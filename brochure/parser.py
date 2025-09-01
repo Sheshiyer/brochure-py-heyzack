@@ -30,7 +30,7 @@ class NormalizedProduct:
     
     @property
     def primary_image(self) -> Optional[str]:
-        """Get the primary product image."""
+        """Get the primary product image.""" 
         return self.images[0] if self.images else None
 
 
