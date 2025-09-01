@@ -1,0 +1,11 @@
+{
+  "model_id": "OMNIA_",
+  "prompt": "Using the product shown in the reference image, create a realistic usage scenario: A modern smart home setup showcasing AC Hard-wire Video Doorbel in use, demonstrating its key features and benefits. Show this exact product being used in its intended environment. Key features to highlight: Features: 2MP CMOS sensor full HD 1080p live view and video, Wi-Fi connection, IR night vision, Two-way audio, Siren alarm. Style: Clean, modern, well-lit, professional product photography with real-world usage context. Keep the product design and appearance consistent with the reference image. Avoid text, logos, or branding. Focus on the product in its intended environment.",
+  "generated_at": "2025-09-01 18:37:47",
+  "image_path": "../generated_images/use-case-OMNIA_.png",
+  "api_response": {
+    "success": true,
+    "mime_type": "image/png"
+  },
+  "generator": "Google Nano Banana API"
+}

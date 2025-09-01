@@ -1,10 +1,13 @@
 # PROJECT TODO
 
 ## In Progress
-- [x] None - All tasks completed
+- [ ] None - All tasks completed
 
 ## Pending
-- [x] None - All tasks completed
+- [ ] Create framework for S3 upload functionality (initially disabled) for future implementation
+
+## Completed (move to memory.md)
+- [DONE] ~~Process and test the image rendering functionality with one product at a time to identify why JPG files are appearing broken or unviewable. Use the actual product image from the provided S3 URL to generate a use case video demonstrating the complete workflow for this single product. This focused approach will help isolate and resolve the rendering issues before scaling to multiple products.~~
 
 ## Completed (move to memory.md)
 - [DONE] ~~Set up OpenRouter API integration with provided API key and model ID~~
