@@ -1,0 +1,1193 @@
+{
+  "analysis_timestamp": "2025-08-27T15:40:53.741500",
+  "executive_summary": {
+    "current_fields": 21,
+    "proposed_new_fields": 12,
+    "enhancement_opportunities": 10,
+    "standardization_needs": 2,
+    "implementation_phases": 4
+  },
+  "current_analysis": {
+    "current_structure": {
+      "id": "str",
+      "supplier": "str",
+      "model_number": "str",
+      "name": "str",
+      "category": "str",
+      "specifications": "list[str]",
+      "description": "str",
+      "communication_protocol": "str",
+      "power_source": "str",
+      "country": "NoneType",
+      "image": "NoneType",
+      "price": "float",
+      "price_raw": "str",
+      "moq": "str",
+      "catalogue": "NoneType",
+      "packing": "NoneType",
+      "status": "str",
+      "designation_fr": "str",
+      "ref_heyzack": "str",
+      "drive_link": "str",
+      "lead_time": "NoneType"
+    },
+    "field_coverage": {
+      "id": {
+        "present": 46,
+        "missing": 0,
+        "coverage_percentage": 100.0,
+        "unique_values": 46,
+        "sample_values": [
+          "OMNIA_IPC173",
+          "szsmarthome_N238-A",
+          "szsmarthome_A7-K",
+          "Wenhui_WHDZ12-4C",
+          "Wenhui_WHD02-Z",
+          "OMNIA_IPC176",
+          "szsmarthome_M9-PC",
+          "TUYA_UX33",
+          "TUYA_GW60-Matter",
+          "szsmarthome_N238-B"
+        ]
+      },
+      "supplier": {
+        "present": 46,
+        "missing": 0,
+        "coverage_percentage": 100.0,
+        "unique_values": 5,
+        "sample_values": [
+          "szsmarthome",
+          "OMNIA",
+          "AVATTO",
+          "Wenhui",
+          "TUYA"
+        ]
+      },
+      "model_number": {
+        "present": 46,
+        "missing": 0,
+        "coverage_percentage": 100.0,
+        "unique_values": 46,
+        "sample_values": [
+          "IPC176",
+          "A7-K",
+          "UFO-R1",
+          "N238-B",
+          "VEN5KHB-D1",
+          "SF254-WC2",
+          "S16Pro",
+          "IPC210",
+          "IPC267",
+          "WHS20S"
+        ]
+      },
+      "name": {
+        "present": 46,
+        "missing": 0,
+        "coverage_percentage": 100.0,
+        "unique_values": 41,
+        "sample_values": [
+          "Residential Single-Phase Hybrid inverter",
+          "Battery Solar Spotlight Camera",
+          "Control Panel MAX",
+          "Pet\u0001Feeder\u0001+ \u0001Pet\u0001Water\u0001Fountain",
+          "Wired Matter Gateway",
+          "6-inch high fidelity ceiling horn",
+          "Baby Monitor",
+          "2K Video Doorbell",
+          "tuya Zigbee,1ch",
+          "Smart Water Valve"
+        ]
+      },
+      "category": {
+        "present": 46,
+        "missing": 0,
+        "coverage_percentage": 100.0,
+        "unique_values": 15,
+        "sample_values": [
+          "Smart Electrical Products",
+          "Smart DIY Module",
+          "Door Lock",
+          "Pets accessories",
+          "background music",
+          "Smart Thermostat",
+          "smart switch",
+          "Smart Remote Control",
+          "Smart Gateway",
+          "Baby Monitor"
+        ]
+      },
+      "specifications": {
+        "present": 46,
+        "missing": 0,
+        "coverage_percentage": 100.0,
+        "unique_values": 18,
+        "sample_values": [
+          "list_length_31",
+          "list_length_21",
+          "list_length_25",
+          "list_length_32",
+          "list_length_29",
+          "list_length_30",
+          "list_length_22",
+          "list_length_23",
+          "list_length_19",
+          "list_length_20"
+        ]
+      },
+      "description": {
+        "present": 46,
+        "missing": 0,
+        "coverage_percentage": 100.0,
+        "unique_values": 43,
+        "sample_values": [
+          "The Indoor Rotatable Camera provides comprehensive home security and monitoring capabilities. Enjoy ",
+          "The Control Panel MAX is a powerful and versatile smart control panel designed for seamless integrat",
+          "The Tuya WiFi Smart Power Strip is a versatile smart outlet designed to simplify power management an",
+          "The ZIGBEE Intelligent Thermostat is a smart switch designed to provide comprehensive control over y",
+          "The Wired Matter Gateway is a robust and versatile smart home hub designed to seamlessly integrate a",
+          "The Pet Feeder + Pet Water Fountain is a smart, automated solution for providing fresh food and hydr",
+          "The Residential Single-Phase Hybrid Inverter is a robust and reliable solution for providing backup ",
+          "The Outdoor Camera provides reliable surveillance for your property with its robust features and wea",
+          "The Air-Conditioner Controller is a smart home device designed to provide convenient and precise con",
+          "The Tuya Zigbee 1-Channel Smart DIY Module is a compact and versatile solution for creating customiz"
+        ]
+      },
+      "communication_protocol": {
+        "present": 45,
+        "missing": 1,
+        "coverage_percentage": 97.82608695652173,
+        "unique_values": 25,
+        "sample_values": [
+          "4G LTE, IR",
+          "ZigBee 3.0",
+          "Wi-Fi 2.4GHz, IR",
+          "Zigbee 3.0, Wi-Fi 2.4GHz",
+          "Wi-Fi, Ethernet, 4G, Zigbee, Bluetooth",
+          "Wi-Fi 2.4GHz 802.11 b/g/n, IR",
+          "Wi-Fi, Zigbee, Bluetooth 4.2, Ethernet",
+          "Wi-Fi",
+          "Wi-Fi 2.4GHz, Wi-Fi 5GHz",
+          "Wi-Fi (2.4G)"
+        ]
+      },
+      "power_source": {
+        "present": 45,
+        "missing": 1,
+        "coverage_percentage": 97.82608695652173,
+        "unique_values": 23,
+        "sample_values": [
+          "Built-in rechargeable lithium battery, Solar power recharger",
+          "DC 5V 1A USB",
+          "5W AC",
+          "Built-in 5200mAh battery, Solar (3W panel)",
+          "AC 100-240V (Zero-live)",
+          "AC 110-250V / 12v-24v",
+          "Built-in 5200mAh lithium battery, AC 8-24V",
+          "USB Type-C",
+          "AC 220V",
+          "DC 5V/1A adapter"
+        ]
+      },
+      "country": {
+        "present": 1,
+        "missing": 45,
+        "coverage_percentage": 2.1739130434782608,
+        "unique_values": 1,
+        "sample_values": [
+          "Universal"
+        ]
+      },
+      "image": {
+        "present": 0,
+        "missing": 46,
+        "coverage_percentage": 0.0,
+        "unique_values": 0,
+        "sample_values": []
+      },
+      "price": {
+        "present": 31,
+        "missing": 15,
+        "coverage_percentage": 67.3913043478261,
+        "unique_values": 24,
+        "sample_values": [
+          "27.0",
+          "20.0",
+          "4.0",
+          "14.0",
+          "3.0",
+          "4.5",
+          "178.0",
+          "100.0",
+          "75.0",
+          "8.0"
+        ]
+      },
+      "price_raw": {
+        "present": 31,
+        "missing": 15,
+        "coverage_percentage": 67.3913043478261,
+        "unique_values": 27,
+        "sample_values": [
+          "$3,80",
+          "23 USD",
+          "27 USD",
+          "$28.50",
+          "65 USD",
+          "$3,50",
+          "Q＜100：5.58\n100≤Q＜500：5.30\n500≤Q＜1000：5.02\n1000≤Q：4.74",
+          "$4,00",
+          "2MP： US$ 10.8 / 3MP: US$ 11.44 ok for 3",
+          "US$13.80"
+        ]
+      },
+      "moq": {
+        "present": 19,
+        "missing": 27,
+        "coverage_percentage": 41.30434782608695,
+        "unique_values": 4,
+        "sample_values": [
+          "100",
+          "5000",
+          "1000",
+          "500 (for 12v-24v)"
+        ]
+      },
+      "catalogue": {
+        "present": 0,
+        "missing": 46,
+        "coverage_percentage": 0.0,
+        "unique_values": 0,
+        "sample_values": []
+      },
+      "packing": {
+        "present": 0,
+        "missing": 46,
+        "coverage_percentage": 0.0,
+        "unique_values": 0,
+        "sample_values": []
+      },
+      "status": {
+        "present": 46,
+        "missing": 0,
+        "coverage_percentage": 100.0,
+        "unique_values": 2,
+        "sample_values": [
+          "To be ordered",
+          "Not selected"
+        ]
+      },
+      "designation_fr": {
+        "present": 9,
+        "missing": 37,
+        "coverage_percentage": 19.565217391304348,
+        "unique_values": 9,
+        "sample_values": [
+          "Caméra extérieure 4G rotative à batterie",
+          "Enregistreur intelligent Stick",
+          "Capteur de gaz intelligent",
+          "Cadenas",
+          "Sonnette vidéo câblée AC",
+          "Bébé Moniteur",
+          "Caméra Cube",
+          "Caméra projecteur à batterie solaire",
+          "Valve thermostatique intelligente pour radiateur"
+        ]
+      },
+      "ref_heyzack": {
+        "present": 12,
+        "missing": 34,
+        "coverage_percentage": 26.08695652173913,
+        "unique_values": 10,
+        "sample_values": [
+          "HZ-SS-CONACC01",
+          "HZ-SS-CAMINT05",
+          "HZ-CD-THERM08",
+          "HZ-SS-CAPTENV04",
+          "HZ-SS-LOCK01",
+          "HZ-CD-GESTNRJ05",
+          "ask for the finish color in front",
+          "HZ-SS-CAMINT02",
+          "HZ-SS-CAMEX08",
+          "HZ-SS-CAMEX01"
+        ]
+      },
+      "drive_link": {
+        "present": 46,
+        "missing": 0,
+        "coverage_percentage": 100.0,
+        "unique_values": 44,
+        "sample_values": [
+          "https://drive.google.com/file/d/1VmpL8wLZdvSwhva1VKux_EYZ9zZo3ug1/view?usp=drive_link",
+          "https://drive.google.com/file/d/1ZSDBQ2_S3CIlNKqa_X6hvW-4M7OgGhhu/view?usp=drive_link",
+          "https://drive.google.com/file/d/1kzBuQpklMkPom3W1XPMvzbwLv3cjWpfh/view?usp=drive_link",
+          "https://drive.google.com/file/d/18yND3rAnxKEKpHkNmrxYvw3tWiCvhPTE/view?usp=drive_link",
+          "https://drive.google.com/file/d/1b2CpR6UWlpORpNjYTMgjZ_bx3nwxLIMv/view?usp=drive_link",
+          "https://drive.google.com/file/d/1LRJ4gfEo1xAFEth_8xKOwkXFB5gvisQH/view?usp=drive_link",
+          "https://drive.google.com/file/d/1BS2BngLEva32ngPiKGOx0oERewLq5oF_/view?usp=drive_link",
+          "https://drive.google.com/file/d/1O72oPYWs89RBgUkhVH6b51002M-3dnzv/view?usp=drive_link",
+          "https://drive.google.com/file/d/1JqotKcw3NHppG62UWbaNixvIA0xpn_xH/view?usp=drive_link",
+          "https://drive.google.com/file/d/1iwvbzVVMA10XW8oNViI6V1GahdMOSGYY/view?usp=drive_link"
+        ]
+      },
+      "lead_time": {
+        "present": 0,
+        "missing": 46,
+        "coverage_percentage": 0.0,
+        "unique_values": 0,
+        "sample_values": []
+      }
+    },
+    "value_patterns": {},
+    "missing_fields": [
+      {
+        "field": "metadata.tags",
+        "description": "Searchable tags for product discovery",
+        "type": "list[string]",
+        "priority": "high",
+        "examples": [
+          "smart-home",
+          "security",
+          "energy-efficient",
+          "voice-control"
+        ]
+      },
+      {
+        "field": "metadata.search_keywords",
+        "description": "SEO and search optimization keywords",
+        "type": "list[string]",
+        "priority": "high",
+        "examples": [
+          "smart doorbell",
+          "wireless camera",
+          "home automation"
+        ]
+      },
+      {
+        "field": "metadata.compatibility_ecosystem",
+        "description": "Compatible smart home ecosystems",
+        "type": "list[string]",
+        "priority": "high",
+        "examples": [
+          "Google Home",
+          "Amazon Alexa",
+          "Apple HomeKit",
+          "Samsung SmartThings"
+        ]
+      },
+      {
+        "field": "metadata.installation_complexity",
+        "description": "Installation difficulty level",
+        "type": "string",
+        "priority": "medium",
+        "examples": [
+          "Easy",
+          "Moderate",
+          "Professional Required"
+        ]
+      },
+      {
+        "field": "metadata.energy_rating",
+        "description": "Energy efficiency rating",
+        "type": "string",
+        "priority": "medium",
+        "examples": [
+          "A+++",
+          "A++",
+          "A+",
+          "A",
+          "B"
+        ]
+      },
+      {
+        "field": "metadata.warranty_period",
+        "description": "Product warranty duration",
+        "type": "string",
+        "priority": "medium",
+        "examples": [
+          "1 year",
+          "2 years",
+          "3 years",
+          "Lifetime"
+        ]
+      },
+      {
+        "field": "metadata.price_range",
+        "description": "Product price category",
+        "type": "string",
+        "priority": "medium",
+        "examples": [
+          "Budget",
+          "Mid-range",
+          "Premium",
+          "Luxury"
+        ]
+      },
+      {
+        "field": "metadata.target_audience",
+        "description": "Primary target user group",
+        "type": "list[string]",
+        "priority": "medium",
+        "examples": [
+          "Homeowners",
+          "Renters",
+          "Tech Enthusiasts",
+          "Seniors"
+        ]
+      },
+      {
+        "field": "metadata.use_cases",
+        "description": "Primary use case scenarios",
+        "type": "list[string]",
+        "priority": "high",
+        "examples": [
+          "Home Security",
+          "Energy Management",
+          "Entertainment",
+          "Convenience"
+        ]
+      },
+      {
+        "field": "metadata.certification_standards",
+        "description": "Industry certifications and standards",
+        "type": "list[string]",
+        "priority": "medium",
+        "examples": [
+          "FCC",
+          "CE",
+          "UL",
+          "Energy Star",
+          "Matter"
+        ]
+      },
+      {
+        "field": "metadata.last_updated",
+        "description": "Last metadata update timestamp",
+        "type": "string",
+        "priority": "low",
+        "examples": [
+          "2024-01-15T10:30:00Z"
+        ]
+      },
+      {
+        "field": "metadata.data_quality_score",
+        "description": "Completeness and quality score (0-100)",
+        "type": "number",
+        "priority": "low",
+        "examples": [
+          85,
+          92,
+          78
+        ]
+      }
+    ],
+    "enhancement_opportunities": [
+      {
+        "field": "country",
+        "type": "low_coverage",
+        "coverage": 2.1739130434782608,
+        "priority": "high",
+        "recommendation": "Enhance country coverage from 2.2% to >80%"
+      },
+      {
+        "field": "image",
+        "type": "low_coverage",
+        "coverage": 0.0,
+        "priority": "high",
+        "recommendation": "Enhance image coverage from 0.0% to >80%"
+      },
+      {
+        "field": "moq",
+        "type": "low_coverage",
+        "coverage": 41.30434782608695,
+        "priority": "medium",
+        "recommendation": "Enhance moq coverage from 41.3% to >80%"
+      },
+      {
+        "field": "moq",
+        "type": "limited_diversity",
+        "unique_values": 4,
+        "priority": "medium",
+        "recommendation": "Expand moq value diversity (currently 4 unique values)"
+      },
+      {
+        "field": "catalogue",
+        "type": "low_coverage",
+        "coverage": 0.0,
+        "priority": "high",
+        "recommendation": "Enhance catalogue coverage from 0.0% to >80%"
+      },
+      {
+        "field": "packing",
+        "type": "low_coverage",
+        "coverage": 0.0,
+        "priority": "high",
+        "recommendation": "Enhance packing coverage from 0.0% to >80%"
+      },
+      {
+        "field": "status",
+        "type": "limited_diversity",
+        "unique_values": 2,
+        "priority": "medium",
+        "recommendation": "Expand status value diversity (currently 2 unique values)"
+      },
+      {
+        "field": "designation_fr",
+        "type": "low_coverage",
+        "coverage": 19.565217391304348,
+        "priority": "high",
+        "recommendation": "Enhance designation_fr coverage from 19.6% to >80%"
+      },
+      {
+        "field": "ref_heyzack",
+        "type": "low_coverage",
+        "coverage": 26.08695652173913,
+        "priority": "medium",
+        "recommendation": "Enhance ref_heyzack coverage from 26.1% to >80%"
+      },
+      {
+        "field": "lead_time",
+        "type": "low_coverage",
+        "coverage": 0.0,
+        "priority": "high",
+        "recommendation": "Enhance lead_time coverage from 0.0% to >80%"
+      }
+    ],
+    "standardization_needs": [
+      {
+        "field": "name",
+        "issue": "case_inconsistency",
+        "priority": "medium",
+        "recommendation": "Standardize case formatting for name",
+        "examples": [
+          "Residential Single-Phase Hybrid inverter",
+          "Battery Solar Spotlight Camera",
+          "Control Panel MAX",
+          "Pet\u0001Feeder\u0001+ \u0001Pet\u0001Water\u0001Fountain",
+          "Wired Matter Gateway"
+        ]
+      },
+      {
+        "field": "communication_protocol",
+        "issue": "case_inconsistency",
+        "priority": "medium",
+        "recommendation": "Standardize case formatting for communication_protocol",
+        "examples": [
+          "4G LTE, IR",
+          "ZigBee 3.0",
+          "Wi-Fi 2.4GHz, IR",
+          "Zigbee 3.0, Wi-Fi 2.4GHz",
+          "Wi-Fi, Ethernet, 4G, Zigbee, Bluetooth"
+        ]
+      }
+    ]
+  },
+  "enhancement_plan": {
+    "overview": {
+      "current_fields": 21,
+      "proposed_new_fields": 12,
+      "enhancement_opportunities": 10,
+      "standardization_needs": 2
+    },
+    "implementation_phases": [
+      {
+        "phase": 1,
+        "name": "Critical Metadata Addition",
+        "duration": "1 week",
+        "description": "Add high-priority metadata fields for searchability",
+        "tasks": [
+          "Add tags field for product categorization",
+          "Add search_keywords for SEO optimization",
+          "Add compatibility_ecosystem for smart home integration",
+          "Add use_cases for application scenarios"
+        ],
+        "deliverables": [
+          "Enhanced product schema",
+          "Metadata population scripts"
+        ]
+      },
+      {
+        "phase": 2,
+        "name": "Data Quality Enhancement",
+        "duration": "2 weeks",
+        "description": "Improve existing field coverage and standardization",
+        "tasks": [
+          "Enhance low-coverage fields to >80%",
+          "Standardize unit formats across specifications",
+          "Normalize case formatting for categorical fields",
+          "Validate and clean existing metadata"
+        ],
+        "deliverables": [
+          "Data quality report",
+          "Standardization guidelines"
+        ]
+      },
+      {
+        "phase": 3,
+        "name": "Advanced Metadata Features",
+        "duration": "1 week",
+        "description": "Add advanced metadata for enhanced functionality",
+        "tasks": [
+          "Add installation_complexity ratings",
+          "Add energy_rating classifications",
+          "Add warranty_period information",
+          "Add price_range categories"
+        ],
+        "deliverables": [
+          "Complete metadata schema",
+          "Population workflows"
+        ]
+      },
+      {
+        "phase": 4,
+        "name": "Automation and Monitoring",
+        "duration": "1 week",
+        "description": "Implement automated metadata management",
+        "tasks": [
+          "Create data quality scoring system",
+          "Implement automated metadata validation",
+          "Set up metadata update tracking",
+          "Create enhancement monitoring dashboard"
+        ],
+        "deliverables": [
+          "Automation scripts",
+          "Quality monitoring system"
+        ]
+      }
+    ],
+    "field_additions": [
+      {
+        "field": "metadata.tags",
+        "description": "Searchable tags for product discovery",
+        "type": "list[string]",
+        "priority": "high",
+        "examples": [
+          "smart-home",
+          "security",
+          "energy-efficient",
+          "voice-control"
+        ]
+      },
+      {
+        "field": "metadata.search_keywords",
+        "description": "SEO and search optimization keywords",
+        "type": "list[string]",
+        "priority": "high",
+        "examples": [
+          "smart doorbell",
+          "wireless camera",
+          "home automation"
+        ]
+      },
+      {
+        "field": "metadata.compatibility_ecosystem",
+        "description": "Compatible smart home ecosystems",
+        "type": "list[string]",
+        "priority": "high",
+        "examples": [
+          "Google Home",
+          "Amazon Alexa",
+          "Apple HomeKit",
+          "Samsung SmartThings"
+        ]
+      },
+      {
+        "field": "metadata.installation_complexity",
+        "description": "Installation difficulty level",
+        "type": "string",
+        "priority": "medium",
+        "examples": [
+          "Easy",
+          "Moderate",
+          "Professional Required"
+        ]
+      },
+      {
+        "field": "metadata.energy_rating",
+        "description": "Energy efficiency rating",
+        "type": "string",
+        "priority": "medium",
+        "examples": [
+          "A+++",
+          "A++",
+          "A+",
+          "A",
+          "B"
+        ]
+      },
+      {
+        "field": "metadata.warranty_period",
+        "description": "Product warranty duration",
+        "type": "string",
+        "priority": "medium",
+        "examples": [
+          "1 year",
+          "2 years",
+          "3 years",
+          "Lifetime"
+        ]
+      },
+      {
+        "field": "metadata.price_range",
+        "description": "Product price category",
+        "type": "string",
+        "priority": "medium",
+        "examples": [
+          "Budget",
+          "Mid-range",
+          "Premium",
+          "Luxury"
+        ]
+      },
+      {
+        "field": "metadata.target_audience",
+        "description": "Primary target user group",
+        "type": "list[string]",
+        "priority": "medium",
+        "examples": [
+          "Homeowners",
+          "Renters",
+          "Tech Enthusiasts",
+          "Seniors"
+        ]
+      },
+      {
+        "field": "metadata.use_cases",
+        "description": "Primary use case scenarios",
+        "type": "list[string]",
+        "priority": "high",
+        "examples": [
+          "Home Security",
+          "Energy Management",
+          "Entertainment",
+          "Convenience"
+        ]
+      },
+      {
+        "field": "metadata.certification_standards",
+        "description": "Industry certifications and standards",
+        "type": "list[string]",
+        "priority": "medium",
+        "examples": [
+          "FCC",
+          "CE",
+          "UL",
+          "Energy Star",
+          "Matter"
+        ]
+      },
+      {
+        "field": "metadata.last_updated",
+        "description": "Last metadata update timestamp",
+        "type": "string",
+        "priority": "low",
+        "examples": [
+          "2024-01-15T10:30:00Z"
+        ]
+      },
+      {
+        "field": "metadata.data_quality_score",
+        "description": "Completeness and quality score (0-100)",
+        "type": "number",
+        "priority": "low",
+        "examples": [
+          85,
+          92,
+          78
+        ]
+      }
+    ],
+    "field_enhancements": [
+      {
+        "field": "country",
+        "type": "low_coverage",
+        "coverage": 2.1739130434782608,
+        "priority": "high",
+        "recommendation": "Enhance country coverage from 2.2% to >80%"
+      },
+      {
+        "field": "image",
+        "type": "low_coverage",
+        "coverage": 0.0,
+        "priority": "high",
+        "recommendation": "Enhance image coverage from 0.0% to >80%"
+      },
+      {
+        "field": "moq",
+        "type": "low_coverage",
+        "coverage": 41.30434782608695,
+        "priority": "medium",
+        "recommendation": "Enhance moq coverage from 41.3% to >80%"
+      },
+      {
+        "field": "moq",
+        "type": "limited_diversity",
+        "unique_values": 4,
+        "priority": "medium",
+        "recommendation": "Expand moq value diversity (currently 4 unique values)"
+      },
+      {
+        "field": "catalogue",
+        "type": "low_coverage",
+        "coverage": 0.0,
+        "priority": "high",
+        "recommendation": "Enhance catalogue coverage from 0.0% to >80%"
+      },
+      {
+        "field": "packing",
+        "type": "low_coverage",
+        "coverage": 0.0,
+        "priority": "high",
+        "recommendation": "Enhance packing coverage from 0.0% to >80%"
+      },
+      {
+        "field": "status",
+        "type": "limited_diversity",
+        "unique_values": 2,
+        "priority": "medium",
+        "recommendation": "Expand status value diversity (currently 2 unique values)"
+      },
+      {
+        "field": "designation_fr",
+        "type": "low_coverage",
+        "coverage": 19.565217391304348,
+        "priority": "high",
+        "recommendation": "Enhance designation_fr coverage from 19.6% to >80%"
+      },
+      {
+        "field": "ref_heyzack",
+        "type": "low_coverage",
+        "coverage": 26.08695652173913,
+        "priority": "medium",
+        "recommendation": "Enhance ref_heyzack coverage from 26.1% to >80%"
+      },
+      {
+        "field": "lead_time",
+        "type": "low_coverage",
+        "coverage": 0.0,
+        "priority": "high",
+        "recommendation": "Enhance lead_time coverage from 0.0% to >80%"
+      }
+    ],
+    "standardization_tasks": [
+      {
+        "field": "name",
+        "issue": "case_inconsistency",
+        "priority": "medium",
+        "recommendation": "Standardize case formatting for name",
+        "examples": [
+          "Residential Single-Phase Hybrid inverter",
+          "Battery Solar Spotlight Camera",
+          "Control Panel MAX",
+          "Pet\u0001Feeder\u0001+ \u0001Pet\u0001Water\u0001Fountain",
+          "Wired Matter Gateway"
+        ]
+      },
+      {
+        "field": "communication_protocol",
+        "issue": "case_inconsistency",
+        "priority": "medium",
+        "recommendation": "Standardize case formatting for communication_protocol",
+        "examples": [
+          "4G LTE, IR",
+          "ZigBee 3.0",
+          "Wi-Fi 2.4GHz, IR",
+          "Zigbee 3.0, Wi-Fi 2.4GHz",
+          "Wi-Fi, Ethernet, 4G, Zigbee, Bluetooth"
+        ]
+      }
+    ],
+    "automation_opportunities": [
+      {
+        "task": "Tag Generation",
+        "description": "Auto-generate tags from product names and categories",
+        "complexity": "Low",
+        "impact": "High"
+      },
+      {
+        "task": "Keyword Extraction",
+        "description": "Extract search keywords from descriptions and specifications",
+        "complexity": "Medium",
+        "impact": "High"
+      },
+      {
+        "task": "Compatibility Detection",
+        "description": "Detect ecosystem compatibility from specifications",
+        "complexity": "Medium",
+        "impact": "Medium"
+      },
+      {
+        "task": "Use Case Classification",
+        "description": "Classify use cases based on product category and features",
+        "complexity": "High",
+        "impact": "Medium"
+      }
+    ],
+    "quality_metrics": {
+      "completeness_score": "Percentage of fields populated per product",
+      "consistency_score": "Standardization level across similar fields",
+      "accuracy_score": "Validation success rate for metadata values",
+      "searchability_score": "Effectiveness of tags and keywords for discovery",
+      "overall_quality_score": "Weighted average of all quality metrics"
+    }
+  },
+  "enhanced_schema": {
+    "product_schema_v2": {
+      "id": {
+        "type": "string",
+        "required": true,
+        "description": "Unique product identifier"
+      },
+      "name": {
+        "type": "string",
+        "required": true,
+        "description": "Product name"
+      },
+      "category": {
+        "type": "string",
+        "required": true,
+        "description": "Product category"
+      },
+      "supplier": {
+        "type": "string",
+        "required": true,
+        "description": "Product supplier/manufacturer"
+      },
+      "description": {
+        "type": "string",
+        "required": false,
+        "description": "Detailed product description"
+      },
+      "specifications": {
+        "type": "object",
+        "required": false,
+        "description": "Technical specifications",
+        "properties": {
+          "power_source": {
+            "type": "string",
+            "standardized_values": [
+              "Battery",
+              "AC Power",
+              "DC Power",
+              "Solar",
+              "Hybrid"
+            ]
+          },
+          "communication_protocol": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "dimensions": {
+            "type": "object",
+            "standardized_units": [
+              "mm",
+              "cm",
+              "inch"
+            ]
+          },
+          "weight": {
+            "type": "string",
+            "standardized_units": [
+              "g",
+              "kg",
+              "lb"
+            ]
+          },
+          "operating_voltage": {
+            "type": "string",
+            "standardized_units": [
+              "V",
+              "VDC",
+              "VAC"
+            ]
+          },
+          "power_consumption": {
+            "type": "string",
+            "standardized_units": [
+              "W",
+              "mW"
+            ]
+          }
+        }
+      },
+      "metadata": {
+        "type": "object",
+        "required": true,
+        "description": "Enhanced metadata for searchability and categorization",
+        "properties": {
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Searchable tags for product discovery",
+            "examples": [
+              "smart-home",
+              "security",
+              "wireless",
+              "voice-control"
+            ]
+          },
+          "search_keywords": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "SEO and search optimization keywords",
+            "examples": [
+              "smart doorbell",
+              "wireless camera",
+              "home automation"
+            ]
+          },
+          "compatibility_ecosystem": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Compatible smart home ecosystems",
+            "standardized_values": [
+              "Google Home",
+              "Amazon Alexa",
+              "Apple HomeKit",
+              "Samsung SmartThings",
+              "Tuya Smart",
+              "Matter"
+            ]
+          },
+          "use_cases": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Primary use case scenarios",
+            "standardized_values": [
+              "Home Security",
+              "Energy Management",
+              "Entertainment",
+              "Convenience",
+              "Health & Safety",
+              "Lighting Control"
+            ]
+          },
+          "installation_complexity": {
+            "type": "string",
+            "description": "Installation difficulty level",
+            "standardized_values": [
+              "Easy",
+              "Moderate",
+              "Professional Required"
+            ]
+          },
+          "energy_rating": {
+            "type": "string",
+            "description": "Energy efficiency rating",
+            "standardized_values": [
+              "A+++",
+              "A++",
+              "A+",
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
+          },
+          "warranty_period": {
+            "type": "string",
+            "description": "Product warranty duration",
+            "examples": [
+              "1 year",
+              "2 years",
+              "3 years",
+              "Lifetime"
+            ]
+          },
+          "price_range": {
+            "type": "string",
+            "description": "Product price category",
+            "standardized_values": [
+              "Budget",
+              "Mid-range",
+              "Premium",
+              "Luxury"
+            ]
+          },
+          "target_audience": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Primary target user group",
+            "standardized_values": [
+              "Homeowners",
+              "Renters",
+              "Tech Enthusiasts",
+              "Seniors",
+              "Families",
+              "Professionals"
+            ]
+          },
+          "certification_standards": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Industry certifications and standards",
+            "examples": [
+              "FCC",
+              "CE",
+              "UL",
+              "Energy Star",
+              "Matter",
+              "Thread",
+              "Zigbee"
+            ]
+          },
+          "last_updated": {
+            "type": "string",
+            "format": "datetime",
+            "description": "Last metadata update timestamp"
+          },
+          "data_quality_score": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100,
+            "description": "Completeness and quality score (0-100)"
+          }
+        }
+      },
+      "drive_link": {
+        "type": "string",
+        "required": false,
+        "description": "Google Drive link to product documentation"
+      },
+      "enhancement_history": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "timestamp": {
+              "type": "string",
+              "format": "datetime"
+            },
+            "enhancement_type": {
+              "type": "string"
+            },
+            "fields_modified": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "source": {
+              "type": "string"
+            }
+          }
+        },
+        "description": "History of metadata enhancements"
+      }
+    }
+  }
+}

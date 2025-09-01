@@ -1,0 +1,331 @@
+{
+  "timestamp": "2025-08-27T17:49:49.562270",
+  "total_images": 46,
+  "successful_migrations": 46,
+  "failed_migrations": 0,
+  "migration_details": [
+    {
+      "original_url": "https://drive.google.com/file/d/1JqKpg1tRRNOX0iPE-hzK4prAtPvEAVZM/view?usp=sharing",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1JqKpg1tRRNOX0iPE-hzK4prAtPvEAVZM.jpg",
+      "s3_key": "product-images/1JqKpg1tRRNOX0iPE-hzK4prAtPvEAVZM.jpg",
+      "file_id": "1JqKpg1tRRNOX0iPE-hzK4prAtPvEAVZM"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/1sh2o2bjmKu8tGprmZjsWvcNffRqMrYyA/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1sh2o2bjmKu8tGprmZjsWvcNffRqMrYyA.jpg",
+      "s3_key": "product-images/1sh2o2bjmKu8tGprmZjsWvcNffRqMrYyA.jpg",
+      "file_id": "1sh2o2bjmKu8tGprmZjsWvcNffRqMrYyA"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/1LRJ4gfEo1xAFEth_8xKOwkXFB5gvisQH/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1LRJ4gfEo1xAFEth_8xKOwkXFB5gvisQH.jpg",
+      "s3_key": "product-images/1LRJ4gfEo1xAFEth_8xKOwkXFB5gvisQH.jpg",
+      "file_id": "1LRJ4gfEo1xAFEth_8xKOwkXFB5gvisQH"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/1Rx4vnJJiR5E2cHQPvzHHktKWkWAWy3Ik/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1Rx4vnJJiR5E2cHQPvzHHktKWkWAWy3Ik.jpg",
+      "s3_key": "product-images/1Rx4vnJJiR5E2cHQPvzHHktKWkWAWy3Ik.jpg",
+      "file_id": "1Rx4vnJJiR5E2cHQPvzHHktKWkWAWy3Ik"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/1PAXH12NDEWWVfm0Hp7-gueAwP_OmHPTR/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1PAXH12NDEWWVfm0Hp7-gueAwP_OmHPTR.jpg",
+      "s3_key": "product-images/1PAXH12NDEWWVfm0Hp7-gueAwP_OmHPTR.jpg",
+      "file_id": "1PAXH12NDEWWVfm0Hp7-gueAwP_OmHPTR"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/1Y-VLmCBTIEy6D6Aj08hrfWOKvaDvTq1_/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1Y-VLmCBTIEy6D6Aj08hrfWOKvaDvTq1_.jpg",
+      "s3_key": "product-images/1Y-VLmCBTIEy6D6Aj08hrfWOKvaDvTq1_.jpg",
+      "file_id": "1Y-VLmCBTIEy6D6Aj08hrfWOKvaDvTq1_"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/1qAg2bJNN61L5r3yzmDSTUKJJlKpXQB6M/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1qAg2bJNN61L5r3yzmDSTUKJJlKpXQB6M.jpg",
+      "s3_key": "product-images/1qAg2bJNN61L5r3yzmDSTUKJJlKpXQB6M.jpg",
+      "file_id": "1qAg2bJNN61L5r3yzmDSTUKJJlKpXQB6M"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/1sIkhV5AdP1VwFZ6lJh0VECYNWRGSc3JY/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1sIkhV5AdP1VwFZ6lJh0VECYNWRGSc3JY.jpg",
+      "s3_key": "product-images/1sIkhV5AdP1VwFZ6lJh0VECYNWRGSc3JY.jpg",
+      "file_id": "1sIkhV5AdP1VwFZ6lJh0VECYNWRGSc3JY"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/17_D5DnKHuBwvNgtaabMOD-rHVl3hY-bF/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/17_D5DnKHuBwvNgtaabMOD-rHVl3hY-bF.jpg",
+      "s3_key": "product-images/17_D5DnKHuBwvNgtaabMOD-rHVl3hY-bF.jpg",
+      "file_id": "17_D5DnKHuBwvNgtaabMOD-rHVl3hY-bF"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/1h1zOdsK1TR6czVueQ7VjtF92GHK3GgS8/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1h1zOdsK1TR6czVueQ7VjtF92GHK3GgS8.jpg",
+      "s3_key": "product-images/1h1zOdsK1TR6czVueQ7VjtF92GHK3GgS8.jpg",
+      "file_id": "1h1zOdsK1TR6czVueQ7VjtF92GHK3GgS8"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/16J1uNJM8AhXOjexfWUeTgUg7rzgWub5J/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/16J1uNJM8AhXOjexfWUeTgUg7rzgWub5J.jpg",
+      "s3_key": "product-images/16J1uNJM8AhXOjexfWUeTgUg7rzgWub5J.jpg",
+      "file_id": "16J1uNJM8AhXOjexfWUeTgUg7rzgWub5J"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/1ZSDBQ2_S3CIlNKqa_X6hvW-4M7OgGhhu/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1ZSDBQ2_S3CIlNKqa_X6hvW-4M7OgGhhu.jpg",
+      "s3_key": "product-images/1ZSDBQ2_S3CIlNKqa_X6hvW-4M7OgGhhu.jpg",
+      "file_id": "1ZSDBQ2_S3CIlNKqa_X6hvW-4M7OgGhhu"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/1wMdPlORDuFTeyOyAZnpwCCAES2AXqiq2/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1wMdPlORDuFTeyOyAZnpwCCAES2AXqiq2.jpg",
+      "s3_key": "product-images/1wMdPlORDuFTeyOyAZnpwCCAES2AXqiq2.jpg",
+      "file_id": "1wMdPlORDuFTeyOyAZnpwCCAES2AXqiq2"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/1SttSJ87foa1-YM6ZyrWMxL3dVooIioRx/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1SttSJ87foa1-YM6ZyrWMxL3dVooIioRx.jpg",
+      "s3_key": "product-images/1SttSJ87foa1-YM6ZyrWMxL3dVooIioRx.jpg",
+      "file_id": "1SttSJ87foa1-YM6ZyrWMxL3dVooIioRx"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/1kzBuQpklMkPom3W1XPMvzbwLv3cjWpfh/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1kzBuQpklMkPom3W1XPMvzbwLv3cjWpfh.jpg",
+      "s3_key": "product-images/1kzBuQpklMkPom3W1XPMvzbwLv3cjWpfh.jpg",
+      "file_id": "1kzBuQpklMkPom3W1XPMvzbwLv3cjWpfh"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/1O72oPYWs89RBgUkhVH6b51002M-3dnzv/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1O72oPYWs89RBgUkhVH6b51002M-3dnzv.jpg",
+      "s3_key": "product-images/1O72oPYWs89RBgUkhVH6b51002M-3dnzv.jpg",
+      "file_id": "1O72oPYWs89RBgUkhVH6b51002M-3dnzv"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/1dNtYuXjtvb3MVgfOwU1xyfl9p8b4SSf2/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1dNtYuXjtvb3MVgfOwU1xyfl9p8b4SSf2.jpg",
+      "s3_key": "product-images/1dNtYuXjtvb3MVgfOwU1xyfl9p8b4SSf2.jpg",
+      "file_id": "1dNtYuXjtvb3MVgfOwU1xyfl9p8b4SSf2"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/1gu6BsVX6cpUKdRZXKfWOy9faxf2NUAfr/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1gu6BsVX6cpUKdRZXKfWOy9faxf2NUAfr.jpg",
+      "s3_key": "product-images/1gu6BsVX6cpUKdRZXKfWOy9faxf2NUAfr.jpg",
+      "file_id": "1gu6BsVX6cpUKdRZXKfWOy9faxf2NUAfr"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/1gerPthxLLqlShbvh1dgSwVJR95Xc8p62/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1gerPthxLLqlShbvh1dgSwVJR95Xc8p62.jpg",
+      "s3_key": "product-images/1gerPthxLLqlShbvh1dgSwVJR95Xc8p62.jpg",
+      "file_id": "1gerPthxLLqlShbvh1dgSwVJR95Xc8p62"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/1k7LEa46FOoCwpd8o77o6YVbvQ24bQhjz/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1k7LEa46FOoCwpd8o77o6YVbvQ24bQhjz.jpg",
+      "s3_key": "product-images/1k7LEa46FOoCwpd8o77o6YVbvQ24bQhjz.jpg",
+      "file_id": "1k7LEa46FOoCwpd8o77o6YVbvQ24bQhjz"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/1k7LEa46FOoCwpd8o77o6YVbvQ24bQhjz/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1k7LEa46FOoCwpd8o77o6YVbvQ24bQhjz.jpg",
+      "s3_key": "product-images/1k7LEa46FOoCwpd8o77o6YVbvQ24bQhjz.jpg",
+      "file_id": "1k7LEa46FOoCwpd8o77o6YVbvQ24bQhjz"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/1Ap4AmOBm_1sYRfRWi5CoX9xy35Hmpbbh/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1Ap4AmOBm_1sYRfRWi5CoX9xy35Hmpbbh.jpg",
+      "s3_key": "product-images/1Ap4AmOBm_1sYRfRWi5CoX9xy35Hmpbbh.jpg",
+      "file_id": "1Ap4AmOBm_1sYRfRWi5CoX9xy35Hmpbbh"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/16iC666qNUQ_ncLNn9fLJab603Y6glN_E/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/16iC666qNUQ_ncLNn9fLJab603Y6glN_E.jpg",
+      "s3_key": "product-images/16iC666qNUQ_ncLNn9fLJab603Y6glN_E.jpg",
+      "file_id": "16iC666qNUQ_ncLNn9fLJab603Y6glN_E"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/1OMpTR2gp7dlrytZPKnGHXEqRBktzdES5/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1OMpTR2gp7dlrytZPKnGHXEqRBktzdES5.jpg",
+      "s3_key": "product-images/1OMpTR2gp7dlrytZPKnGHXEqRBktzdES5.jpg",
+      "file_id": "1OMpTR2gp7dlrytZPKnGHXEqRBktzdES5"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/1Z8cFI1iZxWrkOlH_TlWb7lFFiKznxC2V/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1Z8cFI1iZxWrkOlH_TlWb7lFFiKznxC2V.jpg",
+      "s3_key": "product-images/1Z8cFI1iZxWrkOlH_TlWb7lFFiKznxC2V.jpg",
+      "file_id": "1Z8cFI1iZxWrkOlH_TlWb7lFFiKznxC2V"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/1b2CpR6UWlpORpNjYTMgjZ_bx3nwxLIMv/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1b2CpR6UWlpORpNjYTMgjZ_bx3nwxLIMv.jpg",
+      "s3_key": "product-images/1b2CpR6UWlpORpNjYTMgjZ_bx3nwxLIMv.jpg",
+      "file_id": "1b2CpR6UWlpORpNjYTMgjZ_bx3nwxLIMv"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/1v_MkMoUV21wC8wGPSKs5E-JZUr8WrM3L/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1v_MkMoUV21wC8wGPSKs5E-JZUr8WrM3L.jpg",
+      "s3_key": "product-images/1v_MkMoUV21wC8wGPSKs5E-JZUr8WrM3L.jpg",
+      "file_id": "1v_MkMoUV21wC8wGPSKs5E-JZUr8WrM3L"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/1G4VRQdfxTChyCa6aggo4HUiddIIRsGSH/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1G4VRQdfxTChyCa6aggo4HUiddIIRsGSH.jpg",
+      "s3_key": "product-images/1G4VRQdfxTChyCa6aggo4HUiddIIRsGSH.jpg",
+      "file_id": "1G4VRQdfxTChyCa6aggo4HUiddIIRsGSH"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/1eLbWtrrfi2P36_yBlLetChHHWeHHm8XX/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1eLbWtrrfi2P36_yBlLetChHHWeHHm8XX.jpg",
+      "s3_key": "product-images/1eLbWtrrfi2P36_yBlLetChHHWeHHm8XX.jpg",
+      "file_id": "1eLbWtrrfi2P36_yBlLetChHHWeHHm8XX"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/1PjEan2PhXhcWbdJs4jVxXYi1O1qBbj5j/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1PjEan2PhXhcWbdJs4jVxXYi1O1qBbj5j.jpg",
+      "s3_key": "product-images/1PjEan2PhXhcWbdJs4jVxXYi1O1qBbj5j.jpg",
+      "file_id": "1PjEan2PhXhcWbdJs4jVxXYi1O1qBbj5j"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/1JqotKcw3NHppG62UWbaNixvIA0xpn_xH/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1JqotKcw3NHppG62UWbaNixvIA0xpn_xH.jpg",
+      "s3_key": "product-images/1JqotKcw3NHppG62UWbaNixvIA0xpn_xH.jpg",
+      "file_id": "1JqotKcw3NHppG62UWbaNixvIA0xpn_xH"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/1piwFqZkoVN8juRKlmoK2-eW1KECl0D_C/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1piwFqZkoVN8juRKlmoK2-eW1KECl0D_C.jpg",
+      "s3_key": "product-images/1piwFqZkoVN8juRKlmoK2-eW1KECl0D_C.jpg",
+      "file_id": "1piwFqZkoVN8juRKlmoK2-eW1KECl0D_C"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/1nDWB0d9y7-711uVCyrOuCclsi--HavEB/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1nDWB0d9y7-711uVCyrOuCclsi--HavEB.jpg",
+      "s3_key": "product-images/1nDWB0d9y7-711uVCyrOuCclsi--HavEB.jpg",
+      "file_id": "1nDWB0d9y7-711uVCyrOuCclsi--HavEB"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/1hqmSK89DOkmWQpsgGMlghsm2uGfIpcpy/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1hqmSK89DOkmWQpsgGMlghsm2uGfIpcpy.jpg",
+      "s3_key": "product-images/1hqmSK89DOkmWQpsgGMlghsm2uGfIpcpy.jpg",
+      "file_id": "1hqmSK89DOkmWQpsgGMlghsm2uGfIpcpy"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/1iwvbzVVMA10XW8oNViI6V1GahdMOSGYY/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1iwvbzVVMA10XW8oNViI6V1GahdMOSGYY.jpg",
+      "s3_key": "product-images/1iwvbzVVMA10XW8oNViI6V1GahdMOSGYY.jpg",
+      "file_id": "1iwvbzVVMA10XW8oNViI6V1GahdMOSGYY"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/1cCtmvGcaNs2_YYd-ofzIRquS-9qsnxLA/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1cCtmvGcaNs2_YYd-ofzIRquS-9qsnxLA.jpg",
+      "s3_key": "product-images/1cCtmvGcaNs2_YYd-ofzIRquS-9qsnxLA.jpg",
+      "file_id": "1cCtmvGcaNs2_YYd-ofzIRquS-9qsnxLA"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/1CrjIFl39iM9CBT0QBhwGLtqvrfOkOMTq/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1CrjIFl39iM9CBT0QBhwGLtqvrfOkOMTq.jpg",
+      "s3_key": "product-images/1CrjIFl39iM9CBT0QBhwGLtqvrfOkOMTq.jpg",
+      "file_id": "1CrjIFl39iM9CBT0QBhwGLtqvrfOkOMTq"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/1BS2BngLEva32ngPiKGOx0oERewLq5oF_/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1BS2BngLEva32ngPiKGOx0oERewLq5oF_.jpg",
+      "s3_key": "product-images/1BS2BngLEva32ngPiKGOx0oERewLq5oF_.jpg",
+      "file_id": "1BS2BngLEva32ngPiKGOx0oERewLq5oF_"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/1VmpL8wLZdvSwhva1VKux_EYZ9zZo3ug1/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1VmpL8wLZdvSwhva1VKux_EYZ9zZo3ug1.jpg",
+      "s3_key": "product-images/1VmpL8wLZdvSwhva1VKux_EYZ9zZo3ug1.jpg",
+      "file_id": "1VmpL8wLZdvSwhva1VKux_EYZ9zZo3ug1"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/1HLYHSDnf59KhItsB64P0GpqVjAAopDc8/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1HLYHSDnf59KhItsB64P0GpqVjAAopDc8.jpg",
+      "s3_key": "product-images/1HLYHSDnf59KhItsB64P0GpqVjAAopDc8.jpg",
+      "file_id": "1HLYHSDnf59KhItsB64P0GpqVjAAopDc8"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/1QVOoZj7MVdPCgpSwGan2qpg7Dncywl3L/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1QVOoZj7MVdPCgpSwGan2qpg7Dncywl3L.jpg",
+      "s3_key": "product-images/1QVOoZj7MVdPCgpSwGan2qpg7Dncywl3L.jpg",
+      "file_id": "1QVOoZj7MVdPCgpSwGan2qpg7Dncywl3L"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/1JhuvTLB0_SRE5WsYGrv7QKD8M4q9RDHs/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1JhuvTLB0_SRE5WsYGrv7QKD8M4q9RDHs.jpg",
+      "s3_key": "product-images/1JhuvTLB0_SRE5WsYGrv7QKD8M4q9RDHs.jpg",
+      "file_id": "1JhuvTLB0_SRE5WsYGrv7QKD8M4q9RDHs"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/11JDTwZK4wR6SPFt_idgKArqkmc3aYYph/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/11JDTwZK4wR6SPFt_idgKArqkmc3aYYph.jpg",
+      "s3_key": "product-images/11JDTwZK4wR6SPFt_idgKArqkmc3aYYph.jpg",
+      "file_id": "11JDTwZK4wR6SPFt_idgKArqkmc3aYYph"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/11JDTwZK4wR6SPFt_idgKArqkmc3aYYph/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/11JDTwZK4wR6SPFt_idgKArqkmc3aYYph.jpg",
+      "s3_key": "product-images/11JDTwZK4wR6SPFt_idgKArqkmc3aYYph.jpg",
+      "file_id": "11JDTwZK4wR6SPFt_idgKArqkmc3aYYph"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/18yND3rAnxKEKpHkNmrxYvw3tWiCvhPTE/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/18yND3rAnxKEKpHkNmrxYvw3tWiCvhPTE.jpg",
+      "s3_key": "product-images/18yND3rAnxKEKpHkNmrxYvw3tWiCvhPTE.jpg",
+      "file_id": "18yND3rAnxKEKpHkNmrxYvw3tWiCvhPTE"
+    },
+    {
+      "original_url": "https://drive.google.com/file/d/17fezDjVNJ7blHVyREftG6khsohvkdGSQ/view?usp=drive_link",
+      "s3_url": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/17fezDjVNJ7blHVyREftG6khsohvkdGSQ.jpg",
+      "s3_key": "product-images/17fezDjVNJ7blHVyREftG6khsohvkdGSQ.jpg",
+      "file_id": "17fezDjVNJ7blHVyREftG6khsohvkdGSQ"
+    }
+  ],
+  "s3_urls": {
+    "https://drive.google.com/file/d/1JqKpg1tRRNOX0iPE-hzK4prAtPvEAVZM/view?usp=sharing": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1JqKpg1tRRNOX0iPE-hzK4prAtPvEAVZM.jpg",
+    "https://drive.google.com/file/d/1sh2o2bjmKu8tGprmZjsWvcNffRqMrYyA/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1sh2o2bjmKu8tGprmZjsWvcNffRqMrYyA.jpg",
+    "https://drive.google.com/file/d/1LRJ4gfEo1xAFEth_8xKOwkXFB5gvisQH/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1LRJ4gfEo1xAFEth_8xKOwkXFB5gvisQH.jpg",
+    "https://drive.google.com/file/d/1Rx4vnJJiR5E2cHQPvzHHktKWkWAWy3Ik/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1Rx4vnJJiR5E2cHQPvzHHktKWkWAWy3Ik.jpg",
+    "https://drive.google.com/file/d/1PAXH12NDEWWVfm0Hp7-gueAwP_OmHPTR/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1PAXH12NDEWWVfm0Hp7-gueAwP_OmHPTR.jpg",
+    "https://drive.google.com/file/d/1Y-VLmCBTIEy6D6Aj08hrfWOKvaDvTq1_/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1Y-VLmCBTIEy6D6Aj08hrfWOKvaDvTq1_.jpg",
+    "https://drive.google.com/file/d/1qAg2bJNN61L5r3yzmDSTUKJJlKpXQB6M/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1qAg2bJNN61L5r3yzmDSTUKJJlKpXQB6M.jpg",
+    "https://drive.google.com/file/d/1sIkhV5AdP1VwFZ6lJh0VECYNWRGSc3JY/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1sIkhV5AdP1VwFZ6lJh0VECYNWRGSc3JY.jpg",
+    "https://drive.google.com/file/d/17_D5DnKHuBwvNgtaabMOD-rHVl3hY-bF/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/17_D5DnKHuBwvNgtaabMOD-rHVl3hY-bF.jpg",
+    "https://drive.google.com/file/d/1h1zOdsK1TR6czVueQ7VjtF92GHK3GgS8/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1h1zOdsK1TR6czVueQ7VjtF92GHK3GgS8.jpg",
+    "https://drive.google.com/file/d/16J1uNJM8AhXOjexfWUeTgUg7rzgWub5J/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/16J1uNJM8AhXOjexfWUeTgUg7rzgWub5J.jpg",
+    "https://drive.google.com/file/d/1ZSDBQ2_S3CIlNKqa_X6hvW-4M7OgGhhu/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1ZSDBQ2_S3CIlNKqa_X6hvW-4M7OgGhhu.jpg",
+    "https://drive.google.com/file/d/1wMdPlORDuFTeyOyAZnpwCCAES2AXqiq2/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1wMdPlORDuFTeyOyAZnpwCCAES2AXqiq2.jpg",
+    "https://drive.google.com/file/d/1SttSJ87foa1-YM6ZyrWMxL3dVooIioRx/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1SttSJ87foa1-YM6ZyrWMxL3dVooIioRx.jpg",
+    "https://drive.google.com/file/d/1kzBuQpklMkPom3W1XPMvzbwLv3cjWpfh/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1kzBuQpklMkPom3W1XPMvzbwLv3cjWpfh.jpg",
+    "https://drive.google.com/file/d/1O72oPYWs89RBgUkhVH6b51002M-3dnzv/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1O72oPYWs89RBgUkhVH6b51002M-3dnzv.jpg",
+    "https://drive.google.com/file/d/1dNtYuXjtvb3MVgfOwU1xyfl9p8b4SSf2/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1dNtYuXjtvb3MVgfOwU1xyfl9p8b4SSf2.jpg",
+    "https://drive.google.com/file/d/1gu6BsVX6cpUKdRZXKfWOy9faxf2NUAfr/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1gu6BsVX6cpUKdRZXKfWOy9faxf2NUAfr.jpg",
+    "https://drive.google.com/file/d/1gerPthxLLqlShbvh1dgSwVJR95Xc8p62/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1gerPthxLLqlShbvh1dgSwVJR95Xc8p62.jpg",
+    "https://drive.google.com/file/d/1k7LEa46FOoCwpd8o77o6YVbvQ24bQhjz/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1k7LEa46FOoCwpd8o77o6YVbvQ24bQhjz.jpg",
+    "https://drive.google.com/file/d/1Ap4AmOBm_1sYRfRWi5CoX9xy35Hmpbbh/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1Ap4AmOBm_1sYRfRWi5CoX9xy35Hmpbbh.jpg",
+    "https://drive.google.com/file/d/16iC666qNUQ_ncLNn9fLJab603Y6glN_E/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/16iC666qNUQ_ncLNn9fLJab603Y6glN_E.jpg",
+    "https://drive.google.com/file/d/1OMpTR2gp7dlrytZPKnGHXEqRBktzdES5/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1OMpTR2gp7dlrytZPKnGHXEqRBktzdES5.jpg",
+    "https://drive.google.com/file/d/1Z8cFI1iZxWrkOlH_TlWb7lFFiKznxC2V/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1Z8cFI1iZxWrkOlH_TlWb7lFFiKznxC2V.jpg",
+    "https://drive.google.com/file/d/1b2CpR6UWlpORpNjYTMgjZ_bx3nwxLIMv/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1b2CpR6UWlpORpNjYTMgjZ_bx3nwxLIMv.jpg",
+    "https://drive.google.com/file/d/1v_MkMoUV21wC8wGPSKs5E-JZUr8WrM3L/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1v_MkMoUV21wC8wGPSKs5E-JZUr8WrM3L.jpg",
+    "https://drive.google.com/file/d/1G4VRQdfxTChyCa6aggo4HUiddIIRsGSH/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1G4VRQdfxTChyCa6aggo4HUiddIIRsGSH.jpg",
+    "https://drive.google.com/file/d/1eLbWtrrfi2P36_yBlLetChHHWeHHm8XX/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1eLbWtrrfi2P36_yBlLetChHHWeHHm8XX.jpg",
+    "https://drive.google.com/file/d/1PjEan2PhXhcWbdJs4jVxXYi1O1qBbj5j/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1PjEan2PhXhcWbdJs4jVxXYi1O1qBbj5j.jpg",
+    "https://drive.google.com/file/d/1JqotKcw3NHppG62UWbaNixvIA0xpn_xH/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1JqotKcw3NHppG62UWbaNixvIA0xpn_xH.jpg",
+    "https://drive.google.com/file/d/1piwFqZkoVN8juRKlmoK2-eW1KECl0D_C/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1piwFqZkoVN8juRKlmoK2-eW1KECl0D_C.jpg",
+    "https://drive.google.com/file/d/1nDWB0d9y7-711uVCyrOuCclsi--HavEB/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1nDWB0d9y7-711uVCyrOuCclsi--HavEB.jpg",
+    "https://drive.google.com/file/d/1hqmSK89DOkmWQpsgGMlghsm2uGfIpcpy/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1hqmSK89DOkmWQpsgGMlghsm2uGfIpcpy.jpg",
+    "https://drive.google.com/file/d/1iwvbzVVMA10XW8oNViI6V1GahdMOSGYY/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1iwvbzVVMA10XW8oNViI6V1GahdMOSGYY.jpg",
+    "https://drive.google.com/file/d/1cCtmvGcaNs2_YYd-ofzIRquS-9qsnxLA/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1cCtmvGcaNs2_YYd-ofzIRquS-9qsnxLA.jpg",
+    "https://drive.google.com/file/d/1CrjIFl39iM9CBT0QBhwGLtqvrfOkOMTq/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1CrjIFl39iM9CBT0QBhwGLtqvrfOkOMTq.jpg",
+    "https://drive.google.com/file/d/1BS2BngLEva32ngPiKGOx0oERewLq5oF_/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1BS2BngLEva32ngPiKGOx0oERewLq5oF_.jpg",
+    "https://drive.google.com/file/d/1VmpL8wLZdvSwhva1VKux_EYZ9zZo3ug1/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1VmpL8wLZdvSwhva1VKux_EYZ9zZo3ug1.jpg",
+    "https://drive.google.com/file/d/1HLYHSDnf59KhItsB64P0GpqVjAAopDc8/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1HLYHSDnf59KhItsB64P0GpqVjAAopDc8.jpg",
+    "https://drive.google.com/file/d/1QVOoZj7MVdPCgpSwGan2qpg7Dncywl3L/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1QVOoZj7MVdPCgpSwGan2qpg7Dncywl3L.jpg",
+    "https://drive.google.com/file/d/1JhuvTLB0_SRE5WsYGrv7QKD8M4q9RDHs/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1JhuvTLB0_SRE5WsYGrv7QKD8M4q9RDHs.jpg",
+    "https://drive.google.com/file/d/11JDTwZK4wR6SPFt_idgKArqkmc3aYYph/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/11JDTwZK4wR6SPFt_idgKArqkmc3aYYph.jpg",
+    "https://drive.google.com/file/d/18yND3rAnxKEKpHkNmrxYvw3tWiCvhPTE/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/18yND3rAnxKEKpHkNmrxYvw3tWiCvhPTE.jpg",
+    "https://drive.google.com/file/d/17fezDjVNJ7blHVyREftG6khsohvkdGSQ/view?usp=drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/17fezDjVNJ7blHVyREftG6khsohvkdGSQ.jpg"
+  },
+  "errors": []
+}

@@ -1,0 +1,678 @@
+{
+  "total_products": 46,
+  "categories": {
+    "Video Door Bell": {
+      "product_count": 2,
+      "issues": []
+    },
+    "Camera": {
+      "product_count": 10,
+      "issues": []
+    },
+    "Pets accessories": {
+      "product_count": 2,
+      "issues": []
+    },
+    "Door Lock": {
+      "product_count": 1,
+      "issues": []
+    },
+    "Baby Monitor": {
+      "product_count": 1,
+      "issues": []
+    },
+    "Smart Control Panel": {
+      "product_count": 3,
+      "issues": []
+    },
+    "Smart Sensor": {
+      "product_count": 1,
+      "issues": []
+    },
+    "Smart Gateway": {
+      "product_count": 2,
+      "issues": []
+    },
+    "Smart Thermostat": {
+      "product_count": 1,
+      "issues": []
+    },
+    "Smart Remote Control": {
+      "product_count": 2,
+      "issues": []
+    },
+    "Smart Electrical Products": {
+      "product_count": 5,
+      "issues": []
+    },
+    "background music": {
+      "product_count": 5,
+      "issues": []
+    },
+    "smart switch": {
+      "product_count": 5,
+      "issues": []
+    },
+    "Smart Socket": {
+      "product_count": 3,
+      "issues": []
+    },
+    "Smart DIY Module": {
+      "product_count": 3,
+      "issues": []
+    }
+  },
+  "common_issues": {
+    "missing_descriptions": [
+      {
+        "id": "Wenhui_OHCTF001",
+        "name": "Smart Water Valve",
+        "category": "Smart Electrical Products",
+        "description_length": 0
+      }
+    ],
+    "inconsistent_formats": [],
+    "missing_power_source": [
+      {
+        "id": "OMNIA_IPC286",
+        "name": "Indoor Rotatable Camera",
+        "category": "Camera"
+      },
+      {
+        "id": "OMNIA_IPC267",
+        "name": "Indoor Rotatable Camera",
+        "category": "Camera"
+      },
+      {
+        "id": "OMNIA_IPC207",
+        "name": "Outdoor Camera",
+        "category": "Camera"
+      },
+      {
+        "id": "OMNIA_IPC198",
+        "name": "Outdoor Camera",
+        "category": "Camera"
+      },
+      {
+        "id": "OMNIA_IPC173",
+        "name": "Outdoor Wi-Fi DC Camera",
+        "category": "Camera"
+      },
+      {
+        "id": "OMNIA_IPC216-C",
+        "name": "Outdoor Wi-Fi Battery Camera",
+        "category": "Camera"
+      },
+      {
+        "id": "AVATTO_T10E",
+        "name": "Control Panel MAX",
+        "category": "Smart Control Panel"
+      },
+      {
+        "id": "TUYA_TSW-T111",
+        "name": "Stick Logger",
+        "category": "Smart Electrical Products"
+      },
+      {
+        "id": "TUYA_VEN5KHB-D1",
+        "name": "Residential Single-Phase Hybrid inverter",
+        "category": "Smart Electrical Products"
+      },
+      {
+        "id": "TUYA_URA-MESS1",
+        "name": "Balcony Energy Storage",
+        "category": "Smart Electrical Products"
+      },
+      {
+        "id": "Wenhui_OHCTF001",
+        "name": "Smart Water Valve",
+        "category": "Smart Electrical Products"
+      }
+    ],
+    "missing_communication_protocol": [
+      {
+        "id": "TUYA_SC106-WL3",
+        "name": "Cube camera",
+        "category": "Camera"
+      },
+      {
+        "id": "OMNIA_IPC267",
+        "name": "Indoor Rotatable Camera",
+        "category": "Camera"
+      },
+      {
+        "id": "TUYA_SF254-WC2",
+        "name": "Smart Bird Feeder",
+        "category": "Pets accessories"
+      },
+      {
+        "id": "TUYA_VEN5KHB-D1",
+        "name": "Residential Single-Phase Hybrid inverter",
+        "category": "Smart Electrical Products"
+      },
+      {
+        "id": "TUYA_URA-MESS1",
+        "name": "Balcony Energy Storage",
+        "category": "Smart Electrical Products"
+      },
+      {
+        "id": "Wenhui_OHCTF001",
+        "name": "Smart Water Valve",
+        "category": "Smart Electrical Products"
+      }
+    ],
+    "vague_specifications": [
+      {
+        "id": "OMNIA_IPB195",
+        "name": "AC Hard-wire Video Doorbel",
+        "category": "Video Door Bell",
+        "vague_specs": [
+          "Micro SD card slot (local storage optional)",
+          "Indoor chime available",
+          "Storage: Micro SD cards up to 128GB for local, cloud storage optional",
+          "Microphone: Yes,built-in",
+          "Speaker: Yes,built-in"
+        ]
+      },
+      {
+        "id": "TUYA_SC162-WCD3",
+        "name": "2K Video Doorbell",
+        "category": "Video Door Bell",
+        "vague_specs": [
+          "Support motion/Human/Package Detection",
+          "Support bluetooth LE + Wi-Fi & Tamper alarm"
+        ]
+      },
+      {
+        "id": "TUYA_SC106-WL3",
+        "name": "Cube camera",
+        "category": "Camera",
+        "vague_specs": [
+          "Support 2-way audio"
+        ]
+      },
+      {
+        "id": "OMNIA_IPC176",
+        "name": "Battery Solar Spotlight Camera",
+        "category": "Camera",
+        "vague_specs": [
+          "Image sensor: 2.0MP CMOS (3.0MP optional)",
+          "Storage: Micro SD cards up to 128GB for local, cloud storage optional",
+          "Microphone&Speaker: Yes, built-in"
+        ]
+      },
+      {
+        "id": "OMNIA_IPC216-C",
+        "name": "Outdoor Wi-Fi Battery Camera",
+        "category": "Camera",
+        "vague_specs": [
+          "Connectivity: 2.4GHz Wi-Fi (4G version optional)",
+          "Storage: Micro SD card slot (local storage supported)"
+        ]
+      },
+      {
+        "id": "OMNIA_IPC750",
+        "name": "Outdoor 4G Battery Camera",
+        "category": "Camera",
+        "vague_specs": [
+          "Storage: Micro SD card slot (local storage supported)"
+        ]
+      },
+      {
+        "id": "TUYA_SF254-WC2",
+        "name": "Smart Bird Feeder",
+        "category": "Pets accessories",
+        "vague_specs": [
+          "Support bird detection & squirrel detection",
+          "Support 10000+bird name recognition (not included)"
+        ]
+      },
+      {
+        "id": "TUYA_LL05-B",
+        "name": "Lock BoX",
+        "category": "Door Lock",
+        "vague_specs": [
+          "Supported gateways: Bluetooth Gateway"
+        ]
+      },
+      {
+        "id": "AVATTO_T10E",
+        "name": "Control Panel MAX",
+        "category": "Smart Control Panel",
+        "vague_specs": [
+          "Zigbee Hub: Yes, 128+ Zigbee device can be added"
+        ]
+      },
+      {
+        "id": "szsmarthome_Q4-PRO",
+        "name": "Intelligent control panel",
+        "category": "Smart Control Panel",
+        "vague_specs": [
+          "System: Android 11; Display: 4-inch capacitive touch (480x480); Functions: Tuay app scanning and binding, lighting, switches, sockets, AC, curtains, group control; Gateway: ZIGBEE; Power: AC 110-250V / 12v-24v; Relay: 2 channels < 200W; I/O: 1 audio in, 1 audio out, 1 485 out, 1 timing out; Connectivity: Bluetooth; Installation: UK standard 86 bottom shell; Size: 86x86x11MM; Media: Supports TF card, USB playback, Bluetooth music; Color: black, white"
+        ]
+      },
+      {
+        "id": "TUYA_UX33",
+        "name": "4G Gateway",
+        "category": "Smart Gateway",
+        "vague_specs": [
+          "Metal material, Multiple networks in one, Wireless networking, External antenna, Optional power supply mode"
+        ]
+      },
+      {
+        "id": "TUYA_GW60-Matter",
+        "name": "Wired Matter Gateway",
+        "category": "Smart Gateway",
+        "vague_specs": [
+          "Supports third-party platforms (Apple, Google, Amazon), Rich sub-device ecosystem, Support tuya thread devices and third-party matter over thread devices, LAN control"
+        ]
+      },
+      {
+        "id": "AVATTO_TRV06",
+        "name": "Smart Radiator Valve",
+        "category": "Smart Thermostat",
+        "vague_specs": [
+          "Anti-Froze: Yes",
+          "Programmable: Yes"
+        ]
+      },
+      {
+        "id": "TUYA_UFO-R1",
+        "name": "Universal Remote Control",
+        "category": "Smart Remote Control",
+        "vague_specs": [
+          "Easy connection setting, Mobile App remote control, Support air conditioning/TV/set-top box, 360° all-round no blind angle signal coverage"
+        ]
+      },
+      {
+        "id": "TUYA_TSW-T111",
+        "name": "Stick Logger",
+        "category": "Smart Electrical Products",
+        "vague_specs": [
+          "Support mainstream brands of inverters, Collects data on operating status and power generation",
+          "Interface support: RS485/RS232/TTL/USB or other serial communications"
+        ]
+      },
+      {
+        "id": "szsmarthome_A7-K",
+        "name": "Smart hi-fi karaoke System",
+        "category": "background music",
+        "vague_specs": [
+          "System: Android 8.1, 4-core CPU 1.5H, 2G RAM, 16G ROM; Display: 7-inch IPS (1024x600); Power: AC 110-250V; Output power: 8 x 20W (Yamaha); I/O: HDMI out 1080p, 8-channel horn output, 1 audio in, 1 audio out, analog bass out; Connectivity: WiFi, Bluetooth, 485 bidirectional control; Installation: Special customized bottom box; Features: Family karaoke, supports TF card/otgusb disk; Color: white, black"
+        ]
+      },
+      {
+        "id": "szsmarthome_N86N-4",
+        "name": "4\" smart background music console",
+        "category": "background music",
+        "vague_specs": [
+          "System: Android 8.1, 4-core processor; Display: 4-inch IPS capacitive touch (480x480); Power: AC 110-25V; Output power: 2 x (10-20W); I/O: Audio input/output, 2-channel speaker output; Connectivity: WiFi, wired network, Bluetooth 4.2, external 485 control; Installation: UK standard 86 box; Media: Supports TF cards, USB drives; Color: white, black"
+        ]
+      },
+      {
+        "id": "Wenhui_WHDZ12-4C",
+        "name": "Tuya wifi Smart power strip",
+        "category": "Smart Socket",
+        "vague_specs": [
+          "Operating voltage: AC 110~240V 50/60Hz\nMaximum load current: 10A\nAgreement\n1. Type-C supports PD2.0/PD3.0/PPS/QC2.0/QC3.0/AFC/FCP/Apple2.4A/Samsung2A/BC 1.2.\n2. Type-A supports QC2.0/QC3.0/AFC/FCP/Apple2.4A/Samsung2A/BC1.2.\noutput parameters\nSingle port: USB1/18W 5V3A, 9V2A, 12V1.5, USB2, USB3/5W 5V1A; Type-C: 20W 5V3A, 9V3A, 12V3A, 15V3A.\nDual output\nUSB1 port 18W, USB2, USB2 port 5W, C port: 20W.\nC port: 5V3A, 9V3A, 12V3A, A port: 12W/5V2.4A.\nC port: 15V3A, 20V2.25A, A port 18W: 5V3A, 9V2A, 12V1.5A\nWIFI standard: 2.4GHz\nIndicator light: blue light (indicating button and pairing)\nCase material: PC+ABS fireproof and flame-resistant. Operating temperature: -40 ~ 45. Product ports: 4 AC x 3 USB (5V 2.1A) x 1 Type-C 20W.\nProduct size: 198*100*28MM. Line length: 1.5m\nProduct weight: 0.58kg (with packaging)"
+        ]
+      }
+    ],
+    "duplicate_specifications": [],
+    "non_pipe_separated": [],
+    "missing_technical_details": [
+      {
+        "id": "TUYA_SC162-WCD3",
+        "name": "2K Video Doorbell",
+        "category": "Video Door Bell",
+        "missing_details": [
+          "Storage specifications",
+          "Image sensor details",
+          "Night vision capabilities"
+        ]
+      },
+      {
+        "id": "OMNIA_IPC210",
+        "name": "Battery Solar Camera",
+        "category": "Camera",
+        "missing_details": [
+          "Video resolution/quality",
+          "Storage specifications",
+          "Image sensor details",
+          "Lens specifications"
+        ]
+      },
+      {
+        "id": "OMNIA_IPC286",
+        "name": "Indoor Rotatable Camera",
+        "category": "Camera",
+        "missing_details": [
+          "Video resolution/quality",
+          "Image sensor details",
+          "Lens specifications"
+        ]
+      },
+      {
+        "id": "OMNIA_IPC267",
+        "name": "Indoor Rotatable Camera",
+        "category": "Camera",
+        "missing_details": [
+          "Video resolution/quality",
+          "Image sensor details",
+          "Lens specifications"
+        ]
+      },
+      {
+        "id": "OMNIA_IPC207",
+        "name": "Outdoor Camera",
+        "category": "Camera",
+        "missing_details": [
+          "Storage specifications",
+          "Image sensor details",
+          "Lens specifications"
+        ]
+      },
+      {
+        "id": "OMNIA_IPC198",
+        "name": "Outdoor Camera",
+        "category": "Camera",
+        "missing_details": [
+          "Video resolution/quality",
+          "Storage specifications",
+          "Image sensor details",
+          "Lens specifications"
+        ]
+      },
+      {
+        "id": "OMNIA_IPC173",
+        "name": "Outdoor Wi-Fi DC Camera",
+        "category": "Camera",
+        "missing_details": [
+          "Video resolution/quality",
+          "Image sensor details",
+          "Lens specifications"
+        ]
+      },
+      {
+        "id": "OMNIA_IPC750",
+        "name": "Outdoor 4G Battery Camera",
+        "category": "Camera",
+        "missing_details": [
+          "Video resolution/quality",
+          "Image sensor details"
+        ]
+      },
+      {
+        "id": "TUYA_F1_7-_C+W_8",
+        "name": "Pet\u0001Feeder\u0001+ \u0001Pet\u0001Water\u0001Fountain",
+        "category": "Pets accessories",
+        "missing_details": [
+          "Storage specifications"
+        ]
+      },
+      {
+        "id": "AVATTO_T10E",
+        "name": "Control Panel MAX",
+        "category": "Smart Control Panel",
+        "missing_details": [
+          "Video resolution/quality",
+          "Storage specifications"
+        ]
+      },
+      {
+        "id": "szsmarthome_Q4-PRO",
+        "name": "Intelligent control panel",
+        "category": "Smart Control Panel",
+        "missing_details": [
+          "Video resolution/quality",
+          "Storage specifications"
+        ]
+      },
+      {
+        "id": "szsmarthome_FX-TUYA",
+        "name": "Intelligent control panel Music host",
+        "category": "Smart Control Panel",
+        "missing_details": [
+          "Video resolution/quality",
+          "Storage specifications"
+        ]
+      },
+      {
+        "id": "AVATTO_ZGD16",
+        "name": "Smart Gas sensor",
+        "category": "Smart Sensor",
+        "missing_details": [
+          "Storage specifications"
+        ]
+      },
+      {
+        "id": "TUYA_UX33",
+        "name": "4G Gateway",
+        "category": "Smart Gateway",
+        "missing_details": [
+          "Storage specifications"
+        ]
+      },
+      {
+        "id": "TUYA_GW60-Matter",
+        "name": "Wired Matter Gateway",
+        "category": "Smart Gateway",
+        "missing_details": [
+          "Storage specifications"
+        ]
+      },
+      {
+        "id": "AVATTO_TRV06",
+        "name": "Smart Radiator Valve",
+        "category": "Smart Thermostat",
+        "missing_details": [
+          "Storage specifications"
+        ]
+      },
+      {
+        "id": "TUYA_UFO-R1",
+        "name": "Universal Remote Control",
+        "category": "Smart Remote Control",
+        "missing_details": [
+          "Storage specifications"
+        ]
+      },
+      {
+        "id": "AVATTO_WHS20S",
+        "name": "\u0001 Controller",
+        "category": "Smart Remote Control",
+        "missing_details": [
+          "Storage specifications"
+        ]
+      },
+      {
+        "id": "TUYA_TSW-T111",
+        "name": "Stick Logger",
+        "category": "Smart Electrical Products",
+        "missing_details": [
+          "Video resolution/quality",
+          "Storage specifications"
+        ]
+      },
+      {
+        "id": "TUYA_S16Pro",
+        "name": "Air-Conditioner Controller",
+        "category": "Smart Electrical Products",
+        "missing_details": [
+          "Storage specifications"
+        ]
+      },
+      {
+        "id": "TUYA_VEN5KHB-D1",
+        "name": "Residential Single-Phase Hybrid inverter",
+        "category": "Smart Electrical Products",
+        "missing_details": [
+          "Storage specifications"
+        ]
+      },
+      {
+        "id": "TUYA_URA-MESS1",
+        "name": "Balcony Energy Storage",
+        "category": "Smart Electrical Products",
+        "missing_details": [
+          "Storage specifications"
+        ]
+      },
+      {
+        "id": "Wenhui_OHCTF001",
+        "name": "Smart Water Valve",
+        "category": "Smart Electrical Products",
+        "missing_details": [
+          "Video resolution/quality",
+          "Storage specifications"
+        ]
+      },
+      {
+        "id": "szsmarthome_A7-K",
+        "name": "Smart hi-fi karaoke System",
+        "category": "background music",
+        "missing_details": [
+          "Video resolution/quality",
+          "Storage specifications"
+        ]
+      },
+      {
+        "id": "szsmarthome_N86N-4",
+        "name": "4\" smart background music console",
+        "category": "background music",
+        "missing_details": [
+          "Video resolution/quality",
+          "Storage specifications"
+        ]
+      },
+      {
+        "id": "szsmarthome_N238-A",
+        "name": "5-inch high fidelity ceiling horn",
+        "category": "background music",
+        "missing_details": [
+          "Storage specifications"
+        ]
+      },
+      {
+        "id": "szsmarthome_N238-B",
+        "name": "5-inch high fidelity ceiling horn",
+        "category": "background music",
+        "missing_details": [
+          "Storage specifications"
+        ]
+      },
+      {
+        "id": "szsmarthome_N268",
+        "name": "6-inch high fidelity ceiling horn",
+        "category": "background music",
+        "missing_details": [
+          "Storage specifications"
+        ]
+      },
+      {
+        "id": "szsmarthome_M9-PC",
+        "name": "4-gang Scene Switch (PC)",
+        "category": "smart switch",
+        "missing_details": [
+          "Storage specifications"
+        ]
+      },
+      {
+        "id": "szsmarthome_M8-pro_PC",
+        "name": "Smart Switch (PC)",
+        "category": "smart switch",
+        "missing_details": [
+          "Storage specifications"
+        ]
+      },
+      {
+        "id": "szsmarthome_X3-PC",
+        "name": "Smart Dimmer Switch (PC)",
+        "category": "smart switch",
+        "missing_details": [
+          "Storage specifications"
+        ]
+      },
+      {
+        "id": "szsmarthome_W3-thermostat",
+        "name": "ZIGBEE intelligent thermostat",
+        "category": "smart switch",
+        "missing_details": [
+          "Video resolution/quality",
+          "Storage specifications"
+        ]
+      },
+      {
+        "id": "szsmarthome_M9-thermostat",
+        "name": "ZIGBEE intelligent thermostat",
+        "category": "smart switch",
+        "missing_details": [
+          "Video resolution/quality",
+          "Storage specifications"
+        ]
+      },
+      {
+        "id": "Wenhui_WHDZ01-W-B",
+        "name": "Tuya wifi",
+        "category": "Smart Socket",
+        "missing_details": [
+          "Video resolution/quality",
+          "Storage specifications"
+        ]
+      },
+      {
+        "id": "Wenhui_WHDZ06-Z",
+        "name": "Tuya Zigbee",
+        "category": "Smart Socket",
+        "missing_details": [
+          "Video resolution/quality",
+          "Storage specifications"
+        ]
+      },
+      {
+        "id": "Wenhui_WHDZ12-4C",
+        "name": "Tuya wifi Smart power strip",
+        "category": "Smart Socket",
+        "missing_details": [
+          "Storage specifications"
+        ]
+      },
+      {
+        "id": "Wenhui_WHD02-Z",
+        "name": "TUYA Zigbee",
+        "category": "Smart DIY Module",
+        "missing_details": [
+          "Video resolution/quality",
+          "Storage specifications"
+        ]
+      },
+      {
+        "id": "Wenhui_WHD08-Z",
+        "name": "TUYA Zigbee",
+        "category": "Smart DIY Module",
+        "missing_details": [
+          "Video resolution/quality",
+          "Storage specifications"
+        ]
+      },
+      {
+        "id": "Wenhui_WHD09-Z-1CH",
+        "name": "tuya Zigbee,1ch",
+        "category": "Smart DIY Module",
+        "missing_details": [
+          "Video resolution/quality",
+          "Storage specifications"
+        ]
+      }
+    ]
+  },
+  "specification_patterns": {
+    "plain_text": 45,
+    "colon_separated": 220
+  },
+  "format_analysis": {
+    "pipe_separated_count": 0,
+    "non_pipe_separated_count": 45,
+    "mixed_format_products": []
+  }
+}

@@ -1,0 +1,845 @@
+Supplier,Model Number,Product Name,Category,Specifications,Communitcation protocol,Power Source,Country,Image,Price,MOQ,Catalogue,Packing,Status,DESIGNATION FR,REF HEYZACK,Drive Link,Lead Time
+TUYA,IPB215,Dual-Cam Video Doorbell,Video Door Bell,"Features: Dual 1080p live view and video | Wi-Fi connection | IR night vision | Two-way audio | Siren alarm | Human detection | IP54 waterproof | Micro SD card slot (max.256GB) | Rechargeable battery | Indoor chime available | Specifications: Image sensor: 2MP CMOS*2 | Lens: 100-Degree*2 fixed focus | Video Size: (1920x1080)*2 | Storage: Micro SD cards up to 128GB for local, cloud storage optional | Wireless Standard: IEEE 802.11 b/g/n, 2.4GHz | Button/Switch: Power switch x1, Reset button x1 | Microphone: Yes,built-in | Speaker: Yes, built-in | Power Source: Built-in Rechargeable Battery",Wi-Fi 802.11 b/g/n (2.4GHz),Built-in Rechargeable Battery,,,,,,,Not selected,,,,
+OMNIA,IPB195,AC Hard-wire Video Doorbel,Video Door Bell,"Features: 2MP CMOS sensor full HD 1080p live view and video | Wi-Fi connection | IR night vision | Two-way audio | Siren alarm | Human and sound detection | IP65 weatherproof | AC 12-24v hard-wire | Micro SD card slot (local storage optional) | Indoor chime available | Specifications: Image sensor: 2MP CMOS | Lens: 100-Degree fixed focus | Video Size: (1920x1080) | Storage: Micro SD cards up to 128GB for local, cloud storage optional | Wireless Standard: IEEE 802.11 b/g/n, 2.4GHz | Button/Switch: Power switch x1, Reset button x1 | Microphone: Yes,built-in | Speaker: Yes,built-in | Power Source: AC 12-24V hard-wire",Wi-Fi 802.11 b/g/n (2.4GHz),AC 12-24V hardwired,,,"US$13.80
+
+
+
+
+
+
+",1000,,,Not selected,Sonnette vidéo câblée AC,HZ-SS-CONACC01,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1JqKpg1tRRNOX0iPE-hzK4prAtPvEAVZM.jpg,
+OMNIA,IPB196,Battery Video Doorbell,Video Door Bell,Wi-Fi connectivity | 2K/1080p live view | PIR motion detection | Events recording and notification | Two-way audio talk | Night vision | Siren alarm | Rechargeable battery | IPX4 weatherproof,Wi-Fi,Rechargeable battery,,,"2MP: US$21.6 / 3MP:US$ 23.8
+
+
+",1000,,,Not selected,,,,
+OMNIA,IPB192,Battery Video Doorbell,Video Door Bell,Wi-Fi connectivity | 2K/1080p live view | PIR motion detection | Events recording and notification | Two-way audio talk | Night vision | Siren alarm | Rechargeable battery | IPX4 weatherproof,Wi-Fi,Rechargeable battery,,,,,,,Not selected,,,,
+OMNIA,IPB193,Battery Video Doorbell,Video Door Bell,Wi-Fi connectivity | 2K/1080p live view | PIR motion detection | Events recording and notification | Two-way audio talk | Night vision | Siren alarm | Rechargeable battery | IPX4 weatherproof | Indoor chime (optional),Wi-Fi,Rechargeable battery,,,,,,,To be ordered,Sonnette vidéo à batterie,HZ-SS-CONACC02,,
+OMNIA,IPB192,Doorbell Camera,Video Door Bell,2.4GHz Wi-Fi+ BT connection | Video talk with visitor (when someone ring the bell) | Built-in rechargeable battery | Indoor chime | Two-way audio | IR night vision,"Wi-Fi (2.4GHz), Bluetooth",Built-in rechargeable battery,,,,,,,Not selected,,,,
+OMNIA,IPC197,Battery Solar Camera,Camera,Wi-Fi connectivity | 2K/1080p live view | PIR motion detection | Events recording and notification | Two-way audio talk | IR night vision | Siren alarm | Rechargeable battery | Magnetic bracket | IP65 weatherproof,Wi-Fi,Rechargeable battery,,,"2MP: US$ 27.5 / 3MP: US$ 28.9
+
+
+",1000,,,Not selected,Caméra solaire à batterie,HZ-SS-CAMEX02,,
+OMNIA,IPC210,Battery Solar Camera,Camera,Wi-Fi connectivity | 2K/1080p live view | PIR motion detection | Events recording and notification | Two-way audio talk | IR night vision | Siren alarm | Rechargeable battery | IP65 weatherproof,Wi-Fi,Rechargeable battery,,,,,,,To be ordered,,,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1sh2o2bjmKu8tGprmZjsWvcNffRqMrYyA.jpg,
+OMNIA,IPC209,Battery Solar Camera,Camera,Wi-Fi connectivity | 2K/1080p live view | PIR motion detection | Events recording and notification | Two-way audio talk | IR night vision | Siren alarm | Rechargeable battery | IP65 weatherproof,Wi-Fi,Rechargeable battery,,,"2MP: US$ 21.6 / 3MP: US$ 22.8
+
+
+",1000,,,Not selected,,,,
+TUYA,SC106-WL3,Cube camera,Camera,"Image sensor: 1/3"" | Display resolution: 2304*1296 | Focal length: 4mm | IR distance: 10m | Image compression: H.264/MJPEG | Support 2-way audio | TF card storage: 128GB max | Power adapter: DC 5V/1A",Not specified,DC 5V/1A adapter,,,,,,,To be ordered,Caméra Cube,HZ-SS-CAMINT02,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1LRJ4gfEo1xAFEth_8xKOwkXFB5gvisQH.jpg,
+TUYA,SC116-WZ4,P&T camera,Camera,"Image sensor: 1/3"" | Display resolution: 1920*1080/2560*1440 | Focal length: 4mm | IR distance: 10m | Image compression: H.264/MJPEG | Support 2-way audio | TF card storage: 128GB max | Power adapter: DC 5V/1A",Not specified,DC 5V/1A adapter,,,,,,,Not selected,,,,
+TUYA,SC155-WQ3,2K Battery Camera,Camera,"Video: 2K HD, resolution 2304*1296 | Lens: 3.3mm fixed lens | FOV: 120° (D) | Connectivity: Support bluetooth LE+Wi-Fi & Siren alarm | Features: Support spotlight & color night vision | Support human PIR detection & Area settings | Battery: Built-in 5200mAh lithium battery | Design: IP65","Wi-Fi, Bluetooth LE",Built-in 5200mAh lithium battery,,,With Solar: 24.3 | Without Solar: 21,1000,,,To be ordered,Caméra 2K à batterie,HZ-SS-CAMINT01,,
+TUYA,SC316-WBA2,P&T Camera with Screen,Baby Monitor,Video: 2MP HD video | Lens: 2.8mm fixed lens | Screen: 2.8 inch | Features: Support night vision | Support two-way video call | Support AI human/sound detection | Support smart tracking,Not specified,Not specified,,,,,,,Not selected,,,,
+TUYA,SF254-WC2,Smart Bird Feeder,Pets accessories,"Video: 2MP HD, Resolution 1920*1080 | Lens: 2.5mm fixed lens | FOV: 144° (D) | Features: Support bird detection & squirrel detection | Support 10000+bird name recognition (not included) | Battery: Built-in 5200mAh battery | Design: IP65 | Solar: Built-in 3w solar panel | Bird Cage: Wood (red cedar) | Storage: 3L capacity for bird food",Not specified,"Built-in 5200mAh battery, Solar (3W panel)",,,,,,,To be ordered,,,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1Rx4vnJJiR5E2cHQPvzHHktKWkWAWy3Ik.jpg,
+TUYA,SC162-WCD3,2K Video Doorbell,Video Door Bell,"Video: 2K HD, Resolution 1536*2048 | Lens: 2.5mm fixed lens | FOV: 170° (D) | Features: Support motion/Human/Package Detection | Digital chime (included) & function Setting by APP | Support bluetooth LE + Wi-Fi & Tamper alarm | Battery: Built-in 5200mAh lithium battery | Design: IP65 | Power supply: AC 8-24V","Wi-Fi, Bluetooth LE","Built-in 5200mAh lithium battery, AC 8-24V",,,$29.5,1000,,,To be ordered,,,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1PAXH12NDEWWVfm0Hp7-gueAwP_OmHPTR.jpg,
+TUYA,LL05-B,Lock BoX,Door Lock,"Storage capacity: 100 pcs (not included) | Materials: Aluminum alloy | Surface treatment: Spray painting process | Battery life: 12 months(AAA)/24 months(CR123A) | Operating temperature: -20°C~55°C | Working environment humidity: 40%RH~85%RH | Salt spray test: 96 hours | Installation: Hooks, self-tapping screws, expansion screws | Supported gateways: Bluetooth Gateway | Certification: CE, FCC, RoHS, IP65",Bluetooth,AAA batteries or CR123A batteries,,,$24.6,1000,,,To be ordered,Cadenas,HZ-SS-LOCK01,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1Y-VLmCBTIEy6D6Aj08hrfWOKvaDvTq1_.jpg,
+OMNIA,IPC176,Battery Solar Spotlight Camera,Camera,"Connectivity: Wi-Fi | Live View: 2K/1080p | Detection: PIR motion detection | Recording: Events recording and notification | Audio: Two-way audio talk | Vision: IR night vision & Color night vision | Alarm: Siren & light alarm | Battery: Rechargeable battery | Weatherproof: IP65 | Image sensor: 2.0MP CMOS (3.0MP optional) | Lens: 100-Degree fixed focus | Video Size: 2304x1296, 1920x1080 | PIR Sensor: Effective distance max 5 meters, Detecting angle 90° | Storage: Micro SD cards up to 128GB for local, cloud storage optional | Wireless Standard: IEEE 802.11 b/g/n, 2.4GHz | Button/Switch: Power switch x1, Reset button x1 | Microphone&Speaker: Yes, built-in | Power Source: Built-in rechargeable lithium battery, Solar power recharger | Dimension: Camera: 90x63x83mm",Wi-Fi 802.11 b/g/n (2.4GHz),"Built-in rechargeable lithium battery, Solar power recharger",,,$28.50,1000,,,To be ordered,Caméra projecteur à batterie solaire,HZ-SS-CAMEX01,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1qAg2bJNN61L5r3yzmDSTUKJJlKpXQB6M.jpg,
+OMNIA,BCM005,Baby Monitor,Camera,"Monitor: 2.8""/2.4"" HD portable monitor | Features: Plug and play | Real time live view | Two-way audio | Crying detection | IR night vision | Preset lullabies | Connection: 300 meters in open field | Flexible bracket for camera | Low consumption system with built-in battery | Camera resolution: VGA(640x480) | Camera lens: FOV 100° | Night vision: 940nm no RED dots | Audio: Built-in Mic and speaker | Monitor Display: 2.4""TFT screen with brightness adjustable (2.8"" optional) | Power supply: Built-in rechargeable battery for monitor, DC 5V/1A Type-C USB for both camera and monitor",RF (300m range),"Built-in rechargeable battery, DC 5V/1A USB Type-C",,,,,,,Not selected,Bébé Moniteur,HZ-SS-CAMINT03,,
+OMNIA,BCM003,Baby Monitor,Baby Monitor,"Camera spec: Wi-Fi connectivity 2.4GHz & 900MHz dual band | Wireless control from app at anywhere anytime | Full HD 1080p video /H.264 | Crying detection | Siren alarm | Motion detection | Two-way audio | Preset lullabies | Temperature detector and alert | Local storage | Monitor Spec: 5"" HD display(1280x720) | Rechargeable battery | Transmission distance up to 300M | Two-way audio | Feeding reminder | Lullaby player | Temperature/Crying alerts",Wi-Fi (2.4GHz & 900MHz dual band),Rechargeable battery,,,,,,,Not selected,Bébé Moniteur,HZ-SS-CAMINT04,,
+OMNIA,IPC180 V2,Baby Monitor,Baby Monitor,"Live view: 2K/1080p | Connectivity: Wi-Fi | Display: 2.4""IPS screen with two-way video | Vision: IR night vision | Pan/Tilt: Horizontal 355° monitor by App | Features: Night lamp | Temperature detector and alert | One-press to call-out | Viewing angle: 100-degree | Smart clock | Siren alarm | Charging: Type-C | Local storage",Wi-Fi,USB Type-C,,,,,,,To be ordered,,,,
+OMNIA,IPC263,Baby Monitor,Baby Monitor,Audio: Two-way audio talk | Vision: Night vision | Features: Preset lullabies | Soft touch silicone case | Local storage | Connectivity: Wi-Fi | Live view: 2K/1080p | Temperature detector and alert | Night lamp | Motion detection | Crying detection,Wi-Fi,Not specified,,,,,,,Not selected,,,,
+OMNIA,IPC211 V2,Baby Monitor,Baby Monitor,"Connectivity: Wi-Fi | Live view: 2K/1080p | Detection: Motion detection, Crying detection | Audio: Two-way audio talk | Vision: Night vision | Features: Preset lullabies | Soft touch silicone case | Local storage",Wi-Fi,Not specified,,,,,,,Not selected,,,,
+OMNIA,IPC180,Baby Monitor,Baby Monitor,Live view: 2K/1080p | Connectivity: Wi-Fi | Audio: Two-way audio | Vision: IR night vision | Pan/Tilt: Horizontal 355° monitor by App | Features: Night lamp | Temperature detector and alert | One-press to call-out | Viewing angle: 100-degree | Smart clock | Siren alarm | Charging: Type-C | Local storage (Max.128GB),Wi-Fi,USB Type-C,,,,,,,Not selected,Bébé Moniteur,HZ-SS-CAMINT05,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1sIkhV5AdP1VwFZ6lJh0VECYNWRGSc3JY.jpg,
+OMNIA,IPC208,Indoor Rotatable Camera,Camera,"Connectivity: Wi-Fi (2.4G & 5GHz) | Video: 2K/1080p live view and video recording | Pan & Tilt: 355°, 50° | Features: Privacy protection mode, Human motion and sound detection, Real time notification and recording, Two-way audio talk, IR Night vision | Storage: Micro SD local storage(cloud storage optional) | Image sensor: 2.0MP Sensor(3.0MP/4.0MP optional) | Lens: View Angle 100° | Night vision: IR night vision | Power source: Power adapter 5V/1.0A | Button/Switch: Reset button, USB-C for power | Microphone&Speaker: Yes, built-in | File Format: Video:.mp4(H.264), Photo: .jpg | Supported O/S versions: Android 5.0 and later, iOS 10.0 and later | Dimension: 71x68x110mm",Wi-Fi (2.4G & 5GHz),"DC 5V/1A adapter, USB-C",,,,,,,Not selected,Caméra intérieure rotative,HZ-SS-CAMINT06,,
+OMNIA,IPC286,Indoor Rotatable Camera,Camera,"Live view: 2K/1080p | Connectivity: Wi-Fi (2.4G & 5GHz) | Control: Monitor by app at anytime anywhere | Pan & tilt: 355°, 180° | Features: Privacy protection mode, Human motion/sound detection, Two-way audio talk, Night vision, Local storage",Wi-Fi (2.4G & 5GHz),Not specified,,,2MP： US$ 10.8 / 3MP: US$ 11.44 ok for 3,1000,,,To be ordered,,,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/17_D5DnKHuBwvNgtaabMOD-rHVl3hY-bF.jpg,
+OMNIA,IPC167-B,Indoor Rotatable Camera,Camera,"Live view: 2K/1080p | Connectivity: Wi-Fi (2.4G & 5GHz) | Control: Monitor by app at anytime anywhere | Pan & tilt: 355°, 180° | Features: Privacy protection mode, Human motion/sound detection, Two-way audio talk, Night vision, Local storage",Not specified,Not specified,,,,,,,Not selected,Caméra intérieure rotative,HZ-SS-CAMINT07,,
+OMNIA,IPC167,Indoor Rotatable Camera,Camera,"Live view: 2K/1080p | Connectivity: Wi-Fi (2.4G & 5GHz) | Control: Monitor by app at anytime anywhere | Pan & tilt: 355°, 180° | Features: Privacy protection mode, Human motion/sound detection, Two-way audio talk, Night vision, Local storage",Not specified,Not specified,,,,,,,Not selected,,,,
+OMNIA,T777,Indoor Rotatable Camera,Camera,"Live view: 2K/1080p | Connectivity: Wi-Fi (2.4G & 5GHz) | Control: Monitor by app at anytime anywhere | Pan & tilt: 355°, 180° | Features: Privacy protection mode, Human motion/sound detection, Two-way audio talk, Night vision, Local storage",Not specified,Not specified,Universal,,,,,,Not selected,,,,
+OMNIA,T726,Indoor Rotatable Camera,Camera,"Live view: 2K/1080p | Connectivity: Wi-Fi (2.4G & 5GHz) | Control: Monitor by app at anytime anywhere | Pan & tilt: 355°, 180° | Features: Privacy protection mode, Human motion/sound detection, Two-way audio talk, Night vision, Local storage",Not specified,Not specified,,,,,,,Not selected,,,,
+OMNIA,IPC267,Indoor Rotatable Camera,Camera,"Live view: 2K/1080p | Connectivity: Wi-Fi (2.4G & 5GHz) | Control: Monitor by app at anytime anywhere | Pan & tilt: 355°, 180° | Features: Privacy protection mode, Human motion/sound detection, Two-way audio talk, Night vision, Local storage",Not specified,Not specified,,,,,,,To be ordered,,,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1h1zOdsK1TR6czVueQ7VjtF92GHK3GgS8.jpg,
+OMNIA,IPC181,Indoor Fixed Camera,Camera,"Live view: 2K/1080p | Connectivity: Wi-Fi & Bluetooth | Control: Monitor by app at anytime anywhere | Features: One press to call-out, Human motion/sound detection, Two-way audio talk, Night vision, Local storage, 360-degree bracket",Not specified,Not specified,,,,,,,Not selected,,,,
+OMNIA,IPC201,Indoor Fixed Camera,Camera,"Live view: 2K/1080p | Connectivity: Wi-Fi & Bluetooth | Control: Monitor by app at anytime anywhere | Features: Human motion/sound detection, Two-way audio talk, Night vision, Local storage",Not specified,Not specified,,,"2MP: US$10.2 / 3MP: US$ 10.5
+
+",1000,,,Not selected,,,,
+OMNIA,IPC201B,Indoor Fixed Camera,Camera,"Live view: 2K/1080p | Connectivity: Wi-Fi & Bluetooth | Control: Monitor by app at anytime anywhere | Features: Human motion/sound detection, Two-way audio talk, Night vision, Local storage",Not specified,Not specified,,,,,,,Not selected,Caméra intérieure fixe,HZ-SS-CAMINT08,,
+OMNIA,IPC211,Indoor Fixed Camera,Camera,"Live view: 2K/1080p | Connectivity: Wi-Fi & Bluetooth | Control: Monitor by app at anytime anywhere | Features: Human motion/sound detection, Two-way audio talk, Night vision, Local storage",Not specified,Not specified,,,,,,,Not selected,,,,
+OMNIA,IPC135,Indoor Fixed Camera,Camera,"Live view: 2K/1080p | Connectivity: Wi-Fi & Bluetooth | Control: Monitor by app at anytime anywhere | Features: Human motion/sound detection, Two-way audio talk, Night vision, Local storage",Not specified,Not specified,,,,,,,Not selected,,,,
+OMNIA,IPC138,Indoor Fixed Camera,Camera,"Live view: 2K/1080p | Connectivity: Wi-Fi & Bluetooth | Control: Monitor by app at anytime anywhere | Features: Human motion/sound detection, Two-way audio talk, Night vision, Local storage",WiFi & Bluetooth,Not specified,,,,,,,Not selected,,,,
+OMNIA,IPC185,Outdoor Lighting Camera,Camera,"Connectivity: Wi-Fi (2.4G & 5GHz) | Video: 2K/1080P live view and video recording | Viewing angle: 100-degree | Control: Monitor by app at anytime anywhere | Features: 350 lumen spotlight, Human motion/sound detection, Two-way audio talk, IR/color night vision, Siren alarm | Weatherproof: IP65 | Image sensor: 3.0MP/2.0MP CMOS | Lens: 100-degree fixed focus | Video Size: 2304x1296/1920x1080 | Light: 350 lumen effective spotlight | Storage: Micro SD cards up to 128GB for local, cloud storage optional | Wireless Standard: IEEE 802.11 b/g/n, 2.4GHz | Microphone: Yes, built-in | Speaker: Yes, built-in | Power Source: DC power | File Format: Video:.MP4(H.264), Photo: .jpg | Dimension: 67x118x67mm",Wi-Fi (2.4G & 5GHz),Not specified,,,,,,,Not selected,Caméra d'éclairage extérieur,HZ-SS-CAMEX03,,
+OMNIA,IPC207,Outdoor Camera,Camera,"Connectivity: Wi-Fi (2.4G & 5 GHz) | Video: 2K resolution live view | Audio: Two-way audio talk | Detection: Human motion detection, Sound detection | Features: Siren alarm, Night vision | Weatherproof: IP65",Wi-Fi (2.4G & 5GHz),Not specified,,,,,,,To be ordered,,,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/16J1uNJM8AhXOjexfWUeTgUg7rzgWub5J.jpg,
+OMNIA,IPC178,Outdoor Camera,Camera,"Connectivity: Wi-Fi (2.4G & 5GHz) | Video: Full HD 1080p live view | Audio: Two-way audio talk | Detection: Human motion detection, Sound detection | Features: Siren alarm, Night vision | Weatherproof: IP65",Wi-Fi (2.4G & 5GHz),Not specified,,,,,,,Not selected,Caméra extérieur,HZ-SS-CAMEX04,,
+OMNIA,IPC198,Outdoor Camera,Camera,"Connectivity: Wi-Fi (2.4G & 5GHz) | Video: HD 720p live view | Audio: Two-way audio talk | Detection: Human motion detection, Sound detection | Features: Siren alarm, Night vision | Weatherproof: IP65",Wi-Fi (2.4G & 5GHz),Not specified,,,$13.20,1000,,,To be ordered,,,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1ZSDBQ2_S3CIlNKqa_X6hvW-4M7OgGhhu.jpg,
+OMNIA,IPC809,Outdoor Wi-Fi DC Camera,Camera,"Video: 2K/1080p live view and video | Connectivity: Wi-Fi (2.4G & 5 GHz) | Vision: IR night vision / Color night vision | Lens: 100-Degree | Pan & tilt: monitor by app | Audio: Two-way audio | Alarm: Siren alarm & flash light | Detection: Human motion & sound detection with push notification by app, Motion tracking | Storage: Micro SD card slot (local storage supported) | Weatherproof: IP65",Wi-Fi (2.4G & 5GHz),Not specified,,,$19.80,1000,,,Not selected,,,,
+OMNIA,IPC808,Outdoor Wi-Fi DC Camera,Camera,"Video: 2K/1080p live view and video | Connectivity: Wi-Fi (2.4G & 5 GHz) | Vision: IR night vision / Color night vision | Lens: 100-Degree | Pan & tilt: monitor by app | Audio: Two-way audio | Alarm: Siren alarm & flash light | Detection: Human motion & sound detection with push notification by app, Motion tracking | Storage: Micro SD card slot (local storage supported) | Weatherproof: IP65",Wi-Fi (2.4G & 5GHz),Not specified,,,"3MP: US$ 17.5 / 4MP: US$ 18
+
+",1000,,,Not selected,,,,
+OMNIA,IPC173,Outdoor Wi-Fi DC Camera,Camera,"Video: 2K/1080p live view and video | Connectivity: Wi-Fi (2.4G & 5 GHz) | Vision: IR night vision (color light vision with LED) | Alarm: Light & Siren alarm | Pan & Tilt: 350°, 90° | Audio: Two-way audio | Waterproof: IP54 | Storage: Micro SD card slot (max.256GB)",Wi-Fi (2.4G & 5GHz),Not specified,,,,,,,To be ordered,,,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1wMdPlORDuFTeyOyAZnpwCCAES2AXqiq2.jpg,
+OMNIA,IPC302,Outdoor Camera,Camera,Video: 2K/1080p live view and video | Connectivity: Wi-Fi (2.4G & 5GHz) | Vision: IR night vision | Audio: Two-way audio | Alarm: Siren alarm | Detection: Human detection | Weatherproof: IP65 | Storage: Micro SD card slot (max.256GB),Wi-Fi (2.4G & 5GHz),Not specified,,,,,,,Not selected,,,,
+OMNIA,IPC705,Outdoor Camera,Camera,Video: 2K live view and video | Connectivity: Wi-Fi (2.4G & 5GHz) | Vision: IR night vision | Audio: Two-way audio | Alarm: Siren alarm | Detection: Human detection | Weatherproof: IP66 | Storage: Micro SD card slot (max.256GB) | Housing: Metallic | Options: ONVIF/POE,Wi-Fi (2.4G & 5GHz),Not specified,,,,,,,Not selected,,,,
+OMNIA,IPC709,Outdoor Camera,Camera,Video: 2K live view and video | Connectivity: Wi-Fi (2.4G & 5GHz) | Vision: IR night vision | Audio: Two-way audio | Alarm: Siren alarm | Detection: Human detection | Weatherproof: IP66 | Storage: Micro SD card slot (max.256GB) | Housing: Metallic | Options: ONVIF/POE,Wi-Fi (2.4G & 5GHz),Not specified,,,,,,,Not selected,,,,
+OMNIA,T771,Outdoor Dual Camera DC Camera,Camera,"Camera: Dual 2MP(1080P) with 4X zoom in | Connectivity: Wi-Fi | Vision: IR night vision | Pan & tilt: monitor by app | Features: Motion tracking, Two-way audio, Siren alarm & light flash, Human motion & sound detection with push notification | Storage: Micro SD card slot (local storage supported) | Weatherproof: IP65",Wi-Fi,Not specified,,,,,,,Not selected,Caméra extérieure double DC,HZ-SS-CAMEX06,,
+OMNIA,T722,Outdoor Dual-Lens Camera,Camera,"Lenses: Dual 2MP(1080P) | Connectivity: 2.4GHz Wi-Fi | Vision: IR night vision | Control: Pan & tilt monitor by app | Features: Motion tracking, Two-way audio, Siren alarm & Light flash, Human motion & sound detection with push notification, Micro SD card slot | Weatherproof: IP65 | Sensor: 2MP CMOS*2 | Network standard: 2.4GHz Wi-Fi | Focus: 2.8mm & 8mm dual lenses | Video: H.264/H.265 | Night distance: 0-20 Meters | Day/Night: Auto(ICR)Color/B&W, Night vision full-color | Audio Input/Output: Built-in microphone/Speaker | Power Supply: 12V/1A | Operate temperature: -20°C - 50°C",Wi-Fi (2.4G),Not specified,,,,,,,Not selected,,,,
+OMNIA,IPC216-C,Outdoor Wi-Fi Battery Camera,Camera,Sensor: 2MP CMOS | Video: Full 1080p live view and video | Connectivity: 2.4GHz Wi-Fi (4G version optional) | Vision: IR night vision / color night vision | Lens: 100-Degree | Control: Pan & tilt monitor by app | Audio: Two way audio | Detection: Human detection with push notification by app | Power: 6W solar panel & 7800mAh rechargeable battery | Alarm: Siren alarm | Storage: Micro SD card slot (local storage supported) | Weatherproof: IP65,Wi-Fi (2.4G),Not specified,,,,,,,To be ordered,,,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1SttSJ87foa1-YM6ZyrWMxL3dVooIioRx.jpg,
+OMNIA,WN-778,Wireless NVR Kit with Screen,Camera,"Screen: 7"" Touch screen with 4 channel online viewing | Connectivity: Wireless, installation free | Camera: 2K ultra resolution with low consumption battery powered camera | Detection: Human & sound detection | Vision: IR night vision, 100-Degree viewing angle | Audio: Two way audio | Notification: Events alert and push notification | Storage: Micro SD local (on the screen) and cloud storage",Not specified,Not specified,,,,,,,Not selected,,,,
+OMNIA,IPC750,Outdoor 4G Battery Camera,Camera,Video: 2K/1080p live view and video | Connectivity: 4G LTE network | Vision: IR night vision | Lens: 100-Degree | Control: Pan & Tilt monitor by app | Audio: Two way audio | Power: 8W solar panel & 13200mAH rechargeable battery | Detection: Human motion with push notification by app | Storage: Micro SD card slot (local storage supported) | Weatherproof: IP65,"4G LTE, IR",Solar panel (8W) & 13200mAH rechargeable battery,,,,,,,To be ordered,Caméra extérieure 4G rotative à batterie,HZ-SS-CAMEX08,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1kzBuQpklMkPom3W1XPMvzbwLv3cjWpfh.jpg,
+OMNIA,IPL103,Outdoor Lighting Camera,Camera,Connectivity: Wi-Fi | Video: Full HD 1080p live view | Light: 600 lumen light controlled by app | Lens: Manually adjustable lens angle | Detection: PIR motion detection | Audio: Two-way audio talk | Alarm: Siren & light alarm | Vision: IR night vision | Weatherproof: IP54,"Wi-Fi, IR",Not specified,,,,,,,Not selected,,,,
+OMNIA,T775,Outdoor Lighting Camera,Camera,Connectivity: Wi-Fi | Video: 2K/1080p live view | Control: Pan & tilt monitor by app | Vision: Spotlight and color night vision | Detection: Human motion detection | Audio: Two-way audio talk | Alarm: Siren alarm | Base: E26/E27 light bulb base,Wi-Fi,E26/E27 light bulb base (AC powered),,,,,,,Not selected,,,,
+TUYA,TPP01-Z（EU）,Smart Control Panel S,Smart Control Panel,"Screen: 4 inch HD LCD multi-touch screen | Gateway: Build in Zigbee gateway | Voice: Alexa build in | Control: Intercom, APP control, Door bell/lock/camera answering | Wi-Fi: RTL8723DS Uplink 2.4GHz | Zigbee: TYZS13 Downlink Zigbee | ZigbeeHub: Yes, 80+ Zigbee device can be added | Input: 100-240 VAC, 50/60Hz, Live & Neural Wire | Wireless Protocols: Wi-Fi, Zigbee, Sigmesh | Working Temperature: 0°C-40°C | Working Humidity: 5%-90%RH(Non-condensing) | Dimensions: 86*86*36.3mm | Mic Quantity: 2 | Speaker Quantity: 1 (1W) | Antenna: 2 Built-in shell","Wi-Fi, Zigbee, Sigmesh",AC 100-240V,,,,,,,Not selected,,,,
+AVATTO,P6E Pro,Smart Control Panel L,Smart Control Panel,"Screen: 5 inch HD LCD Multi-touch screen | Gateway: Build in zigbee /BLE Mesh Gateway | Control: Intercom, APP Control, 2 Gang Light Switch, RJ45 Ethernet, RS485 Modbus | Voice: Alexa Build in | Wi-Fi: RTL8733BS Uplink 2.4GHz, 5GHz | Zigbee: ZS13S Downlink Zigbee | Zigbee Hub: Yes, 80+ Zigbee device can be added | Wireless Protocols: Wi-Fi, Zigbee, Sigmesh | Wired Network: 100M RJ45 | Dimensions: 72*127.3*36.5mm","Wi-Fi (2.4GHz/5GHz), Zigbee, Sigmesh, Ethernet",Not specified,,,"1-99：85.08
+100-500：83.68",1,,,Not selected,,,,
+AVATTO,T6E-P,Smart Control Panel,Smart Control Panel,"Features: Quick Control, View Camera & Unlock on Screen, Intercom, 3 Gang Light Switch, Bluetooth Gateway, Infrared Remote Control | Screen: 3.5inch 320*480 Multi-touch capacitive screen | Wi-Fi: RTL8733BS Uplink 2.4GHz, 5GHz | Gateway: Bluetooth | Wireless Protocols: Wi-Fi, Sigmesh, IR | Wired Network: 100M RJ45 | Modbus: RS485 interface | Dimensions: 86*86*35.5mm | Voice Control: Works with Alexa/Google Assistant","Wi-Fi (2.4GHz/5GHz), Sigmesh, IR, Bluetooth, Ethernet",Not specified,,,49$,100,,,Not selected,,,,
+AVATTO,T10E,Control Panel MAX,Smart Control Panel,"Screen: 10.1Inch HD LCD Multi-touch Screen | Gateway: Build in Zigbee/ BLE Mesh Gateway | Control: Intercom, APP Control, 4 Custom Physical Buttons | Bluetooth: BLE4.2 single point | Wi-Fi: RTL8723 Upstream 2.4GHz | Zigbee: ZS13S Downlink Zigbee | Bluetooth Gateway: ZS13S Downlink BLE/BLE-mesh | Zigbee Hub: Yes, 128+ Zigbee device can be added | Wireless Protocols: Wi-Fi, Zigbee, Bluetooth | Wired Network: 100M RJ45 (EU not included) | Product Dimensions: 259x161x37mm(including base)","Wi-Fi, Zigbee, Bluetooth 4.2, Ethernet",Not specified,,,,,,,Not selected,,,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1O72oPYWs89RBgUkhVH6b51002M-3dnzv.jpg,
+AVATTO,MIUC-101-B,Smart Handheld Remote Control Panel,Smart Control Panel,"Screen: 2.4 Inch HD LCD Multi-touch Screen | Control: IR/RF Remote Control Learning, APP Control, Door Bell/Lock/Camera Answering | Power: Rechargeable Battery Build In | Chipset: AK3760E | System: Linux 4.4192V2.4 | RAM: 64MB | Flash: 128MB | PowerInput: DC 5V 2A | Wireless Protocol: Wifi, Zigbee, Bluetooth, IR, RF | IR Working Distance: Range to 8m without barrier | Battery: 1100mA 3.7V | Product size: 52*15.5*185mm | Base size: 28.8*84.2mm","Wi-Fi, Zigbee, Bluetooth, IR, RF","Rechargeable battery 1100mA 3.7V, DC 5V 2A input",,,"white：
+1-99:  54.39                                                           100-500：53.00
+black：
+1-500: 55.09                                                   100-500：53.70",1,,,Not selected,,,,
+AVATTO,ZWHS16,Smart Humidity&Temperature sensor,Smart Sensor,"Features: E-ink screen, Minimalist design, Desk and on wall installation, Environmental suitability smile indicator | Wireless Technology: ZigBee 3.0 | Sensor: Thermistor | Battery: CR2430(NOT included) | Working Voltage: DC 3V | Temperature Measure Range: -9.9°C-60.0°C | Humidity Measure Range: 0% RH-99.9% RH | Temperature Accuracy: ±1°C | Humidity Accuracy: ±5% RH",Zigbee 3.0,CR2430 battery,,,"Q＜100：13.25
+100≤Q＜500：12.55
+500≤Q＜1000：11.85
+1000≤Q：11.16",100,,,Not selected,Capteur intelligent d'humidité et de température,HZ-SS-CAPTENV01,,
+AVATTO,ZDS16,Smart Door Windows Sensor,Smart Sensor,"Features: Tamper alarm notice, Ultra mini size, Minimalist design, Smart scenes linkage | Wireless Technology: ZigBee 3.0 | Working Voltage: DC 3V(CR2032 battery) | Working Temperature: -10°C to +55°C | Low Battery Indication: Yes | Alarm Triggering Distance: 23±5mm | Battery Life: More than one year(20 times per day) | Main Body: 65*26*12.7mm | Magnet: 38.8*11*12.7mm",Zigbee 3.0,CR2032 battery,,,"Q＜100：4.46
+100≤Q＜500：4.18
+500≤Q＜1000：4.04
+1000≤Q：3.91",100,,,Not selected,Capteur intelligent pour porte et fenêtre,HZ-SS-CONACC03,,
+AVATTO,ZWS16,Smart Water Leakage Sensor,Smart Sensor,"Features: APP remote alarm, Anti-corrosion sensor probe, Minimalist design, Smart scenes linkage | Wireless Technology: ZigBee 3.0 | Working Voltage: DC 3V(CR2032 battery) | Detection Method: Anti-corrosion sensor probe | Probe Materials: Copper with nickel plating | Working Temperature: -10°C to +55°C | Low Battery Indication: Yes | Battery Life: More than one year(20 times per day) | Dimensions: Φ59.5mm*17mm",Zigbee 3.0,CR2032 battery,,,"""Q＜100：5.58
+100≤Q＜500：5.30
+500≤Q＜1000：5.02
+1000≤Q：4.74""",100,,,Not selected,Capteur intelligent de fuite d'eau,HZ-SS-CAPTENV02,,
+AVATTO,ZMS16,Smart motion sensor,Smart Sensor,"Features: 1 year battery life, Minimalist design, Magnetic type base, 90° wide detection angle | Wireless Technology: ZigBee | Working Voltage: DC 3V(CR123A battery) | Transmission Frequency: 2.4 GHZ | Working Temperature: -10°C to +55°C | Low battery alarm: support | Detection Radius: 8m | Detection Angle: 60° | Installation Height: 2.2m | Dimensions: Φ50mm*55mm",Zigbee,CR123A battery,,,"""Q＜100：7.95
+100≤Q＜500：7.81
+500≤Q＜1000：7.53
+1000≤Q：7.25""",100,,,Not selected,Capteur intelligent de mouvement,HZ-SS-DETECINTRU01,,
+TUYA,DS100-W,Smart Door Windows Sensor,Smart Sensor,"Battery Type: AAA2 | Wireless Protocol: Wi-Fi 2.4GHz | Installation Method: 3M adhesive tape | Working Temperature: -10°C~50°C | Working Humidity: 10%~90% RH, no condensation | Dimension: 7035*20mm",Zigbee,AAA Battery,,,$4.60,1000,,,Not selected,,,,
+TUYA,HP220-Z,Human Presence Sensor(Plus),Smart Sensor,"Features: Human existence partition detection, People counting & Multi-person trajectory tracking, Radar +PIR double detection, Illumination detection | Working Voltage: 100-240V or Type-c 5V | Wireless Protocol: Zigbee | Radar Frequency: 24-24.25GHz | Detection Area: 4*6 square meters | Installation: Ceiling flat mount/wall mount | Working temp/humidity: -10-45°C, 0-85%RH | Dimension: L90*W90*H79mm",Zigbee,100-240V AC or USB Type-C 5V,,,,,,,Not selected,,,,
+TUYA,HP210-Z,Human Presence Sensor,Smart Sensor,"Features: Human presence detection, Illumination detection | Working Voltage: 100-240V~ | Wireless Protocol: Zigbee | Radar Frequency: 24-24.25GHz | Detection Area: projection diameter 6 meters (hanging height 3 meters) | Installation: Ceiling flat mount/recessed mount | Working temp/humidity: -10°C-50°C, 0-85%RH | Hole Size: 70-80mm | Product Dimension: Φ92*38mm | Certifications: CE, RoHS, REACH",Zigbee,100-240V AC,,,,,,,Not selected,Capteur intelligent de présence humaine,HZ-SS-DETECINTRU03,,
+TUYA,HP320-W,Human Presence Sensor(Pro),Smart Sensor,"Features: Ultra-high precision human presence partition detection, People Counting & Multi-person trajectory tracking, Fall detection & respiratory heart rate detection | Working Voltage: 5VDC | Wireless Protocol: Wi-Fi+Bluetooth LE | Radar Frequency: 60GHz | Detection Area: 6*8 sq meters(side mount); 4*6 sq meters(ceiling mount) | Installation: Wall mounted/embedded mounted | Working temp/humidity: -10-45°C, 0-85%RH | Dimension: Φ80*30mm","Wi-Fi, Bluetooth LE",5V DC,,,,,,,Not selected,Capteur intelligent de présence humaine (PRO),HZ-SS-DETECINTRU04,,
+TUYA,HP221-Z,Human Presence Sensor(Plus),Smart Sensor,"Features: Human existance partition detection, People counting, multi-person trajectory tracking, Illumination detection | Operating voltage: 5V DC | Communication mode: Zigbee | Radar frequency: 24GHz | Detection area: 4*6 square meters | Installation: Wall mounted | Operating temperature: -10-45°C, 0-85%RH | Product size: Φ80*H30mm",Zigbee,5V DC,,,,,,,Not selected,,,,
+TUYA,MD100-B/MD100-Z,PIR Motion Sensor,Smart Sensor,"Features: Human motion detection, Battery level display, Magnetic mounting, 360° adjustable detection angle | Working Voltage: 3VDC | Wireless Protocal: Zigbee Bluetooth Mesh | Detection Distance: 7M | Installation Height: 2m | Battery Type: CR2450 | Installation: Ceiling/wall mounted | Working Temperature: -10°C-50°C | Working Humidity: 10%-90% RH | Dimension: 46.2*34.2*12.9 mm | Certifications: CE, FCC, RoHS, REACH","Zigbee, Bluetooth Mesh",CR2450 battery,,,,,,,Not selected,,,,
+TUYA,EB101-Z,SOS Emergency Button,Smart Sensor,"Features: One-button switch, Low power consumption, Smart scene automation | Working Voltage: 3VDC | Wireless Protocal: Zigbee/Bluetooth Mesh | Installation: 3M adhesive tape | Battery Type: CR2032 | Working Temperature: -10°C-50°C | Working Humidity: 10%-90% RH | Dimension: 58*58*17mm","Zigbee, Bluetooth Mesh",CR2032 battery,,,,,,,Not selected,,,,
+TUYA,MD100-T,PIR Motion Sensor,Smart Sensor,"Features: Human motion detection, Ultra-low power consumption, Battery level display, Detection delay setting | Wireless Protocal: Thread | Detection Distance: 6m | Battery: AAA*2 | Installation: Ceiling/wall mounted | Working Temperature: -10°C-50°C | Working Humidity: 10%-90% RH | Dimension: 90*45*25mm | Certifications: CE,FCC,RoHS,REACH",Thread,2x AAA batteries,,,,,,,Not selected,,,,
+AVATTO,ZSD16,Smart Smoke sensor,Smart Sensor,"Features: 10 years battery life, Minimalist design, Local and APP alarm, 20m² wide range detection | Wireless Technology: ZigBee | Transmission Frequency: 2.4GHz | Power supply: DC 3V(CR123A) | Detection range: 20 square meter | Installation method: ceiling installation | Alarm Sound Pressure: 85dB (3m ahead) | Working temperature: -10°C-50°C | Working humidity: up to 95%RH | Material: Fireproof PC+Fireproof ABS | Color: white",Zigbee,CR123A battery,,,"Q＜100：4.46
+100≤Q＜500：4.18
+500≤Q＜1000：4.04
+1000≤Q：3.91",100,,,To be ordered,Capteur de fumée intelligent,HZ-SS-CAPTENV03,,
+AVATTO,ZGD16,Smart Gas sensor,Smart Sensor,"Features: 10 years battery life, Minimalist design, Local and APP alarm, Celling&wall mounting installation | Wireless Technology: ZigBee | Working Voltage: AC220V | Alarm Density: LEL 8% ±3%LEL (natural gas) | Working Temperature: -10°C to +55°C | Working Humidity: 10%-95%RH | Alarm Method: Audible and visual alarm, APP wireless alarm | Transmission Frequency: 2.4GHz | Standby Current: 100mA | Alarm Sound Pressure: 70dB(1m ahead) | Detected Gas: Natural gas",Zigbee,AC 220V,,,"Q＜100：5.58
+100≤Q＜500：5.30
+500≤Q＜1000：5.02
+1000≤Q：4.74",100,,,To be ordered,Capteur de gaz intelligent,HZ-SS-CAPTENV04,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1dNtYuXjtvb3MVgfOwU1xyfl9p8b4SSf2.jpg,
+TUYA,TH100-T,Temperature and Humidity Sensor,Smart Sensor,"Features: Supports Matter protocol, Reliable performance with ultra-low power consumption | Battery Type: AAA*3 | Wireless Protocal: Thread | Temperature Range: -10°C-55°C | Humidity Range: 0%-99% RH | Response Time: <= 2s | Measurement Accuracy: Temp:±0.3°C, Humidity:±3% RH | Dimension: 54*54*25mm","Thread, Matter",3x AAA batteries,,,,,,,Not selected,,,,
+TUYA,TH210-WR2,Smart Thermo-hygrometer,Smart Sensor,"Features: Data statistics & export, 4.5"" screen real-time data display, Over-limit alerts, Wide coverage & long battery life, AI Comfort Manager | Wireless Protocol: Wi-Fi+Bluetooth+433MHZ RF | Gateway Input: Type-C | Sub-device Input: 3V,AAA*2/CR2032 | Accuracy: ±0.3°C, ±3% RH | Product Size: 105*76*13mm / 72*24mm / 43*43mm","Wi-Fi, Bluetooth, 433MHz RF","USB Type-C (gateway), 2x AAA/CR2032 (sub-devices)",,,,,,,Not selected,,,,
+AVATTO,WSMD-4/ZWSMD-4,Smart 4 Gang Dry Contact Switch,Smart DIY Module,"Features: 4 Gang available, RF remote control, Multi using scene compatible | Options: DC/AC 7-32V and AC 85-250V | Product type: 4 Gang dry contact switch | Voltage: AC100-240V 50/60Hz | Max. load: 10A/Gang | Radio Frequency: 433MHz | Operation temp: -20°C-70°C | Protocol: 2.4G WiFi/Zigbee 3.0 | Dimension: 84*79*28.5 mm | IP Rating: IP20","Wi-Fi 2.4G, Zigbee 3.0, 433MHz RF",AC 100-240V or DC/AC 7-32V,,,"""Q＜100： 4.74
+100≤Q＜500：4.60
+500≤Q＜1000：4.46
+1000≤Q：4.32""",100,,,Not selected,Module intelligent à 4 circuits à contact sec,HZ-IE-MODUL01,,
+AVATTO,ZWSMD-4,Smart 4 Gang Dry Contact Switch,Smart DIY Module,"Features: 4 Gang available, RF remote control, Multi using scene compatible | Options: DC/AC 7-32V and AC 85-250V | Product type: 4 Gang dry contact switch | Voltage: AC100-240V 50/60Hz | Max. load: 10A/Gang | Radio Frequency: 433MHz | Operation temp: -20°C-70°C | Protocol: 2.4G WiFi/Zigbee 3.0 | Dimension: 84*79*28.5 mm | IP Rating: IP20","Wi-Fi 2.4G, Zigbee 3.0, 433MHz RF",AC 100-240V or DC/AC 7-32V,,,"Q＜100： 43
+100≤Q＜500：42
+500≤Q＜1000：40
+1000≤Q：38",100,,,Not selected,Module intelligent à 4 circuits à contact sec,HZ-IE-MODUL01,,
+AVATTO,CSM16-RF,Smart Curtain Switch Module With RF433,Smart DIY Module,"Features: APP remote control, Hand free voice control, Timer/schedule/count down function, Curtain open percentage control & accurate calibration | Type: 1/2 Gang curtain module+RF | Voltage: AC100-240V 50/60Hz | Max.load: 1 Gang 3A, 2 Gang 2x3A | Protocol: 2.4G WiFi | Operation temp: -10°C-40°C | Operation Range: <100m | Dimension: 39*39*19.4mm | IP Rating: IP20","Wi-Fi 2.4G, RF",AC 100-240V,,,"Q＜100： 42
+100≤Q＜500：41
+500≤Q＜1000：40
+1000≤Q：39",100,,,Not selected,Module intelligent de commande de rideaux avec RF433,HZ-IE-MODUL02,,
+AVATTO,ZCSM16-RF,Smart Curtain Switch Module With RF433,Smart DIY Module,"Features: APP remote control, Hand free voice control, Timer/schedule/count down function, Curtain open percentage control & accurate calibration | Type: 1/2 Gang curtain module+RF | Voltage: AC100-240V 50/60Hz | Max.load: 1 Gang 3A, 2 Gang 2x3A | Protocol: Zigbee 3.0 (IEEE802.15.4) | Operation temp: -10°C-40°C | Operation Range: <100m | Dimension: 39*39*19.4mm | IP Rating: IP20","Zigbee 3.0, RF",AC 100-240V,,,"Q＜100： 42
+100≤Q＜500：41
+500≤Q＜1000：40
+1000≤Q：39",100,,,Not selected,Module intelligent de commande de rideaux avec RF433,HZ-IE-MODUL02,,
+AVATTO,GDS16,Smart Garage Door Switch Module,Smart DIY Module,"Features: Ultra mini size, APP remote control, Hand free voice control, Operation time setting, Timeout alarm | Product type: Garage door opener switch module | Voltage: AC100-240V 50/60Hz | Operation Frequency: 2.412GHz-2.484GHz | Protocol: 2.4G WiFi | Operation temp: -10°C-40°C | Operation Range: <100m | Dimension: 39*39*19.4mm | IP Rating: IP20",Wi-Fi 2.4G,AC 100-240V,,,"Q＜100： 6.56
+100≤Q＜500：6.42
+500≤Q＜1000：6.14
+1000≤Q：5.86",100,,,Not selected,Module intelligent de commande de porte de garage,HZ-IE-MODUL03,,
+AVATTO,ZGDS16,Smart Garage Door Switch Module,Smart DIY Module,"Features: Ultra mini size, APP remote control, Hand free voice control, Operation time setting, Timeout alarm | Product type: Garage door opener switch module | Voltage: AC100-240V 50/60Hz | Protocol: Zigbee 3.0 | Operation temp: -10°C-40°C | Operation Range: <100m | Dimension: 39*39*19.4mm | IP Rating: IP20",Zigbee 3.0,AC 100-240V,,,"Q＜100： 6.56
+100≤Q＜500：6.42
+500≤Q＜1000：6.14
+1000≤Q：5.86",100,,,Not selected,Module intelligent de commande de porte de garage,HZ-IE-MODUL03,,
+AVATTO,WSM16/ZWSM16,Smart Light switch Module,Smart DIY Module,"Product type: 1/2/3/4 Gang switch module | Voltage: AC100-240V 50/60Hz | Operation Frequency: 2.412GHz-2.484GHZ | Operation temp: -10°C-40°C | Protocol: 2.4G WiFi | Operation Range: <100m | Dimension: 39*39*19.4mm | IP Rating: IP20 | Max.load: 1Gang:LED 800W 16A, 2Gang:LED 2X150W/2X5A, 3Gang:LED 3X150W/3X3.3A, 4Gang:LED 4X150W/4X2.5A",Wi-Fi 2.4G,AC 100-240V,,,"1gang
+Q＜100： 3.49
+100≤Q＜500：3.35
+500≤Q＜1000：3.21
+1000≤Q：3.07
+2gang
+Q＜100： 4.46
+100≤Q＜500：4.32
+500≤Q＜1000：4.18
+1000≤Q：4.04
+3gang
+Q＜100： 5.44
+100≤Q＜500：5.30
+500≤Q＜1000：5.16
+1000≤Q：5.02
+4gang
+Q＜100： 6.00
+100≤Q＜500：5.86
+500≤Q＜1000：5.72
+1000≤Q：5.58",100,,,Not selected,Module intelligent de commande de lumière,HZ-IE-MODUL04,,
+AVATTO,DMS16/ZDMS16,Smart Light switch Module,Smart DIY Module,"Product type: 1/2/3/4 Gang switch module | Voltage: AC100-240V 50/60Hz | Operation Frequency: 2.412GHz-2.484GHZ | Operation temp: -10°C-40°C | Protocol: Zigbee 3.0 | Operation Range: <100m | Dimension: 39*39*19.4mm | IP Rating: IP20 | Max.load: 1Gang:LED 800W 16A, 2Gang:LED 2X150W/2X5A, 3Gang:LED 3X150W/3X3.3A, 4Gang:LED 4X150W/4X2.5A",Zigbee 3.0,AC 100-240V,,,"1gang
+Q＜100： 4.18
+100≤Q＜500：4.04
+500≤Q＜1000：3.91
+1000≤Q： 3.77
+2gang
+Q＜100： 5.58
+100≤Q＜500：5.30
+500≤Q＜1000：5.02
+1000≤Q： 4.74",100,,,Not selected,Module intelligent de variateur de lumière,HZ-IE-MODUL06,,
+AVATTO,LZWSM16,Smart Light Switch Module No Neutral (Zigbee),Smart DIY Module,"Product type: 1/2/3 Gang switch module no Neutral | Voltage: AC200-240V 50/60Hz | Operation Frequency: 2.405GHz-2.480GHZ | Operation temp: -10°C-40°C | Protocol: Zigbee 3.0 | Operation Range: <100m | Dimension: 39*39*19.4mm | IP Rating: IP20 | Max.load: 1Gang:LED10-100W, 2Gang:LED 2x(10-100W), 3Gang:LED 3x(10-100W)",Zigbee 3.0,AC 200-240V,,,"""1gang
+Q＜100： 4.60
+100≤Q＜500：4.46
+500≤Q＜1000：4.32
+1000≤Q：4.18
+2gang
+Q＜100： 5.58
+100≤Q＜500：5.44
+500≤Q＜1000：5.30
+1000≤Q：5.16""",100,,,Not selected,Module intelligent de commande de lumière sans neutre,HZ-IE-MODUL05,,
+AVATTO,WPM16/ZWPM16,Smart Energy Monitor Module,Smart DIY Module,"Voltage: AC100-240V 50/60Hz | Power Detection Accuracy: ±2% | Operation Frequency: 2.412GHz-2.484GHz | Operation temp: -10°C-40°C | Protocol: 2.4G WiFi | Operation Range: <100m | Dimension: 39*39*19.4mm | IP Rating: IP20 | Max.load: 1CH:0.2-80A, 2CH:2x(0.2-80A)",Wi-Fi 2.4G,AC 100-240V,,,"Q＜100： 7.95
+100≤Q＜500：7.81
+500≤Q＜1000：7.53
+1000≤Q：7.25",100,,,Not selected,Module intelligent de surveillance énergétique,HZ-IE-MODUL07,,
+AVATTO,LWSM16,Smart Light Switch Module No Neutral (Wi-Fi),Smart DIY Module,"Product type: 1/2 Gang switch module no Neutral | Voltage: AC200-240V 50/60Hz | Operation Frequency: 2.412GHz-2.484GHz | Operation temp: -10°C-40°C | Protocol: 2.4G WiFi | Operation Range: <100m | Dimension: 39*39*19.4mm | IP Rating: IP20 | Max.load: 1Gang:LED 10-100W, 2Gang:LED 2x(10-100W)",Wi-Fi 2.4G,AC 200-240V,,,"1gang
+Q＜100： 4.60
+100≤Q＜500：4.46
+500≤Q＜1000：4.32
+1000≤Q：4.18
+2gang
+Q＜100： 5.58
+100≤Q＜500：5.44
+500≤Q＜1000：5.30
+1000≤Q：5.16",100,,,Not selected,Module intelligent de commande de lumière sans neutre,HZ-IE-MODUL05,,
+AVATTO,WSM16-DC/ZWSM16-DC,Smart Dry Contact Switch Module,Smart DIY Module,"Product Type: 1 Gang dry contact switch module | Voice Control: Amazon Alexa, Google Home, Smart Thing etc | Voltage: AC100-240V 50/60Hz | Max.load: LED 150W 5A | Protocol: 2.4G WiFi | Operation Range: <100m | Dimension: 39*39*19.4mm | IP Rating: IP20",Wi-Fi 2.4G,AC 100-240V,,,"1gang
+Q＜100： 3.49
+100≤Q＜500：3.35
+500≤Q＜1000：3.21
+1000≤Q：3.07
+2gang
+Q＜100： 4.46
+100≤Q＜500：4.32
+500≤Q＜1000：4.18
+1000≤Q：4.04
+3gang
+Q＜100： 5.44
+100≤Q＜500：5.30
+500≤Q＜1000：5.16
+1000≤Q：5.02
+4gang
+Q＜100： 6.00
+100≤Q＜500：5.86
+500≤Q＜1000：5.72
+1000≤Q：5.58""1gang
+Q＜100： 4.46
+100≤Q＜500：4.32
+500≤Q＜1000：4.18
+1000≤Q：4.04
+2gang
+Q＜100： 5.58
+100≤Q＜500：5.44
+500≤Q＜1000：5.30
+1000≤Q：5.16
+3gang
+Q＜100： 6.42
+100≤Q＜500：6.28
+500≤Q＜1000：6.14
+1000≤Q：6.00
+4gang
+Q＜100： 7.39
+100≤Q＜500：7.25
+500≤Q＜1000：7.11
+1000≤Q：6.97""",100,,,Not selected,Module intelligent de commande de lumière,HZ-IE-MODUL04,,
+AVATTO,WCB16-1P/ZCB16-1P,Smart Sircuit Breaker,Smart DIY Module,"Features: Power consumption monitor, Multi-function timer setting, Smart protection, Log shows | Protocol: Wi-Fi | Voltage: AC 100-230V | Max.load: 63A | Radio Frequency: 433MHz | Operation temp: -20°C-70°C | Protocol Version: 2.4G WiFi | Dimension: 18*50*85 mm | IP Rating: IP20 | Control Type: Remote Control, Manual","Wi-Fi 2.4G, 433MHz RF",AC 100-230V,,,"Q＜100：15.34
+100≤Q＜500：14.64
+500≤Q＜1000：13.95
+1000≤Q：13.25",100,,,Not selected,,,,
+AVATTO,GW16-Wireless,Gateway,Smart Gateway,Type: Wireless multi protocol gateway (Zigbee & BLE sigmesh) | Color: White/Dark blue | Power input: Type-C 5V1A | Working current: <1A | Working temperature: -10°C-55°C | Working humidity: 10%-90%RH | Wireless protocol: 2.4G Wi-Fi 802.11 b/g/n | Max loaded device: 128 (standard zigbee and single point sigmesh) | Dimensions: 100*85*23mm | Net weight: 70g,"Wi-Fi 2.4G, Zigbee, Bluetooth",USB Type-C 5V 1A,,,,,,,Not selected,,,,
+AVATTO,GW16-Wired,Gateway,Smart Gateway,Type: Wired zigbee gateway (Zigbee 3.0) | Color: White/Dark blue | Power input: Type-C 5V 1A | Working current: <1A | Working temperature: -10°C-55°C | Working humidity: 10%-90%RH | Protocol: Zigbee 3.0 | Max loaded device: 128 (standard zigbee device) | Dimensions: 100*85*23mm | Net weight: 79g,Zigbee 3.0,USB Type-C 5V 1A,,,,,,,Not selected,,,,
+TUYA,TYGWZB-01N,Wireless Multi-mode Gateway,Smart Gateway,"Features: Ultimate price-to-performance home gateway, Versatile connectivity (Zigbee, Bluetooth Mesh, Beacon Mesh), Empowering local automation | Uplink communication: Wi-Fi | Downlink communication: Zigbee, Bluetooth LE, Bluetooth Mesh, Beacon Mesh | Max connection: 128 | Power input: 5V 1A | Size: 62*62*15mm | Product net weight: 30g | Working temperature: -10°C-45°C | Working humidity: 10%-90%RH","Wi-Fi, Zigbee, Bluetooth LE, Bluetooth Mesh",5V 1A USB,,,"1k $11, 5k $10.1, 10k $9.7",1000,,,Not selected,,,,
+TUYA,TYGWBS-02N,Wireless Bluetooth Gateway,Smart Gateway,"Features: Ultimate price-to-performance home gateway, Versatile connectivity (Bluetooth Mesh, Beacon Mesh), Empowering local automation | Uplink communication: Wi-Fi | Downlink communication: Bluetooth LE, Bluetooth Mesh, Beacon Mesh | Max connection: 128 | Power input: 5V 1A | Size: 62*62*15mm | Product net weight: 30g | Working temperature: -10°C-45°C | Working humidity: 10%-90%RH","Wi-Fi, Bluetooth LE, Bluetooth Mesh",5V 1A USB,,,,,,,Not selected,,,,
+TUYA,THP10-B-V2,Smart Bluetooth Gateway Pro,Smart Gateway,"Features: High-performance Bluetooth Gateway, Empowering local automation, User-friendly signal strength diagnosis | Uplink communication: RJ45, Wi-Fi | Downlink communication: Bluetooth LE, Bluetooth Mesh, Beacon Mesh | Max connection: 200 Bluetooth Mesh/16/100 Beacon Mesh | Power input: 5V 1A | Size: 90*90*23mm | Product net weight: 75g | Working temperature: -10°C-55°C | Working humidity: 10%-90%RH","Wi-Fi, Ethernet, Bluetooth LE, Bluetooth Mesh",5V 1A USB,,,,,,,Not selected,,,,
+TUYA,THP10-Z-X,Smart Wired Gateway Pro,Smart Gateway,"Features: First matter gateway, Roles of bridge, controller, and border router, Supports bridging of mainstream platforms (Apple/Google/Samsung) | Power input: 5V 1A | Working temperature: -10°C-+45°C | Working humidity: 10%-90%RH | Stand by power: <= 0.5W | Internet port: 10/100Mbps | Ethernet product size: 90mm*90mm*23mm | Net weight: about 74.5g | Wireless protocol: Zigbee, Thread","Zigbee, Thread, Matter, Ethernet",5V 1A USB,,,,,,,Not selected,,,,
+TUYA,THP10-Z,Wired Zigbee Gateway,Smart Gateway,"Features: Super network capacity (100+ devices), Zigbee 3.0 standard protocol, self-organizing network, local linkage | Connection Protocol: Zigbee + Ethernet | Number of device connections: 128 MAX | Power input: DC5V/1A | Product size: 90*90*23mm | Product net weight: 74.5g | Working temperature: -10°C-55°C | Working humidity: 10%-90%RH","Zigbee, Ethernet",DC 5V 1A USB,,,"1k- 3k: $12.5
+3k- 5k: $12.1
+5k: $11.5",1000,,,Not selected,,,,
+TUYA,UX33,4G Gateway,Smart Gateway,"Features: Metal material, Multiple networks in one, Wireless networking, External antenna, Optional power supply mode | Connection Protocol: Ethernet, Wi-Fi, 4G, Zigbee, Bluetooth | Power input: Method 1: 5V 2A or Method 2: POE power supply | Product size: 265*240*65mm (without antenna) | Product net weight: 480g | Working temperature: -10°C-+55°C | Working humidity: 10%-90%RH(non-condensing)","Wi-Fi, Ethernet, 4G, Zigbee, Bluetooth",5V 2A USB or PoE,,,,,,,To be ordered,,,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1gu6BsVX6cpUKdRZXKfWOy9faxf2NUAfr.jpg,
+TUYA,GW60-Matter,Wired Matter Gateway,Smart Gateway,"Features: Supports third-party platforms (Apple, Google, Amazon), Rich sub-device ecosystem, Support tuya thread devices and third-party matter over thread devices, LAN control | Network port: RJ45 | Color: Grey/Wood Grain | Power input: 5V 1A | Operating Voltage: 2.0V-3.8V | Working Temperature: -10°C-55°C | Working Humidity: 10%-90%RH | Wireless technology: Zigbee, Thread | Dimensions: 87*87*20mm","Zigbee, Thread",5V 1A USB,,,,,,,To be ordered,,,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1gerPthxLLqlShbvh1dgSwVJR95Xc8p62.jpg,
+AVATTO,WT500,Smart Heating Thermostat,Smart Thermostat,"Features: 4 inch touch screen LCD display, 9 Multi-language, Aluminum alloy frame, Celsius and fahrenheit support | Type: Electric heating/Water heating/Gas boiler heating | Material: anti-flammable PC+ABS+Aluminum alloy | Voltage: 95-230V AC, 50/60HZ | Max.current load: 16A/3A/3A | Power consumption: <2W | Sensor: NTC | Temperature detection accuracy: 0.1°C | Temperature setting accuracy: 0.5°C | Temperature setting: 5-95°C | Temperature calibration: -9.9-9.9°C | Temperature Hysteresis: 0.5-10°C | Item Size: 86*86*40mm | Mounting hole distance: 60mm standard | Protection degree: IP20 | Protocol: wifi 2.4GHz | Voice Control: Amazon Alexa, Google Home, Yandex Alice etc",Wi-Fi 2.4GHz,AC 95-230V,,,"Q＜100：33.47
+100≤Q＜500：32.50
+500≤Q＜1000：31.66
+1000≤Q：30.96",100,,,evaluation,Thermostat intelligent pour chauffage,HZ-CD-THERM01,,
+AVATTO,WT410,Smart Heating Thermostat,Smart Thermostat,"Features: LED beads display, Hand free voice control, App remote control, Weekly programmable, Screen backlight brightness adjustable | Protocol: 2.4G Wi-Fi/Matter | Voice control: Amazon Alexa, Google Home, Yandex Alice etc | Temperature sensor: NTC | Temperature accuracy: ±1°C | Display screen: LED | Working temperature: -5°C-50°C | Self power consumption: <1W | Temperature setting range: 15°C-95°C | Load current: Electric Heater 16A / Water Heater 3A / Gas Boiler 3A | Voltage: AC100-240V 50/60Hz | Size: 86*86*14(Front part)+26(Back part)mm","Wi-Fi 2.4GHz, Matter",AC 100-240V,,,"Q＜100： 12.55
+100≤Q＜500：12.27
+500≤Q＜1000：11.85
+1000≤Q：11.16",100,,,evaluation,Thermostat intelligent pour chauffage,HZ-CD-THERM02,,
+AVATTO,WT410-Matter,Smart Heating Thermostat,Smart Thermostat,"Features: LED beads display, Hand free voice control, App remote control, Weekly programmable, Screen backlight brightness adjustable | Protocol: 2.4G Wi-Fi/Matter | Voice control: Amazon Alexa, Google Home, Yandex Alice etc | Temperature sensor: NTC | Temperature accuracy: ±1°C | Display screen: LED | Working temperature: -5°C-50°C | Self power consumption: <1W | Temperature setting range: 15°C-95°C | Load current: Electric Heater 16A / Water Heater 3A / Gas Boiler 3A | Voltage: AC100-240V 50/60Hz | Size: 86*86*14(Front part)+26(Back part)mm","Wi-Fi 2.4GHz, Matter",AC 100-240V,,,"Q＜100： 12.55
+100≤Q＜500：12.27
+500≤Q＜1000：11.85
+1000≤Q：11.16",100,,,evaluation,,,,
+AVATTO,WT200,Smart Heating Thermostat,Smart Thermostat,"Features: Germany standard separated frame and thermostat body design, Hand free voice control, App remote control, Weekly programmable | Voice control: Amazon Alexa, Google Home, Yandex Alice etc | Temperature sensor: NTC | Temperature setting/display accuracy: 0.5°C / 0.1°C | Display screen: LED | Working temperature: -5°C-50°C | Self power consumption: <1W | Temperature setting range: 5°C-95°C | Hysteresis: 0.5°C-10°C | Load current: Electric Heater 16A/Water Heater 3A | Voltage: AC 95-220V 50/60Hz | Size: Frame 80*80 mm, Center part 55*55mm",Not specified,AC 95-220V,,,,,,,evaluation,Thermostat intelligent pour chauffage,HZ-CD-THERM03,,
+AVATTO,WT598,Smart Heating Thermostat,Smart Thermostat,"Features: Temperature display on rest screen, Ultra-long distance rf signal transmission, Battery powered, Manual/programmable, Hand free voice control, App remote control | Control mode: temperature comparison | Control output: relay output | Input type (transmitter): three 1.5V battery(No.5)/USB-DC5V | Supply voltage (receiver): AC100-240V-50/60Hz | Temperature measurement range: 0-99°C | Sensor input: NTC | Transmit output: 433 RF communication | Remote control: Mobile APP-WIFI | Ambient temperature: -5-50°C | Display: LCD","Wi-Fi, RF 433MHz",Three 1.5V batteries (AAA) or USB DC 5V,,,"Q＜100：15.34
+100≤Q＜500：14.64
+500≤Q＜1000：13.95
+1000≤Q：13.25",100,,,evaluation,Thermostat intelligent pour chauffage,HZ-CD-THERM04,,
+AVATTO,WT598-1T1,Smart Heating Thermostat,Smart Thermostat,"Features: Temperature display on rest screen, Ultra-long distance rf signal transmission, Battery powered, Manual/programmable, Hand free voice control, App remote control | Control mode: temperature comparison | Control output: relay output | Input type (transmitter): three 1.5V battery(No.5)/USB-DC5V | Supply voltage (receiver): AC100-240V-50/60Hz | Temperature measurement range: 0-99°C | Sensor input: NTC | Transmit output: 433 RF communication | Remote control: Mobile APP-WIFI | Ambient temperature: -5-50°C | Display: LCD","Wi-Fi, RF 433MHz",Three 1.5V batteries (AAA) or USB DC 5V,,,"""Q＜100：32.08
+100≤Q＜500：30.68
+500≤Q＜1000：29.29
+1000≤Q：27.89""",100,,,evaluation,,,,
+AVATTO,WT-FP,Fil Pilot Smart Thermostat,Smart Thermostat,"Features: Energy saving up to 35%, Power-monitoring function, Compatible with 4-wire/6-wire, ÉcoWatt signal access | Power supply: 100-230V AC 50/60Hz | Wireless protocol type: Zigbee 3.0 | Operating temp: 0°C-40°C (indoor use only) | Storage temp: -20°C-70°C | Protection rating: IP20 | Dimensions (WxDxH): 90*90*26mm",Zigbee 3.0,AC 100-230V,,,,,,,evaluation,Thermostat intelligent Fil Pilote,HZ-CD-THERM05,,
+AVATTO,WT-FP-5,Fil Pilot Smart Thermostat,Smart Thermostat,"Features: Energy saving up to 35%, Power-monitoring function, Compatible with 4-wire/6-wire, ÉcoWatt signal access | Power supply: 100-230V AC 50/60Hz | Wireless protocol type: Zigbee 3.0 | Operating temp: 0°C-40°C (indoor use only) | Storage temp: -20°C-70°C | Protection rating: IP20 | Dimensions (WxDxH): 90*90*26mm",Zigbee 3.0,AC 100-230V,,,Q＜5000:12.00,5000,,,evaluation,,,,
+AVATTO,WT300,Smart Fan Coil Thermostat,Smart Thermostat,"Features: Modbus for option, 2 pipes and 4 pipes, 24V DC and 110-240V AC for option, Simple manually modechange operation, Screen backlight brightness adjustable | Power supply: AC 95-240V, 50-60HZ; DC 24V | Fan relay: 5A resistive, 3A inductive | Valve relay: 3A resistive, 1A inductive | Sensor: NTC3950, 10K | Accuracy: ±0.5°C | Set temp. range: 5-35°C | Shell Material: PC+ABS(Fireproof)",Modbus,AC 95-240V or DC 24V,,,,,,,evaluation,,,,
+AVATTO,TRV10/TRV10-WiFi,Smart Thermostat Radiator Valve,Smart Thermostat,"Features: 2 direction LED display, Open window detection, Hand free voice control, Stroke distance detection, Backlight brightness adjustable | Power supply: 3*AA alkaline battery | Communication protocol: Zigbee 3.0 | Screen type: LED screen | Temperature sensor: NTC | Protection Degree: IP20 | Ambient Temperature: 0-50°C | Connection: M30*1.5mm | Linear travel: 6mm | Dimensions: 59.4*99.3*59.4mm",Zigbee 3.0,3 AA alkaline batteries,,,"""1000+：17.85
+Customization only""",1000,,,evaluation,,,,
+AVATTO,TRV06,Smart Radiator Valve,Smart Thermostat,"Features: APP control, Voice control, Stroke distance detection, Open window detection | Voice control: Amazon Alexa, Google Home | Frequency: 2.4GHz | Battery: 2*AA alkaline battery(LR6) | Battery life: Half a Year | Temperature range: 5°C-60°C | Temperature sensor: NTC | Wireless protocol: Zigbee 3.0 | Connection: M30*1.5mm | Max travel: 6mm | Working temperature: -10°C-40°C | Anti-Froze: Yes | Programmable: Yes","Zigbee 3.0, Wi-Fi 2.4GHz",2 AA alkaline batteries,,,"""Q＜100： 14.64
+100≤Q＜500：13.95
+500≤Q＜1000：13.25
+1000≤Q： 12.55""",100,,,To be ordered,Valve thermostatique intelligente pour radiateur,HZ-CD-THERM08,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1k7LEa46FOoCwpd8o77o6YVbvQ24bQhjz.jpg,
+AVATTO,TRVI6/TRV16-WiFi,Smart Thermostat Radiator Valve,Smart Thermostat,"Features: Ultra compact size, Powerful motor, Auto stroke distance detection, Programmable weekly schedule, Open window detection | System: Support IOS8.0/Android4.0 and above | Voice control: Amazon Alexa, Google Home, Yandex Alice, smart thing etc. | Protocol: Zigbee 3.0 | Material: ABS flame retardant | Temperature sensor: NTC | Battery: 2X1.5V AA Battery(alkaline) | Working temperature: -10°C-40°C | Thread size: M30*1.5mm | Product size: L:77mm, Φ51.5mm",Zigbee 3.0,2 AA alkaline batteries,,,"""Q＜100： 14.64
+100≤Q＜500：13.95
+500≤Q＜1000：13.25
+1000≤Q： 12.55""",100,,,evaluation,,,,
+AVATTO,WPS20-EU,Smart Power Strip,Smart Socket,"Features: Socket&USB/Type-C individual control, Physical on/off button, 5V/2.4A fast charging, Status memory function | Voice control: Amazon Alexa, Google Home | Input voltage: AC100-250V 50/60Hz | Outlet max load: 10A/2400W | USB/Type-C max load: 5V 2.4A | Dimension: 295*65*40mm | Cable length: 1.5m | WIFI standard: 2.4gHz 802.11 b/g/n | Material: PC+ABS | Fireproof standard: V0 | Working temperature: -20°C-55°C | Working humidity: 0%-95%RH non-condensing",Wi-Fi 2.4GHz 802.11 b/g/n,AC 100-250V,,,"""Q＜100： 13.95
+100≤Q＜500：13.67
+500≤Q＜1000：13.39
+1000≤Q： 13.25""",100,,,Not selected,Multiprise intelligente,HZ-CD-GESTNRJ01,,
+TUYA,UFO-R1,Universal Remote Control,Smart Remote Control,"Features: Easy connection setting, Mobile App remote control, Support air conditioning/TV/set-top box, 360° all-round no blind angle signal coverage | Power input: DC 5V/1A | Stand by power consumption: < 0.4W | Control distance: horizontal <= 8m, positive <= 15m | Launch tubes: 7 | Infrared control direction: multi-directional | Working temperature: -10°C-50°C | Working humidity: < 85% RH | Connection method: 2.4GHz 802.11b/g/n","Wi-Fi 2.4GHz 802.11 b/g/n, IR",DC 5V 1A USB,,,$4.50,5000,,,To be ordered,,,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1k7LEa46FOoCwpd8o77o6YVbvQ24bQhjz.jpg,
+Wenhui,S15 Pro,Super Remote Hub,Smart Remote Control,"Features: All-in-one (T&H sensor, remote control, scene switch), Real-time monitoring of T&H, auto-adjustment of AC | Input: DC 5V/1A | IR Distance: <= 10m | IR Direction: Multidirectional | Working temperature: -10°C-50°C | Working humidity: < 85%RH | Connection mode: 2.4GHz 802.11b/g/n | Product Size: 65*65*17mm","Wi-Fi 2.4GHz 802.11 b/g/n, IR",DC 5V 1A USB,,,$9.00,1000,,,Not selected,,,,
+AVATTO,S16 / S16 Pro,Smart IR Remote Control,Smart Remote Control,"Features: Wi-Fi IR+RF 2in 1 universal remote control, APP remote control, Hand free voice control, Multi device & brand compatible, 360° all direction strong & stable signal | Power input: DC 5V/1A(Micro USB2.0) | Infrared frequency: 38KHz | Infrared range: <= 10 Meters | RF frequency: RF433/RF315 | Wi-Fi protocol: 2.4GHz | Wi-Fi standard: IEEE 802.11 b/g/n | Operating temperature range: 0°C-60°C | Working humidity: 0-95%RH | Product size: Φ65*21mm","Wi-Fi 2.4GHz 802.11 b/g/n, IR, RF 433MHz, RF 315MHz",DC 5V 1A Micro USB,,,1-99:46                               100-999:44                     1000+：43,1,,,Not selected,,,,
+AVATTO,WHS20S, Controller,Smart Remote Control,"Features: Smart IR remote control + temp & humidity sensor 2 in 1, Screen brightness adjustable, Temp & humidity calibration function, °C & °F for option, APP remote monitoring, Voice control | Input: 5V 1A | WIFI frequency: 2.4GHz IEEE 802.11 b/g/n | Temperature measure range: 0°C-60°C | Humidity measure range: 0% RH-99%RH | Temperature/Humidity accuracy: ±1°C / ±5%RH | Infrared frequency: 38KHz | Infrared range: <= 10 Meters | Dimensions: 80*86*105 mm | Net weight: 130g | Voice control: Amazon alexa, Google Home","Wi-Fi 2.4GHz 802.11 b/g/n, IR",5V 1A USB,,,"100：11.85
+100-500：11.72
+500-1000：11.44
+1000+：11.16",100,,,To be ordered,,,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1Ap4AmOBm_1sYRfRWi5CoX9xy35Hmpbbh.jpg,
+TUYA,F1S204-EU,Smart Plug-EU,Smart Socket,"Features: Support Alexa/Google Home/IFTTT voice control, Support APP remote control/timer, Power monitoring (optional) | Voltage range: 220-240V AC 50/60Hz | Max current: 16A | Communication protocol: Wi-Fi 2.4G",Wi-Fi 2.4GHz,AC 220-240V,,,,,,,Not selected,Prise intelligente,HZ-CD-GESTNRJ02,,
+TUYA,F1S302-UK,Smart Plug-UK,Smart Socket,"Features: Support Alexa/Google Home/IFTTT voice control, Support APP remote control/timer, Power monitoring (optional) | Voltage range: 220-240V AC 50/60Hz | Max current: 13A | Communication protocol: Wi-Fi 2.4G",Wi-Fi 2.4GHz,AC 220-240V,,,,,,,Not selected,,,,
+TUYA,F1S203-EU,Matter Smart Plug-EU,Smart Socket,"Features: Matter over Wi-Fi, Matter eco-system/multi-admin, Support APP remote control/timer/schedule, Power monitoring (optional) | Voltage range: 220-240V AC 50/60Hz | Max current: 16A | Communication protocol: Wi-Fi 2.4G | Certification: CE, RoHS","Wi-Fi 2.4GHz, Matter",AC 220-240V,,,,,,,Not selected,Prise intelligente Matter,HZ-CD-GESTNRJ03,,
+TUYA,F2S203-EU,Bidirectional Measurement Plug - EU,Smart Socket,"Features: For energy monitoring of balcony power plant, Support APP remote control/timer/schedule, 2 way power monitoring | Voltage range: 220-240V AC 50/60Hz | Max current: 16A | Communication protocol: Wi-Fi 2.4G | Certification: CE, RoHS",Wi-Fi 2.4GHz,AC 220-240V,,,,,,,Not selected,Prise intelligente de mesure bidirectionnelle,HZ-CD-GESTNRJ04,,
+TUYA,F3S202-US / F3202-US,Smart Plug-NA,Smart Socket,"Features: Support Alexa/Google Home/IFTTT voice control, Support App remote control / timer | Rated voltage: AC 125V | Voltage range: AC120V 50/60Hz | Max current: 15A | Communication protocol: Wi-Fi 2.4G | N.W: 60g | Product Size: 38*80*47.8mm | Certificate: FCC,ETL",Wi-Fi 2.4GHz,AC 120V,,,,,,,Not selected,,,,
+TUYA,F7501-JP,Smart Plug-JP,Smart Socket,"Features: Support Alexa/Google Home/IFTTT voice control, Support App remote control / timer | Rated voltage: AC 125V | Voltage range: AC120V 50/60Hz | Max current: 12A | Communication protocol: Wi-Fi 2.4G | N.W: 60g | Product Size: 36*70*46mm | Certificate: FCC,ETL",Wi-Fi 2.4GHz,AC 120V,,,,,,,Not selected,,,,
+TUYA,F3S202-NA,Matter Smart Plug-NA,Smart Socket,"Features: Matter over Wi-Fi, Matter eco-system/multi-admin, Support APP remote control/timer/schedule, Power monitoring (optional) | Voltage: AC90-250V, 50/60Hz | Max current: 15A | Communication protocol: Wi-Fi 2.4G | Certification: ETL,FCC","Wi-Fi 2.4GHz, Matter",AC 90-250V,,,,,,,Not selected,,,,
+TUYA,PS162-W-EU,Smart Scene Switch,Smart Electrical Products,"Features: LCD display, Bi-directional energy metering, Remote management on/off, Prepayment optional, Monitor real-time voltage/current/power | Rated voltage AC: 90-300V (single phase), 208/400/415V (three phase) | Rated current: 5(65)A (single), 5(60)A/10(80)A (three) | Connection mode: Direct type | Operating temp: -25°C to +70°C | Accuracy class: 1% or 0.5%AC voltage",Not specified,AC 90-300V,,,,,,,Not selected,,,,
+TUYA,TSW-T111,Stick Logger,Smart Electrical Products,"Features: Support mainstream brands of inverters, Collects data on operating status and power generation | Interface support: RS485/RS232/TTL/USB or other serial communications","RS485, RS232, TTL",Not specified,,,,,,,To be ordered,Enregistreur intelligent Stick,HZ-CD-GESTNRJ05,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/16iC666qNUQ_ncLNn9fLJab603Y6glN_E.jpg,
+TUYA,S16Pro,Air-Conditioner Controller,Smart Electrical Products,"Features: Remote control Air-conditioner by App, Local touch panel control, Work with Alexa or google assistant, Smart schedule | Input: DC 5V/1A | Dimension: 80*80*16mm | Infrared frequency: 38kHz | Temp measure range: 0°C-60°C | Humidity measure range: 0%RH-99%RH | Wi-Fi frequency: Wi-Fi 2.4G | Display: LCD","Wi-Fi 2.4GHz, IR",DC 5V 1A USB,,,$16.5,1000,,,To be ordered,,,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1OMpTR2gp7dlrytZPKnGHXEqRBktzdES5.jpg,
+TUYA,PS121-W-US,Smart Scene Dimmer Switch,Smart Electrical Products,"Features: Smart devices and scenes control, Supports wireless three/multi-way control and smart lighting, Customizable screen settings, ETL certified | Wireless protocol: Wi-Fi+bluetooth | Input: 100-240V~50/60Hz | Load: LED/CFL 300W/110V Max, Incandescent/Halogen 600W/110V Max | Sensor: Proximity to bright screen","Wi-Fi, Bluetooth",AC 100-240V,,,,,,,Not selected,,,,
+TUYA,VEN5KHB-D1,Residential Single-Phase Hybrid inverter,Smart Electrical Products,"Features: Robust backup power output capacity, Wide range of MPPT voltage range, Reliable IP65 for outdoor using | Power output: 5KVA | MPPT voltage range: 125V-550V | Max. solar input: 7KW | Ingress protection: IP65 | Max. parallel operation: 4 Units",Not specified,Not specified,,,,,,,To be ordered,,,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1Z8cFI1iZxWrkOlH_TlWb7lFFiKznxC2V.jpg,
+TUYA,URA-MESS1,Balcony Energy Storage,Smart Electrical Products,"Features: Integrated MPPT, direct PV input, Easy installation and commissioning, Home-ESS grade LFP battery, Easy Plug & Play MC4 connectors | Expandable capacity: 2240Wh-6720Wh | Max. solar input: 1,000W | Max. DC output: 800W | Ingress protection: IP65 | Life cycles: 6000 cycles",Not specified,Not specified,,,,,,,To be ordered,,,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1b2CpR6UWlpORpNjYTMgjZ_bx3nwxLIMv.jpg,
+TUYA,DDS238-1/DTS238-7,Smart Energy Monitor,Smart Electrical Products,"Features: Single-phase, LCD display, Bi-directional energy metering, Remote management on/off, Prepayment optional, Manage real-time voltage/current/power | Rated voltage AC: 90-300V | Rated current: 10(100)A | Rate frequency: 50Hz/60Hz | Connection mode: Clamp CT | Operating temp: -25°C to +70°C | Accuracy class: 1% or 0.5%AC voltage",Not specified,AC 90-300V,,,,,,,Not selected,,,,
+TUYA,AICB2SP,Miniature Circuit Breaker,Circuit Breaker,"Features: Remote/local switch, Accuracy level 1, Monitor real-time info, Compact size | Pole: 1P/2P/3P/4P | Rated voltage: AC 110/230V | Rated frequency: 50Hz/60Hz | Operating temperature: -25°C to +70°C | Frame rated current: 100A | Rated current: 6A to 100A | Mechanical lifespan: 20,000 times | Electrical lifespan: 10,000 times",Not specified,AC 110/230V,,,,,,,evaluation,,,,
+TUYA,AICB2SLP,Miniature Circuit Breaker,Circuit Breaker,"Features: Type A leakage protection (30mA-300mA), Remote/local on/off, Leakage self-checking, Accuracy level 1, Monitor real-time info | Pole: 2P/4P | Rated voltage: AC 110/230V | Rated frequency: 50Hz/60Hz | Operating temperature: -25C to +70°C | Frame rated current: 100A | Rated current: 6A to 100A | Mechanical lifespan: 20,000 times | Electrical Lifespan: 10,000 times",Not specified,AC 110/230V,,,,,,,evaluation,,,,
+TUYA,F1 7- C+W 8,PetFeeder+ PetWaterFountain,Pets accessories,"Capacity: 4 L (pet feeder)  +  3 L (pet water fountain)
+| Material: ABS plastic, 304 stainless steel |Rated Power: 5 W | Wi-Fi: 2.4 GHz  &  5 GHz | Operating Temperature: 0 °C – 50 °C","Wi-Fi 2.4GHz, Wi-Fi 5GHz",5W AC,Universal,,$16.20,1000,,,To be ordered,,,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1v_MkMoUV21wC8wGPSKs5E-JZUr8WrM3L.jpg,
+TUYA,WVC-800,Microinverter,Smart Electrical Products,"Features: External antenna for reliable Wi-Fi, Reliable IP65 for outdoor using, Adjustable power output on App | Max. DC output: 800W | Max. solar input: 1000W | MPPT voltage range: 30V-60V | Ingress protection: IP65",Wi-Fi,Not specified,,,,,,,Not selected,,,,
+TUYA,GT5D / GT5C,Smart Watch,Smart Health,"Screen: 1.69-inch full-screen touch, 240PPI retina-level | Features: 24-hour heart rate monitoring, blood oxygen saturation monitoring, IP68 protection, 50 meters waterproof, swimming wearable | Chipset: REALTEK8762CK | Resolution: 240*280 | Battery: 175mAh | Waterproof Level: IP68 | Charging way: Wireless charging | Flash: 160KB SRAM+128Mb Flash",Bluetooth,"175mAh rechargeable battery, wireless charging",,,,,,,Not selected,,,,
+TUYA,V101,Smart Watch,Smart Health,"Features: 24-hour continuous automatic heart rate monitoring, 22g weight, IP68 protection, multiple dial styles, multiple sports modes | Chipset: REALTEK8752CJ | Screen size: 0.96 inch IPS | Resolution: 160*80 | Battery: 90mAh | Waterproof Level: IP68 | Working time: 7-10 days",Bluetooth,90mAh rechargeable battery,,,,,,,Not selected,,,,
+TUYA,TG-R007,Smart Ring,Smart Health,"Features: Support outdoor sports and record data/track, 7*24 hours automatic detection of heart rate/blood oxygen, Accurately record and monitor sleep quality | Colors: black, rose gold, gold, white (customizable) | Sizes: 8 sizes from 6-13# | Chipset: Dialog DA14585 | Origin sensor: Tianyi 3602 | Battery type: Polymer | Charging: Magnetic suction | Material: Ceramic | Working time: 7-9 days | Waterproof: IP68",Bluetooth,"Rechargeable polymer battery, magnetic charging",,,,,,,Not selected,,,,
+TUYA,CT08,Visual Otoscope,Smart Health,"Features: Automatically connects to device hotspots, high-definition images without lag, various colors available, various silicone covers available | Appearance process: Black/white | Material: Plastic Cement(PC+ABS) | Master chip: BK7231U(BK) | Battery: 150mAh | Pixel: 30W sensor | Focal IP Level: IP67 | Visual angle: 70 Angle | Focal length: 13mm | Camera size: 3.5mm | LED lamp: 6*LED | Camera tube size: 4.2*52mm | Operation temp: 0°C-50°C | Connection: Wi-Fi | Charging: Type-C | Product size: 141*14*12mm | Product weight: 14g",Wi-Fi,"150mAh battery, USB Type-C charging",,,,,,,Not selected,,,,
+TUYA,BF8072,Smart Scale,Smart Health,"Features: 18 items of body data (weight, fat mass, BMI, etc.) | Capacity: 3-180kg | Division: 100g | Product size: 300*300*25mm | LED display | Unit: KG/LB | Power: 6V 4*AAA battery | Indicators: Low battery (LO) and overload (Err) | Material: tempered glass+ABS plastic",Not specified,4 AAA batteries (6V),,,,,,,Not selected,,,,
+TUYA,CT01,Visual Otoscope,Smart Health,"Features: Threaded ear spoons, automatically connect to device hotspots, high-definition images without lag, customizable colors, variety of silicone sleeves available | Appearance process: Black/white | Material: Plastic Cement(PC+ABS) | Master chip: BK7231U(BK) | Battery: 600mAh | Pixel: 30W sensor | Focal IP Level: IP67 | Visual angle: 70 Angle | Focal length: 13mm | Camera size: 3.5mm | LED lamp: 6*LED | Camera tube size: 4.2*52mm | Operation temp: 0°C-50°C | Connection: Wi-Fi | Charging: Type-C | Product size: 160*27*27mm | Product weight: 43g",Wi-Fi,"600mAh battery, USB Type-C charging",,,,,,,Not selected,,,,
+TUYA,CT01,Smart Jump Rope,Smart Health,"Features: Large high-definition display, multiple rope skipping games | Handle Material: Plastic with texture | Button: Power*1, switch*1 | Display: LED with big digital | Certificate: CE, RoHS, FCC | Packing: gift box | Packing detail: Handle*2, 3M rope*1, Type C cable*1, carry bag*1, cordless balls*2 | Connection: BT4.2, support connect with Smart Life APP | Rope length: 3m PVC (adjustable) | Color: green | Vibration: Built-in motor | Battery: 300 mAh lithium polymer (lasts 2-3 months)",,6V (4 AAA batteries),,,,,,,Not selected,,,,
+TONGOU,TOQCB2-80-JW,Smart Circuit Breaker (1P/2P),Circuit Breaker,"Features: Remote Control, Voice Control, Time Mode, Circuit Protection, Electricity Consumption, Real-Time Power/Current/Voltage, Temperature Protection, Operation Log, DIN Rail Installation, Maintenance Mode | Standards: IEC/EN 60947, IEC/EN 60898, IEC/EN 50557, EN 301 489, EN 300 328, EN IEC 61000 | Poles: 1P/2P | Frequency: 50/60Hz | Current Frame(A): 16,20,32,40,63,80 | Curve Code: B, C, D | Rated Insulation Voltage(V): AC 500V | Breaking Capacity(kA): 10kA | Short Circuit Protection: acc. to IEC/EN 60947-2,IEC/EN 60898-1 | Operational Safety: Physical Safety Lock | Monitoring: Real-time Voltage, Current, Power, Power Factor, Power Consumption, Temperature, Phase Angle, Switch State, Device Operating Status, Frequency | Function: Multiple Timing, Over/Under-voltage Protection, Over-current/Power Protection, Temperature protection, Short Circuit Protection, Auto-reclosing, Remote Control, Voice Control | Mounting: DIN Rail 35mm",TCP/IP:Wi-Fi(2.412~2.484GHz) IEEE 802.11b/g/n,AC 145V-230V,,,,,,,evaluation,,,,
+TONGOU,TOQCB2-80-JZ,Smart Circuit Breaker (1P/2P),Circuit Breaker,"Features: Remote Control, Voice Control, Time Mode, Circuit Protection, Electricity Consumption, Real-Time Power/Current/Voltage, Temperature Protection, Operation Log, DIN Rail Installation, Maintenance Mode | Standards: IEC/EN 60947, IEC/EN 60898, IEC/EN 50557, EN 301 489, EN 300 328, EN IEC 61000 | Poles: 1P/2P | Frequency: 50/60Hz | Current Frame(A): 16,20,32,40,63,80 | Curve Code: B, C, D | Rated Insulation Voltage(V): AC 500V | Breaking Capacity(kA): 10kA | Short Circuit Protection: acc. to IEC/EN 60947-2,IEC/EN 60898-1 | Operational Safety: Physical Safety Lock | Monitoring: Real-time Voltage, Current, Power, Power Factor, Power Consumption, Temperature, Phase Angle, Switch State, Device Operating Status, Frequency | Function: Multiple Timing, Over/Under-voltage Protection, Over-current/Power Protection, Temperature protection, Short Circuit Protection, Auto-reclosing, Remote Control, Voice Control | Mounting: DIN Rail 35mm",Zigbee(2.400-2.483GHz) IEEE 802.15.4,AC 145V-230V,,,,,,,evaluation,,,,
+TONGOU,TOQCB2-80-JR,Smart Circuit Breaker (1P/2P),Circuit Breaker,"Features: Remote Control, Voice Control, Time Mode, Circuit Protection, Electricity Consumption, Real-Time Power/Current/Voltage, Temperature Protection, Operation Log, DIN Rail Installation, Maintenance Mode | Standards: IEC/EN 60947, IEC/EN 60898, IEC/EN 50557, EN 301 489, EN 300 328, EN IEC 61000 | Poles: 1P/2P | Frequency: 50/60Hz | Current Frame(A): 16,20,32,40,63,80 | Curve Code: B, C, D | Rated Insulation Voltage(V): AC 500V | Breaking Capacity(kA): 10kA | Short Circuit Protection: acc. to IEC/EN 60947-2,IEC/EN 60898-1 | Operational Safety: Physical Safety Lock | Monitoring: Real-time Voltage, Current, Power, Power Factor, Power Consumption, Temperature, Phase Angle, Switch State, Device Operating Status, Frequency | Function: Multiple Timing, Over/Under-voltage Protection, Over-current/Power Protection, Temperature protection, Short Circuit Protection, Auto-reclosing, Remote Control, Voice Control | Mounting: DIN Rail 35mm",Modbus-RTU,AC 145V-230V,,,,,,,evaluation,,,,
+TONGOU,TOQCB2-80-JL,Smart Circuit Breaker (1P/2P),Circuit Breaker,"Features: Remote Control, Voice Control, Time Mode, Circuit Protection, Electricity Consumption, Real-Time Power/Current/Voltage, Temperature Protection, Operation Log, DIN Rail Installation, Maintenance Mode | Standards: IEC/EN 60947, IEC/EN 60898, IEC/EN 50557, EN 301 489, EN 300 328, EN IEC 61000 | Poles: 1P/2P | Frequency: 50/60Hz | Current Frame(A): 16,20,32,40,63,80 | Curve Code: B, C, D | Rated Insulation Voltage(V): AC 500V | Breaking Capacity(kA): 10kA | Short Circuit Protection: acc. to IEC/EN 60947-2,IEC/EN 60898-1 | Operational Safety: Physical Safety Lock | Monitoring: Real-time Voltage, Current, Power, Power Factor, Power Consumption, Temperature, Phase Angle, Switch State, Device Operating Status, Frequency | Function: Multiple Timing, Over/Under-voltage Protection, Over-current/Power Protection, Temperature protection, Short Circuit Protection, Auto-reclosing, Remote Control, Voice Control | Mounting: DIN Rail 35mm",LTE Cat.1: LTE-FDD:B1/B3/B5/B8/B20/B28A* LTE-TDD:B38/40/41 GSM/GPRS:GSM900/DCS1800,AC 145V-230V,,,,,,,evaluation,,,,
+TONGOU,TOQCB2-80-JM,Smart Circuit Breaker (1P/2P),Circuit Breaker,"Features: Remote Control, Voice Control, Time Mode, Circuit Protection, Electricity Consumption, Real-Time Power/Current/Voltage, Temperature Protection, Operation Log, DIN Rail Installation, Maintenance Mode | Standards: IEC/EN 60947, IEC/EN 60898, IEC/EN 50557, EN 301 489, EN 300 328, EN IEC 61000 | Poles: 1P/2P | Frequency: 50/60Hz | Current Frame(A): 16,20,32,40,63,80 | Curve Code: B, C, D | Rated Insulation Voltage(V): AC 500V | Breaking Capacity(kA): 10kA | Short Circuit Protection: acc. to IEC/EN 60947-2,IEC/EN 60898-1 | Operational Safety: Physical Safety Lock | Monitoring: Real-time Voltage, Current, Power, Power Factor, Power Consumption, Temperature, Phase Angle, Switch State, Device Operating Status, Frequency | Function: Multiple Timing, Over/Under-voltage Protection, Over-current/Power Protection, Temperature protection, Short Circuit Protection, Auto-reclosing, Remote Control, Voice Control | Mounting: DIN Rail 35mm",TCP/UDP: Matter,AC 145V-230V,,,,,,,evaluation,,,,
+TONGOU,TOQCB2-80-JW,Smart Circuit Breaker (3P/4P),Circuit Breaker,"Features: Remote Control, Voice Control, Time Mode, Circuit Protection, Electricity Consumption, Real-Time Power/Current/Voltage, Temperature Protection, Operation Log, DIN Rail Installation, Maintenance Mode | Standards: IEC/EN 60947, IEC/EN 60898, IEC/EN 50557, EN 301 489, EN 300 328, EN IEC 61000 | Poles: 3P/4P | Frequency: 50/60Hz | Current Frame(A): 16,20,32,40,63,80 | Curve Code: B, C, D | Rated Insulation Voltage(V): AC 500V | Breaking Capacity(kA): 10kA | Function: Multiple Timing, Over/Under-voltage Protection, Over-current/Power Protection, Temperature protection, Short Circuit Protection, Auto-reclosing, Remote Control, Voice Control | Mounting: DIN Rail 35mm",TCP/IP:Wi-Fi(2.412~2.484GHz) IEEE 802.11b/g/n,"MCU: AC 380V-415V, Phase Line: AC 230V(L1-N, L2-N, L3-N)",,,,,,,evaluation,,,,
+TONGOU,TOQCB2-80-JZ,Smart Circuit Breaker (3P/4P),Circuit Breaker,"Features: Remote Control, Voice Control, Time Mode, Circuit Protection, Electricity Consumption, Real-Time Power/Current/Voltage, Temperature Protection, Operation Log, DIN Rail Installation, Maintenance Mode | Standards: IEC/EN 60947, IEC/EN 60898, IEC/EN 50557, EN 301 489, EN 300 328, EN IEC 61000 | Poles: 3P/4P | Frequency: 50/60Hz | Current Frame(A): 16,20,32,40,63,80 | Curve Code: B, C, D | Rated Insulation Voltage(V): AC 500V | Breaking Capacity(kA): 10kA | Function: Multiple Timing, Over/Under-voltage Protection, Over-current/Power Protection, Temperature protection, Short Circuit Protection, Auto-reclosing, Remote Control, Voice Control | Mounting: DIN Rail 35mm",Zigbee(2.400-2.483GHz) IEEE 802.15.4,"MCU: AC 380V-415V, Phase Line: AC 230V(L1-N, L2-N, L3-N)",,,,,,,evaluation,,,,
+TONGOU,TOQCB2L-63-JW,Smart Circuit Breaker with Leakage Protection (2P),Circuit Breaker,"Features: Remote Control, Voice Control, Time Mode, Circuit Protection, Leakage Protection, Electricity Consumption, Real-Time Power/Current/Voltage, Temperature Protection, Operation Log, DIN Rail Installation, Maintenance Mode | Standards: IEC/EN 61009, IEC/EN 50557, EN 301 489, EN 300 328, EN IEC 61000 | Poles: 2P | Frequency: 50/60Hz | Current Frame(A): 16,20,32,40,63 | Rated Residual Operating Current(mA): 30,100,300,500 | Residual Current Type: AC, A | Curve Code: B, C, D | Rated Insulation Voltage(V): AC 500V | Breaking Capacity(kA): 10kA | Mounting: DIN Rail 35mm",TCP/IP:Wi-Fi(2.412~2.484GHz) IEEE 802.11b/g/n,"MCU: AC 145V-230V, Phase Line: AC 230V",,,,,,,evaluation,,,,
+TONGOU,TOQCB2L-63-JZ,Smart Circuit Breaker with Leakage Protection (2P),Circuit Breaker,"Features: Remote Control, Voice Control, Time Mode, Circuit Protection, Leakage Protection, Electricity Consumption, Real-Time Power/Current/Voltage, Temperature Protection, Operation Log, DIN Rail Installation, Maintenance Mode | Standards: IEC/EN 61009, IEC/EN 50557, EN 301 489, EN 300 328, EN IEC 61000 | Poles: 2P | Frequency: 50/60Hz | Current Frame(A): 16,20,32,40,63 | Rated Residual Operating Current(mA): 30,100,300,500 | Residual Current Type: AC, A | Curve Code: B, C, D | Rated Insulation Voltage(V): AC 500V | Breaking Capacity(kA): 10kA | Mounting: DIN Rail 35mm",Zigbee(2.400-2.483GHz) IEEE 802.15.4,"MCU: AC 145V-230V, Phase Line: AC 230V",,,,,,,evaluation,,,,
+TONGOU,TOQCB2L-63-JW,Smart Circuit Breaker with Leakage Protection (3P),Circuit Breaker,"Features: Remote Control, Voice Control, Time Mode, Circuit Protection, Leakage Protection, Electricity Consumption, Real-Time Power/Current/Voltage, Temperature Protection, Operation Log, DIN Rail Installation, Maintenance Mode | Standards: IEC/EN 61009, IEC/EN 50557, EN 301 489, EN 300 328, EN IEC 61000 | Poles: 3P | Frequency: 50/60Hz | Current Frame(A): 16,20,32,40,63 | Rated Residual Operating Current(mA): 30,100,300,500 | Residual Current Type: AC, A | Curve Code: B, C, D | Rated Insulation Voltage(V): AC 500V | Breaking Capacity(kA): 10kA | Mounting: DIN Rail 35mm",TCP/IP:Wi-Fi(2.412~2.484GHz) IEEE 802.11b/g/n,"MCU: AC 145V-230V, Phase Line: AC 230V(L1-N, L2-N, L3-N)",,,,,,,evaluation,,,,
+TONGOU,TOQCB2L-63-JW,Smart Circuit Breaker with Leakage Protection (4P),Circuit Breaker,"Features: Remote Control, Voice Control, Time Mode, Circuit Protection, Leakage Protection, Electricity Consumption, Real-Time Power/Current/Voltage, Temperature Protection, Operation Log, DIN Rail Installation, Maintenance Mode | Standards: IEC/EN 61009, IEC/EN 50557, EN 301 489, EN 300 328, EN IEC 61000 | Poles: 4P | Frequency: 50/60Hz | Current Frame(A): 16,20,32,40,63 | Rated Residual Operating Current(mA): 30,100,300,500 | Residual Current Type: AC, A | Curve Code: B, C, D | Rated Insulation Voltage(V): AC 500V | Breaking Capacity(kA): 10kA | Mounting: DIN Rail 35mm",TCP/IP:Wi-Fi(2.412~2.484GHz) IEEE 802.11b/g/n,"MCU: AC 145V-230V, Phase Line: AC 230V(L1-N, L2-N, L3-N)",,,,,,,evaluation,,,,
+TONGOU,TOSMR1-40-JW,Smart Circuit Breaker with Leakage Protection,Circuit Breaker,"Features: Remote Control, Voice Control, Time Mode, Circuit Protection, Leakage Protection, Electricity Consumption, Real-Time Power/Current/Voltage, Temperature Protection, Operation Log, DIN Rail Installation, Maintenance Mode | Poles: 2P | Frequency: 50/60Hz | Current Frame(A): 16,20,32,40 | Rated Residual Operating Current(mA): 10,30,100 | Residual Current Type: AC, A | Curve Code: B, C, D | Rated Insulation Voltage(V): AC 500V | Breaking Capacity(kA): 6kA",TCP/IP:Wi-Fi(2.412~2.484GHz) IEEE 802.11b/g/n,"MCU: AC 145V-230V, Phase Line: AC 230V",,,,,,,evaluation,,,,
+TONGOU,TO-Q-SY1-W,DIN Rail Smart Switch (Non-Metering Type),Circuit Breaker,"Features: Remote Control, Voice Control, Time Mode, Circuit Protection, Temperature Protection, Operation Log, DIN Rail Installation, Maintenance Mode | Poles: Disconnectable L Pole, Direct N Pole | Wiring Mode: DPN 18mm | Rated Current(A): 6,10,16,20,25,32,40,50,63 | Operational Safety: Remote setting maintenance switch | Function: Multiple Timing, Remote Control, Voice Control | Mounting: DIN Rail 35mm",TCP/IP:Wi-Fi(2.412~2.484GHz) IEEE 802.11b/g/n,AC 90-240V,,,,,,,evaluation,,,,
+TONGOU,TO-Q-SY1-Z,DIN Rail Smart Switch (Non-Metering Type),Circuit Breaker,"Features: Remote Control, Voice Control, Time Mode, Circuit Protection, Temperature Protection, Operation Log, DIN Rail Installation, Maintenance Mode | Poles: Disconnectable L Pole, Direct N Pole | Wiring Mode: DPN 18mm | Rated Current(A): 6,10,16,20,25,32,40,50,63 | Operational Safety: Remote setting maintenance switch | Function: Multiple Timing, Remote Control, Voice Control | Mounting: DIN Rail 35mm",Zigbee(2.400-2.483GHz)IEEE 802.15.4,AC 90-240V,,,,,,,evaluation,,,,
+TONGOU,TO-Q-SY1-M,DIN Rail Smart Switch (Non-Metering Type),Circuit Breaker,"Features: Remote Control, Voice Control, Time Mode, Circuit Protection, Temperature Protection, Operation Log, DIN Rail Installation, Maintenance Mode | Poles: Disconnectable L Pole, Direct N Pole | Wiring Mode: DPN 18mm | Rated Current(A): 6,10,16,20,25,32,40,50,63 | Operational Safety: Remote setting maintenance switch | Function: Multiple Timing, Remote Control, Voice Control | Mounting: DIN Rail 35mm",TCP/UDP: Matter,AC 90-240V,,,,,,,evaluation,,,,
+TONGOU,TO-Q-SY1-JW,DIN Rail Smart Switch (Metering Type),Circuit Breaker,"Features: Remote Control, Voice Control, Time Mode, Circuit Protection, Electricity Consumption, Real-Time Power/Current/Voltage, Temperature Protection, Operation Log, DIN Rail Installation, Maintenance Mode | Poles: Disconnectable L Pole, Direct N Pole | Rated Current(A): 6,10,16,20,25,32,40,50,63 | Monitoring: Real-time Voltage/Current/Power, Power Consumption, Switch State, Device Operating Status | Measurement Accuracy: Class 2.0 | Function: Multiple Timing, Remote Control, Voice Control | Mounting: DIN Rail 35mm",TCP/IP:Wi-Fi(2.412~2.484GHz) IEEE 802.11b/g/n,AC 90-240V,,,,,,,evaluation,,,,
+TONGOU,TO-Q-SY2-JW,DIN Rail Smart Switch,Circuit Breaker,"Features: Remote Control, Voice Control, Time Mode, Circuit Protection, Electricity Consumption, Real-Time Power/Current/Voltage, Temperature Protection, Operation Log, DIN Rail Installation, Maintenance Mode | Poles: Disconnectable L Pole, Direct N Pole | Current Frame(A): 63 | Function: Multiple Timing, Over-voltage/current/Power Protection, Temperature protection, Remote Control, Voice Control | Mounting: DIN Rail 35mm",TCP/IP:Wi-Fi(2.412~2.484GHz) IEEE 802.11b/g/n,AC 90-240V,,,,,,,evaluation,,,,
+TONGOU,TO-Q-SYS-JW,DIN Rail Smart Meter,Circuit Breaker,"Features: LCD Display, Remote Control, Voice Control, Time Mode, Circuit Protection, Electricity Consumption, Real-Time Power/Current/Voltage, Temperature Protection, Operation Log, DIN Rail Installation, Maintenance Mode | Poles: Disconnectable L Pole, Direct N Pole | Current Frame(A): 50 | Initial Current Value: 100mA | Monitoring: Realtime Voltage, Current, Power, Power Consumption, Switch State, Device Operating Status | Function: Multiple Timing, Over-voltage/current/Power/Temperature Protection, Remote Control, Voice Control",TCP/IP:Wi-Fi(2.412~2.484GHz) IEEE 802.11b/g/n,AC 100-240V,,,,,,,evaluation,,,,
+TONGOU,TO-Q-SYS-JB,DIN Rail Smart Meter,Circuit Breaker,"Features: LCD Display, Remote Control, Voice Control, Time Mode, Circuit Protection, Electricity Consumption, Real-Time Power/Current/Voltage, Temperature Protection, Operation Log, DIN Rail Installation, Maintenance Mode | Poles: Disconnectable L Pole, Direct N Pole | Current Frame(A): 50 | Initial Current Value: 100mA | Monitoring: Local Screen Display | Function: Multiple Timing, Over-voltage/current/Power/Temperature Protection",Local,AC 100-240V,,,,,,,evaluation,,,,
+TONGOU,TO-Q-SA1-0150W,Smart Energy Accessory (1P),Circuit Breaker,"Features: Electricity Consumption, Real-Time Power/Current/Voltage, Operation Log, DIN Rail Installation, Circuit Fault Alarm, High Temperature Alarm | Current Frame Maximum(A): 50 | Monitoring: Real-time Voltage, Current, Power, Power Consumption, Internal Temperature | Function: Over-voltage/current/power Alarm, Temperature Alarm, Prepaid Monitoring | Matched MCB: TOMD6-63",TCP/IP:Wi-Fi(2.412~2.484GHz) IEEE 802.11b/g/n,AC 110-240V,,,,,,,evaluation,,,,
+TONGOU,TO-Q-SA1-0350W,Smart Energy Accessory (3P),Circuit Breaker,"Features: Electricity Consumption, Real-Time Power/Current/Voltage, Operation Log, DIN Rail Installation, Circuit Fault Alarm, High Temperature Alarm | Current Frame Maximum(A): 50 | Monitoring: Real-time Voltage, Current, Power, Power Consumption, Internal Temperature | Function: Over-voltage/current/power Alarm, Temperature Alarm, Prepaid Monitoring | Matched MCB: TOMD6-63",TCP/IP:Wi-Fi(2.412~2.484GHz) IEEE 802.11b/g/n,"Nominal: AC 230/400V, Operating: AC 230V",,,,,,,evaluation,,,,
+AVATTO,WOT12 / ZWOT12,Smart Wall Socket,Smart Socket,"Model No.: WOT12/ZWOT12
+APP: AVATTO/Smart Life/Tuya Smart
+Voice Control: Amazon Alexa, Google Home
+Input Voltage: 100V-250V 50/60Hz AC
+Max. Load: 5V 2.4A (USB&Type-C)
+ 16A 3680W (socket)
+Grounding: Standard Grounding
+Flammability: Rated V0 per UI94
+Protocol: 2.4G WiFi/Zigbee 3.0
+Standby Power Consumption: <0.5W
+System Supported: IOS/Android
+Working Life: 100 000Times
+Materials: Tempered Glass+PC
+Switch Size: 120*72*43 mm
+Color: White, Black",2.4G WiFi/Zigbee 3.0,100V-250V 50/60Hz AC,,,"""Q＜100：9.07
+100≤Q＜500：8.93
+500≤Q＜1000：8.65
+1000≤Q： 8.37""",100,,,Not selected,Prise intelligente murale,HZ-CD-PRISE01,,
+AVATTO,WOT16P / ZWOT16P,Smart Switch & Socket,Smart Socket,"Model No.: WOT16P/ZWOT16P
+ WOT18P/ZWOT18P
+APP: AVATTO/Smart Life/Tuya Smart
+Voice Control: Amazon Alexa, Google Home
+Input Voltage: 100V-240V 50/60Hz
+Max. Load: 10A 800W/Gang(light)
+ 20A 4400W(socket)
+Protocol: 2.4G WiFi/ Zigbee 3.0
+Standby Power Consumption: <0.5W
+System Supported: IOS/Android
+Working Life: 100 000Times
+Materials: Tempered Glass+PC
+Switch Size: 120*72*43 mm/120*120*44 mm",2.4G WiFi/ Zigbee 3.0,100V-240V 50/60Hz,,,"WiFi
+1gang
+Q＜100： 10.46
+100≤Q＜500：9.76
+500≤Q＜1000：9.07
+1000≤Q： 8.37
+2gang
+Q＜100： 11.16
+100≤Q＜500：10.46
+500≤Q＜1000：9.76
+1000≤Q： 9.07
+ZigBee
+1gang
+Q＜100： 11.16
+100≤Q＜500：10.46
+500≤Q＜1000：9.76
+2gang
+Q＜100： 11.85
+100≤Q＜500：11.16
+500≤Q＜1000：10.46
+1000≤Q： 9.76",100,,,Not selected,Interrupteur et prise intelligente,HZ-CD-PRISE02,,
+AVATTO,WOT18P / ZWOT18P,Smart Wall Socket,Smart Socket,"Model No.: WOT16P/ZWOT16P
+ WOT18P/ZWOT18P
+APP: AVATTO/Smart Life/Tuya Smart
+Voice Control: Amazon Alexa, Google Home
+Input Voltage: 100V-240V 50/60Hz
+Max. Load: 10A 800W/Gang(light)
+ 20A 4400W(socket)
+Protocol: 2.4G WiFi/ Zigbee 3.0
+Standby Power Consumption: <0.5W
+System Supported: IOS/Android
+Working Life: 100 000Times
+Materials: Tempered Glass+PC
+Switch Size: 120*72*43 mm/120*120*44 mm",2.4G WiFi/ Zigbee 3.0, 100V-240V 50/60Hz,,,"WiFi
+Q＜100： 13.25
+100≤Q＜500：12.55
+500≤Q＜1000：11.85
+1000≤Q： 11.16
+ZigBee
+Q＜100： 13.95
+100≤Q＜500：13.25
+500≤Q＜1000：12.55
+1000≤Q： 11.85",100,,,Not selected,Interrupteur et prise intelligente,HZ-CD-PRISE03,,
+LINPTECH,WD1-LB,,Garage/Window/Curtain Motor,"Name: Automatic Window Opener
+Model: WD1-LB
+Material: Aluminum alloy fixing frame + pc shell (plus anti-UV)
+Power supply: 3.6V 5100mah 18650 lithium battery
+Rated power consumption: <5W
+Protocol: BLE Mesh (Control distance: 20m)
+Open and closing speed: >7.8cm/s (No-loaded) 5cm/s (load)
+Motor torque: >6kg.cm
+Motor noise: <45db (1m,no-loaded)
+Size: 216.5x61x35.7mm","BLE Mesh (Control distance: 20m)","3.6V 5100mah 18650 lithium battery",,,,,,,Not selected,,,,
+LINPTECH,KK9Z-TY / K9B-TY,,smart switch,"Product Name: Self-powered wireless switch
+- Model: K9Z-TY/K9B-TY
+Power Supply: Self-powered (No additional power supply required)
+Wireless Protocol: ZigBee Green Power 3.0/BLE 2.4GHz
+Quantity of Gangs: 1/2/3 Gangs
+Switch type: Unilateral reset
+Product Size: 86x86x15mm
+Remote Control Distance: about 50m(open area)
+about 15m(indoor)
+Operating life: >100,000 times
+tuya",ZigBee Green Power 3.0/BLE 2.4GHz,"Self-powered (No additional power supply required)",,,,,,,To be ordered,,,,
+LINPTECH,KH1BB,,smart switch,"Product Name: Wireless switch
+Model: KH1BB
+Power Supply: button battery CR2032 (240mAh)
+Battery Life: 2 years
+-Wireless Protocol: BLE
+Quantity of Gangs: 1/2/3/4 Gangs
+Switch Type: full press reset
+Product Size: 86x86x11mm
+Distance Between Transmitter and
+BLE Gateway: about 50m
+",BLE," button battery CR2032 (240mAh)",,,,,,,To be ordered,,,,
+LINPTECH,XH1BB,,smart switch,"Product Name: Smart Knob Wireless Dimmer Switch
+Model: XH18B
+Power Supply: Button battery CR2032 (240mAh)
+Battery Life: 2 years
+Wireless Protocol: BLE
+Operation method: Knob & Button
+Product Size: 86x86x11mm
+Distance Between Transmitter and
+BLE Gateway: about 50m",BLE," Button battery CR2032 (240mAh)",,,,,,,To be ordered,,,,
+LINPTECH,S2,,Smart Control Panel,"Name: Smart Control Panel
+Model: S2DW
+Voltage: 220V-50Hz
+Screen: 3.5 inch touch screen
+Protocol: WIFI 2.4GHz
+Relays: 3-way
+Load: Max 500W/load, support
+incandescent lamps, LED
+lamps, fluorescent lamps etc.
+Size: 86X86X35mm",WIFI 2.4GHz,220V-50Hz,,,,,,,evaluation,,,,
+LINPTECH,XH1,,sw,"Product Name: Smart Knob Dimmer Switch XHI (TH1-DB)
+Input Voltage: 220V AC ± 10% 50Hz
+Rated Load: 500 W
+Wireless Protocol: BLE
+Operation method: Knob & Button
+- Working Temperature: 0-40°C
+Temperature Control Accuracy: ±0.5°C
+Product Size: 86x86x11mm
+Installation Method: Standard 86 bottom box,
+Bottom box depth > 45 mm",WIFI 2.4GHz,"220V AC ± 10% 50Hz",,,,,,,To be ordered,,,,
+LINPTECH,TH1,,Smart Thermostat,"Product Name: Smart thermostat TH1 (TH1-DW-113MI)
+Input Voltage: 220V AC ± 10% 50Hz
+- Load Current: <3A
+Wireless Protocol: WiFi 2.4G/BLE
+Access Platform: MI Home
+Temperature Control Range: 5-35°C
+Temperature Control Accuracy: ±0.5°C
+Product Size: 86x86x11mm
+- Installation Method: Standard 86 bottom box, Bottom box depth > 45 mm","WiFi 2.4G/BLE
+","220V AC ± 10% 50Hz",,,,,,,To be ordered,,,,
+LINPTECH,RX-4,,smart switch,"Product Name: Receiver of remote-control
+Power Supply: 85-265VAC 50/60HZ
+Wireless Protocol: CC433MHz
+Remote Control Distance: about 80m
+Product Size: 87.5x72x58.7mm
+Number of Switches: Up to 10pcs switches/way can be connected
+Output Current: 16A Max/way","CC433MHz",85-265VAC 50/60HZ,,,,,,,To be ordered,,,,
+Wenhui,OHCTF001,Smart Water Valve,Smart Electrical Products,,,,,,"US$8,80 ",,,,To be ordered,,,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1G4VRQdfxTChyCa6aggo4HUiddIIRsGSH.jpg,
+AVATTO,SWT60,WiFi Irrigator,Smart Electrical Products,"W-Fi：802.11b/g/n(2.4GHz)
+Working Water Pressure：
+0.03 MPa-0.9 MPa(4.35 psi-130.53 psi)
+Max Flow Rate：35L / min
+Working Temperature：1-60 ℃
+Waterproof Level：IP65
+Dimension：
+92.4x175x50 mm
+Water Inlet：For 3/4"" taps
+Water Outlet：For 3/4"" standard garden hose
+Power By：4 AA (1.5V) alkaline batteries (Not Included)",WiFi,4x AA Battery,,,"Q＜100： 150
+100≤Q＜500：140
+500≤Q＜1000：135
+1000≤Q： 130",100,,,Not selected,,,,
+szsmarthome,Q4-PRO,Intelligent control panel,Smart Control Panel,"System: Android 11; Display: 4-inch capacitive touch (480x480); Functions: Tuay app scanning and binding, lighting, switches, sockets, AC, curtains, group control; Gateway: ZIGBEE; Power: AC 110-250V / 12v-24v; Relay: 2 channels < 200W; I/O: 1 audio in, 1 audio out, 1 485 out, 1 timing out; Connectivity: Bluetooth; Installation: UK standard 86 bottom shell; Size: 86x86x11MM; Media: Supports TF card, USB playback, Bluetooth music; Color: black, white",ZigBee; Bluetooth; RS485,AC 110-250V / 12v-24v,,,65 USD,500 (for 12v-24v),,,To be ordered,,,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1eLbWtrrfi2P36_yBlLetChHHWeHHm8XX.jpg,
+szsmarthome,Q7-TUYA,Intelligent control panel,Smart Control Panel,"System: Android 11, RAM 2G, Rom 8g; Display: 7-inch (1024x600) + 1.28-inch round (240x240); Functions: smart home control, scene control, background music playback; Power: 90v-240v; I/O: 1 audio in, 1 audio out, 1 485 out; Speaker output: 8 x 25W; Connectivity: Bluetooth; Features: Two zone independent music playback, four zone volume adjustment; Size: 237.5x112x10.5MM; Weight: 1.1kg; Color: Black",Bluetooth; RS485,90-240V,,,175 USD,,,,To be ordered,,,,
+szsmarthome,S4-2 PRO Tuya Gateway,Intelligent control panel,Smart Control Panel,"System: Android 11; Display: 4-inch capacitive touch (480x480); Gateway: Built-in ZigBee (Tuya); Functions: lighting, switches, sockets, AC, curtains, group control; Power: AC 110-250V / 12v-24v; Speaker output: 2 x (10-25W); I/O: 1 audio in, 1 audio out, 1 485 out, 1 timing out; Connectivity: Bluetooth; Installation: UK standard 86 bottom shell; Size: 86x86x11MM; Media: Supports TF card, USB playback, Bluetooth music; Color: black, white",ZigBee; Bluetooth; RS485,AC 110-250V / 12v-24v,,,78 USD,500 (for 12v-24v),,,Not selected,,,,
+szsmarthome,S4-4 PRO Tuya Gateway,Intelligent control panel,Smart Control Panel,"System: Android 11; Display: 4-inch capacitive touch (480x480); Gateway: Built-in ZigBee (Tuya); Power: AC 110-250V / 12v-24v; Speaker output: 4 x (10-25W); I/O: 1 audio in, 1 audio out, 1 485 out, 1 timing out; Connectivity: Bluetooth; Installation: UK standard 86 bottom shell; Size: 86x86x11MM; Media: Supports TF card, USB playback, Bluetooth music; Color: black, white",ZigBee; Bluetooth; RS485,AC 110-250V / 12v-24v,,,85 USD,500 (for 12v-24v),,,Not selected,,,,
+szsmarthome,S4-3 PRO Tuya No Gateway,Intelligent control panel,Smart Control Panel,"System: Android 11; Display: 4-inch capacitive touch (480x480); Gateway: No Gateway; Power: AC 110-250V / 12v-24v; Speaker output: 2 x (10-25W); I/O: 1 audio in, 1 audio out, 1 485 out, 1 timing out; Connectivity: Bluetooth; Installation: UK standard 86 bottom shell; Size: 86x86x11MM; Media: Supports TF card, USB playback, Bluetooth music; Color: black, white",Bluetooth; RS485,AC 110-250V / 12v-24v,,,65 USD,500 (for 12v-24v),,,Not selected,,,,
+szsmarthome,L2 Linux,Intelligent control panel,Smart Control Panel,"System: Linux; Display: 4-inch capacitive touch (480x480); Gateway: ZigBee (Tuya); Power: 2 circuits < 200W; Connectivity: 485 half duplex; Installation: UK standard 86 bottom shell; Size: 86x86x11MM; Functions: supports lights, switches, sockets, air conditioners, curtains; Color: black",ZigBee; RS485,AC,,,58 USD,500,,,Not selected,,,,
+szsmarthome,FX-TUYA,Intelligent control panel Music host,Smart Control Panel,"System: Android 8.1, RAM 2G, Rom 8g; Display: 7-inch capacitive touch (1024x600); Power: 90v-240v; Speaker output: 2 x (10-25W); I/O: 1 audio in, 1 audio out, 1 485 out, 1 timing out; Connectivity: Bluetooth; Installation: UK standard 86 bottom shell; Functions: smart home control, scene control, background music playback; Color: Black",Bluetooth; RS485,90-240V,,,115 USD,,,,To be ordered,,,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1PjEan2PhXhcWbdJs4jVxXYi1O1qBbj5j.jpg,
+szsmarthome,A7-TUYA,Intelligent control panel,Smart Control Panel,"System: Android 8.1, 4-core CPU 1.5Hz, 2G RAM, 16G ROM; Display: 7-inch IPS (1024x600); Power: AC 110-250V; Output power: 8 x 20W (Yamaha); I/O: 1 audio in, 1 audio out, 1 analog bass out, HDMI out 1080p, 8-channel horn output; Connectivity: WiFi, Bluetooth 4.2, 485 bidirectional control; Installation: embed junction box; Media: Supports TF card, otgusb disk; Color: white, black",WiFi; Bluetooth; RS485; HDMI,AC 110-250V,,,160 USD,,,,Not selected,,,,
+szsmarthome,F4-Tuya,Intelligent control panel,Smart Control Panel,"System: Android 8.1; Display: 4-inch capacitive touch (480x480); Power: AC 110-250V; Switch: 4-way ZigBee switch (<200W), 4-way situational control; Speaker output: 2 x 15W; I/O: 1 audio in, 1 audio out, 485 Protocol input; Connectivity: Tuya ZigBee, Bluetooth; Installation: Double 86 standard junction box; Size: 172x86x13MM; Color: Black/Grey/White/Red",ZigBee; Bluetooth; RS485,AC 110-250V,,,125 USD,,,,Not selected,,,,
+szsmarthome,G4-Tuya,Intelligent control panel,Smart Control Panel,"System: Android 8.1; Display: 4-inch capacitive touch (480x480); Power: AC 110-250VC; Switch: 4-way ZigBee switch (<200W), 4 scenes, 4 lights, 4-way situational control; I/O: 485 Protocol input; Connectivity: Graffiti ZigBee, Bluetooth; Installation: UK Single 86 Bottom Shell; Media: Supports TF card, USB playback; Color: Black/Grey/White/Red",ZigBee; Bluetooth; RS485,AC 110-250VC,,,120 USD,,,,Not selected,,,,
+szsmarthome,F6-MAX-Tuya,Multi functional intelligent central control screen,Smart Control Panel,"System: Android 8.1, RAM 2G, Rom 8G; Display: 6-inch capacitive touch (1440x720); Power: 90v-240v; Speaker output: 1*2W and 2*(10-25W); Connectivity: Bluetooth, TUYA ZigBee gateway; Installation: British standard 86 bottom box; Weight: 1.1kg; Functions: Scheduled playback, knob adjustment; Color: Black",Bluetooth; ZigBee,90-240V,,,125 USD,50,,,Not selected,,,,
+szsmarthome,F6-1Tuya,Intelligent central control Music host,Smart Control Panel,"System: Android 8.1, RAM 2G, Rom 8G; Display: 6-inch (1440x720) + 1.28-inch round (240x240); Power: 90v-240v; Speaker output: 1*2W; Switch: 2-way zero fire power supply < 200W; Connectivity: Bluetooth; Installation: UK standard 86 bottom shell; Weight: 1.1kg; Functions: Scheduled playback; Color: Black",Bluetooth,90-240V,,,125 USD,200,,,Not selected,,,,
+szsmarthome,F6-2Tuya,Intelligent central control Music host,Smart Control Panel,"System: Android 8.1, RAM 2G, Rom 8G; Display: 6-inch (1440x720) + 1.28-inch round (240x240); Power: 90v-240v; Speaker output: 1*2W and 2*(10-25W); Connectivity: Bluetooth; Installation: UK standard 86 bottom shell; Weight: 1.1kg; Functions: Scheduled playback; Color: Black",Bluetooth,90-240V,,,128 USD,200,,,Not selected,,,,
+szsmarthome,F6-1Tuya Relay,Intelligent control panel,Smart Control Panel,"System: Android 8.1, RAM 2G, Rom 8G; Display: 6-inch (1440x720) + 1.28-inch round (240x240); Power: 90v-240v; Speaker output: 1*2W; Switch: 2-way zero fire power supply < 200W; Connectivity: Bluetooth; Installation: UK standard 86 bottom shell; Size: 208x86x10.5MM; Weight: 1.1kg; Color: Black",Bluetooth,90-240V,,,135 USD,,,,Not selected,,,,
+szsmarthome,F6-2Tuya Music,Intelligent control panel,Smart Control Panel,"System: Android 8.1, RAM 2G, Rom 8G; Display: 6-inch (1440x720) + 1.28-inch round (240x240); Power: 90v-240v; Speaker output: 1*2W and 2*(10-25W); Connectivity: Bluetooth; Installation: UK standard 86 bottom shell; Size: 208x86x10.5MM; Weight: 1.1kg; Color: Black",Bluetooth,90-240V,,,135 USD,,,,Not selected,,,,
+szsmarthome,F7-Tuya,Multi functional intelligent central control screen,Smart Control Panel,"System: Android 8.1, RAM 2G, Rom 8g; Display: 7-inch (1024x600) + 1.28-inch round (240x240); Power: 90v-240v; Speaker output: 2 x 20W; I/O: 1 audio in, 1 audio out, 485 out; Connectivity: Bluetooth, TUYA ZigBee gateway; Installation: UK standard 86 bottom shell; Weight: 1.1kg; Color: Black",Bluetooth; ZigBee; RS485,90-240V,,,135 USD,,,,evaluation,,,,
+szsmarthome,F8-Tuya,Intelligent central control Music host,Smart Control Panel,"System: Android 8.1, RAM 2G, Rom 8G; Display: 8-inch (800x1200) + 1.28-inch round (240x240); Power: AC 90v-240v; Speaker output: 2 x (10-25W); Switch: Switching power < 200W; I/O: 1 audio in, 1 audio out, 485 out; Connectivity: Bluetooth; Installation: British standard 86 bottom box; Color: Black graffiti",Bluetooth; RS485,AC 90-240V,,,211 USD,,,,evaluation,,,,
+szsmarthome,F10-Tuya,Multi functional intelligent central control screen,Smart Control Panel,"System: Android 11, RAM 2G, Rom 8G; Display: 10-inch (800x1200) + 1.28-inch round (240x240); Power: AC 90v-240v; Speaker output: 2 x (10-25W); Switch: Switching power < 200W; I/O: 1 audio in, 1 audio out, 485 out; Connectivity: Bluetooth, TUYA ZigBee gateway; Installation: British standard 86 bottom box; Color: Black graffiti",Bluetooth; ZigBee; RS485,AC 90-240V,,,240 USD,,,,To be ordered,,,,
+szsmarthome,F12-PRO-Tuya,Multi functional intelligent central control screen,Smart Control Panel,"System: Android 11, RAM 2G, Rom 8G; Display: 12.3-inch capacitive multi-point touch (1920x720); Power: AC 90v-250V; Speaker output: 2 x (10-25W); Switch: Switching power < 200W; I/O: 1 audio in, 1 audio out, 485 out; Connectivity: Bluetooth 5.2, TUYA ZigBee gateway; Installation: UK double 86 bottom shell; Color: Black graffiti",Bluetooth; ZigBee; RS485,AC 90-250V,,,278 USD,,,,To be ordered,,,,
+szsmarthome,A7-K,Smart hi-fi karaoke System,background music,"System: Android 8.1, 4-core CPU 1.5H, 2G RAM, 16G ROM; Display: 7-inch IPS (1024x600); Power: AC 110-250V; Output power: 8 x 20W (Yamaha); I/O: HDMI out 1080p, 8-channel horn output, 1 audio in, 1 audio out, analog bass out; Connectivity: WiFi, Bluetooth, 485 bidirectional control; Installation: Special customized bottom box; Features: Family karaoke, supports TF card/otgusb disk; Color: white, black",WiFi; Bluetooth; HDMI; RS485,AC 110-250V,,,178 USD,,,,To be ordered,,,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1JqotKcw3NHppG62UWbaNixvIA0xpn_xH.jpg,
+szsmarthome,T7-3,Background music player,background music,"System: Android 11, 4-core CPU 1.5H, 2G RAM, 16G ROM; Display: 7-inch IPS (1024x600); Power: AC 110-250V; Output power: 8 x (10-30W) (Yamaha); I/O: 8-channel horn output, 1 audio in, 1 audio out, analog bass out; Connectivity: WiFi, Bluetooth, 485 bidirectional control; Installation: Special customized bottom box; Size: 185x125x10.5mm; Weight: 1.2kg",WiFi; Bluetooth; RS485,AC 110-250V,,,160 USD,,,,,,,,
+szsmarthome,N86N-4,"4"" smart background music console",background music,"System: Android 8.1, 4-core processor; Display: 4-inch IPS capacitive touch (480x480); Power: AC 110-25V; Output power: 2 x (10-20W); I/O: Audio input/output, 2-channel speaker output; Connectivity: WiFi, wired network, Bluetooth 4.2, external 485 control; Installation: UK standard 86 box; Media: Supports TF cards, USB drives; Color: white, black",WiFi; Ethernet; Bluetooth; RS485,AC 110-25V,,,75 USD,,,,To be ordered,,,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1piwFqZkoVN8juRKlmoK2-eW1KECl0D_C.jpg,
+szsmarthome,A7-PRO,Background music player,background music,"System: Android 8.1, 4-core CPU 1.5H, 2G RAM, 16G ROM; Display: 7-inch IPS (1024x600); Power: AC 110-250V; Output power: 8 x 20W (Yamaha); I/O: HDMI out 1080p, 8-channel horn output; Connectivity: WiFi, Bluetooth, 485 bidirectional control; Installation: Special customized bottom box; Features: Mobile APP push music, TF card/otgusb disk support; Color: white, black",WiFi; Bluetooth; HDMI; RS485,AC 110-250V,,,160 USD,,,,Not selected,,,,
+szsmarthome,Z8-2,Smart Hi-Fi karaoke System,background music,"System: Android 8.1, 4-core CPU 1.5H, 2G RAM, 16G ROM; Display: 7-inch IPS (1024x600); Power: AC 110-250V; Output power: 8 x 20W (Yamaha); I/O: HDMI out, 8-channel horn output; Connectivity: 5G WiFi, Bluetooth, 485 bidirectional control, Infrared remote control; Installation: Special customized bottom box; Media: TF card, otgusb disk; Color: white, black",WiFi; Bluetooth; HDMI; RS485; IR,AC 110-250V,,,160 USD,,,,Not selected,,,,
+szsmarthome,T10,Background music player,background music,"System: Android 11, 4-core CPU 1.8hz, 2g RAM, 8g ROM; Display: 10-inch IPS (1280x800); Power: AC 110-250V; Output power: 8 x 20W (Yamaha); Features: Independent music playback in two zones, 10-channel speaker output; Connectivity: WiFi, Ethernet, Bluetooth, 485 bidirectional control; Installation: embed junction box; Color: Black",WiFi; Ethernet; Bluetooth; RS485,AC 110-250V,,,210 USD,,,,To be ordered,,,,
+szsmarthome,N238-A,5-inch high fidelity ceiling horn,background music,"Type: Passive Ceiling Speaker; Rated power: 20W; Peak Power: 60W; Impedance: 8 ohms; Sensitivity: 90dB; Materials: Black fiberglass Basin, 25 core black silk treble; Features: circuit 2 frequency division; Dimensions: Opening size 180MM, Diameter 215MM, Height 70MM; Color: white",N/A,N/A,,,23 USD,,,,To be ordered,,ask for the finish color in front ,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1nDWB0d9y7-711uVCyrOuCclsi--HavEB.jpg,
+szsmarthome,N238-B,5-inch high fidelity ceiling horn,background music,"Type: Passive Ceiling Speaker; Rated power: 20W; Peak Power: 60W; Impedance: 8 ohms; Sensitivity: 90dB; Materials: black PP Basin, 20 core black silk treble; Features: circuit 2 frequency division; Dimensions: Opening size 170MM, Diameter 215MM, Height 90MM; Color: white",N/A,N/A,,,20 USD,,,,To be ordered,,ask for the finish color in front ,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1hqmSK89DOkmWQpsgGMlghsm2uGfIpcpy.jpg,
+szsmarthome,N268,6-inch high fidelity ceiling horn,background music,"Type: Passive Ceiling Speaker; Rated power: 30W; Peak Power: 80W; Impedance: 8 ohms; Sensitivity: 90dB; Materials: Black fiberglass Basin, 25 core black silk treble; Features: circuit 2 frequency division; Dimensions: Opening size 200MM, Diameter 230MM, Height 110MM; Color: white",N/A,N/A,,,27 USD,,,,To be ordered,,ask for the finish color in front ,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1iwvbzVVMA10XW8oNViI6V1GahdMOSGYY.jpg,
+szsmarthome,F3-PRO,Multifunctional scene panel,smart switch,"Display: 3-inch touch control (360x480); Buttons: 4-way mechanical; Control: 4 dimming lights, 4 curtains, 8 scenarios; Features: Radar induction; Installation: UK standard 86 bottom shell; Size: 86x86x11MM",Not specified,AC,,,35 USD,,,,To be ordered,,,,
+szsmarthome,M9-PC,4-gang Scene Switch (PC),smart switch,"Control: 4 road scene, 4 street lamp; Power: zero live wire, AC100V-240V; Connectivity: ZigBee 3.0; Features: UK TUYA ZIGBEE, button control, backlight, human body sensing, APP/voice control, timing, countdown; Material: PC flame retardant; Colors: white/black/gold/gray",ZigBee 3.0,AC 100-240V (Zero-live),,,16 USD,,,,To be ordered,,,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1cCtmvGcaNs2_YYd-ofzIRquS-9qsnxLA.jpg,
+szsmarthome,M9-aluminum,4-gang Scene Switch (Aluminum),smart switch,"Control: 4 road scene, 4 street lamp; Power: zero live wire, AC100V-240V; Connectivity: ZigBee 3.0; Features: UK TUYA ZIGBEE, button control, backlight, human body sensing, APP/voice control, timing, countdown; Material: Aluminum; Colors: white/black/gold/gray",ZigBee 3.0,AC 100-240V (Zero-live),,,20 USD,,,,To be ordered,,,,
+szsmarthome,M8-pro PC,Smart Switch (PC),smart switch,"Control: 4 street lamp, binds to 8 scenes, 4 dimming lights, 4 curtains; Power: zero live wire, AC100V-240V; Connectivity: ZigBee 3.0; Features: UK TUYA ZIGBEE, button control, backlight, human body sensing, APP/voice control; Material: PC flame retardant; Colors: Grey, Black, White",ZigBee 3.0,AC 100-240V (Zero-live),,,22 USD,,,,To be ordered,,,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1CrjIFl39iM9CBT0QBhwGLtqvrfOkOMTq.jpg,
+szsmarthome,M8-pro aluminum,Smart Switch (Aluminum),smart switch,"Control: 4 street lamp, binds to 8 scenes, 4 dimming lights, 4 curtains; Power: zero live wire, AC100V-240V; Connectivity: ZigBee 3.0; Features: UK TUYA ZIGBEE, button control, backlight, human body sensing, APP/voice control; Material: Aluminum; Colors: Grey, Black, White",ZigBee 3.0,AC 100-240V (Zero-live),,,25 USD,,,,To be ordered,,,,
+szsmarthome,X3-PC,Smart Dimmer Switch (PC),smart switch,"Control: 2 road scene or 2 street lamp; Power: zero live wire, AC100V-240V; Connectivity: ZigBee 3.0; Features: UK TUYA ZIGBEE, button control, backlight, human body sensing, APP/voice control, dimming; Material: PC; Colors: white/black/gold/gray",ZigBee 3.0,AC 100-240V (Zero-live),,,23 USD,,,,To be ordered,,,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1BS2BngLEva32ngPiKGOx0oERewLq5oF_.jpg,
+szsmarthome,X3-aluminum,Smart Dimmer Switch (Aluminum),smart switch,"Control: 2 road scene or 2 street lamp; Power: zero live wire, AC100V-240V; Connectivity: ZigBee 3.0; Features: UK TUYA ZIGBEE, button control, backlight, human body sensing, APP/voice control, dimming; Material: Aluminum; Colors: white/black/gold/gray",ZigBee 3.0,AC 100-240V (Zero-live),,,25 USD,,,,To be ordered,,,,
+szsmarthome,W3-thermostat,ZIGBEE intelligent thermostat,smart switch,"Control: fresh air, floor heating, air conditioning; Power: zero live wire, AC100V-240V; Connectivity: ZigBee 3.0; Material: Aluminium panel, PC shell; Features: CNC hardware anodized shell, button control, backlight, human body induction, APP/voice control; Size: 86x86x35mm; Colors: White, Black, Gray",ZigBee 3.0,AC 100-240V (Zero-live),,,33 USD,,,,To be ordered,,,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1VmpL8wLZdvSwhva1VKux_EYZ9zZo3ug1.jpg,
+szsmarthome,M9-thermostat,ZIGBEE intelligent thermostat,smart switch,"Control: fresh air, floor heating, air conditioning; Power: zero live wire, AC100V-240V; Connectivity: ZigBee 3.0; Material: Aluminum alloy CNC anodized panel, PC shell; Features: UK TUYA ZIGBEE, button control, backlight, human body sensing, APP/voice control; Colors: Gold, Silver, Blue, Grey, Orange, Black, White, Red",ZigBee 3.0,AC 100-240V (Zero-live),,,33 USD,,,,To be ordered,,,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1HLYHSDnf59KhItsB64P0GpqVjAAopDc8.jpg,
+szsmarthome,M6-1 PC,1-gang Touch Switch (PC),smart switch,"Control: 1-way light; Power: zero live wire, AC100V-240V; Load: incandescent 10-200W, energy-saving 5-100W; Connectivity: ZigBee 3.0; Features: Touch switch, APP/voice control; Material: PC; Colors: white/black/gold/gray",ZigBee 3.0,AC 100-240V (Zero-live),,,10 USD,,,,,,,,
+szsmarthome,M6-1 aluminum,1-gang Touch Switch (Aluminum),smart switch,"Control: 1-way light; Power: zero live wire, AC100V-240V; Load: incandescent 10-200W, energy-saving 5-100W; Connectivity: ZigBee 3.0; Features: Touch switch, APP/voice control; Material: Aluminum; Colors: white/black/gold/gray",ZigBee 3.0,AC 100-240V (Zero-live),,,14.5 USD,,,,,,,,
+szsmarthome,M6-2 PC,2-gang Touch Switch (PC),smart switch,"Control: 2-way light; Power: zero live wire, AC100V-240V; Load: incandescent 10-200W, energy-saving 5-100W per channel; Connectivity: ZigBee 3.0; Material: PC; Colors: white/black/gold/gray",ZigBee 3.0,AC 100-240V (Zero-live),,,10 USD,,,,,,,,
+szsmarthome,M6-2 aluminum,2-gang Touch Switch (Aluminum),smart switch,"Control: 2-way light; Power: zero live wire, AC100V-240V; Load: incandescent 10-200W, energy-saving 5-100W per channel; Connectivity: ZigBee 3.0; Material: Aluminum; Colors: white/black/gold/gray",ZigBee 3.0,AC 100-240V (Zero-live),,,15 USD,,,,,,,,
+szsmarthome,M6-3 PC,3-gang Touch Switch (PC),smart switch,"Control: 3-way light; Power: zero live wire, AC100V-240V; Load: incandescent 10-200W, energy-saving 5-100W per channel; Connectivity: ZigBee 3.0; Material: PC; Colors: white/black/gold/gray",ZigBee 3.0,AC 100-240V (Zero-live),,,12 USD,,,,,,,,
+szsmarthome,M6-3 aluminum,3-gang Touch Switch (Aluminum),smart switch,"Control: 3-way light; Power: zero live wire, AC100V-240V; Load: incandescent 10-200W, energy-saving 5-100W per channel; Connectivity: ZigBee 3.0; Material: Aluminum; Colors: white/black/gold/gray",ZigBee 3.0,AC 100-240V (Zero-live),,,16 USD,,,,,,,,
+szsmarthome,M6-4 PC,4-gang Touch Switch (PC),smart switch,"Control: 4-way light; Power: zero live wire, AC100V-240V; Load: incandescent 10-200W, energy-saving 5-100W per channel; Connectivity: ZigBee 3.0; Material: PC; Colors: white/black/gold/gray",ZigBee 3.0,AC 100-240V (Zero-live),,,13 USD,,,,,,,,
+szsmarthome,M6-4 aluminum,4-gang Touch Switch (Aluminum),smart switch,"Control: 4-way light; Power: zero live wire, AC100V-240V; Load: incandescent 10-200W, energy-saving 5-100W per channel; Connectivity: ZigBee 3.0; Material: Aluminum; Colors: white/black/gold/gray",ZigBee 3.0,AC 100-240V (Zero-live),,,17 USD,,,,,,,,
+szsmarthome,M6-6 PC,6-gang Scene/Light Switch (PC),smart switch,"Control: 4-way lighting + 2-way scene; Power: zero live wire, AC100V-240V; Load: incandescent 10-200W, energy-saving 5-100W per channel; Connectivity: ZigBee 3.0; Material: PC; Colors: white/black/gold/gray",ZigBee 3.0,AC 100-240V (Zero-live),,,13 USD,,,,,,,,
+szsmarthome,M6-6 aluminum,6-gang Scene/Light Switch (Aluminum),smart switch,"Control: 4-way lighting + 2-way scene; Power: zero live wire, AC100V-240V; Load: incandescent 10-200W, energy-saving 5-100W per channel; Connectivity: ZigBee 3.0; Material: Aluminum; Colors: white/black/gold/gray",ZigBee 3.0,AC 100-240V (Zero-live),,,17 USD,,,,,,,,
+szsmarthome,KW03,Building intercom outdoor unit,Video Door Bell,"Screen: 4.3 inch 1080P HD IP Intercom; Functions: Calling, intercom, unlocking, monitoring; Material: Aluminium alloy panel + touch screen; OS: Android, TUYA App; Connectivity: RJ45 ethernet; Install: Wall/flush; Dimension: 210x120x40mm; Door opening: IC/ID card, password, face recognition, mobile phone; Color: silver/goldene",IP/Ethernet (TUYA),PoE (implied),,,135 USD,,,,evaluation,,,,
+szsmarthome,KW04,Building intercom outdoor unit,Video Door Bell,"Screen: 8 inch 1080P HD TCP/IP Intercom; Functions: Calling, intercom, unlocking, monitoring; Material: Aluminium alloy panel + touch screen; OS: Android, TUYA App; Connectivity: RJ45 ethernet; Install: Wall/flush; Dimension: 331x152x10mm; Door opening: IC/ID card, password, face recognition, mobile phone; Color: silver/golden",TCP/IP (TUYA),PoE (implied),,,215 USD,,,,evaluation,,,,
+szsmarthome,KW02,Tuya WIFI visible doorbell,Video Door Bell,"Resolution: 2MP; View angle: 140° Horizontal; Power: DC12V or 48V POE; Connectivity: 2.4G WiFi or wired network; Functions: Full duplex talk, Unlock, Motion detection push notification; Memory: MicroSD up to 256GB; Third-Party: Amazon echo, Google Home, Cloud storage",WiFi; Ethernet (PoE),DC12V or 48V POE,,,43 USD,,,,Not selected,,,,
+szsmarthome,CW-01,WiFi Tuya Curtain Motor,Garage/Window/Curtain Motor,"Type: WiFi Motor; Torque: 1.2N (24W), 2.0N (36W); Power: AC110V-250V; Control: remote, manual pull, APP; Features: Silent DC motor, high-accuracy Clutch, Smart Find start/Stop position; Optional Control: RS485, Dry contact, Hotel Control, Zigbee, PLC",WiFi; (Optional: RS485,Zigbee,,,,,,,Not selected,,,,
+szsmarthome,CW-02,Zigbee Tuya Curtain Motor,Garage/Window/Curtain Motor,"Type: Zigbee Motor; Torque: 1.2N (24W), 2.0N (36W); Load: 1.2N for 30kg, <=5m track; Power: AC110V-250V; Control: remote, manual pull, APP; Features: Silent DC motor, high-accuracy Clutch, Smart Find start/Stop position; Optional Control: RS485, Dry contact, WiFi, Hotel Control, PLC",Zigbee; (Optional: RS485,WiFi,,,20 USD,,20 USD,,Not selected,,,,
+szsmarthome,CW-03-SET,WiFi/Zigbee Tuya Curtain Motor with Telescopic Rail,Garage/Window/Curtain Motor,"Type: Motor + Telescopic Rail Set; Protocol: WiFi or Zigbee; Control: remote, manual pull, APP, AI voice, Hand to start; Rail Lengths: (1.2M-2.0M), (2.0M-3.6M), (3.0M-5.6.M); Power: AC110V-250V",WiFi; Zigbee,AC 110-250V,,,,,,,Not selected,,,,
+szsmarthome,CW-04-SET,WiFi/ZigBee Tuya curtain motor with combination track,Garage/Window/Curtain Motor,"Type: Motor + Combination Track Set; Protocol: WiFi or Zigbee; Control: remote, manual pull, APP, AI voice, Hand to start; Rail Lengths: (2M-3.2M), (3.0M-4.2M), (4.0M-5.2.M); Power: AC110V-250V",WiFi; Zigbee,AC 110-250V,,,,,,,Not selected,,,,
+Wenhui,Zigbee + Bluetooth,Multi-mode wireless gateway plug type,Smart Gateway,"Status indicator: 1 LED (Wi-Fi+Zigbee) Operation button: 1 button (reset) Power supply: AC100-240V Working current: <1A Working temperature: -10℃-55℃ Working humidity: 10%-90% RH (non-condensing) Storage temperature: -20℃-60℃ Storage humidity: 5%-90% RH (non-condensing) Wireless technology: Wi-Fi 802.11 b/g/n (Zigbee 802.15.4), support Bluetooth Zigbee Parameters Wireless frequency: 2.400-2.480GHz Transmit power: nominal 10dBm Number of channels: CH1-CH26 Channel transmission rate: 250Kbps Other parameters Wireless encryption: AES 128bit encryption, WPA-PSK/WPA2-PSK, WPA/WPA2 security mechanism Network management: Remote App configuration Maximum number of connections: Max Node=50","Wifi, Zigbee",AC 100-240V ,,,"$12,00",1000,,,To be ordered,,,,
+Wenhui,WHDZ01-W-B,Tuya wifi ,Smart Socket,"*Current: 16A/20A
+*Material: PC+ABS
+*Item Type:  EU Smart Socket
+*Switch Type: APP control
+* Voltage: AC 100V-240V 110V 220V 60HZ/50HZ
+*WIFI Standard: IEEE 802.11 b/g/n
+*Controller size: 52*52*87mm
+*Controller weight:90g
+*CTN:100PCS/BOX",Wifi,AC 100V-240V 110V 220V 60HZ/50HZ,,,"$3,50",1000,,,To be ordered,,,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1QVOoZj7MVdPCgpSwGan2qpg7Dncywl3L.jpg,
+Wenhui,WHDZ06-Z,Tuya Zigbee,Smart Socket,"*Current: 16A/20A
+*Material: PC+ABS
+*Item Type:  EU Smart Socket
+*Switch Type: APP control
+* Voltage: AC 100V-240V 110V 220V 60HZ/50HZ
+*WIFI Standard: IEEE 802.11 b/g/n
+*Controller size: 53*60*84mm
+*Controller weight:100g
+*CTN:100PCS/BOX",Zigbee,AC 100V-240V 110V 220V 60HZ/50HZ,,,"$4,00",1000,,,To be ordered,,,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1JhuvTLB0_SRE5WsYGrv7QKD8M4q9RDHs.jpg,
+Wenhui,WHDZ12-4C,Tuya wifi Smart power strip,Smart Socket,"Operating voltage: AC 110~240V 50/60Hz
+Maximum load current: 10A
+Agreement
+1. Type-C supports PD2.0/PD3.0/PPS/QC2.0/QC3.0/AFC/FCP/Apple2.4A/Samsung2A/BC 1.2.
+2. Type-A supports QC2.0/QC3.0/AFC/FCP/Apple2.4A/Samsung2A/BC1.2.
+output parameters
+Single port: USB1/18W 5V3A, 9V2A, 12V1.5, USB2, USB3/5W 5V1A; Type-C: 20W 5V3A, 9V3A, 12V3A, 15V3A.
+Dual output
+USB1 port 18W, USB2, USB2 port 5W, C port: 20W.
+C port: 5V3A, 9V3A, 12V3A, A port: 12W/5V2.4A.
+C port: 15V3A, 20V2.25A, A port 18W: 5V3A, 9V2A, 12V1.5A
+WIFI standard: 2.4GHz
+Indicator light: blue light (indicating button and pairing)
+Case material: PC+ABS fireproof and flame-resistant. Operating temperature: -40 ~ 45. Product ports: 4 AC x 3 USB (5V 2.1A) x 1 Type-C 20W.
+Product size: 198*100*28MM. Line length: 1.5m
+Product weight: 0.58kg (with packaging)",WiFi,AC 100V-240V 110V 220V 60HZ/50HZ,,,"$14,00",1000,,,To be ordered,,,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/11JDTwZK4wR6SPFt_idgKArqkmc3aYYph.jpg,
+Wenhui,WHD02-Z,TUYA Zigbee,Smart DIY Module,"*Current: 10A/16A
+*Item Type: WIFI-Switches
+*Switch Type: APP control
+*Features: MINI
+*Voltage: AC 100V-240V 110V 220V 60HZ/50HZ
+*Controller working frequency: 2.4GHz WIFI
+*Controller size: 42*42*20mm
+*Controller weight:40g
+*CTN:400PCS/BOX",Zigbee,AC 100V-240V 110V 220V 60HZ/50HZ,,,"$3,50",1000,,,To be ordered,,,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/11JDTwZK4wR6SPFt_idgKArqkmc3aYYph.jpg,
+Wenhui,WHD08-Z,TUYA Zigbee,Smart DIY Module,"*Current: 10A/16A
+*Item Type: WIFI-Switches
+*Switch Type: APP control
+*Features: MINI
+*Voltage: AC 100V-240V 110V 220V 60HZ/50HZ
+*Controller working frequency: 2.4GHz WIFI
+*Controller size: 42*42*20mm
+*Controller weight:40g
+*CTN:400PCS/BOX",Zigbee,AC 100V-240V 110V 220V 60HZ/50HZ,,,"$3,50",1000,,,To be ordered,,,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/18yND3rAnxKEKpHkNmrxYvw3tWiCvhPTE.jpg,
+Wenhui,WHD02-Z,Tuya Zigbee  with Power monitor,Smart DIY Module,"*Current: 10A/16A
+*Item Type: Smart Switches
+*Switch Type: APP control
+*Features: MINI
+*Voltage: AC 100V-240V 110V 220V 60HZ/50HZ
+*Controller size: 42*42*20mm
+*Controller weight:40g
+*CTN:400PCS/BOX",Zigbee,AC 100V-240V 110V 220V 60HZ/50HZ,,,#VALUE!,1000,,,To be ordered,,,,
+Wenhui,WHD09-Z-1CH,"tuya Zigbee,1ch",Smart DIY Module,"*Current: 10A/16A
+*Item Type: Smart Switches
+*Switch Type: APP control
+*Features: MINI
+*Voltage: AC 100V-240V 110V 220V 60HZ/50HZ
+*Controller size: 45*45*24mm
+*Controller weight:50g",Zigbee,AC 100V-240V 110V 220V 60HZ/50HZ,,,"$3,80",1000,,,To be ordered,,,https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/17fezDjVNJ7blHVyREftG6khsohvkdGSQ.jpg,
+Wenhui,WHD09-Z-2CH,"tuya Zigbee,2ch",Smart DIY Module,"*Current: 10A/16A
+*Item Type: Smart Switches
+*Switch Type: APP control
+*Features: MINI
+*Voltage: AC 100V-240V 110V 220V 60HZ/50HZ
+*Controller size: 45*45*24mm
+*Controller weight:50g",Zigbee,AC 100V-240V 110V 220V 60HZ/50HZ,,,"$4,50",1000,,,To be ordered,,,,
+Wenhui,WHD09-Z-3CH,"tuya Zigbee,3ch",Smart DIY Module,"*Current: 10A/16A
+*Item Type: Smart Switches
+*Switch Type: APP control
+*Features: MINI
+*Voltage: AC 100V-240V 110V 220V 60HZ/50HZ
+*Controller size: 45*45*24mm
+*Controller weight:50g",Zigbee,AC 100V-240V 110V 220V 60HZ/50HZ,,,"$7,00",1000,,,To be ordered,,,,
+Wenhui,WHD09-Z-4CH,"tuya Zigbee,4ch",Smart DIY Module,"*Current: 10A/16A
+*Item Type: Smart Switches
+*Switch Type: APP control
+*Features: MINI
+*Voltage: AC 100V-240V 110V 220V 60HZ/50HZ
+*Controller size: 45*45*24mm
+*Controller weight:50g",Zigbee,AC 100V-240V 110V 220V 60HZ/50HZ,,,"$8,50",1000,,,To be ordered,,,,
+Wenhui,WHD11-D,Tuya wifi Dimmable Switch,Smart DIY Module,"*Current: 10A/16A
+*Item Type: Smart Dimmable Switches
+*Switch Type: APP control
+*Features: MINI
+*Voltage: AC 100V-240V 110V 220V 60HZ/50HZ
+*Controller size: 45*45*24mm
+*Controller weight:50g
+*CTN:320PCS/BOX",Wifi,AC 100V-240V 110V 220V 60HZ/50HZ,,,"$3,50",1000,,,To be ordered,,,WHD11-D.jpg.png,
+Wenhui,WHD12-W,Tuya wifi Shutter Switch,Smart DIY Module,"*Current: 10A/16A
+*Item Type: Smart Curtain Switches
+*Switch Type: APP control
+*Features: MINI
+*Voltage: AC 100V-240V 110V 220V 60HZ/50HZ
+*Controller size: 45*45*24mm
+*Controller weight:50g
+*CTN:320PCS/BOX",Wifi,AC 100V-240V 110V 220V 60HZ/50HZ,,,"$4,50",1000,,,To be ordered,,,WHD12-W.jpg.png,
+Wenhui,WHD06-WP,Tuya wifi  With Power monitor,Smart DIY Module,"*Current: 10A
+*Item Type: Smart Switches
+*Switch Type: APP control
+*Features: MINI
+*Voltage: AC 100V-240V 110V 220V 60HZ/50HZ
+*Controller size: 42*42*20mm
+*Controller weight:40g
+*CTN:400PCS/BOX",Wifi,AC 100V-240V 110V 220V 60HZ/50HZ,,,"$2,80",1000,,,evaluation,,,,
+Wenhui,WHD15-W,"Tuya wifi,30A",Smart DIY Module,"*Item Type: Smart Curtain Switches
+*Switch Type: APP control
+*Features: MINI
+*Voltage: AC 100V-240V 110V 220V 60HZ/50HZ
+*Controller size: 57*35*104mm
+*Controller weight:150g
+*CTN:75PCS/BOX",Wifi,AC 100V-240V 110V 220V 60HZ/50HZ,,,"$6,50",1000,,,evaluation,,,,
+Wenhui,WF010,Smart  WIFI Doorbell,Video Door Bell,"Type:Tuya Video Doorbells
+HD Image:HD Image
+Two-way Audio:Two-way Audio
+WIFI Compatible:WIFI Compatible
+Capture Image When Doorbell Pressed:Capture
+Image When Doorbell Pressed
+Long Battery life:Long Battery life
+Cloud storage service:Cloud storage service
+Notification to Smartphones:Notification to
+Smartphones
+Night Vision:Night Vision",WiFi,Battery ?,,,"$7,00",1000,,,evaluation,,,,
+Wenhui,WHZ05-WHD03-Z-1,"Tuya Zigbee
+1gang 1receiver",smart switch,"
+*Material: PC+ABS
+*Item Type:Self-powered smart switch
+*Warranty: 1 YEAR
+*Is Smart Device: YES
+*Switch Type: APP control+RF433 switch control
+*Controller Operating Voltage: AC 100V-240V 60HZ
+*Controller size: 48*48*22mm
+*Switch panel size: 86*86*19mm
+*Current: 16A
+*Support System: Both Android IOS
+*Support App: Tuya Smart or Smart Life
+*Support: Google Home Amazon Alexa ECHO
+*Feature 1: timing
+*Feature 2: Countdown
+*Feature 3: Voice Control
+*Feature 4: 3 Kinds Of Restart State
+*Feature 5: The switch panel does not need wiring or batteries",Zigbee,AC 100V-240V 60HZ,,,"$7,20",1000,,,,,,,
+Wenhui,WHZ05-WHD03-Z-2,"Tuya Zigbee
+2gang 2receiver",smart switch,"
+*Material: PC+ABS
+*Item Type:Self-powered smart switch
+*Warranty: 1 YEAR
+*Is Smart Device: YES
+*Switch Type: APP control+RF433 switch control
+*Controller Operating Voltage: AC 100V-240V 60HZ
+*Controller size: 48*48*22mm
+*Switch panel size: 86*86*19mm
+*Current: 16A
+*Support System: Both Android IOS
+*Support App: Tuya Smart or Smart Life
+*Support: Google Home Amazon Alexa ECHO
+*Feature 1: timing
+*Feature 2: Countdown
+*Feature 3: Voice Control
+*Feature 4: 3 Kinds Of Restart State
+*Feature 5: The switch panel does not need wiring or batteries",Zigbee,AC 100V-240V 60HZ,,,"$12,30",1000,,,,,,,
+Wenhui,WHZ05-WHD03-Z-3,"Tuya Zigbee
+3gang 3receiver",smart switch,"
+*Material: PC+ABS
+*Item Type:Self-powered smart switch
+*Warranty: 1 YEAR
+*Is Smart Device: YES
+*Switch Type: APP control+RF433 switch control
+*Controller Operating Voltage: AC 100V-240V 60HZ
+*Controller size: 48*48*22mm
+*Switch panel size: 86*86*19mm
+*Current: 16A
+*Support System: Both Android IOS
+*Support App: Tuya Smart or Smart Life
+*Support: Google Home Amazon Alexa ECHO
+*Feature 1: timing
+*Feature 2: Countdown
+*Feature 3: Voice Control
+*Feature 4: 3 Kinds Of Restart State
+*Feature 5: The switch panel does not need wiring or batteries",Zigbee,AC 100V-240V 60HZ,,,"$17,60",1000,,,,,,,
+Wenhui,tuya WFGU10,,Smart Light,"WIFI+Bluetooth dual mode Power: 5W 450LM Size: 45*57mm Voltage AC 85-265V Working temperature: -25℃ to 45℃ Connector: GU10 Ra:80 PF:0.5290 Supports major smart speakers such as Amazon, Google, Xiaodu, etc.",Wifi + Bluetooth,AC 85-265V,,,"US$3,50
+",1000,,,Not selected,,,,
+Wenhui,tuya ZGA19,,Smart Light,"Zigbee 3.0 Power: 9W 850LM Size: 60*118mm Voltage 85-265V Working temperature: -25℃ to 45℃ Connector: E27, E26, B22 Ra:80 PF:0.5290 With Zigbee gateway, supports Amazon, Google, Xiaodu and other major smart speakers",Zigbee,AC 85-265V,,,"US$4,50
+",1000,,,To be ordered,,,TUYA ZGA19.png,
+Wenhui,tuya ZGC37,,Smart Light,"Zigbee 3.0 Power: 5W 450LM Size: 37*105mm Voltage 85-265V Working temperature: -25℃ to 45℃ Connector: E14, E12 Supports major smart speakers such as Amazon, Google, Xiaodu, etc.",Zigbee,AC 85-265V,,,"US$4,80
+",1000,,,To be ordered,,,TUYA ZGC37.png,
+Wenhui,tuya ZGGU10,,Smart Light,"Zigbee 3.0 Power: 5W 450LM Size: 45*57mm Voltage 85-265V Working temperature: -25℃ to 45℃ Connector: GU10 Supports major smart speakers such as Amazon, Google, Xiaodu, etc.",Zigbee,AC 85-265V,,,"US$4,80
+",1000,,,To be ordered,,,TUYA ZGGU10.png,
+Wenhui,HomekitWFGU10,,Smart Light,"Homekit Mfi certification Scan the code to add the device Homekit+Cozylife APP Power: 5W 450LM Size: 45*57mm Voltage 85-265V Working temperature: -25℃ to 45℃ Connector: GU10 Ra:80 PF:0.5290 Support Amazon, Google, Xiaodu and other major smart speakers",Zigbee?,AC 85-265V,,,"US$5,00
+",1000,,,To be ordered,,,HomekitWFGU10.png,
+Wenhui,,Zigbee door sensor,Smart Sensor,Product name: Zigbee door and window sensor Wireless protocol: Zigbee 3.0 Working voltage: 3V Sensing distance: ≥15mm Standby current: ≤4uA Battery type: CR2032 Standby time: ≥12 months Working temperature: -10～55℃ Working humidity: 0%～99%RH Wireless distance: ≥100 meters (open distance) Installation: 3M adhesive Product net weight: 25g Product size: 50×25×11mm 30×15×10mm,Zigbee,CR2032 Battery,,,"US$3,50
+",1000,,,,,,,
+Wenhui,,Zigbee light & door and window sensor (two in one) (Zigbee door sensor +LUX),Smart Sensor,Product name: Zigbee light & door and window sensor Wireless protocol: Zigbee 3.0 Sensing distance: ≥15mm Working voltage: 3V Standby current: ≤23uA Battery type: CR~2032 Light range: 0 10000LUX Accuracy: 50LUX Standby time: ≥12 months Working temperature: -10～55℃ Working humidity: 0%～99%RH Wireless distance: ≥100 meters (open distance) Installation: 3M adhesive Product weight: 25g Product size: 50×25×11mm 30×15×10mm,Zigbee,CR2032 Battery,,,"US$4,00",1000,,,To be ordered,,,,
+Wenhui,,"Zigbee human presence sensor (2 in 1, with bracket) (24 GHZ or 5.8 GHZ millimeter wave module optional)",Smart Sensor,Product name: Human presence detector Wireless protocol: Zigbee3.0/tuya WiFi (optional) Millimeter wave module: 24GHZ/5.8GHZ Optional temperature range: -10～55℃ Humidity range: 0%～99%RH Working voltage: DC5~V/1A (adapter power supply) Light detection value: 0 ~3000 LUX Static detection distance 0~6 meters Motion detection distance 0 10 meters Sensing angle: >90 degrees Wireless distance: ≥100 meters (open distance) Product net weight: 27g Product size: 72×32×38mm,Zigbee3.0  Wifi,,,,"US$6,50",1000,,,Not selected,,,,
+Wenhui,,Zigbee human presence sensor (2 in 1) (24 GHz or 5.8 GHz optional),Smart Sensor,Product name: Human presence detector Wireless protocol: Zigbee3.0 /tuya WiFi (optional) Millimeter wave module: 5.8GHZ Temperature range: -10～55℃ Humidity range: 0%～99%RH Working voltage: DC5~V/1A (adapter power supply) Light detection value: 0 ~3000 LUX Static detection distance 0~6 meters Motion detection distance 0 10 meters Sensing angle: >90 degrees Wireless distance: ≥100 meters (open distance) Product net weight: 27g Product size: 60×60×12mm,Zigbee3.0,,,,"US$6,50",1000,,,,,,,
+Wenhui,,"Zigbee millimeter wave human presence sensor (2 in 1, ceiling mounted) 24g (Zigbee human presence sensor AC 100-250V)",Smart Sensor,Product name: Human presence detector Wireless protocol: Zigbee3.0 Millimeter wave module: 24GHZ/5.8GHZ Optional temperature range: -10～55℃ Humidity range: 0%～~99%RH Working voltage: AC8~5 250V Light detection value: 0 ~3000 LUX Static detection distance 0~6 meters Motion detection distance 0 10 meters Sensing angle: >90 degrees Wireless distance: ≥100 meters (open distance) Product net weight: 27g Product size: 60×60×38mm,Zigbee3.0,,,,"US$9,50",1000,,,To be ordered,,,,
+Wenhui,,"Zigbee human presence sensor 24GHz +PIR+LUX,On Battery",Smart Sensor,Product name: Zigbee light + human motion sensor Wireless protocol: Zigbee 3.0 mmWave module: 24GHZ Sensing range: ≥135 ° Sensing distance: ≥10m Standby current: ≤30uA Working voltage: 3V Battery type: AA~A x2 Light range: 0 4000LUX Accuracy: 50LUX Standby time: ≥6 months Working temperature: -10～55℃ Working humidity: 0%～99%RH Wireless distance: ≥100 meters (open distance) Installation: 3M adhesive Product net weight: 22g Product size 72×32×18mm,Zigbee,,,,"US$11,50",1000,,,To be ordered,,,,
+Wenhui,,Zigbee Motion detection Sensor PIR+LUX,Smart Sensor,Product name: Zigbee light + human motion sensor Wireless protocol: Zigbee 3.0 Sensing range: ≥135 ° Sensing distance: ≥10m Standby current: ≤12uA Working voltage: 3V Battery type: AA~A x2 Light range: 0 4000LUX Accuracy: 50LUX Standby time: ≥24 months Working temperature: -10～55℃ Working humidity: 0%～99%RH Wireless distance: ≥100 meters (open distance) Installation: 3M adhesive Product net weight: 22g Product size 72×32×18mm,Zigbee,,,,"US$5,00
+",1000,,,,,,,
+Wenhui,,Zigbee vibration sensor,Smart Sensor,Product name: Zigbee motion and static sensor Wireless protocol: Zigbee 3.0 Standby current: ≤5uA Working voltage: 3V Material: PC+ABS Battery type: CR2450 Standby time: ≥12 months Working temperature: -10～55℃ Working humidity: 0%～99%RH Wireless distance: ≥100 meters (open distance) Installation: 3M adhesive tape/place at will Product net weight: 18g Product size: Φ40×13mm,Zigbee,,,,"US$5,00
+",1000,,,,,,,
+Wenhui,,Zigbee Gas Sensor,Smart Sensor,"Product name: Zigbee gas alarm Wireless protocol: Zigbee 3.0 Detected gas: liquefied gas, natural gas Alarm concentration: 8%LEL methane (natural gas) Concentration error: ±3%LEL Alarm mode: Sound and light alarm, mobile phone push Built-in siren: ≥80dB Material: PC+ABS Power input: DC 5V/1A Working temperature: -10～55℃ Working humidity: 0%～99%RH Wireless distance: ≥100 meters (open distance) Installation: 3M adhesive/screw fixing Product net weight: 68g Product size: Φ85×27mm",Zigbee,,,,"US$9,80",1000,,,,,,,
+Wenhui,,Zigbee smoke alarm,Smart Sensor,"APP name: Smart Life/Tuya Smart Zigbee standard: Zigbee 3.0 Alarm mode: sound alarm, mobile phone notification Built-in siren: ≥80dB Material: PC+ABS Power input: DC 3V/1A Working temperature: -10~55℃ Working humidity: 0%~99%RH Wireless distance: ≥50 meters (open distance) Installation: 3M adhesive/screw fixation",Zigbee3.0,,,,"US$6,50",1000,,,,,,,
+Wenhui,,SmartWater Valve Controller,Smart Electrical Products,"Power supply voltage: 12V/1A
+Communication technology: WIFI, Zigbee
+Communication frequency: 2.4G
+Product specifications:
+Product packaging size: 130*120*90mm
+Product weight: 530G
+Outer box packaging:
+20 sets per box.
+Gross weight: 11.5 KG
+Outer box size: 47 x27.5x25.5 cm",Zigbee,,,,"US$8,80 ",1000,,,To be ordered,,,,
+Wenhui,WHCS9,Tuya Bluetooth Password Lock,Door Lock,App remote password/Bluetooth/swipe card/mechanical key Standard lock body: single/limited time/cycle/permanent/custom password unlocking,,,,,"$18,06 ",1000,,,To be ordered,,,WHCS9.png,
+Wenhui,BLUETOOH,High-end modified version of smart lock cylinder,Door Lock,"Password, card, key, graffiti remote unlocking. Can be installed on doors below 60MM thick",,,,,"$47,92 ",1000,,,To be ordered,,,High-end modified version of smart lock cylinder.png,
+Wenhui,Equipped with Tuya WIFI and lock body,S-09 Broken Bridge Aluminum,Door Lock,App remote password/Bluetooth/WiFi/card swipe/mechanical key Standard lock body: single/limited time/cycle/permanent/custom password unlocking,,,,,"$49,31 ",1000,,,evaluation,,,,
+Wenhui,Equipped with Tuya WIFI ,S-05 One-grip opening (with screen),Door Lock,App remote password/Bluetooth/WiFi/card swipe/mechanical key Standard lock body: single/limited time/cycle/permanent/custom password unlocking,,,,,"$25,69 ",1000,,,evaluation,,,,
+Wenhui, Tuya Active Intercom,M03 Face Lock,Door Lock,App remote password/Bluetooth/WiFi/card swipe/mechanical key Standard lock body: single/limited time/cycle/permanent/custom password unlocking,,,,,"$62,50 ",1000,,,evaluation,,,,
+Wenhui,Tuya Active Intercom,M16 Carved Lock,Door Lock,App remote password/Bluetooth/WiFi/card swipe/mechanical key Standard lock body: single/limited time/cycle/permanent/custom password unlocking,,,,,"$66,67 ",1000,,,evaluation,,,,
+Wenhui, Tuya Active Intercom,M12 Face Lock,Door Lock,App remote password/Bluetooth/WiFi/card swipe/mechanical key Standard lock body: single/limited time/cycle/permanent/custom password unlocking,,,,,"$48,61 ",1000,,,evaluation,,,,
+Wenhui,,Curtain robot,Garage/Window/Curtain Motor,"Control method: Tuya app/remote control 
+Product size: 167*43*37. 5 MM
+Motor voltage: 10V Power : 4W
+Voltage/ current : 5V/ 2A
+Port : Type C
+Standby power consumption: 25mA
+Communi cation method: RF
+Power supply method: 5V/ 2A
+Speed: 3. 6CM/ S
+track: blinds and roll er 
+shutters Material : ABS+PC
+Size: 210*168*72mm, 0. 62kg/ box 20 pi eces/ canton,
+size: 43. 2*41*40. 5cm
+Carton gross weight : 13. 4kg",Zigbee,5V/2A,,,"$23,0",1000,,,To be ordered,,,Curtain robot.png,
+Wenhui,,Roman pole single open LY-1668-1,Garage/Window/Curtain Motor,"Control mode: Tuya App/Remote 
+Control size: 112.6*80.4*53mm * 2PCs
+Voltage: 10V 
+power: 4W * 1PCs
+Charging Current: 5V/1A 
+Charging Port: Type C 
+Power Consumption: 180UA
+Communication: Bluetooth/wifi 
+battery: Built-in 4000mA lithium battery 
+speed: 10 seconds/meter
+Operation Time:>6 months 
+Control distance: 20 meters
+Application Track: Non Roman Rod Track with Hook 
+Material: ABS + PC
+Packing: 1 piece/box, 
+size: 210*168*72mm,0.68 kg/box
+20 pieces/carton, 
+size: 43.2*41*40.5cm 
+carton Gross weight: 14.6kg",Zigbee+RF,5V/1A 4000mA Lithium battery,,,"$26,5",1000,,,To be ordered,,,,
+Wenhui,,"Single opening T/U
+LY-1668-3",Garage/Window/Curtain Motor,"Control mode: Tuya App/Remote 
+Control size: 112.6*80.4*53mm * 2PCs
+Voltage: 10V 
+power: 4W * 1PCs
+Charging Current: 5V/1A 
+Charging Port: Type C 
+Power Consumption: 180UA
+Communication: Bluetooth/wifi 
+battery: Built-in 4000mA lithium battery 
+speed: 10 seconds/meter
+Operation Time:>6 months 
+Control distance: 20 meters
+Application Track: T/U Rod Track with Hook Material: ABS + PC
+Packing: 1 piece/box, 
+size: 210*168*72mm,0.68 kg/box
+20 pieces/carton, 
+size: 43.2*41*40.5cm 
+carton Gross weight: 14.6kg",Zigbee,5V/1A 4000mA Lithium battery,,,"$26,0",1000,,,To be ordered,,,,
+Wenhui,,Curtain motor ZigBee 4m set,Garage/Window/Curtain Motor,"Control method: Tuya App/remote control Product size: 167*43*37.5 MM Motor voltage: 10V
+Power: 4W
+Charging current: 5V/1A Charging port: Type C Standby power consumption: 180UA
+Communication method: Zigbee Battery: built-in lithium battery Speed: 4CM/S 4 4",Zigbee,5V/1A 4000mA Lithium battery,,,"$40,3",1000,,,To be ordered,,,curtain-motor-zigbee-4mset.png,

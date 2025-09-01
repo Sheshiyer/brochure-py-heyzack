@@ -1,0 +1,2208 @@
+{
+  "analysis_timestamp": "2025-08-27T15:30:17.768083",
+  "executive_summary": {
+    "total_products": 272,
+    "valid_drive_links": 46,
+    "missing_drive_links": 216,
+    "primary_recommendation": "strategy_2_placeholder",
+    "rationale": "With 79.4% missing links, placeholder strategy ensures catalog completeness."
+  },
+  "detailed_analysis": {
+    "total_products": 272,
+    "drive_link_categories": {
+      "valid_links": 46,
+      "invalid_links": 10,
+      "empty_links": 0,
+      "missing_links": 216
+    },
+    "link_patterns": {
+      "google_drive_file": 46
+    },
+    "products_by_link_status": {
+      "with_valid_links": [
+        {
+          "id": "IPB195",
+          "name": "AC Hard-wire Video Doorbel",
+          "category": "Video Door Bell",
+          "supplier": "OMNIA",
+          "drive_link": "https://drive.google.com/file/d/1JqKpg1tRRNOX0iPE-hzK4prAtPvEAVZM/view?usp=sharing"
+        },
+        {
+          "id": "IPC210",
+          "name": "Battery Solar Camera",
+          "category": "Camera",
+          "supplier": "OMNIA",
+          "drive_link": "https://drive.google.com/file/d/1sh2o2bjmKu8tGprmZjsWvcNffRqMrYyA/view?usp=drive_link"
+        },
+        {
+          "id": "SC106-WL3",
+          "name": "Cube camera",
+          "category": "Camera",
+          "supplier": "TUYA",
+          "drive_link": "https://drive.google.com/file/d/1LRJ4gfEo1xAFEth_8xKOwkXFB5gvisQH/view?usp=drive_link"
+        },
+        {
+          "id": "SF254-WC2",
+          "name": "Smart Bird Feeder",
+          "category": "Pets accessories",
+          "supplier": "TUYA",
+          "drive_link": "https://drive.google.com/file/d/1Rx4vnJJiR5E2cHQPvzHHktKWkWAWy3Ik/view?usp=drive_link"
+        },
+        {
+          "id": "SC162-WCD3",
+          "name": "2K Video Doorbell",
+          "category": "Video Door Bell",
+          "supplier": "TUYA",
+          "drive_link": "https://drive.google.com/file/d/1PAXH12NDEWWVfm0Hp7-gueAwP_OmHPTR/view?usp=drive_link"
+        },
+        {
+          "id": "LL05-B",
+          "name": "Lock BoX",
+          "category": "Door Lock",
+          "supplier": "TUYA",
+          "drive_link": "https://drive.google.com/file/d/1Y-VLmCBTIEy6D6Aj08hrfWOKvaDvTq1_/view?usp=drive_link"
+        },
+        {
+          "id": "IPC176",
+          "name": "Battery Solar Spotlight Camera",
+          "category": "Camera",
+          "supplier": "OMNIA",
+          "drive_link": "https://drive.google.com/file/d/1qAg2bJNN61L5r3yzmDSTUKJJlKpXQB6M/view?usp=drive_link"
+        },
+        {
+          "id": "IPC180",
+          "name": "Baby Monitor",
+          "category": "Baby Monitor",
+          "supplier": "OMNIA",
+          "drive_link": "https://drive.google.com/file/d/1sIkhV5AdP1VwFZ6lJh0VECYNWRGSc3JY/view?usp=drive_link"
+        },
+        {
+          "id": "IPC286",
+          "name": "Indoor Rotatable Camera",
+          "category": "Camera",
+          "supplier": "OMNIA",
+          "drive_link": "https://drive.google.com/file/d/17_D5DnKHuBwvNgtaabMOD-rHVl3hY-bF/view?usp=drive_link"
+        },
+        {
+          "id": "IPC267",
+          "name": "Indoor Rotatable Camera",
+          "category": "Camera",
+          "supplier": "OMNIA",
+          "drive_link": "https://drive.google.com/file/d/1h1zOdsK1TR6czVueQ7VjtF92GHK3GgS8/view?usp=drive_link"
+        },
+        {
+          "id": "IPC207",
+          "name": "Outdoor Camera",
+          "category": "Camera",
+          "supplier": "OMNIA",
+          "drive_link": "https://drive.google.com/file/d/16J1uNJM8AhXOjexfWUeTgUg7rzgWub5J/view?usp=drive_link"
+        },
+        {
+          "id": "IPC198",
+          "name": "Outdoor Camera",
+          "category": "Camera",
+          "supplier": "OMNIA",
+          "drive_link": "https://drive.google.com/file/d/1ZSDBQ2_S3CIlNKqa_X6hvW-4M7OgGhhu/view?usp=drive_link"
+        },
+        {
+          "id": "IPC173",
+          "name": "Outdoor Wi-Fi DC Camera",
+          "category": "Camera",
+          "supplier": "OMNIA",
+          "drive_link": "https://drive.google.com/file/d/1wMdPlORDuFTeyOyAZnpwCCAES2AXqiq2/view?usp=drive_link"
+        },
+        {
+          "id": "IPC216-C",
+          "name": "Outdoor Wi-Fi Battery Camera",
+          "category": "Camera",
+          "supplier": "OMNIA",
+          "drive_link": "https://drive.google.com/file/d/1SttSJ87foa1-YM6ZyrWMxL3dVooIioRx/view?usp=drive_link"
+        },
+        {
+          "id": "IPC750",
+          "name": "Outdoor 4G Battery Camera",
+          "category": "Camera",
+          "supplier": "OMNIA",
+          "drive_link": "https://drive.google.com/file/d/1kzBuQpklMkPom3W1XPMvzbwLv3cjWpfh/view?usp=drive_link"
+        },
+        {
+          "id": "T10E",
+          "name": "Control Panel MAX",
+          "category": "Smart Control Panel",
+          "supplier": "AVATTO",
+          "drive_link": "https://drive.google.com/file/d/1O72oPYWs89RBgUkhVH6b51002M-3dnzv/view?usp=drive_link"
+        },
+        {
+          "id": "ZGD16",
+          "name": "Smart Gas sensor",
+          "category": "Smart Sensor",
+          "supplier": "AVATTO",
+          "drive_link": "https://drive.google.com/file/d/1dNtYuXjtvb3MVgfOwU1xyfl9p8b4SSf2/view?usp=drive_link"
+        },
+        {
+          "id": "UX33",
+          "name": "4G Gateway",
+          "category": "Smart Gateway",
+          "supplier": "TUYA",
+          "drive_link": "https://drive.google.com/file/d/1gu6BsVX6cpUKdRZXKfWOy9faxf2NUAfr/view?usp=drive_link"
+        },
+        {
+          "id": "GW60-Matter",
+          "name": "Wired Matter Gateway",
+          "category": "Smart Gateway",
+          "supplier": "TUYA",
+          "drive_link": "https://drive.google.com/file/d/1gerPthxLLqlShbvh1dgSwVJR95Xc8p62/view?usp=drive_link"
+        },
+        {
+          "id": "TRV06",
+          "name": "Smart Radiator Valve",
+          "category": "Smart Thermostat",
+          "supplier": "AVATTO",
+          "drive_link": "https://drive.google.com/file/d/1k7LEa46FOoCwpd8o77o6YVbvQ24bQhjz/view?usp=drive_link"
+        },
+        {
+          "id": "UFO-R1",
+          "name": "Universal Remote Control",
+          "category": "Smart Remote Control",
+          "supplier": "TUYA",
+          "drive_link": "https://drive.google.com/file/d/1k7LEa46FOoCwpd8o77o6YVbvQ24bQhjz/view?usp=drive_link"
+        },
+        {
+          "id": "WHS20S",
+          "name": "\u0001 Controller",
+          "category": "Smart Remote Control",
+          "supplier": "AVATTO",
+          "drive_link": "https://drive.google.com/file/d/1Ap4AmOBm_1sYRfRWi5CoX9xy35Hmpbbh/view?usp=drive_link"
+        },
+        {
+          "id": "TSW-T111",
+          "name": "Stick Logger",
+          "category": "Smart Electrical Products",
+          "supplier": "TUYA",
+          "drive_link": "https://drive.google.com/file/d/16iC666qNUQ_ncLNn9fLJab603Y6glN_E/view?usp=drive_link"
+        },
+        {
+          "id": "S16Pro",
+          "name": "Air-Conditioner Controller",
+          "category": "Smart Electrical Products",
+          "supplier": "TUYA",
+          "drive_link": "https://drive.google.com/file/d/1OMpTR2gp7dlrytZPKnGHXEqRBktzdES5/view?usp=drive_link"
+        },
+        {
+          "id": "VEN5KHB-D1",
+          "name": "Residential Single-Phase Hybrid inverter",
+          "category": "Smart Electrical Products",
+          "supplier": "TUYA",
+          "drive_link": "https://drive.google.com/file/d/1Z8cFI1iZxWrkOlH_TlWb7lFFiKznxC2V/view?usp=drive_link"
+        },
+        {
+          "id": "URA-MESS1",
+          "name": "Balcony Energy Storage",
+          "category": "Smart Electrical Products",
+          "supplier": "TUYA",
+          "drive_link": "https://drive.google.com/file/d/1b2CpR6UWlpORpNjYTMgjZ_bx3nwxLIMv/view?usp=drive_link"
+        },
+        {
+          "id": "F1 7- C+W 8",
+          "name": "Pet\u0001Feeder\u0001+ \u0001Pet\u0001Water\u0001Fountain",
+          "category": "Pets accessories",
+          "supplier": "TUYA",
+          "drive_link": "https://drive.google.com/file/d/1v_MkMoUV21wC8wGPSKs5E-JZUr8WrM3L/view?usp=drive_link"
+        },
+        {
+          "id": "OHCTF001",
+          "name": "Smart Water Valve",
+          "category": "Smart Electrical Products",
+          "supplier": "Wenhui",
+          "drive_link": "https://drive.google.com/file/d/1G4VRQdfxTChyCa6aggo4HUiddIIRsGSH/view?usp=drive_link"
+        },
+        {
+          "id": "Q4-PRO",
+          "name": "Intelligent control panel",
+          "category": "Smart Control Panel",
+          "supplier": "szsmarthome",
+          "drive_link": "https://drive.google.com/file/d/1eLbWtrrfi2P36_yBlLetChHHWeHHm8XX/view?usp=drive_link"
+        },
+        {
+          "id": "FX-TUYA",
+          "name": "Intelligent control panel Music host",
+          "category": "Smart Control Panel",
+          "supplier": "szsmarthome",
+          "drive_link": "https://drive.google.com/file/d/1PjEan2PhXhcWbdJs4jVxXYi1O1qBbj5j/view?usp=drive_link"
+        },
+        {
+          "id": "A7-K",
+          "name": "Smart hi-fi karaoke System",
+          "category": "background music",
+          "supplier": "szsmarthome",
+          "drive_link": "https://drive.google.com/file/d/1JqotKcw3NHppG62UWbaNixvIA0xpn_xH/view?usp=drive_link"
+        },
+        {
+          "id": "N86N-4",
+          "name": "4\" smart background music console",
+          "category": "background music",
+          "supplier": "szsmarthome",
+          "drive_link": "https://drive.google.com/file/d/1piwFqZkoVN8juRKlmoK2-eW1KECl0D_C/view?usp=drive_link"
+        },
+        {
+          "id": "N238-A",
+          "name": "5-inch high fidelity ceiling horn",
+          "category": "background music",
+          "supplier": "szsmarthome",
+          "drive_link": "https://drive.google.com/file/d/1nDWB0d9y7-711uVCyrOuCclsi--HavEB/view?usp=drive_link"
+        },
+        {
+          "id": "N238-B",
+          "name": "5-inch high fidelity ceiling horn",
+          "category": "background music",
+          "supplier": "szsmarthome",
+          "drive_link": "https://drive.google.com/file/d/1hqmSK89DOkmWQpsgGMlghsm2uGfIpcpy/view?usp=drive_link"
+        },
+        {
+          "id": "N268",
+          "name": "6-inch high fidelity ceiling horn",
+          "category": "background music",
+          "supplier": "szsmarthome",
+          "drive_link": "https://drive.google.com/file/d/1iwvbzVVMA10XW8oNViI6V1GahdMOSGYY/view?usp=drive_link"
+        },
+        {
+          "id": "M9-PC",
+          "name": "4-gang Scene Switch (PC)",
+          "category": "smart switch",
+          "supplier": "szsmarthome",
+          "drive_link": "https://drive.google.com/file/d/1cCtmvGcaNs2_YYd-ofzIRquS-9qsnxLA/view?usp=drive_link"
+        },
+        {
+          "id": "M8-pro PC",
+          "name": "Smart Switch (PC)",
+          "category": "smart switch",
+          "supplier": "szsmarthome",
+          "drive_link": "https://drive.google.com/file/d/1CrjIFl39iM9CBT0QBhwGLtqvrfOkOMTq/view?usp=drive_link"
+        },
+        {
+          "id": "X3-PC",
+          "name": "Smart Dimmer Switch (PC)",
+          "category": "smart switch",
+          "supplier": "szsmarthome",
+          "drive_link": "https://drive.google.com/file/d/1BS2BngLEva32ngPiKGOx0oERewLq5oF_/view?usp=drive_link"
+        },
+        {
+          "id": "W3-thermostat",
+          "name": "ZIGBEE intelligent thermostat",
+          "category": "smart switch",
+          "supplier": "szsmarthome",
+          "drive_link": "https://drive.google.com/file/d/1VmpL8wLZdvSwhva1VKux_EYZ9zZo3ug1/view?usp=drive_link"
+        },
+        {
+          "id": "M9-thermostat",
+          "name": "ZIGBEE intelligent thermostat",
+          "category": "smart switch",
+          "supplier": "szsmarthome",
+          "drive_link": "https://drive.google.com/file/d/1HLYHSDnf59KhItsB64P0GpqVjAAopDc8/view?usp=drive_link"
+        },
+        {
+          "id": "WHDZ01-W-B",
+          "name": "Tuya wifi ",
+          "category": "Smart Socket",
+          "supplier": "Wenhui",
+          "drive_link": "https://drive.google.com/file/d/1QVOoZj7MVdPCgpSwGan2qpg7Dncywl3L/view?usp=drive_link"
+        },
+        {
+          "id": "WHDZ06-Z",
+          "name": "Tuya Zigbee",
+          "category": "Smart Socket",
+          "supplier": "Wenhui",
+          "drive_link": "https://drive.google.com/file/d/1JhuvTLB0_SRE5WsYGrv7QKD8M4q9RDHs/view?usp=drive_link"
+        },
+        {
+          "id": "WHDZ12-4C",
+          "name": "Tuya wifi Smart power strip",
+          "category": "Smart Socket",
+          "supplier": "Wenhui",
+          "drive_link": "https://drive.google.com/file/d/11JDTwZK4wR6SPFt_idgKArqkmc3aYYph/view?usp=drive_link"
+        },
+        {
+          "id": "WHD02-Z",
+          "name": "TUYA Zigbee",
+          "category": "Smart DIY Module",
+          "supplier": "Wenhui",
+          "drive_link": "https://drive.google.com/file/d/11JDTwZK4wR6SPFt_idgKArqkmc3aYYph/view?usp=drive_link"
+        },
+        {
+          "id": "WHD08-Z",
+          "name": "TUYA Zigbee",
+          "category": "Smart DIY Module",
+          "supplier": "Wenhui",
+          "drive_link": "https://drive.google.com/file/d/18yND3rAnxKEKpHkNmrxYvw3tWiCvhPTE/view?usp=drive_link"
+        },
+        {
+          "id": "WHD09-Z-1CH",
+          "name": "tuya Zigbee,1ch",
+          "category": "Smart DIY Module",
+          "supplier": "Wenhui",
+          "drive_link": "https://drive.google.com/file/d/17fezDjVNJ7blHVyREftG6khsohvkdGSQ/view?usp=drive_link"
+        }
+      ],
+      "with_invalid_links": [
+        {
+          "id": "WHD11-D",
+          "name": "Tuya wifi Dimmable Switch",
+          "category": "Smart DIY Module",
+          "supplier": "Wenhui",
+          "drive_link": "WHD11-D.jpg.png"
+        },
+        {
+          "id": "WHD12-W",
+          "name": "Tuya wifi Shutter Switch",
+          "category": "Smart DIY Module",
+          "supplier": "Wenhui",
+          "drive_link": "WHD12-W.jpg.png"
+        },
+        {
+          "id": "tuya ZGA19",
+          "name": NaN,
+          "category": "Smart Light",
+          "supplier": "Wenhui",
+          "drive_link": "TUYA ZGA19.png"
+        },
+        {
+          "id": "tuya ZGC37",
+          "name": NaN,
+          "category": "Smart Light",
+          "supplier": "Wenhui",
+          "drive_link": "TUYA ZGC37.png"
+        },
+        {
+          "id": "tuya ZGGU10",
+          "name": NaN,
+          "category": "Smart Light",
+          "supplier": "Wenhui",
+          "drive_link": "TUYA ZGGU10.png"
+        },
+        {
+          "id": "HomekitWFGU10",
+          "name": NaN,
+          "category": "Smart Light",
+          "supplier": "Wenhui",
+          "drive_link": "HomekitWFGU10.png"
+        },
+        {
+          "id": "WHCS9",
+          "name": "Tuya Bluetooth Password Lock",
+          "category": "Door Lock",
+          "supplier": "Wenhui",
+          "drive_link": "WHCS9.png"
+        },
+        {
+          "id": "BLUETOOH",
+          "name": "High-end modified version of smart lock cylinder",
+          "category": "Door Lock",
+          "supplier": "Wenhui",
+          "drive_link": "High-end modified version of smart lock cylinder.png"
+        },
+        {
+          "id": "nan",
+          "name": "Curtain robot",
+          "category": "Garage/Window/Curtain Motor",
+          "supplier": "Wenhui",
+          "drive_link": "Curtain robot.png"
+        },
+        {
+          "id": "nan",
+          "name": "Curtain motor ZigBee 4m set",
+          "category": "Garage/Window/Curtain Motor",
+          "supplier": "Wenhui",
+          "drive_link": "curtain-motor-zigbee-4mset.png"
+        }
+      ],
+      "without_links": [
+        {
+          "id": "IPB215",
+          "name": "Dual-Cam Video Doorbell",
+          "category": "Video Door Bell",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "IPB196",
+          "name": "Battery Video Doorbell",
+          "category": "Video Door Bell",
+          "supplier": "OMNIA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "IPB192",
+          "name": "Battery Video Doorbell",
+          "category": "Video Door Bell",
+          "supplier": "OMNIA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "IPB193",
+          "name": "Battery Video Doorbell",
+          "category": "Video Door Bell",
+          "supplier": "OMNIA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "IPB192",
+          "name": "Doorbell Camera",
+          "category": "Video Door Bell",
+          "supplier": "OMNIA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "IPC197",
+          "name": "Battery Solar Camera",
+          "category": "Camera",
+          "supplier": "OMNIA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "IPC209",
+          "name": "Battery Solar Camera",
+          "category": "Camera",
+          "supplier": "OMNIA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "SC116-WZ4",
+          "name": "P&T camera",
+          "category": "Camera",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "SC155-WQ3",
+          "name": "2K Battery Camera",
+          "category": "Camera",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "SC316-WBA2",
+          "name": "P&T Camera with Screen",
+          "category": "Baby Monitor",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "BCM005",
+          "name": "Baby Monitor",
+          "category": "Camera",
+          "supplier": "OMNIA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "BCM003",
+          "name": "Baby Monitor",
+          "category": "Baby Monitor",
+          "supplier": "OMNIA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "IPC180 V2",
+          "name": "Baby Monitor",
+          "category": "Baby Monitor",
+          "supplier": "OMNIA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "IPC263",
+          "name": "Baby Monitor",
+          "category": "Baby Monitor",
+          "supplier": "OMNIA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "IPC211 V2",
+          "name": "Baby Monitor",
+          "category": "Baby Monitor",
+          "supplier": "OMNIA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "IPC208",
+          "name": "Indoor Rotatable Camera",
+          "category": "Camera",
+          "supplier": "OMNIA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "IPC167-B",
+          "name": "Indoor Rotatable Camera",
+          "category": "Camera",
+          "supplier": "OMNIA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "IPC167",
+          "name": "Indoor Rotatable Camera",
+          "category": "Camera",
+          "supplier": "OMNIA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "T777",
+          "name": "Indoor Rotatable Camera",
+          "category": "Camera",
+          "supplier": "OMNIA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "T726",
+          "name": "Indoor Rotatable Camera",
+          "category": "Camera",
+          "supplier": "OMNIA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "IPC181",
+          "name": "Indoor Fixed Camera",
+          "category": "Camera",
+          "supplier": "OMNIA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "IPC201",
+          "name": "Indoor Fixed Camera",
+          "category": "Camera",
+          "supplier": "OMNIA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "IPC201B",
+          "name": "Indoor Fixed Camera",
+          "category": "Camera",
+          "supplier": "OMNIA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "IPC211",
+          "name": "Indoor Fixed Camera",
+          "category": "Camera",
+          "supplier": "OMNIA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "IPC135",
+          "name": "Indoor Fixed Camera",
+          "category": "Camera",
+          "supplier": "OMNIA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "IPC138",
+          "name": "Indoor Fixed Camera",
+          "category": "Camera",
+          "supplier": "OMNIA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "IPC185",
+          "name": "Outdoor Lighting Camera",
+          "category": "Camera",
+          "supplier": "OMNIA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "IPC178",
+          "name": "Outdoor Camera",
+          "category": "Camera",
+          "supplier": "OMNIA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "IPC809",
+          "name": "Outdoor Wi-Fi DC Camera",
+          "category": "Camera",
+          "supplier": "OMNIA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "IPC808",
+          "name": "Outdoor Wi-Fi DC Camera",
+          "category": "Camera",
+          "supplier": "OMNIA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "IPC302",
+          "name": "Outdoor Camera",
+          "category": "Camera",
+          "supplier": "OMNIA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "IPC705",
+          "name": "Outdoor Camera",
+          "category": "Camera",
+          "supplier": "OMNIA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "IPC709",
+          "name": "Outdoor Camera",
+          "category": "Camera",
+          "supplier": "OMNIA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "T771",
+          "name": "Outdoor Dual Camera DC Camera",
+          "category": "Camera",
+          "supplier": "OMNIA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "T722",
+          "name": "Outdoor Dual-Lens Camera",
+          "category": "Camera",
+          "supplier": "OMNIA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "WN-778",
+          "name": "Wireless NVR Kit with Screen",
+          "category": "Camera",
+          "supplier": "OMNIA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "IPL103",
+          "name": "Outdoor Lighting Camera",
+          "category": "Camera",
+          "supplier": "OMNIA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "T775",
+          "name": "Outdoor Lighting Camera",
+          "category": "Camera",
+          "supplier": "OMNIA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "TPP01-Z（EU）",
+          "name": "Smart Control Panel S",
+          "category": "Smart Control Panel",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "P6E Pro",
+          "name": "Smart Control Panel L",
+          "category": "Smart Control Panel",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "T6E-P",
+          "name": "Smart Control Panel",
+          "category": "Smart Control Panel",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "MIUC-101-B",
+          "name": "Smart Handheld Remote Control Panel",
+          "category": "Smart Control Panel",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "ZWHS16",
+          "name": "Smart Humidity&Temperature sensor",
+          "category": "Smart Sensor",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "ZDS16",
+          "name": "Smart Door Windows Sensor",
+          "category": "Smart Sensor",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "ZWS16",
+          "name": "Smart Water Leakage Sensor",
+          "category": "Smart Sensor",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "ZMS16",
+          "name": "Smart motion sensor",
+          "category": "Smart Sensor",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "DS100-W",
+          "name": "Smart Door Windows Sensor",
+          "category": "Smart Sensor",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "HP220-Z",
+          "name": "Human Presence Sensor(Plus)",
+          "category": "Smart Sensor",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "HP210-Z",
+          "name": "Human Presence Sensor",
+          "category": "Smart Sensor",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "HP320-W",
+          "name": "Human Presence Sensor(Pro)",
+          "category": "Smart Sensor",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "HP221-Z",
+          "name": "Human Presence Sensor(Plus)",
+          "category": "Smart Sensor",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "MD100-B/MD100-Z",
+          "name": "PIR Motion Sensor",
+          "category": "Smart Sensor",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "EB101-Z",
+          "name": "SOS Emergency Button",
+          "category": "Smart Sensor",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "MD100-T",
+          "name": "PIR Motion Sensor",
+          "category": "Smart Sensor",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "ZSD16",
+          "name": "Smart Smoke sensor",
+          "category": "Smart Sensor",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "TH100-T",
+          "name": "Temperature and Humidity Sensor",
+          "category": "Smart Sensor",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "TH210-WR2",
+          "name": "Smart Thermo-hygrometer",
+          "category": "Smart Sensor",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "WSMD-4/ZWSMD-4",
+          "name": "Smart 4 Gang Dry Contact Switch",
+          "category": "Smart DIY Module",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "ZWSMD-4",
+          "name": "Smart 4 Gang Dry Contact Switch",
+          "category": "Smart DIY Module",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "CSM16-RF",
+          "name": "Smart Curtain Switch Module With RF433",
+          "category": "Smart DIY Module",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "ZCSM16-RF",
+          "name": "Smart Curtain Switch Module With RF433",
+          "category": "Smart DIY Module",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "GDS16",
+          "name": "Smart Garage Door Switch Module",
+          "category": "Smart DIY Module",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "ZGDS16",
+          "name": "Smart Garage Door Switch Module",
+          "category": "Smart DIY Module",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "WSM16/ZWSM16",
+          "name": "Smart Light switch Module",
+          "category": "Smart DIY Module",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "DMS16/ZDMS16",
+          "name": "Smart Light switch Module",
+          "category": "Smart DIY Module",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "LZWSM16",
+          "name": "Smart Light Switch Module No Neutral (Zigbee)",
+          "category": "Smart DIY Module",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "WPM16/ZWPM16",
+          "name": "Smart Energy Monitor Module",
+          "category": "Smart DIY Module",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "LWSM16",
+          "name": "Smart Light Switch Module No Neutral (Wi-Fi)",
+          "category": "Smart DIY Module",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "WSM16-DC/ZWSM16-DC",
+          "name": "Smart Dry Contact Switch Module",
+          "category": "Smart DIY Module",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "WCB16-1P/ZCB16-1P",
+          "name": "Smart Sircuit Breaker",
+          "category": "Smart DIY Module",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "GW16-Wireless",
+          "name": "Gateway",
+          "category": "Smart Gateway",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "GW16-Wired",
+          "name": "Gateway",
+          "category": "Smart Gateway",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "TYGWZB-01N",
+          "name": "Wireless Multi-mode Gateway",
+          "category": "Smart Gateway",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "TYGWBS-02N",
+          "name": "Wireless Bluetooth Gateway",
+          "category": "Smart Gateway",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "THP10-B-V2",
+          "name": "Smart Bluetooth Gateway Pro",
+          "category": "Smart Gateway",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "THP10-Z-X",
+          "name": "Smart Wired Gateway Pro",
+          "category": "Smart Gateway",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "THP10-Z",
+          "name": "Wired Zigbee Gateway",
+          "category": "Smart Gateway",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "WT500",
+          "name": "Smart Heating Thermostat",
+          "category": "Smart Thermostat",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "WT410",
+          "name": "Smart Heating Thermostat",
+          "category": "Smart Thermostat",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "WT410-Matter",
+          "name": "Smart Heating Thermostat",
+          "category": "Smart Thermostat",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "WT200",
+          "name": "Smart Heating Thermostat",
+          "category": "Smart Thermostat",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "WT598",
+          "name": "Smart Heating Thermostat",
+          "category": "Smart Thermostat",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "WT598-1T1",
+          "name": "Smart Heating Thermostat",
+          "category": "Smart Thermostat",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "WT-FP",
+          "name": "Fil Pilot Smart Thermostat",
+          "category": "Smart Thermostat",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "WT-FP-5",
+          "name": "Fil Pilot Smart Thermostat",
+          "category": "Smart Thermostat",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "WT300",
+          "name": "Smart Fan Coil Thermostat",
+          "category": "Smart Thermostat",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "TRV10/TRV10-WiFi",
+          "name": "Smart Thermostat Radiator Valve",
+          "category": "Smart Thermostat",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "TRVI6/TRV16-WiFi",
+          "name": "Smart Thermostat Radiator Valve",
+          "category": "Smart Thermostat",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "WPS20-EU",
+          "name": "Smart Power Strip",
+          "category": "Smart Socket",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "S15 Pro",
+          "name": "Super Remote Hub",
+          "category": "Smart Remote Control",
+          "supplier": "Wenhui",
+          "drive_link": "nan"
+        },
+        {
+          "id": "S16 / S16 Pro",
+          "name": "Smart IR Remote Control",
+          "category": "Smart Remote Control",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "F1S204-EU",
+          "name": "Smart Plug-EU",
+          "category": "Smart Socket",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "F1S302-UK",
+          "name": "Smart Plug-UK",
+          "category": "Smart Socket",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "F1S203-EU",
+          "name": "Matter Smart Plug-EU",
+          "category": "Smart Socket",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "F2S203-EU",
+          "name": "Bidirectional Measurement Plug - EU",
+          "category": "Smart Socket",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "F3S202-US / F3202-US",
+          "name": "Smart Plug-NA",
+          "category": "Smart Socket",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "F7501-JP",
+          "name": "Smart Plug-JP",
+          "category": "Smart Socket",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "F3S202-NA",
+          "name": "Matter Smart Plug-NA",
+          "category": "Smart Socket",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "PS162-W-EU",
+          "name": "Smart Scene Switch",
+          "category": "Smart Electrical Products",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "PS121-W-US",
+          "name": "Smart Scene Dimmer Switch",
+          "category": "Smart Electrical Products",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "DDS238-1/DTS238-7",
+          "name": "Smart Energy Monitor",
+          "category": "Smart Electrical Products",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "AICB2SP",
+          "name": "Miniature Circuit Breaker",
+          "category": "Circuit Breaker",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "AICB2SLP",
+          "name": "Miniature Circuit Breaker",
+          "category": "Circuit Breaker",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "WVC-800",
+          "name": "Microinverter",
+          "category": "Smart Electrical Products",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "GT5D / GT5C",
+          "name": "Smart Watch",
+          "category": "Smart Health",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "V101",
+          "name": "Smart Watch",
+          "category": "Smart Health",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "TG-R007",
+          "name": "Smart Ring",
+          "category": "Smart Health",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "CT08",
+          "name": "Visual Otoscope",
+          "category": "Smart Health",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "BF8072",
+          "name": "Smart Scale",
+          "category": "Smart Health",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "CT01",
+          "name": "Visual Otoscope",
+          "category": "Smart Health",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "CT01",
+          "name": "Smart Jump Rope",
+          "category": "Smart Health",
+          "supplier": "TUYA",
+          "drive_link": "nan"
+        },
+        {
+          "id": "TOQCB2-80-JW",
+          "name": "Smart Circuit Breaker (1P/2P)",
+          "category": "Circuit Breaker",
+          "supplier": "TONGOU",
+          "drive_link": "nan"
+        },
+        {
+          "id": "TOQCB2-80-JZ",
+          "name": "Smart Circuit Breaker (1P/2P)",
+          "category": "Circuit Breaker",
+          "supplier": "TONGOU",
+          "drive_link": "nan"
+        },
+        {
+          "id": "TOQCB2-80-JR",
+          "name": "Smart Circuit Breaker (1P/2P)",
+          "category": "Circuit Breaker",
+          "supplier": "TONGOU",
+          "drive_link": "nan"
+        },
+        {
+          "id": "TOQCB2-80-JL",
+          "name": "Smart Circuit Breaker (1P/2P)",
+          "category": "Circuit Breaker",
+          "supplier": "TONGOU",
+          "drive_link": "nan"
+        },
+        {
+          "id": "TOQCB2-80-JM",
+          "name": "Smart Circuit Breaker (1P/2P)",
+          "category": "Circuit Breaker",
+          "supplier": "TONGOU",
+          "drive_link": "nan"
+        },
+        {
+          "id": "TOQCB2-80-JW",
+          "name": "Smart Circuit Breaker (3P/4P)",
+          "category": "Circuit Breaker",
+          "supplier": "TONGOU",
+          "drive_link": "nan"
+        },
+        {
+          "id": "TOQCB2-80-JZ",
+          "name": "Smart Circuit Breaker (3P/4P)",
+          "category": "Circuit Breaker",
+          "supplier": "TONGOU",
+          "drive_link": "nan"
+        },
+        {
+          "id": "TOQCB2L-63-JW",
+          "name": "Smart Circuit Breaker with Leakage Protection (2P)",
+          "category": "Circuit Breaker",
+          "supplier": "TONGOU",
+          "drive_link": "nan"
+        },
+        {
+          "id": "TOQCB2L-63-JZ",
+          "name": "Smart Circuit Breaker with Leakage Protection (2P)",
+          "category": "Circuit Breaker",
+          "supplier": "TONGOU",
+          "drive_link": "nan"
+        },
+        {
+          "id": "TOQCB2L-63-JW",
+          "name": "Smart Circuit Breaker with Leakage Protection (3P)",
+          "category": "Circuit Breaker",
+          "supplier": "TONGOU",
+          "drive_link": "nan"
+        },
+        {
+          "id": "TOQCB2L-63-JW",
+          "name": "Smart Circuit Breaker with Leakage Protection (4P)",
+          "category": "Circuit Breaker",
+          "supplier": "TONGOU",
+          "drive_link": "nan"
+        },
+        {
+          "id": "TOSMR1-40-JW",
+          "name": "Smart Circuit Breaker with Leakage Protection",
+          "category": "Circuit Breaker",
+          "supplier": "TONGOU",
+          "drive_link": "nan"
+        },
+        {
+          "id": "TO-Q-SY1-W",
+          "name": "DIN Rail Smart Switch (Non-Metering Type)",
+          "category": "Circuit Breaker",
+          "supplier": "TONGOU",
+          "drive_link": "nan"
+        },
+        {
+          "id": "TO-Q-SY1-Z",
+          "name": "DIN Rail Smart Switch (Non-Metering Type)",
+          "category": "Circuit Breaker",
+          "supplier": "TONGOU",
+          "drive_link": "nan"
+        },
+        {
+          "id": "TO-Q-SY1-M",
+          "name": "DIN Rail Smart Switch (Non-Metering Type)",
+          "category": "Circuit Breaker",
+          "supplier": "TONGOU",
+          "drive_link": "nan"
+        },
+        {
+          "id": "TO-Q-SY1-JW",
+          "name": "DIN Rail Smart Switch (Metering Type)",
+          "category": "Circuit Breaker",
+          "supplier": "TONGOU",
+          "drive_link": "nan"
+        },
+        {
+          "id": "TO-Q-SY2-JW",
+          "name": "DIN Rail Smart Switch",
+          "category": "Circuit Breaker",
+          "supplier": "TONGOU",
+          "drive_link": "nan"
+        },
+        {
+          "id": "TO-Q-SYS-JW",
+          "name": "DIN Rail Smart Meter",
+          "category": "Circuit Breaker",
+          "supplier": "TONGOU",
+          "drive_link": "nan"
+        },
+        {
+          "id": "TO-Q-SYS-JB",
+          "name": "DIN Rail Smart Meter",
+          "category": "Circuit Breaker",
+          "supplier": "TONGOU",
+          "drive_link": "nan"
+        },
+        {
+          "id": "TO-Q-SA1-0150W",
+          "name": "Smart Energy Accessory (1P)",
+          "category": "Circuit Breaker",
+          "supplier": "TONGOU",
+          "drive_link": "nan"
+        },
+        {
+          "id": "TO-Q-SA1-0350W",
+          "name": "Smart Energy Accessory (3P)",
+          "category": "Circuit Breaker",
+          "supplier": "TONGOU",
+          "drive_link": "nan"
+        },
+        {
+          "id": "WOT12 / ZWOT12",
+          "name": "Smart Wall Socket",
+          "category": "Smart Socket",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "WOT16P / ZWOT16P",
+          "name": "Smart Switch & Socket",
+          "category": "Smart Socket",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "WOT18P / ZWOT18P",
+          "name": "Smart Wall Socket",
+          "category": "Smart Socket",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "WD1-LB",
+          "name": NaN,
+          "category": "Garage/Window/Curtain Motor",
+          "supplier": "LINPTECH",
+          "drive_link": "nan"
+        },
+        {
+          "id": "KK9Z-TY / K9B-TY",
+          "name": NaN,
+          "category": "smart switch",
+          "supplier": "LINPTECH",
+          "drive_link": "nan"
+        },
+        {
+          "id": "KH1BB",
+          "name": NaN,
+          "category": "smart switch",
+          "supplier": "LINPTECH",
+          "drive_link": "nan"
+        },
+        {
+          "id": "XH1BB",
+          "name": NaN,
+          "category": "smart switch",
+          "supplier": "LINPTECH",
+          "drive_link": "nan"
+        },
+        {
+          "id": "S2",
+          "name": NaN,
+          "category": "Smart Control Panel",
+          "supplier": "LINPTECH",
+          "drive_link": "nan"
+        },
+        {
+          "id": "XH1",
+          "name": NaN,
+          "category": "sw",
+          "supplier": "LINPTECH",
+          "drive_link": "nan"
+        },
+        {
+          "id": "TH1",
+          "name": NaN,
+          "category": "Smart Thermostat",
+          "supplier": "LINPTECH",
+          "drive_link": "nan"
+        },
+        {
+          "id": "RX-4",
+          "name": NaN,
+          "category": "smart switch",
+          "supplier": "LINPTECH",
+          "drive_link": "nan"
+        },
+        {
+          "id": "SWT60",
+          "name": "WiFi Irrigator",
+          "category": "Smart Electrical Products",
+          "supplier": "AVATTO",
+          "drive_link": "nan"
+        },
+        {
+          "id": "Q7-TUYA",
+          "name": "Intelligent control panel",
+          "category": "Smart Control Panel",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "S4-2 PRO Tuya Gateway",
+          "name": "Intelligent control panel",
+          "category": "Smart Control Panel",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "S4-4 PRO Tuya Gateway",
+          "name": "Intelligent control panel",
+          "category": "Smart Control Panel",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "S4-3 PRO Tuya No Gateway",
+          "name": "Intelligent control panel",
+          "category": "Smart Control Panel",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "L2 Linux",
+          "name": "Intelligent control panel",
+          "category": "Smart Control Panel",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "A7-TUYA",
+          "name": "Intelligent control panel",
+          "category": "Smart Control Panel",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "F4-Tuya",
+          "name": "Intelligent control panel",
+          "category": "Smart Control Panel",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "G4-Tuya",
+          "name": "Intelligent control panel",
+          "category": "Smart Control Panel",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "F6-MAX-Tuya",
+          "name": "Multi functional intelligent central control screen",
+          "category": "Smart Control Panel",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "F6-1Tuya",
+          "name": "Intelligent central control Music host",
+          "category": "Smart Control Panel",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "F6-2Tuya",
+          "name": "Intelligent central control Music host",
+          "category": "Smart Control Panel",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "F6-1Tuya Relay",
+          "name": "Intelligent control panel",
+          "category": "Smart Control Panel",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "F6-2Tuya Music",
+          "name": "Intelligent control panel",
+          "category": "Smart Control Panel",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "F7-Tuya",
+          "name": "Multi functional intelligent central control screen",
+          "category": "Smart Control Panel",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "F8-Tuya",
+          "name": "Intelligent central control Music host",
+          "category": "Smart Control Panel",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "F10-Tuya",
+          "name": "Multi functional intelligent central control screen",
+          "category": "Smart Control Panel",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "F12-PRO-Tuya",
+          "name": "Multi functional intelligent central control screen",
+          "category": "Smart Control Panel",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "T7-3",
+          "name": "Background music player",
+          "category": "background music",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "A7-PRO",
+          "name": "Background music player",
+          "category": "background music",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "Z8-2",
+          "name": "Smart Hi-Fi karaoke System",
+          "category": "background music",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "T10",
+          "name": "Background music player",
+          "category": "background music",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "F3-PRO",
+          "name": "Multifunctional scene panel",
+          "category": "smart switch",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "M9-aluminum",
+          "name": "4-gang Scene Switch (Aluminum)",
+          "category": "smart switch",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "M8-pro aluminum",
+          "name": "Smart Switch (Aluminum)",
+          "category": "smart switch",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "X3-aluminum",
+          "name": "Smart Dimmer Switch (Aluminum)",
+          "category": "smart switch",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "M6-1 PC",
+          "name": "1-gang Touch Switch (PC)",
+          "category": "smart switch",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "M6-1 aluminum",
+          "name": "1-gang Touch Switch (Aluminum)",
+          "category": "smart switch",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "M6-2 PC",
+          "name": "2-gang Touch Switch (PC)",
+          "category": "smart switch",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "M6-2 aluminum",
+          "name": "2-gang Touch Switch (Aluminum)",
+          "category": "smart switch",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "M6-3 PC",
+          "name": "3-gang Touch Switch (PC)",
+          "category": "smart switch",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "M6-3 aluminum",
+          "name": "3-gang Touch Switch (Aluminum)",
+          "category": "smart switch",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "M6-4 PC",
+          "name": "4-gang Touch Switch (PC)",
+          "category": "smart switch",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "M6-4 aluminum",
+          "name": "4-gang Touch Switch (Aluminum)",
+          "category": "smart switch",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "M6-6 PC",
+          "name": "6-gang Scene/Light Switch (PC)",
+          "category": "smart switch",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "M6-6 aluminum",
+          "name": "6-gang Scene/Light Switch (Aluminum)",
+          "category": "smart switch",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "KW03",
+          "name": "Building intercom outdoor unit",
+          "category": "Video Door Bell",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "KW04",
+          "name": "Building intercom outdoor unit",
+          "category": "Video Door Bell",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "KW02",
+          "name": "Tuya WIFI visible doorbell",
+          "category": "Video Door Bell",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "CW-01",
+          "name": "WiFi Tuya Curtain Motor",
+          "category": "Garage/Window/Curtain Motor",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "CW-02",
+          "name": "Zigbee Tuya Curtain Motor",
+          "category": "Garage/Window/Curtain Motor",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "CW-03-SET",
+          "name": "WiFi/Zigbee Tuya Curtain Motor with Telescopic Rail",
+          "category": "Garage/Window/Curtain Motor",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "CW-04-SET",
+          "name": "WiFi/ZigBee Tuya curtain motor with combination track",
+          "category": "Garage/Window/Curtain Motor",
+          "supplier": "szsmarthome",
+          "drive_link": "nan"
+        },
+        {
+          "id": "Zigbee + Bluetooth",
+          "name": "Multi-mode wireless gateway plug type",
+          "category": "Smart Gateway",
+          "supplier": "Wenhui",
+          "drive_link": "nan"
+        },
+        {
+          "id": "WHD02-Z",
+          "name": "Tuya Zigbee  with Power monitor",
+          "category": "Smart DIY Module",
+          "supplier": "Wenhui",
+          "drive_link": "nan"
+        },
+        {
+          "id": "WHD09-Z-2CH",
+          "name": "tuya Zigbee,2ch",
+          "category": "Smart DIY Module",
+          "supplier": "Wenhui",
+          "drive_link": "nan"
+        },
+        {
+          "id": "WHD09-Z-3CH",
+          "name": "tuya Zigbee,3ch",
+          "category": "Smart DIY Module",
+          "supplier": "Wenhui",
+          "drive_link": "nan"
+        },
+        {
+          "id": "WHD09-Z-4CH",
+          "name": "tuya Zigbee,4ch",
+          "category": "Smart DIY Module",
+          "supplier": "Wenhui",
+          "drive_link": "nan"
+        },
+        {
+          "id": "WHD06-WP",
+          "name": "Tuya wifi  With Power monitor",
+          "category": "Smart DIY Module",
+          "supplier": "Wenhui",
+          "drive_link": "nan"
+        },
+        {
+          "id": "WHD15-W",
+          "name": "Tuya wifi,30A",
+          "category": "Smart DIY Module",
+          "supplier": "Wenhui",
+          "drive_link": "nan"
+        },
+        {
+          "id": "WF010",
+          "name": "Smart  WIFI Doorbell",
+          "category": "Video Door Bell",
+          "supplier": "Wenhui",
+          "drive_link": "nan"
+        },
+        {
+          "id": "WHZ05-WHD03-Z-1",
+          "name": "Tuya Zigbee\n1gang 1receiver",
+          "category": "smart switch",
+          "supplier": "Wenhui",
+          "drive_link": "nan"
+        },
+        {
+          "id": "WHZ05-WHD03-Z-2",
+          "name": "Tuya Zigbee\n2gang 2receiver",
+          "category": "smart switch",
+          "supplier": "Wenhui",
+          "drive_link": "nan"
+        },
+        {
+          "id": "WHZ05-WHD03-Z-3",
+          "name": "Tuya Zigbee\n3gang 3receiver",
+          "category": "smart switch",
+          "supplier": "Wenhui",
+          "drive_link": "nan"
+        },
+        {
+          "id": "tuya WFGU10",
+          "name": NaN,
+          "category": "Smart Light",
+          "supplier": "Wenhui",
+          "drive_link": "nan"
+        },
+        {
+          "id": "nan",
+          "name": "Zigbee door sensor",
+          "category": "Smart Sensor",
+          "supplier": "Wenhui",
+          "drive_link": "nan"
+        },
+        {
+          "id": "nan",
+          "name": "Zigbee light & door and window sensor (two in one) (Zigbee door sensor +LUX)",
+          "category": "Smart Sensor",
+          "supplier": "Wenhui",
+          "drive_link": "nan"
+        },
+        {
+          "id": "nan",
+          "name": "Zigbee human presence sensor (2 in 1, with bracket) (24 GHZ or 5.8 GHZ millimeter wave module optional)",
+          "category": "Smart Sensor",
+          "supplier": "Wenhui",
+          "drive_link": "nan"
+        },
+        {
+          "id": "nan",
+          "name": "Zigbee human presence sensor (2 in 1) (24 GHz or 5.8 GHz optional)",
+          "category": "Smart Sensor",
+          "supplier": "Wenhui",
+          "drive_link": "nan"
+        },
+        {
+          "id": "nan",
+          "name": "Zigbee millimeter wave human presence sensor (2 in 1, ceiling mounted) 24g (Zigbee human presence sensor AC 100-250V)",
+          "category": "Smart Sensor",
+          "supplier": "Wenhui",
+          "drive_link": "nan"
+        },
+        {
+          "id": "nan",
+          "name": "Zigbee human presence sensor 24GHz +PIR+LUX,On Battery",
+          "category": "Smart Sensor",
+          "supplier": "Wenhui",
+          "drive_link": "nan"
+        },
+        {
+          "id": "nan",
+          "name": "Zigbee Motion detection Sensor PIR+LUX",
+          "category": "Smart Sensor",
+          "supplier": "Wenhui",
+          "drive_link": "nan"
+        },
+        {
+          "id": "nan",
+          "name": "Zigbee vibration sensor",
+          "category": "Smart Sensor",
+          "supplier": "Wenhui",
+          "drive_link": "nan"
+        },
+        {
+          "id": "nan",
+          "name": "Zigbee Gas Sensor",
+          "category": "Smart Sensor",
+          "supplier": "Wenhui",
+          "drive_link": "nan"
+        },
+        {
+          "id": "nan",
+          "name": "Zigbee smoke alarm",
+          "category": "Smart Sensor",
+          "supplier": "Wenhui",
+          "drive_link": "nan"
+        },
+        {
+          "id": "nan",
+          "name": "SmartWater Valve Controller",
+          "category": "Smart Electrical Products",
+          "supplier": "Wenhui",
+          "drive_link": "nan"
+        },
+        {
+          "id": "Equipped with Tuya WIFI and lock body",
+          "name": "S-09 Broken Bridge Aluminum",
+          "category": "Door Lock",
+          "supplier": "Wenhui",
+          "drive_link": "nan"
+        },
+        {
+          "id": "Equipped with Tuya WIFI ",
+          "name": "S-05 One-grip opening (with screen)",
+          "category": "Door Lock",
+          "supplier": "Wenhui",
+          "drive_link": "nan"
+        },
+        {
+          "id": " Tuya Active Intercom",
+          "name": "M03 Face Lock",
+          "category": "Door Lock",
+          "supplier": "Wenhui",
+          "drive_link": "nan"
+        },
+        {
+          "id": "Tuya Active Intercom",
+          "name": "M16 Carved Lock",
+          "category": "Door Lock",
+          "supplier": "Wenhui",
+          "drive_link": "nan"
+        },
+        {
+          "id": " Tuya Active Intercom",
+          "name": "M12 Face Lock",
+          "category": "Door Lock",
+          "supplier": "Wenhui",
+          "drive_link": "nan"
+        },
+        {
+          "id": "nan",
+          "name": "Roman pole single open LY-1668-1",
+          "category": "Garage/Window/Curtain Motor",
+          "supplier": "Wenhui",
+          "drive_link": "nan"
+        },
+        {
+          "id": "nan",
+          "name": "Single opening T/U\nLY-1668-3",
+          "category": "Garage/Window/Curtain Motor",
+          "supplier": "Wenhui",
+          "drive_link": "nan"
+        }
+      ]
+    },
+    "category_link_distribution": {
+      "Video Door Bell": {
+        "with_links": 2,
+        "without_links": 9
+      },
+      "Camera": {
+        "with_links": 10,
+        "without_links": 28
+      },
+      "Baby Monitor": {
+        "with_links": 1,
+        "without_links": 5
+      },
+      "Pets accessories": {
+        "with_links": 2,
+        "without_links": 0
+      },
+      "Door Lock": {
+        "with_links": 1,
+        "without_links": 7
+      },
+      "Smart Control Panel": {
+        "with_links": 3,
+        "without_links": 22
+      },
+      "Smart Sensor": {
+        "with_links": 1,
+        "without_links": 25
+      },
+      "Smart DIY Module": {
+        "with_links": 3,
+        "without_links": 21
+      },
+      "Smart Gateway": {
+        "with_links": 2,
+        "without_links": 8
+      },
+      "Smart Thermostat": {
+        "with_links": 1,
+        "without_links": 12
+      },
+      "Smart Socket": {
+        "with_links": 3,
+        "without_links": 11
+      },
+      "Smart Remote Control": {
+        "with_links": 2,
+        "without_links": 2
+      },
+      "Smart Electrical Products": {
+        "with_links": 5,
+        "without_links": 6
+      },
+      "Circuit Breaker": {
+        "with_links": 0,
+        "without_links": 23
+      },
+      "Smart Health": {
+        "with_links": 0,
+        "without_links": 7
+      },
+      "Garage/Window/Curtain Motor": {
+        "with_links": 0,
+        "without_links": 9
+      },
+      "smart switch": {
+        "with_links": 5,
+        "without_links": 21
+      },
+      "sw": {
+        "with_links": 0,
+        "without_links": 1
+      },
+      "background music": {
+        "with_links": 5,
+        "without_links": 4
+      },
+      "Smart Light": {
+        "with_links": 0,
+        "without_links": 5
+      }
+    },
+    "supplier_link_distribution": {
+      "TUYA": {
+        "with_links": 12,
+        "without_links": 40
+      },
+      "OMNIA": {
+        "with_links": 11,
+        "without_links": 34
+      },
+      "AVATTO": {
+        "with_links": 4,
+        "without_links": 40
+      },
+      "Wenhui": {
+        "with_links": 7,
+        "without_links": 41
+      },
+      "TONGOU": {
+        "with_links": 0,
+        "without_links": 21
+      },
+      "LINPTECH": {
+        "with_links": 0,
+        "without_links": 8
+      },
+      "szsmarthome": {
+        "with_links": 12,
+        "without_links": 42
+      }
+    }
+  },
+  "strategy_options": {
+    "strategy_1_exclusion": {
+      "name": "Exclusion Strategy",
+      "description": "Exclude products without valid drive links from JSON files",
+      "approach": "Quality-first approach maintaining current standards",
+      "implementation": {
+        "criteria": "Only include products with valid Google Drive links",
+        "validation": "Verify link accessibility before inclusion",
+        "fallback": "None - products excluded permanently"
+      },
+      "pros": [
+        "Maintains consistent data quality",
+        "Ensures all products have supporting documentation",
+        "Simple implementation and maintenance",
+        "Clear quality standards"
+      ],
+      "cons": [
+        "Reduces catalog completeness",
+        "May exclude valuable products",
+        "Potential loss of business opportunities",
+        "Incomplete product representation"
+      ],
+      "use_cases": [
+        "High-quality product catalogs",
+        "Customer-facing applications",
+        "Premium product showcases"
+      ]
+    },
+    "strategy_2_placeholder": {
+      "name": "Placeholder Strategy",
+      "description": "Include products with placeholder drive links and enhancement flags",
+      "approach": "Completeness-first with quality indicators",
+      "implementation": {
+        "criteria": "Include all products with quality flags",
+        "placeholder_format": "Standard placeholder URL or \"TBD\" marker",
+        "enhancement_queue": "Track products needing drive link updates"
+      },
+      "pros": [
+        "Complete catalog representation",
+        "Clear enhancement roadmap",
+        "Maintains product visibility",
+        "Allows for future improvements"
+      ],
+      "cons": [
+        "May confuse users with incomplete data",
+        "Requires additional metadata management",
+        "Ongoing maintenance overhead",
+        "Potential quality perception issues"
+      ],
+      "use_cases": [
+        "Internal product management",
+        "Comprehensive catalogs",
+        "Development environments"
+      ]
+    },
+    "strategy_3_alternative_sourcing": {
+      "name": "Alternative Sourcing Strategy",
+      "description": "Source alternative documentation for products without drive links",
+      "approach": "Active enhancement through alternative sources",
+      "implementation": {
+        "criteria": "Research and source alternative documentation",
+        "sources": "Manufacturer websites, product databases, specifications sheets",
+        "validation": "Verify accuracy and completeness of sourced data"
+      },
+      "pros": [
+        "Maintains high data quality",
+        "Complete product coverage",
+        "Enhanced product information",
+        "Professional documentation standards"
+      ],
+      "cons": [
+        "Significant time and resource investment",
+        "Potential copyright and licensing issues",
+        "Ongoing maintenance requirements",
+        "Variable data quality from different sources"
+      ],
+      "use_cases": [
+        "Professional product catalogs",
+        "Sales and marketing materials",
+        "Customer documentation"
+      ]
+    },
+    "strategy_4_tiered_approach": {
+      "name": "Tiered Quality Approach",
+      "description": "Implement quality tiers based on drive link availability",
+      "approach": "Multi-tier system with clear quality indicators",
+      "implementation": {
+        "tier_1": "Products with valid drive links (premium tier)",
+        "tier_2": "Products with detailed specifications but no links (standard tier)",
+        "tier_3": "Products with basic information only (basic tier)",
+        "metadata": "Clear tier indicators in product data"
+      },
+      "pros": [
+        "Balanced approach to quality and completeness",
+        "Clear quality expectations for users",
+        "Flexible implementation options",
+        "Scalable enhancement pathway"
+      ],
+      "cons": [
+        "Complex metadata management",
+        "Potential user confusion with tiers",
+        "Requires careful tier definition",
+        "Ongoing tier maintenance"
+      ],
+      "use_cases": [
+        "Multi-purpose catalogs",
+        "Flexible product databases",
+        "Scalable product management"
+      ]
+    }
+  },
+  "recommendations": {
+    "primary_recommendation": "strategy_2_placeholder",
+    "rationale": "With 79.4% missing links, placeholder strategy ensures catalog completeness.",
+    "implementation_plan": [
+      {
+        "phase": 1,
+        "name": "Link Validation and Cleanup",
+        "description": "Validate existing drive links and fix broken ones",
+        "timeline": "1 week",
+        "deliverables": [
+          "Validated link inventory",
+          "Broken link report"
+        ]
+      },
+      {
+        "phase": 2,
+        "name": "Strategy Implementation",
+        "description": "Implement chosen strategy for products without links",
+        "timeline": "2-3 weeks",
+        "deliverables": [
+          "Updated product data",
+          "Quality tier assignments"
+        ]
+      },
+      {
+        "phase": 3,
+        "name": "Enhancement Pipeline",
+        "description": "Establish ongoing process for link enhancement",
+        "timeline": "1 week",
+        "deliverables": [
+          "Enhancement workflow",
+          "Quality monitoring system"
+        ]
+      }
+    ],
+    "immediate_actions": [
+      "Audit all existing drive links for accessibility",
+      "Categorize products by link quality and availability",
+      "Identify high-priority products for alternative sourcing",
+      "Establish quality standards for different product tiers",
+      "Create enhancement workflow for ongoing improvements"
+    ],
+    "quality_thresholds": {
+      "tier_1_premium": "Valid drive link + detailed specifications",
+      "tier_2_standard": "Detailed specifications without drive link",
+      "tier_3_basic": "Basic product information only",
+      "exclusion_criteria": "Insufficient product information"
+    },
+    "enhancement_priorities": [],
+    "resource_requirements": {}
+  }
+}

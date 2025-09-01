@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-01-27",
+  "analysis": {
+    "sheets_total_rows": 272,
+    "csv_total_rows": 272,
+    "sheets_drive_links": 46,
+    "csv_s3_urls": 46,
+    "mappable_urls": 44,
+    "drive_link_column_index": 16,
+    "drive_link_column_name": "Drive Link",
+    "mapping_sample": {
+      "1JqKpg1tRRNOX0iPE-hzK4prAtPvEAVZM": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1JqKpg1tRRNOX0iPE-hzK4prAtPvEAVZM.jpg",
+      "1sh2o2bjmKu8tGprmZjsWvcNffRqMrYyA": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1sh2o2bjmKu8tGprmZjsWvcNffRqMrYyA.jpg",
+      "1LRJ4gfEo1xAFEth_8xKOwkXFB5gvisQH": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1LRJ4gfEo1xAFEth_8xKOwkXFB5gvisQH.jpg",
+      "1Rx4vnJJiR5E2cHQPvzHHktKWkWAWy3Ik": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1Rx4vnJJiR5E2cHQPvzHHktKWkWAWy3Ik.jpg",
+      "1PAXH12NDEWWVfm0Hp7-gueAwP_OmHPTR": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/product-images/1PAXH12NDEWWVfm0Hp7-gueAwP_OmHPTR.jpg"
+    },
+    "sync_needed": true,
+    "sync_executed": true,
+    "sync_success": true
+  },
+  "status": "analysis_complete"
+}

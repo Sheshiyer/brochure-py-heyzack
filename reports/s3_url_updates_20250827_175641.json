@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-08-27T17:56:41.332236",
+  "total_mappings": 44,
+  "files_updated": [
+    {
+      "file": "data/products.json",
+      "updates_made": 92,
+      "errors": []
+    },
+    {
+      "file": "data/products_hierarchical_enhanced.json",
+      "updates_made": 92,
+      "errors": []
+    },
+    {
+      "file": "data/SMART HOME FOLLOWING PROJECT - All Products.csv",
+      "updates_made": 46,
+      "errors": []
+    }
+  ],
+  "total_updates": 230,
+  "errors": []
+}

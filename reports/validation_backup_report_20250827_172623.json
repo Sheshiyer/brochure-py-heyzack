@@ -1,0 +1,57 @@
+{
+  "report_timestamp": "2025-08-27T17:26:23.645399",
+  "backup_summary": {
+    "backup_directory": "data/backups/pre_s3_migration_20250827_172623",
+    "backup_success": true,
+    "files_backed_up": 5,
+    "backup_errors": 0
+  },
+  "validation_summary": {
+    "overall_status": "PASS",
+    "total_validations": 4,
+    "passed_validations": 3,
+    "warnings": 1,
+    "errors": 0
+  },
+  "detailed_backup_manifest": {
+    "timestamp": "20250827_172623",
+    "backup_directory": "data/backups/pre_s3_migration_20250827_172623",
+    "files_backed_up": [
+      "data/products_hierarchical_enhanced.json",
+      "data/products.json",
+      "data/SMART HOME FOLLOWING PROJECT - All Products.csv",
+      "reports/google_sheets_analysis.json",
+      "reports/s3_migration_plan.json"
+    ],
+    "integrity_hashes": {
+      "data/products_hierarchical_enhanced.json": "effd49b22f2eb02beb809186225f178e909df54fa216ec2cff5e00c4c7e64be3",
+      "data/products.json": "1c1636ed031209449d5319347e93f102ea0077a02e42a2e50028703ac5ba3281",
+      "data/SMART HOME FOLLOWING PROJECT - All Products.csv": "6fcae8351e0e12a2147bce7b97bdb881cd0e25e00fc9127f209b08d44d605457",
+      "reports/google_sheets_analysis.json": "a3bd97ca7100e5fa45d46adccecebdd0f07c8194879a60625bf32826566509c0",
+      "reports/s3_migration_plan.json": "65c9f74c0f3fd8b1bae72321472004256f75700a463bf0635c6db39c1366b740"
+    },
+    "backup_success": true,
+    "errors": []
+  },
+  "detailed_validation_results": {
+    "timestamp": "2025-08-27T17:26:23.643119",
+    "validations": {
+      "json_validity_products_hierarchical_enhanced": "PASS",
+      "json_validity_products": "PASS",
+      "json_validity_google_sheets_analysis": "PASS",
+      "drive_links_consistency": "WARN"
+    },
+    "overall_status": "PASS",
+    "warnings": [
+      "Drive link count mismatch: Sheets=46, Hierarchical=0"
+    ],
+    "errors": []
+  },
+  "next_steps": [
+    "Review this validation report",
+    "Ensure all backups completed successfully",
+    "Set up S3 bucket and AWS credentials",
+    "Test S3 migration on a small subset first",
+    "Keep rollback script ready for emergency use"
+  ]
+}

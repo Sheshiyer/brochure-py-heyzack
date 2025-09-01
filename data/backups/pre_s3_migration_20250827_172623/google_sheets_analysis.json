@@ -1,0 +1,409 @@
+{
+  "timestamp": "2025-01-27",
+  "spreadsheet_id": "17xcmTsSZkguOjXC6h6YDrNcOU27jrpU8Ah9xEONARg8",
+  "sheet_analysis": {
+    "name": "All Products",
+    "total_rows": 273,
+    "headers": [
+      "Supplier",
+      "Model Number",
+      "Product Name",
+      "Category",
+      "Specifications",
+      "Communitcation protocol",
+      "Power Source",
+      "Country",
+      "Image",
+      "Price",
+      "MOQ",
+      "Catalogue",
+      "Packing",
+      "Status",
+      "DESIGNATION FR",
+      "REF HEYZACK",
+      "Drive Link",
+      "Lead Time"
+    ]
+  },
+  "drive_links": {
+    "total_drive_links": 46,
+    "view_links": 46,
+    "other_links": 0,
+    "sample_links": [
+      {
+        "row": 2,
+        "url": "https://drive.google.com/file/d/1JqKpg1tRRNOX0iPE-hzK4prAtPvEAVZM/view?usp=sharing",
+        "type": "view",
+        "file_id": "1JqKpg1tRRNOX0iPE-hzK4prAtPvEAVZM"
+      },
+      {
+        "row": 8,
+        "url": "https://drive.google.com/file/d/1sh2o2bjmKu8tGprmZjsWvcNffRqMrYyA/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1sh2o2bjmKu8tGprmZjsWvcNffRqMrYyA"
+      },
+      {
+        "row": 10,
+        "url": "https://drive.google.com/file/d/1LRJ4gfEo1xAFEth_8xKOwkXFB5gvisQH/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1LRJ4gfEo1xAFEth_8xKOwkXFB5gvisQH"
+      },
+      {
+        "row": 14,
+        "url": "https://drive.google.com/file/d/1Rx4vnJJiR5E2cHQPvzHHktKWkWAWy3Ik/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1Rx4vnJJiR5E2cHQPvzHHktKWkWAWy3Ik"
+      },
+      {
+        "row": 15,
+        "url": "https://drive.google.com/file/d/1PAXH12NDEWWVfm0Hp7-gueAwP_OmHPTR/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1PAXH12NDEWWVfm0Hp7-gueAwP_OmHPTR"
+      }
+    ],
+    "all_links": [
+      {
+        "row": 2,
+        "url": "https://drive.google.com/file/d/1JqKpg1tRRNOX0iPE-hzK4prAtPvEAVZM/view?usp=sharing",
+        "type": "view",
+        "file_id": "1JqKpg1tRRNOX0iPE-hzK4prAtPvEAVZM"
+      },
+      {
+        "row": 8,
+        "url": "https://drive.google.com/file/d/1sh2o2bjmKu8tGprmZjsWvcNffRqMrYyA/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1sh2o2bjmKu8tGprmZjsWvcNffRqMrYyA"
+      },
+      {
+        "row": 10,
+        "url": "https://drive.google.com/file/d/1LRJ4gfEo1xAFEth_8xKOwkXFB5gvisQH/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1LRJ4gfEo1xAFEth_8xKOwkXFB5gvisQH"
+      },
+      {
+        "row": 14,
+        "url": "https://drive.google.com/file/d/1Rx4vnJJiR5E2cHQPvzHHktKWkWAWy3Ik/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1Rx4vnJJiR5E2cHQPvzHHktKWkWAWy3Ik"
+      },
+      {
+        "row": 15,
+        "url": "https://drive.google.com/file/d/1PAXH12NDEWWVfm0Hp7-gueAwP_OmHPTR/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1PAXH12NDEWWVfm0Hp7-gueAwP_OmHPTR"
+      },
+      {
+        "row": 16,
+        "url": "https://drive.google.com/file/d/1Y-VLmCBTIEy6D6Aj08hrfWOKvaDvTq1_/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1Y-VLmCBTIEy6D6Aj08hrfWOKvaDvTq1_"
+      },
+      {
+        "row": 17,
+        "url": "https://drive.google.com/file/d/1qAg2bJNN61L5r3yzmDSTUKJJlKpXQB6M/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1qAg2bJNN61L5r3yzmDSTUKJJlKpXQB6M"
+      },
+      {
+        "row": 23,
+        "url": "https://drive.google.com/file/d/1sIkhV5AdP1VwFZ6lJh0VECYNWRGSc3JY/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1sIkhV5AdP1VwFZ6lJh0VECYNWRGSc3JY"
+      },
+      {
+        "row": 25,
+        "url": "https://drive.google.com/file/d/17_D5DnKHuBwvNgtaabMOD-rHVl3hY-bF/view?usp=drive_link",
+        "type": "view",
+        "file_id": "17_D5DnKHuBwvNgtaabMOD-rHVl3hY-bF"
+      },
+      {
+        "row": 30,
+        "url": "https://drive.google.com/file/d/1h1zOdsK1TR6czVueQ7VjtF92GHK3GgS8/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1h1zOdsK1TR6czVueQ7VjtF92GHK3GgS8"
+      },
+      {
+        "row": 38,
+        "url": "https://drive.google.com/file/d/16J1uNJM8AhXOjexfWUeTgUg7rzgWub5J/view?usp=drive_link",
+        "type": "view",
+        "file_id": "16J1uNJM8AhXOjexfWUeTgUg7rzgWub5J"
+      },
+      {
+        "row": 40,
+        "url": "https://drive.google.com/file/d/1ZSDBQ2_S3CIlNKqa_X6hvW-4M7OgGhhu/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1ZSDBQ2_S3CIlNKqa_X6hvW-4M7OgGhhu"
+      },
+      {
+        "row": 43,
+        "url": "https://drive.google.com/file/d/1wMdPlORDuFTeyOyAZnpwCCAES2AXqiq2/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1wMdPlORDuFTeyOyAZnpwCCAES2AXqiq2"
+      },
+      {
+        "row": 49,
+        "url": "https://drive.google.com/file/d/1SttSJ87foa1-YM6ZyrWMxL3dVooIioRx/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1SttSJ87foa1-YM6ZyrWMxL3dVooIioRx"
+      },
+      {
+        "row": 51,
+        "url": "https://drive.google.com/file/d/1kzBuQpklMkPom3W1XPMvzbwLv3cjWpfh/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1kzBuQpklMkPom3W1XPMvzbwLv3cjWpfh"
+      },
+      {
+        "row": 57,
+        "url": "https://drive.google.com/file/d/1O72oPYWs89RBgUkhVH6b51002M-3dnzv/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1O72oPYWs89RBgUkhVH6b51002M-3dnzv"
+      },
+      {
+        "row": 72,
+        "url": "https://drive.google.com/file/d/1dNtYuXjtvb3MVgfOwU1xyfl9p8b4SSf2/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1dNtYuXjtvb3MVgfOwU1xyfl9p8b4SSf2"
+      },
+      {
+        "row": 95,
+        "url": "https://drive.google.com/file/d/1gu6BsVX6cpUKdRZXKfWOy9faxf2NUAfr/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1gu6BsVX6cpUKdRZXKfWOy9faxf2NUAfr"
+      },
+      {
+        "row": 96,
+        "url": "https://drive.google.com/file/d/1gerPthxLLqlShbvh1dgSwVJR95Xc8p62/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1gerPthxLLqlShbvh1dgSwVJR95Xc8p62"
+      },
+      {
+        "row": 107,
+        "url": "https://drive.google.com/file/d/1k7LEa46FOoCwpd8o77o6YVbvQ24bQhjz/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1k7LEa46FOoCwpd8o77o6YVbvQ24bQhjz"
+      },
+      {
+        "row": 110,
+        "url": "https://drive.google.com/file/d/1k7LEa46FOoCwpd8o77o6YVbvQ24bQhjz/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1k7LEa46FOoCwpd8o77o6YVbvQ24bQhjz"
+      },
+      {
+        "row": 113,
+        "url": "https://drive.google.com/file/d/1Ap4AmOBm_1sYRfRWi5CoX9xy35Hmpbbh/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1Ap4AmOBm_1sYRfRWi5CoX9xy35Hmpbbh"
+      },
+      {
+        "row": 122,
+        "url": "https://drive.google.com/file/d/16iC666qNUQ_ncLNn9fLJab603Y6glN_E/view?usp=drive_link",
+        "type": "view",
+        "file_id": "16iC666qNUQ_ncLNn9fLJab603Y6glN_E"
+      },
+      {
+        "row": 123,
+        "url": "https://drive.google.com/file/d/1OMpTR2gp7dlrytZPKnGHXEqRBktzdES5/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1OMpTR2gp7dlrytZPKnGHXEqRBktzdES5"
+      },
+      {
+        "row": 125,
+        "url": "https://drive.google.com/file/d/1Z8cFI1iZxWrkOlH_TlWb7lFFiKznxC2V/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1Z8cFI1iZxWrkOlH_TlWb7lFFiKznxC2V"
+      },
+      {
+        "row": 126,
+        "url": "https://drive.google.com/file/d/1b2CpR6UWlpORpNjYTMgjZ_bx3nwxLIMv/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1b2CpR6UWlpORpNjYTMgjZ_bx3nwxLIMv"
+      },
+      {
+        "row": 130,
+        "url": "https://drive.google.com/file/d/1v_MkMoUV21wC8wGPSKs5E-JZUr8WrM3L/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1v_MkMoUV21wC8wGPSKs5E-JZUr8WrM3L"
+      },
+      {
+        "row": 171,
+        "url": "https://drive.google.com/file/d/1G4VRQdfxTChyCa6aggo4HUiddIIRsGSH/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1G4VRQdfxTChyCa6aggo4HUiddIIRsGSH"
+      },
+      {
+        "row": 173,
+        "url": "https://drive.google.com/file/d/1eLbWtrrfi2P36_yBlLetChHHWeHHm8XX/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1eLbWtrrfi2P36_yBlLetChHHWeHHm8XX"
+      },
+      {
+        "row": 179,
+        "url": "https://drive.google.com/file/d/1PjEan2PhXhcWbdJs4jVxXYi1O1qBbj5j/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1PjEan2PhXhcWbdJs4jVxXYi1O1qBbj5j"
+      },
+      {
+        "row": 192,
+        "url": "https://drive.google.com/file/d/1JqotKcw3NHppG62UWbaNixvIA0xpn_xH/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1JqotKcw3NHppG62UWbaNixvIA0xpn_xH"
+      },
+      {
+        "row": 194,
+        "url": "https://drive.google.com/file/d/1piwFqZkoVN8juRKlmoK2-eW1KECl0D_C/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1piwFqZkoVN8juRKlmoK2-eW1KECl0D_C"
+      },
+      {
+        "row": 198,
+        "url": "https://drive.google.com/file/d/1nDWB0d9y7-711uVCyrOuCclsi--HavEB/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1nDWB0d9y7-711uVCyrOuCclsi--HavEB"
+      },
+      {
+        "row": 199,
+        "url": "https://drive.google.com/file/d/1hqmSK89DOkmWQpsgGMlghsm2uGfIpcpy/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1hqmSK89DOkmWQpsgGMlghsm2uGfIpcpy"
+      },
+      {
+        "row": 200,
+        "url": "https://drive.google.com/file/d/1iwvbzVVMA10XW8oNViI6V1GahdMOSGYY/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1iwvbzVVMA10XW8oNViI6V1GahdMOSGYY"
+      },
+      {
+        "row": 202,
+        "url": "https://drive.google.com/file/d/1cCtmvGcaNs2_YYd-ofzIRquS-9qsnxLA/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1cCtmvGcaNs2_YYd-ofzIRquS-9qsnxLA"
+      },
+      {
+        "row": 204,
+        "url": "https://drive.google.com/file/d/1CrjIFl39iM9CBT0QBhwGLtqvrfOkOMTq/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1CrjIFl39iM9CBT0QBhwGLtqvrfOkOMTq"
+      },
+      {
+        "row": 206,
+        "url": "https://drive.google.com/file/d/1BS2BngLEva32ngPiKGOx0oERewLq5oF_/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1BS2BngLEva32ngPiKGOx0oERewLq5oF_"
+      },
+      {
+        "row": 208,
+        "url": "https://drive.google.com/file/d/1VmpL8wLZdvSwhva1VKux_EYZ9zZo3ug1/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1VmpL8wLZdvSwhva1VKux_EYZ9zZo3ug1"
+      },
+      {
+        "row": 209,
+        "url": "https://drive.google.com/file/d/1HLYHSDnf59KhItsB64P0GpqVjAAopDc8/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1HLYHSDnf59KhItsB64P0GpqVjAAopDc8"
+      },
+      {
+        "row": 228,
+        "url": "https://drive.google.com/file/d/1QVOoZj7MVdPCgpSwGan2qpg7Dncywl3L/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1QVOoZj7MVdPCgpSwGan2qpg7Dncywl3L"
+      },
+      {
+        "row": 229,
+        "url": "https://drive.google.com/file/d/1JhuvTLB0_SRE5WsYGrv7QKD8M4q9RDHs/view?usp=drive_link",
+        "type": "view",
+        "file_id": "1JhuvTLB0_SRE5WsYGrv7QKD8M4q9RDHs"
+      },
+      {
+        "row": 230,
+        "url": "https://drive.google.com/file/d/11JDTwZK4wR6SPFt_idgKArqkmc3aYYph/view?usp=drive_link",
+        "type": "view",
+        "file_id": "11JDTwZK4wR6SPFt_idgKArqkmc3aYYph"
+      },
+      {
+        "row": 231,
+        "url": "https://drive.google.com/file/d/11JDTwZK4wR6SPFt_idgKArqkmc3aYYph/view?usp=drive_link",
+        "type": "view",
+        "file_id": "11JDTwZK4wR6SPFt_idgKArqkmc3aYYph"
+      },
+      {
+        "row": 232,
+        "url": "https://drive.google.com/file/d/18yND3rAnxKEKpHkNmrxYvw3tWiCvhPTE/view?usp=drive_link",
+        "type": "view",
+        "file_id": "18yND3rAnxKEKpHkNmrxYvw3tWiCvhPTE"
+      },
+      {
+        "row": 234,
+        "url": "https://drive.google.com/file/d/17fezDjVNJ7blHVyREftG6khsohvkdGSQ/view?usp=drive_link",
+        "type": "view",
+        "file_id": "17fezDjVNJ7blHVyREftG6khsohvkdGSQ"
+      }
+    ]
+  },
+  "csv_comparison": {
+    "sheets_count": 272,
+    "csv_count": 272,
+    "sheets_headers": [
+      "Supplier",
+      "Model Number",
+      "Product Name",
+      "Category",
+      "Specifications",
+      "Communitcation protocol",
+      "Power Source",
+      "Country",
+      "Image",
+      "Price",
+      "MOQ",
+      "Catalogue",
+      "Packing",
+      "Status",
+      "DESIGNATION FR",
+      "REF HEYZACK",
+      "Drive Link",
+      "Lead Time"
+    ],
+    "csv_headers": [
+      "Supplier",
+      "Model Number",
+      "Product Name",
+      "Category",
+      "Specifications",
+      "Communitcation protocol",
+      "Power Source",
+      "Country",
+      "Image",
+      "Price",
+      "MOQ",
+      "Catalogue",
+      "Packing",
+      "Status",
+      "DESIGNATION FR",
+      "REF HEYZACK",
+      "Drive Link",
+      "Lead Time"
+    ],
+    "common_headers": [
+      "Price",
+      "Status",
+      "DESIGNATION FR",
+      "Packing",
+      "MOQ",
+      "Model Number",
+      "Country",
+      "REF HEYZACK",
+      "Image",
+      "Drive Link",
+      "Supplier",
+      "Power Source",
+      "Communitcation protocol",
+      "Specifications",
+      "Lead Time",
+      "Product Name",
+      "Category",
+      "Catalogue"
+    ],
+    "sheets_only_headers": [],
+    "csv_only_headers": []
+  }
+}

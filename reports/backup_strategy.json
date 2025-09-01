@@ -1,0 +1,21 @@
+{
+  "backup_files": [
+    "data/products_hierarchical_enhanced.json",
+    "data/products.json",
+    "reports/google_sheets_analysis.json"
+  ],
+  "backup_directory": "data/backups/pre_s3_migration_20250827_172507",
+  "rollback_procedure": [
+    "1. Stop any running processes",
+    "2. Restore original JSON files from backup",
+    "3. Revert any Google Sheets changes",
+    "4. Clear S3 bucket if needed",
+    "5. Regenerate brochures with original URLs"
+  ],
+  "validation_steps": [
+    "1. Verify backup files exist and are readable",
+    "2. Test S3 bucket access and permissions",
+    "3. Validate image download capabilities",
+    "4. Confirm rollback procedure works"
+  ]
+}

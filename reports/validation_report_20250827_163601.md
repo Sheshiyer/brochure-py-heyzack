@@ -1,0 +1,901 @@
+# Data Validation Report
+Generated on: 2025-08-27 16:39:52
+
+## Summary
+- **Files validated**: 6
+- **Files with errors**: 1
+- **Files with warnings**: 2
+- **Total issues**: 432
+  - Errors: 110
+  - Warnings: 322
+  - Info: 0
+
+## Invalid Field Value Issues
+
+### products_hierarchical_enhanced.json
+
+- ❌ **ERROR** (Product 0): Product name must be a non-empty string
+- ❌ **ERROR** (Product 1): Product name must be a non-empty string
+- ❌ **ERROR** (Product 2): Product name must be a non-empty string
+- ❌ **ERROR** (Product 3): Product name must be a non-empty string
+
+## Missing Products Issues
+
+### specification_analysis.json
+
+- ⚠️ **WARNING** (Category 'Video Door Bell'): Category has no 'products' key
+  - **Suggestion**: Add 'products' array to category
+- ⚠️ **WARNING** (Category 'Camera'): Category has no 'products' key
+  - **Suggestion**: Add 'products' array to category
+- ⚠️ **WARNING** (Category 'Pets accessories'): Category has no 'products' key
+  - **Suggestion**: Add 'products' array to category
+- ⚠️ **WARNING** (Category 'Door Lock'): Category has no 'products' key
+  - **Suggestion**: Add 'products' array to category
+- ⚠️ **WARNING** (Category 'Baby Monitor'): Category has no 'products' key
+  - **Suggestion**: Add 'products' array to category
+- ⚠️ **WARNING** (Category 'Smart Control Panel'): Category has no 'products' key
+  - **Suggestion**: Add 'products' array to category
+- ⚠️ **WARNING** (Category 'Smart Sensor'): Category has no 'products' key
+  - **Suggestion**: Add 'products' array to category
+- ⚠️ **WARNING** (Category 'Smart Gateway'): Category has no 'products' key
+  - **Suggestion**: Add 'products' array to category
+- ⚠️ **WARNING** (Category 'Smart Thermostat'): Category has no 'products' key
+  - **Suggestion**: Add 'products' array to category
+- ⚠️ **WARNING** (Category 'Smart Remote Control'): Category has no 'products' key
+  - **Suggestion**: Add 'products' array to category
+- ⚠️ **WARNING** (Category 'Smart Electrical Products'): Category has no 'products' key
+  - **Suggestion**: Add 'products' array to category
+- ⚠️ **WARNING** (Category 'background music'): Category has no 'products' key
+  - **Suggestion**: Add 'products' array to category
+- ⚠️ **WARNING** (Category 'smart switch'): Category has no 'products' key
+  - **Suggestion**: Add 'products' array to category
+- ⚠️ **WARNING** (Category 'Smart Socket'): Category has no 'products' key
+  - **Suggestion**: Add 'products' array to category
+- ⚠️ **WARNING** (Category 'Smart DIY Module'): Category has no 'products' key
+  - **Suggestion**: Add 'products' array to category
+
+## Missing Recommended Field Issues
+
+### products_hierarchical_enhanced.json
+
+- ⚠️ **WARNING** (Product 0): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 1): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 2): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 3): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 0): Missing recommended field 'price'
+  - **Suggestion**: Consider adding 'price' field for better data quality
+- ⚠️ **WARNING** (Product 0): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 1): Missing recommended field 'price'
+  - **Suggestion**: Consider adding 'price' field for better data quality
+- ⚠️ **WARNING** (Product 1): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 2): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 3): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 4): Missing recommended field 'price'
+  - **Suggestion**: Consider adding 'price' field for better data quality
+- ⚠️ **WARNING** (Product 4): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 5): Missing recommended field 'price'
+  - **Suggestion**: Consider adding 'price' field for better data quality
+- ⚠️ **WARNING** (Product 5): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 6): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 7): Missing recommended field 'price'
+  - **Suggestion**: Consider adding 'price' field for better data quality
+- ⚠️ **WARNING** (Product 7): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 8): Missing recommended field 'price'
+  - **Suggestion**: Consider adding 'price' field for better data quality
+- ⚠️ **WARNING** (Product 8): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 9): Missing recommended field 'price'
+  - **Suggestion**: Consider adding 'price' field for better data quality
+- ⚠️ **WARNING** (Product 9): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 10): Missing recommended field 'price'
+  - **Suggestion**: Consider adding 'price' field for better data quality
+- ⚠️ **WARNING** (Product 10): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 11): Missing recommended field 'price'
+  - **Suggestion**: Consider adding 'price' field for better data quality
+- ⚠️ **WARNING** (Product 11): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 12): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 13): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 14): Missing recommended field 'price'
+  - **Suggestion**: Consider adding 'price' field for better data quality
+- ⚠️ **WARNING** (Product 14): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 15): Missing recommended field 'price'
+  - **Suggestion**: Consider adding 'price' field for better data quality
+- ⚠️ **WARNING** (Product 15): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 16): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 17): Missing recommended field 'price'
+  - **Suggestion**: Consider adding 'price' field for better data quality
+- ⚠️ **WARNING** (Product 17): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 18): Missing recommended field 'price'
+  - **Suggestion**: Consider adding 'price' field for better data quality
+- ⚠️ **WARNING** (Product 18): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 19): Missing recommended field 'price'
+  - **Suggestion**: Consider adding 'price' field for better data quality
+- ⚠️ **WARNING** (Product 19): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 0): Missing recommended field 'price'
+  - **Suggestion**: Consider adding 'price' field for better data quality
+- ⚠️ **WARNING** (Product 0): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 1): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 2): Missing recommended field 'price'
+  - **Suggestion**: Consider adding 'price' field for better data quality
+- ⚠️ **WARNING** (Product 2): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 3): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 0): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 1): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 2): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 3): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 0): Missing recommended field 'price'
+  - **Suggestion**: Consider adding 'price' field for better data quality
+- ⚠️ **WARNING** (Product 0): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 1): Missing recommended field 'price'
+  - **Suggestion**: Consider adding 'price' field for better data quality
+- ⚠️ **WARNING** (Product 1): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 0): Missing recommended field 'price'
+  - **Suggestion**: Consider adding 'price' field for better data quality
+- ⚠️ **WARNING** (Product 0): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 1): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 2): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 3): Missing recommended field 'price'
+  - **Suggestion**: Consider adding 'price' field for better data quality
+- ⚠️ **WARNING** (Product 3): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 4): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 5): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 0): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 1): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 0): Missing recommended field 'price'
+  - **Suggestion**: Consider adding 'price' field for better data quality
+- ⚠️ **WARNING** (Product 0): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 1): Missing recommended field 'price'
+  - **Suggestion**: Consider adding 'price' field for better data quality
+- ⚠️ **WARNING** (Product 1): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 2): Missing recommended field 'price'
+  - **Suggestion**: Consider adding 'price' field for better data quality
+- ⚠️ **WARNING** (Product 2): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 3): Missing recommended field 'price'
+  - **Suggestion**: Consider adding 'price' field for better data quality
+- ⚠️ **WARNING** (Product 3): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 0): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 1): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 0): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 1): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 2): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 3): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 0): Missing recommended field 'price'
+  - **Suggestion**: Consider adding 'price' field for better data quality
+- ⚠️ **WARNING** (Product 0): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 1): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 2): Missing recommended field 'price'
+  - **Suggestion**: Consider adding 'price' field for better data quality
+- ⚠️ **WARNING** (Product 2): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 3): Missing recommended field 'price'
+  - **Suggestion**: Consider adding 'price' field for better data quality
+- ⚠️ **WARNING** (Product 3): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 4): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 5): Missing recommended field 'price'
+  - **Suggestion**: Consider adding 'price' field for better data quality
+- ⚠️ **WARNING** (Product 5): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 6): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 7): Missing recommended field 'price'
+  - **Suggestion**: Consider adding 'price' field for better data quality
+- ⚠️ **WARNING** (Product 7): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 8): Missing recommended field 'price'
+  - **Suggestion**: Consider adding 'price' field for better data quality
+- ⚠️ **WARNING** (Product 8): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 9): Missing recommended field 'specifications'
+  - **Suggestion**: Consider adding 'specifications' field for better data quality
+- ⚠️ **WARNING** (Product 9): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 0): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 1): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 2): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 3): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 4): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 5): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 6): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 7): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 8): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 9): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 0): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 1): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 2): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 3): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 4): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 5): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 6): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 7): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 8): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 9): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 0): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 1): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 2): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 3): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 4): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 5): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 0): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 1): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 2): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 3): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 4): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 5): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 6): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 7): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 0): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 1): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 2): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 3): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 0): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+- ⚠️ **WARNING** (Product 1): Missing recommended field 'availability'
+  - **Suggestion**: Consider adding 'availability' field for better data quality
+
+## Missing Required Field Issues
+
+### products_hierarchical_enhanced.json
+
+- ❌ **ERROR** (Product 0): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 1): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 2): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 3): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 0): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 1): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 2): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 3): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 4): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 5): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 6): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 7): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 8): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 9): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 10): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 11): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 12): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 13): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 14): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 15): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 16): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 17): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 18): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 19): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 0): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 1): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 2): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 3): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 0): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 1): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 2): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 3): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 0): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 1): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 0): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 1): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 2): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 3): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 4): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 5): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 0): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 1): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 0): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 1): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 2): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 3): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 0): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 1): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 0): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 1): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 2): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 3): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 0): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 1): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 2): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 3): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 4): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 5): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 6): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 7): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 8): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 9): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 0): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 1): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 2): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 3): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 4): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 5): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 6): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 7): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 8): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 9): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 0): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 1): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 2): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 3): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 4): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 5): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 6): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 7): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 8): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 9): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 0): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 1): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 2): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 3): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 4): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 5): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 0): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 1): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 2): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 3): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 4): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 5): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 6): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 7): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 0): Missing required field 'name'
+  - **Suggestion**: Add 'name' field to product
+- ❌ **ERROR** (Product 0): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 1): Missing required field 'name'
+  - **Suggestion**: Add 'name' field to product
+- ❌ **ERROR** (Product 1): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 2): Missing required field 'name'
+  - **Suggestion**: Add 'name' field to product
+- ❌ **ERROR** (Product 2): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 3): Missing required field 'name'
+  - **Suggestion**: Add 'name' field to product
+- ❌ **ERROR** (Product 3): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 0): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+- ❌ **ERROR** (Product 1): Missing required field 'model'
+  - **Suggestion**: Add 'model' field to product
+
+## Price Format Issues
+
+### products_hierarchical_enhanced.json
+
+- ⚠️ **WARNING** (Product 0): Price '13.8' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 1): Price '29.5' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 2): Price '13.8' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 3): Price '29.5' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 2): Price '28.5' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 3): Price '2.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 6): Price '13.2' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 12): Price '28.5' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 13): Price '2.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 16): Price '13.2' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 1): Price '16.2' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 3): Price '16.2' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 0): Price '24.6' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 1): Price '24.6' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 2): Price '1806.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 3): Price '4792.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 1): Price '65.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 2): Price '115.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 4): Price '65.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 5): Price '115.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 0): Price '100.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 1): Price '100.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 0): Price '100.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 1): Price '100.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 0): Price '4.5' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 1): Price '100.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 2): Price '4.5' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 3): Price '100.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 1): Price '16.5' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 4): Price '8.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 6): Price '16.5' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 9): Price '880.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 0): Price '178.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 1): Price '75.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 2): Price '23.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 3): Price '20.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 4): Price '27.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 5): Price '178.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 6): Price '75.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 7): Price '23.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 8): Price '20.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 9): Price '27.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 0): Price '16.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 1): Price '22.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 2): Price '23.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 3): Price '33.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 4): Price '33.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 5): Price '16.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 6): Price '22.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 7): Price '23.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 8): Price '33.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 9): Price '33.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 0): Price '3.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 1): Price '4.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 2): Price '14.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 3): Price '350.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 4): Price '400.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 5): Price '1400.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 0): Price '3.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 1): Price '3.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 2): Price '3.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 3): Price '350.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 4): Price '350.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 5): Price '380.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 6): Price '350.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 7): Price '450.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 0): Price '450.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 1): Price '480.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 2): Price '480.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 3): Price '500.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 0): Price '230.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+- ⚠️ **WARNING** (Product 1): Price '403.0' doesn't follow standard format
+  - **Suggestion**: Use format like '$99.99' or '99.99'
+
+## Unknown Category Issues
+
+### products_hierarchical_enhanced.json
+
+- ⚠️ **WARNING** (Product 0): Unknown category 'Video Door Bell'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 1): Unknown category 'Video Door Bell'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 2): Unknown category 'Video Door Bell'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 3): Unknown category 'Video Door Bell'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 0): Unknown category 'Camera'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 1): Unknown category 'Camera'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 2): Unknown category 'Camera'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 3): Unknown category 'Camera'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 4): Unknown category 'Camera'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 5): Unknown category 'Camera'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 6): Unknown category 'Camera'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 7): Unknown category 'Camera'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 8): Unknown category 'Camera'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 9): Unknown category 'Camera'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 10): Unknown category 'Camera'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 11): Unknown category 'Camera'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 12): Unknown category 'Camera'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 13): Unknown category 'Camera'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 14): Unknown category 'Camera'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 15): Unknown category 'Camera'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 16): Unknown category 'Camera'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 17): Unknown category 'Camera'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 18): Unknown category 'Camera'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 19): Unknown category 'Camera'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 0): Unknown category 'Pets accessories'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 1): Unknown category 'Pets accessories'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 2): Unknown category 'Pets accessories'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 3): Unknown category 'Pets accessories'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 0): Unknown category 'Door Lock'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 1): Unknown category 'Door Lock'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 2): Unknown category 'Door Lock'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 3): Unknown category 'Door Lock'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 0): Unknown category 'Baby Monitor'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 1): Unknown category 'Baby Monitor'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 0): Unknown category 'Smart Control Panel'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 1): Unknown category 'Smart Control Panel'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 2): Unknown category 'Smart Control Panel'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 3): Unknown category 'Smart Control Panel'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 4): Unknown category 'Smart Control Panel'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 5): Unknown category 'Smart Control Panel'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 0): Unknown category 'Smart Sensor'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 1): Unknown category 'Smart Sensor'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 0): Unknown category 'Smart Gateway'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 1): Unknown category 'Smart Gateway'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 2): Unknown category 'Smart Gateway'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 3): Unknown category 'Smart Gateway'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 0): Unknown category 'Smart Thermostat'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 1): Unknown category 'Smart Thermostat'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 0): Unknown category 'Smart Remote Control'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 1): Unknown category 'Smart Remote Control'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 2): Unknown category 'Smart Remote Control'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 3): Unknown category 'Smart Remote Control'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 0): Unknown category 'Smart Electrical Products'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 1): Unknown category 'Smart Electrical Products'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 2): Unknown category 'Smart Electrical Products'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 3): Unknown category 'Smart Electrical Products'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 4): Unknown category 'Smart Electrical Products'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 5): Unknown category 'Smart Electrical Products'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 6): Unknown category 'Smart Electrical Products'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 7): Unknown category 'Smart Electrical Products'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 8): Unknown category 'Smart Electrical Products'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 9): Unknown category 'Smart Electrical Products'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 0): Unknown category 'background music'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 1): Unknown category 'background music'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 2): Unknown category 'background music'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 3): Unknown category 'background music'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 4): Unknown category 'background music'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 5): Unknown category 'background music'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 6): Unknown category 'background music'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 7): Unknown category 'background music'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 8): Unknown category 'background music'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 9): Unknown category 'background music'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 0): Unknown category 'smart switch'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 1): Unknown category 'smart switch'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 2): Unknown category 'smart switch'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 3): Unknown category 'smart switch'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 4): Unknown category 'smart switch'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 5): Unknown category 'smart switch'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 6): Unknown category 'smart switch'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 7): Unknown category 'smart switch'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 8): Unknown category 'smart switch'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 9): Unknown category 'smart switch'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 0): Unknown category 'Smart Socket'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 1): Unknown category 'Smart Socket'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 2): Unknown category 'Smart Socket'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 3): Unknown category 'Smart Socket'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 4): Unknown category 'Smart Socket'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 5): Unknown category 'Smart Socket'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 0): Unknown category 'Smart DIY Module'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 1): Unknown category 'Smart DIY Module'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 2): Unknown category 'Smart DIY Module'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 3): Unknown category 'Smart DIY Module'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 4): Unknown category 'Smart DIY Module'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 5): Unknown category 'Smart DIY Module'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 6): Unknown category 'Smart DIY Module'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 7): Unknown category 'Smart DIY Module'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 0): Unknown category 'Smart Light'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 1): Unknown category 'Smart Light'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 2): Unknown category 'Smart Light'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 3): Unknown category 'Smart Light'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 0): Unknown category 'Garage/Window/Curtain Motor'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
+- ⚠️ **WARNING** (Product 1): Unknown category 'Garage/Window/Curtain Motor'
+  - **Suggestion**: Use one of: Smart Cameras, Smart Displays, Smart Doorbells, Smart Home Hubs, Smart Lighting, Smart Locks, Smart Plugs, Smart Security, Smart Sensors, Smart Speakers, Smart Switches, Smart Thermostats
