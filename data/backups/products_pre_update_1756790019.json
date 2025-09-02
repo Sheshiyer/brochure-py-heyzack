@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "total_products": 258,
+    "total_products": 257,
     "categories_count": 19,
     "suppliers_count": 6,
     "categories": [
@@ -33,7 +33,7 @@
       "szsmarthome"
     ],
     "average_price": 169.44621848739496,
-    "last_synchronized": "2025-09-02T05:13:39.032926+00:00",
+    "last_synchronized": "2025-09-02T04:37:43.341991+00:00",
     "source": "products_hierarchical_enhanced.json"
   },
   "products": [
@@ -7746,36 +7746,6 @@
       },
       "createdAt": "2025-09-02T04:37:43.319563+00:00",
       "updatedAt": "2025-09-02T04:37:43.319563+00:00"
-    },
-    {
-      "id": "product-1756790019030403",
-      "name": "AC Hard-wire Video Doorbel",
-      "model": "",
-      "supplier": "AVATTO",
-      "category": "Smart Thermostat",
-      "price": 0.0,
-      "currency": "USD",
-      "status": "published",
-      "images": [],
-      "specifications": {
-        "description": "New smart home product with advanced features.",
-        "specifications": "Features: 2MP CMOS sensor full HD 1080p live view and video | Wi-Fi connection | IR night vision | Two-way audio | Siren alarm | Human and sound detection | IP65 weatherproof | AC 12-24v hard-wire | Micro SD card slot (local storage optional) | Indoor chime available | Specifications: Image sensor: 2MP CMOS | Lens: 100-Degree fixed focus | Video Size: (1920x1080) | Storage: Micro SD cards up to 128GB for local, cloud storage optional | Wireless Standard: IEEE 802.11 b/g/n, 2.4GHz | Button/Switch: Power switch x1, Reset button x1 | Microphone: Yes,built-in | Speaker: Yes,built-in | Power Source: AC 12-24V hard-wire",
-        "features": "",
-        "communication_protocol": "",
-        "power_source": "AC 12-24V hardwired",
-        "country": "",
-        "moq": "1000",
-        "lead_time": ""
-      },
-      "metadata": {
-        "enhanced_id": "AVATTO_",
-        "drive_link": "https://drive.google.com/file/d/1JqKpg1tRRNOX0iPE-hzK4prAtPvEAVZM/view?usp=sharing",
-        "price_raw": "US$13.80",
-        "ref_heyzack": null,
-        "designation_fr": null
-      },
-      "createdAt": "2025-09-02T05:13:39.030403+00:00",
-      "updatedAt": "2025-09-02T05:13:39.030403+00:00"
     }
   ]
 }
