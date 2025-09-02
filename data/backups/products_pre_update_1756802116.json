@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "total_products": 258,
+    "total_products": 259,
     "categories_count": 19,
     "suppliers_count": 6,
     "categories": [
@@ -33,7 +33,7 @@
       "szsmarthome"
     ],
     "average_price": 169.44621848739496,
-    "last_synchronized": "2025-09-02T08:58:51.704720+00:00",
+    "last_synchronized": "2025-09-02T06:55:02.737819+00:00",
     "source": "products_hierarchical_enhanced.json"
   },
   "products": [
@@ -7746,36 +7746,6 @@
       },
       "createdAt": "2025-09-02T04:37:43.319563+00:00",
       "updatedAt": "2025-09-02T04:37:43.319563+00:00"
-    },
-    {
-      "id": "product-1756803531695967",
-      "name": "Hard-wire Video Doorbel 2",
-      "model": "IPB564",
-      "supplier": "TUYA",
-      "category": "Camera",
-      "price": 0.0,
-      "currency": "USD",
-      "status": "published",
-      "images": [],
-      "specifications": {
-        "description": "2MP CMOS sensor full HD 1080p live view and video | Wi-Fi connection | IR night vision | Two-way audio | Siren alarm | Human and sound detection | IP65 weatherproof | AC 12-24v hard-wire | Micro SD card slot (local storage optional) | Indoor chime available |",
-        "specifications": "Image sensor: 2MP CMOS | Lens: 100-Degree fixed focus | Video Size: (1920x1080) | Storage: Micro SD cards up to 128GB for local, cloud storage optional | Wireless Standard: IEEE 802.11 b/g/n, 2.4GHz | Button/Switch: Power switch x1, Reset button x1 | Microphone: Yes,built-in | Speaker: Yes,built-in | Power Source: AC 12-24V hard-wire",
-        "features": "Features: 2MP CMOS sensor full HD 1080p live view and video | Wi-Fi connection | IR night vision | Two-way audio | Siren alarm | Human and sound detection | IP65 weatherproof | AC 12-24v hard-wire | Micro SD card slot (local storage optional) | Indoor chime available | Specifications: Image sensor: 2MP CMOS | Lens: 100-Degree fixed focus | Video Size: (1920x1080) | Storage: Micro SD cards up to 128GB for local, cloud storage optional | Wireless Standard: IEEE 802.11 b/g/n, 2.4GHz | Button/Switch: Power switch x1, Reset button x1 | Microphone: Yes,built-in | Speaker: Yes,built-in | Power Source: AC 12-24V hard-wire",
-        "communication_protocol": "Wi-Fi 802.11 b/g/n (2.4GHz)",
-        "power_source": "AC 12-24V hardwired",
-        "country": "",
-        "moq": "1000",
-        "lead_time": ""
-      },
-      "metadata": {
-        "enhanced_id": "TUYA_IPB564",
-        "drive_link": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/IPB215_aaa168327b824311aea689a83aa2942c.jpg",
-        "price_raw": "US$13.80",
-        "ref_heyzack": "HZ-SS-CONACC01",
-        "designation_fr": "Sonnette vidéo câblée AC"
-      },
-      "createdAt": "2025-09-02T08:58:51.695967+00:00",
-      "updatedAt": "2025-09-02T08:58:51.695967+00:00"
     }
   ]
 }

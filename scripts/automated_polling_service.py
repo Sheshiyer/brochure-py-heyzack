@@ -175,11 +175,28 @@ class DataProcessor:
             # Pad row with empty strings if needed
             row = row + [''] * (len(headers) - len(row))
         
-        # Create mapping of headers to values
-        row_data = {headers[i]: (row[i] if i < len(row) else '') for i in range(len(headers))}
+        # Create mapping of headers to values with case-insensitive matching
+        row_data = {}
+        header_map = {}
+        for i, header in enumerate(headers):
+            header_lower = header.lower()
+            row_data[header] = row[i] if i < len(row) else ''
+            header_map[header_lower] = header
+        
+        # Helper function to get data with flexible header matching
+        def get_field(possible_names):
+            for name in possible_names:
+                # Try exact match first
+                if name in row_data:
+                    return str(row_data[name]).strip()
+                # Try case-insensitive match
+                name_lower = name.lower()
+                if name_lower in header_map:
+                    return str(row_data[header_map[name_lower]]).strip()
+            return ''
         
         # Extract key fields (adjust based on your sheet structure)
-        name = str(row_data.get('Product Name', '')).strip()
+        name = get_field(['Product Name'])
         if not name:
             return None
         
@@ -187,39 +204,76 @@ class DataProcessor:
         timestamp = int(time.time() * 1000000)  # microsecond precision
         product_id = f"product-{timestamp}"
         
+        # Get specifications and parse them for description and technical specs
+        specs_raw = get_field(['Specifications'])
+        description, technical_specs = self._parse_specifications(specs_raw)
+        
+        # Process drive link for images
+        drive_link = get_field(['Drive Link'])
+        images = []
+        if drive_link and 'drive.google.com' in drive_link:
+            # Convert Google Drive share link to direct image URL if possible
+            images = [{"url": drive_link, "alt": name, "type": "drive_link"}]
+        
         # Build product object
         product = {
             "id": product_id,
             "name": name,
-            "model": str(row_data.get('Model', '')).strip(),
-            "supplier": str(row_data.get('Supplier', '')).strip(),
-            "category": str(row_data.get('Category', '')).strip(),
-            "price": self._parse_price(str(row_data.get('Price', ''))),
+            "model": get_field(['Model Number', 'Model']),
+            "supplier": get_field(['Supplier']),
+            "category": get_field(['Category']),
+            "price": self._parse_price(get_field(['Price'])),
             "currency": "USD",
             "status": "published",
-            "images": [],
+            "images": images,
             "specifications": {
-                "description": str(row_data.get('Description', '')).strip() or "New smart home product with advanced features.",
-                "specifications": str(row_data.get('Specifications', '')).strip(),
-                "features": str(row_data.get('Features', '')).strip(),
-                "communication_protocol": str(row_data.get('Protocol', '')).strip(),
-                "power_source": str(row_data.get('Power Source', '')).strip(),
-                "country": str(row_data.get('Country', '')).strip(),
-                "moq": str(row_data.get('MOQ', '')).strip(),
-                "lead_time": str(row_data.get('Lead Time', '')).strip()
+                "description": description or "New smart home product with advanced features.",
+                "specifications": technical_specs,
+                "features": specs_raw,  # Keep the full specs as features for now
+                "communication_protocol": get_field(['Communitcation protocol', 'Communication protocol', 'Protocol']),
+                "power_source": get_field(['Power Source']),
+                "country": get_field(['Country']),
+                "moq": get_field(['MOQ']),
+                "lead_time": get_field(['Lead Time'])
             },
             "metadata": {
-                "enhanced_id": f"{str(row_data.get('Supplier', '')).strip()}_{str(row_data.get('Model', '')).strip()}",
-                "drive_link": str(row_data.get('Drive Link', '')).strip(),
-                "price_raw": str(row_data.get('Price', '')).strip(),
-                "ref_heyzack": str(row_data.get('Ref Heyzack', '')).strip() or None,
-                "designation_fr": str(row_data.get('Designation FR', '')).strip() or None
+                "enhanced_id": f"{get_field(['Supplier'])}_{get_field(['Model Number', 'Model'])}",
+                "drive_link": drive_link,
+                "price_raw": get_field(['Price']),
+                "ref_heyzack": get_field(['REF HEYZACK', 'Ref Heyzack']) or None,
+                "designation_fr": get_field(['DESIGNATION FR', 'Designation FR']) or None
             },
             "createdAt": datetime.now(timezone.utc).isoformat(),
             "updatedAt": datetime.now(timezone.utc).isoformat()
         }
         
         return product
+    
+    def _parse_specifications(self, specs_text: str) -> tuple[str, str]:
+        """Parse specifications text to extract description and technical specs."""
+        if not specs_text:
+            return "", ""
+        
+        # Look for common patterns that separate features from specifications
+        if 'Features:' in specs_text and 'Specifications:' in specs_text:
+            parts = specs_text.split('Specifications:', 1)
+            if len(parts) == 2:
+                features_part = parts[0].replace('Features:', '').strip()
+                specs_part = parts[1].strip()
+                return features_part, specs_part
+        elif 'Features:' in specs_text:
+            # If only Features section exists, use it as description
+            description = specs_text.replace('Features:', '').strip()
+            return description, ""
+        else:
+            # If no clear structure, use first part as description
+            sentences = specs_text.split('|')
+            if len(sentences) > 3:
+                description = ' | '.join(sentences[:3]).strip()
+                technical_specs = ' | '.join(sentences[3:]).strip()
+                return description, technical_specs
+            else:
+                return specs_text.strip(), ""
     
     def _parse_price(self, price_str: str) -> float:
         """Parse price string to float."""
@@ -353,6 +407,7 @@ class AutomatedPollingService:
             
             if changes["new_row_count"] > 0:
                 logger.info(f"Processing {changes['new_row_count']} new rows")
+                logger.info(f"Product Details: {changes['new_rows']}")
                 
                 # Process new rows
                 headers = sheets_data[0] if sheets_data else []
