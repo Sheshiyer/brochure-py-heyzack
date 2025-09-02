@@ -599,6 +599,8 @@ h1, h2, h3, h4, h5, h6 {
 .hero-image img {
     width: 85%; /* Fixed width for consistent sizing */
     height: 85%; /* Fixed height for consistent sizing */
+    max-width: 400px; /* Prevent oversized images */
+    max-height: 400px; /* Prevent oversized images */
     object-fit: contain;
     border-radius: 12px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
@@ -609,6 +611,8 @@ h1, h2, h3, h4, h5, h6 {
     height: 85%; /* Match image sizing for consistency */
     min-width: 250px; /* Minimum size for visibility */
     min-height: 250px; /* Minimum size for visibility */
+    max-width: 400px; /* Match image constraints */
+    max-height: 400px; /* Match image constraints */
     background: linear-gradient(135deg, #333232 0%, #222222 100%);
     border-radius: 12px;
     display: flex;
@@ -656,13 +660,18 @@ h1, h2, h3, h4, h5, h6 {
     padding: 4rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     background: #ffffff;
     position: relative;
+    min-height: 600px; /* Ensure consistent minimum height */
 }
 
 .product-header {
     margin-bottom: 2rem;
+    min-height: 120px; /* Consistent space for title and model */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .product-title {
@@ -683,6 +692,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .product-description {
     margin-bottom: 2rem;
+    min-height: 80px; /* Consistent space for description content */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .product-description p {
@@ -695,6 +708,10 @@ h1, h2, h3, h4, h5, h6 {
 /* Specifications */
 .specifications {
     margin-bottom: 1.5rem;
+    min-height: 200px; /* Consistent space for specifications content */
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Allow section to expand as needed */
 }
 
 .spec-title {
@@ -728,6 +745,7 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid rgba(232, 47, 137, 0.1);
     margin-bottom: 0.5rem;
     box-sizing: border-box;
+    min-height: 150px; /* Ensure consistent layout structure */
 }
 
 /* 
@@ -866,6 +884,7 @@ h1, h2, h3, h4, h5, h6 {
     grid-template-columns: 1fr auto;
     gap: 2rem;
     align-items: end;
+    min-height: 60px; /* Ensure consistent footer space even with missing supplier/price info */
 }
 
 .supplier-info,
