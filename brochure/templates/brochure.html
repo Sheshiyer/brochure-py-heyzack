@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ company_info.name }} Product Catalog</title>
+    <link rel="stylesheet" href="static/css/{{ theme }}.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cover Page -->
+    <section class="cover-page">
+        <div class="cover-content">
+            <div class="brand-section">
+                <h1 class="brand-name">HeyZack</h1>
+                <p class="brand-tagline">Your Home, Smarter Than Ever</p>
+                <div class="brand-description">
+                    <p>AI-powered smart home solutions designed for professionals and consumers</p>
+                </div>
+            </div>
+            <div class="catalog-meta">
+                <div class="meta-item">
+                    <span class="meta-label">Product Catalog</span>
+                    <span class="meta-value">{{ generation_date }}</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Total Products</span>
+                    <span class="meta-value">{{ total_products }}</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Categories</span>
+                    <span class="meta-value">{{ categories|length }}</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <main class="product-showcase">
+        {% set product_counter = namespace(value=1) %}
+        {% set total_products_count = grouped_products.values() | map('length') | sum %}
+        {% for category, category_products in grouped_products.items() %}
+            {% for product in category_products %}
+            {% set layout_type = 'default' %}
+            {% if total_products_count >= 4 and total_products_count <= 6 %}
+                {% if product_counter.value % 6 == 1 %}
+                    {% set layout_type = 'hero-left' %}
+                {% elif product_counter.value % 6 == 2 %}
+                    {% set layout_type = 'hero-right' %}
+                {% elif product_counter.value % 6 == 3 %}
+                    {% set layout_type = 'left-image-right-content' %}
+                {% elif product_counter.value % 6 == 4 %}
+                    {% set layout_type = 'right-image-left-content' %}
+                {% elif product_counter.value % 6 == 5 %}
+                    {% set layout_type = 'grid-showcase' %}
+                {% else %}
+                    {% set layout_type = 'specs-focus' %}
+                {% endif %}
+            {% elif total_products_count >= 5 %}
+                {% if product_counter.value % 8 == 1 %}
+                    {% set layout_type = 'hero-left' %}
+                {% elif product_counter.value % 8 == 2 %}
+                    {% set layout_type = 'hero-right' %}
+                {% elif product_counter.value % 8 == 3 %}
+                    {% set layout_type = 'left-image-right-content' %}
+                {% elif product_counter.value % 8 == 4 %}
+                    {% set layout_type = 'right-image-left-content' %}
+                {% elif product_counter.value % 8 == 5 %}
+                    {% set layout_type = 'category-grid' %}
+                {% elif product_counter.value % 8 == 6 %}
+                    {% set layout_type = 'grid-showcase' %}
+                {% elif product_counter.value % 8 == 7 %}
+                    {% set layout_type = 'specs-focus' %}
+                {% else %}
+                    {% set layout_type = 'minimal-grid' %}
+                {% endif %}
+            {% endif %}
+            <section class="product-page layout-{{ layout_type }}" data-product="{{ product_counter.value }}" data-layout="{{ layout_type }}">
+                <div class="product-layout layout-{{ layout_type }}">
+                    <!-- Hero Image Section -->
+                    <div class="hero-section">
+                        <div class="product-number">
+                            <span class="number">{{ "%02d"|format(product_counter.value) }}</span>
+                        </div>
+                        <div class="hero-image">
+                            {% if product.primary_image %}
+                            <img src="{{ product.primary_image }}" alt="{{ product.name }}" loading="lazy">
+                            {% else %}
+                            <div class="image-placeholder">
+                                <span class="placeholder-text">{{ product.name[:2]|upper }}</span>
+                            </div>
+                            {% endif %}
+
+                        </div>
+                        <div class="category-label">
+                            <span>{{ category|upper }}</span>
+                        </div>
+                    </div>
+
+                    <!-- Product Details Section -->
+                    <div class="details-section">
+                        <div class="product-header">
+                            <h2 class="product-title">{{ product.name }}</h2>
+                            <p class="product-model">{% if product.model and product.model.strip() %}{{ product.model }}{% else %}{{ product.supplier }} {{ product.category }}{% endif %}</p>
+                        </div>
+
+                        <div class="product-description">
+                            {% if product.short_description and product.short_description.strip() %}
+                                <p>{{ product.short_description }}</p>
+                            {% elif product.specifications and product.specifications.description and product.specifications.description.strip() %}
+                                <p>{{ product.specifications.description[:200] }}{% if product.specifications.description|length > 200 %}...{% endif %}</p>
+                            {% else %}
+                                <p>Professional {{ product.category|lower }} solution from {{ product.supplier }} designed for smart home applications.</p>
+                            {% endif %}
+                        </div>
+
+                        <div class="specifications">
+                            <h3 class="spec-title">Strengths & Advantages</h3>
+                            <div class="spec-table{% if (product.features and product.features|length >= 20) or (not product.features and 8 >= 20) %} linear-layout{% elif (product.features and product.features|length >= 6) or (not product.features and 8 >= 6) %} left-right-layout{% endif %}">
+                                {% if product.features and product.features|length > 0 %}
+                                    {% for feature in product.features %}
+                                    <div class="spec-row">
+                                        <div class="spec-icon">⚡</div>
+                                        <div class="spec-text">{{ feature }}</div>
+                                    </div>
+                                    {% endfor %}
+                                {% else %}
+                                    <!-- Fallback features based on product category and available data -->
+                                    {% set fallback_features = [] %}
+                                    {% if product.specifications and product.specifications.power_source and product.specifications.power_source.strip() %}
+                                        {% set _ = fallback_features.append("Power: " + product.specifications.power_source) %}
+                                    {% endif %}
+                                    {% if product.specifications and product.specifications.communication_protocol and product.specifications.communication_protocol.strip() %}
+                                        {% set _ = fallback_features.append("Protocol: " + product.specifications.communication_protocol) %}
+                                    {% endif %}
+                                    {% if product.specifications and product.specifications.moq and product.specifications.moq.strip() %}
+                                        {% set _ = fallback_features.append("MOQ: " + product.specifications.moq + " units") %}
+                                    {% endif %}
+                                    {% if product.category %}
+                                        {% set _ = fallback_features.append("Category: " + product.category) %}
+                                    {% endif %}
+                                    {% if product.supplier %}
+                                        {% set _ = fallback_features.append("Supplier: " + product.supplier) %}
+                                    {% endif %}
+                                    {% set _ = fallback_features.append("Smart Home Compatible") %}
+                                    {% set _ = fallback_features.append("Professional Grade Quality") %}
+                                    {% set _ = fallback_features.append("Easy Installation") %}
+                                    
+                                    {% for feature in fallback_features[:8] %}
+                                    <div class="spec-row">
+                                        <div class="spec-icon">⚡</div>
+                                        <div class="spec-text">{{ feature }}</div>
+                                    </div>
+                                    {% endfor %}
+                                {% endif %}
+                            </div>
+                        </div>
+
+                        <div class="product-footer">
+                            <div class="supplier-info">
+                                {{ product.supplier if product.supplier else 'Premium Supplier' }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Page Number -->
+                <div class="page-number">
+                    <span>{{ product_counter.value }}</span>
+                </div>
+            </section>
+            {% set product_counter.value = product_counter.value + 1 %}
+            {% endfor %}
+        {% endfor %}
+    </main>
+
+    <!-- Back Cover -->
+    <section class="back-cover">
+        <div class="back-content">
+            <div class="company-section">
+                <h2 class="company-title">HeyZack AI Calling Agent</h2>
+                <p class="company-description">Complete AI-powered smart home ecosystem that transforms how people interact with their living spaces.</p>
+                
+                <div class="value-proposition">
+                    <h3>Why Choose HeyZack?</h3>
+                    <div class="value-grid">
+                        <div class="value-item">
+                            <h4>AI Guardian Technology</h4>
+                            <p>Proactive home management</p>
+                        </div>
+                        <div class="value-item">
+                            <h4>Complete Integration</h4>
+                            <p>All devices work seamlessly together</p>
+                        </div>
+                        <div class="value-item">
+                            <h4>Professional Support</h4>
+                            <p>Dedicated partner success program</p>
+                        </div>
+                        <div class="value-item">
+                            <h4>30% Partner Margins</h4>
+                            <p>Industry-leading profitability</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="partner-section">
+                <h3>Partner Network Benefits</h3>
+                <ul class="benefits-list">
+                    <li>2-3 additional installs per month</li>
+                    <li>Free demo kits for approved partners</li>
+                    <li>Pre-qualified leads delivered directly</li>
+                    <li>Ultra-fast, professional-grade setup</li>
+                </ul>
+                
+                <div class="cta-section">
+                    <h3>Ready to Partner?</h3>
+                    <div class="cta-options">
+                        <div class="cta-option">
+                            <strong>Schedule a 15-minute Zoom call</strong>
+                            <span>for detailed discussion</span>
+                        </div>
+                        <div class="cta-option">
+                            <strong>Request email overview</strong>
+                            <span>for self-paced review</span>
+                        </div>
+                        <div class="cta-option">
+                            <strong>Book demo kit</strong>
+                            <span>for hands-on experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-section">
+                <h3>Business Hours</h3>
+                <div class="hours-info">
+                    <p><strong>Mon-Fri:</strong> 6 AM - 9 PM</p>
+                    <p><strong>Sat:</strong> 9 AM - 5 PM</p>
+                    <p><strong>Sun:</strong> 9 AM - 4 PM</p>
+                </div>
+            </div>
+
+            <div class="generation-info">
+                <p>Generated on {{ generation_date }}</p>
+                <p>{{ total_products }} products across {{ categories|length }} categories</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="static/js/brochure.js"></script>
+</body>
+</html>

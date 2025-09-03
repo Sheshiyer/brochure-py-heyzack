@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ company_info.name }} Live Product Catalog</title>
+    <link rel="stylesheet" href="static/css/{{ theme }}.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .live-indicator {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #28a745;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .live-indicator.updating {
+            background: #ffc107;
+            color: #212529;
+        }
+        .live-indicator.disconnected {
+            background: #dc3545;
+        }
+        .notification {
+            position: fixed;
+            top: 80px;
+            right: 20px;
+            background: #17a2b8;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            z-index: 1001;
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .notification.show {
+            transform: translateX(0);
+        }
+        .pdf-export-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+        .pdf-export-button button {
+            background: linear-gradient(135deg, #e82f89 0%, #333232 100%);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(232, 47, 137, 0.3);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .pdf-export-button button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(232, 47, 137, 0.4);
+        }
+        .pdf-export-button button:active {
+            transform: translateY(0);
+        }
+        .pdf-export-button button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Live Status Indicator -->
+    <div id="liveStatus" class="live-indicator">
+        🟢 Live Catalog - Auto-updating
+    </div>
+
+    <!-- PDF Export Button -->
+    <div id="pdfExport" class="pdf-export-button">
+        <button onclick="downloadPDF()" title="Download catalog as PDF">
+            📄 Export PDF
+        </button>
+    </div>
+
+    <!-- Notification for new products -->
+    <div id="notification" class="notification">
+        New products detected! Refreshing catalog...
+    </div>
+
+    <!-- Cover Page -->
+    <section class="cover-page">
+        <div class="cover-content">
+            <div class="brand-section">
+                <h1 class="brand-name">HeyZack</h1>
+                <p class="brand-tagline">Your Home, Smarter Than Ever</p>
+                <div class="brand-description">
+                    <p>AI-powered smart home solutions designed for professionals and consumers</p>
+                    <p><strong>Live Catalog</strong> - Automatically updates when new products are added</p>
+                </div>
+            </div>
+            <div class="catalog-meta">
+                <div class="meta-item">
+                    <span class="meta-label">Product Catalog</span>
+                    <span class="meta-value">{{ generation_date }}</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Total Products</span>
+                    <span class="meta-value" id="totalProducts">{{ total_products }}</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Categories</span>
+                    <span class="meta-value" id="totalCategories">{{ categories|length }}</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <main class="product-showcase" id="productShowcase">
+        {% set product_counter = namespace(value=1) %}
+        {% for category, category_products in grouped_products.items() %}
+            {% for product in category_products %}
+            <section class="product-page layout-structured" data-product="{{ product_counter.value }}">
+                <div class="product-layout layout-structured">
+                    <!-- Hero Image Section (30% height) -->
+                    <div class="hero-section">
+                        <div class="product-number">
+                            <span class="number">{{ "%02d"|format(product_counter.value) }}</span>
+                        </div>
+                        <div class="hero-image">
+                            {% if product.primary_image %}
+                            <img src="{{ product.primary_image }}" alt="{{ product.name }}" loading="lazy">
+                            {% else %}
+                            <div class="image-placeholder">
+                                <span class="placeholder-text">{{ product.name[:2]|upper }}</span>
+                            </div>
+                            {% endif %}
+                        </div>
+                        <div class="category-label">
+                            <span>{{ category|upper }}</span>
+                        </div>
+                    </div>
+
+                    <!-- Details Section (70% height, two columns) -->
+                    <div class="details-section">
+                        <!-- Left Column: Specifications and Features -->
+                        <div class="left-column">
+                            <div class="product-header">
+                                <h2 class="product-title">{{ product.name }}</h2>
+                                <p class="product-model">{{ product.model }}</p>
+                            </div>
+
+                            <!-- Specifications Section -->
+                            <div class="specifications">
+                                <h3 class="spec-title">Product Specifications</h3>
+                                <div class="spec-content">
+                                    {% macro render_specifications(specs) %}
+                                        {% if specs %}
+                                            {% if specs is string %}
+                                                {% set specs_list = specs.split(' | ') %}
+                                                <table class="spec-table">
+                                                    {% for spec in specs_list %}
+                                                        {% if spec and '|' in spec %}
+                                                            {% set parts = spec.split('|', 1) %}
+                                                            <tr>
+                                                                <td class="spec-key">{{ parts[0].strip() }}</td>
+                                                                <td class="spec-value">{{ parts[1].strip() }}</td>
+                                                            </tr>
+                                                        {% elif spec %}
+                                                            <tr>
+                                                                <td class="spec-key">Specification</td>
+                                                                <td class="spec-value">{{ spec }}</td>
+                                                            </tr>
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                </table>
+                                            {% elif specs is mapping %}
+                                                {% if specs.specifications is string %}
+                                                    {% set specs_list = specs.specifications.split(' | ') %}
+                                                    <table class="spec-table">
+                                                        {% for spec in specs_list %}
+                                                            {% if spec and '|' in spec %}
+                                                                {% set parts = spec.split('|', 1) %}
+                                                                <tr>
+                                                                    <td class="spec-key">{{ parts[0].strip() }}</td>
+                                                                    <td class="spec-value">{{ parts[1].strip() }}</td>
+                                                                </tr>
+                                                            {% elif spec %}
+                                                                <tr>
+                                                                    <td class="spec-key">Specification</td>
+                                                                    <td class="spec-value">{{ spec }}</td>
+                                                                </tr>
+                                                            {% endif %}
+                                                        {% endfor %}
+                                                    </table>
+                                                {% elif specs.specifications is mapping %}
+                                                    <table class="spec-table">
+                                                        {% for key, value in specs.specifications.items() %}
+                                                            <tr>
+                                                                <td class="spec-key">{{ key }}</td>
+                                                                <td class="spec-value">{{ value }}</td>
+                                                            </tr>
+                                                        {% endfor %}
+                                                    </table>
+                                                {% else %}
+                                                    <p>Specifications format not recognized.</p>
+                                                {% endif %}
+                                            {% else %}
+                                                <p>Specifications format not recognized.</p>
+                                            {% endif %}
+                                        {% else %}
+                                            <p>No specifications available for this product.</p>
+                                        {% endif %}
+                                    {% endmacro %}
+
+                                    {{ render_specifications(product.specifications) }}
+                                </div>
+                            </div>
+
+                            <div class="product-footer">
+                                <div class="supplier-info">
+                                    <span class="supplier-label">Supplier</span>
+                                    <span class="supplier-name">{{ product.supplier }}</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Column: Secondary Image -->
+                        <div class="right-column">
+                            <div class="secondary-image">
+                                {% if product.primary_image %}
+                                <img src="{{ product.primary_image }}" alt="{{ product.name }} - Detail View" loading="lazy">
+                                {% else %}
+                                <div class="image-placeholder">
+                                    <span class="placeholder-text">{{ product.name[:2]|upper }}</span>
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Page Number -->
+                <div class="page-number">
+                    <span>{{ product_counter.value }}</span>
+                </div>
+            </section>
+            {% set product_counter.value = product_counter.value + 1 %}
+            {% endfor %}
+        {% endfor %}
+    </main>
+
+    <!-- Back Cover -->
+    <section class="back-cover">
+        <div class="back-content">
+            <div class="company-section">
+                <h2 class="company-title">HeyZack AI Calling Agent</h2>
+                <p class="company-description">Complete AI-powered smart home ecosystem that transforms how people interact with their living spaces.</p>
+                
+                <div class="value-proposition">
+                    <h3>Why Choose HeyZack?</h3>
+                    <div class="value-grid">
+                        <div class="value-item">
+                            <h4>AI Guardian Technology</h4>
+                            <p>Proactive home management</p>
+                        </div>
+                        <div class="value-item">
+                            <h4>Complete Integration</h4>
+                            <p>All devices work seamlessly together</p>
+                        </div>
+                        <div class="value-item">
+                            <h4>Professional Support</h4>
+                            <p>Dedicated partner success program</p>
+                        </div>
+                        <div class="value-item">
+                            <h4>30% Partner Margins</h4>
+                            <p>Industry-leading profitability</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="partner-section">
+                <h3>Partner Network Benefits</h3>
+                <ul class="benefits-list">
+                    <li>2-3 additional installs per month</li>
+                    <li>Free demo kits for approved partners</li>
+                    <li>Pre-qualified leads delivered directly</li>
+                    <li>Ultra-fast, professional-grade setup</li>
+                </ul>
+                
+                <div class="cta-section">
+                    <h3>Ready to Partner?</h3>
+                    <div class="cta-options">
+                        <div class="cta-option">
+                            <strong>Schedule a 15-minute Zoom call</strong>
+                            <span>for detailed discussion</span>
+                        </div>
+                        <div class="cta-option">
+                            <strong>Request email overview</strong>
+                            <span>for self-paced review</span>
+                        </div>
+                        <div class="cta-option">
+                            <strong>Book demo kit</strong>
+                            <span>for hands-on experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-section">
+                <h3>Business Hours</h3>
+                <div class="hours-info">
+                    <p><strong>Mon-Fri:</strong> 6 AM - 9 PM</p>
+                    <p><strong>Sat:</strong> 9 AM - 5 PM</p>
+                    <p><strong>Sun:</strong> 9 AM - 4 PM</p>
+                </div>
+            </div>
+
+            <div class="generation-info">
+                <p>Generated on {{ generation_date }}</p>
+                <p>{{ total_products }} products across {{ categories|length }} categories</p>
+                <p><em>This catalog automatically updates when new products are added to your inventory</em></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="static/js/brochure.js"></script>
+    <script>
+        // WebSocket connection for real-time updates
+        const ws = new WebSocket(`ws://${window.location.host}/ws`);
+        const liveStatus = document.getElementById('liveStatus');
+        const notification = document.getElementById('notification');
+        
+        // Connection status management
+        ws.onopen = function(event) {
+            liveStatus.className = 'live-indicator';
+            liveStatus.innerHTML = '🟢 Live Catalog - Auto-updating';
+        };
+        
+        ws.onclose = function(event) {
+            liveStatus.className = 'live-indicator disconnected';
+            liveStatus.innerHTML = '🔴 Connection Lost - Refresh to reconnect';
+        };
+        
+        ws.onerror = function(error) {
+            liveStatus.className = 'live-indicator disconnected';
+            liveStatus.innerHTML = '🔴 Connection Error';
+        };
+        
+        // Handle incoming messages
+        ws.onmessage = function(event) {
+            try {
+                const data = JSON.parse(event.data);
+                
+                if (data.type === 'new_products') {
+                    // Show notification
+                    notification.innerHTML = `${data.count} new products detected! Refreshing catalog...`;
+                    notification.classList.add('show');
+                    
+                    // Update status
+                    liveStatus.className = 'live-indicator updating';
+                    liveStatus.innerHTML = '🟡 Updating catalog...';
+                    
+                    // Auto-refresh after 2 seconds
+                    setTimeout(() => {
+                        window.location.reload();
+                    }, 2000);
+                    
+                    // Hide notification after 5 seconds
+                    setTimeout(() => {
+                        notification.classList.remove('show');
+                    }, 5000);
+                }
+            } catch (e) {
+                console.error('Error parsing WebSocket message:', e);
+            }
+        };
+        
+        // Reconnection logic
+        let reconnectInterval;
+        
+        ws.onclose = function(event) {
+            liveStatus.className = 'live-indicator disconnected';
+            liveStatus.innerHTML = '🔴 Connection Lost - Attempting to reconnect...';
+            
+            // Attempt to reconnect every 5 seconds
+            reconnectInterval = setInterval(function() {
+                if (ws.readyState === WebSocket.CLOSED) {
+                    location.reload(); // Simple reconnection by page reload
+                }
+            }, 5000);
+        };
+        
+        // Cleanup on page unload
+        window.addEventListener('beforeunload', function() {
+            if (reconnectInterval) {
+                clearInterval(reconnectInterval);
+            }
+            ws.close();
+        });
+        
+        // Optional: Periodically ping to keep connection alive
+        setInterval(function() {
+            if (ws.readyState === WebSocket.OPEN) {
+                ws.send('ping');
+            }
+        }, 30000); // Every 30 seconds
+        
+        // PDF Download Function
+        async function downloadPDF() {
+            const button = document.querySelector('.pdf-export-button button');
+            const originalText = button.innerHTML;
+            
+            try {
+                // Disable button and show loading state
+                button.disabled = true;
+                button.innerHTML = '⏳ Generating PDF...';
+                
+                // Make request to PDF endpoint
+                const response = await fetch('/catalog/pdf', {
+                    method: 'GET',
+                    headers: {
+                        'Accept': 'application/pdf'
+                    }
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                // Get the PDF blob
+                const blob = await response.blob();
+                
+                // Create download link
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.style.display = 'none';
+                a.href = url;
+                
+                // Generate filename with current date
+                const date = new Date().toISOString().split('T')[0];
+                a.download = `HeyZack-Catalog-${date}.pdf`;
+                
+                // Trigger download
+                document.body.appendChild(a);
+                a.click();
+                
+                // Clean up
+                window.URL.revokeObjectURL(url);
+                document.body.removeChild(a);
+                
+                // Success feedback
+                button.innerHTML = '✓ Downloaded!';
+                setTimeout(() => {
+                    button.innerHTML = originalText;
+                    button.disabled = false;
+                }, 2000);
+                
+            } catch (error) {
+                console.error('Error downloading PDF:', error);
+                
+                // Error feedback
+                button.innerHTML = '❌ Error - Try again';
+                setTimeout(() => {
+                    button.innerHTML = originalText;
+                    button.disabled = false;
+                }, 3000);
+                
+                // Show user-friendly error message
+                alert('Failed to generate PDF. Please try again or check your connection.');
+            }
+        }
+    </script>
+</body>
+</html>

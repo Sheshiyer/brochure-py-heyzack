@@ -164,5 +164,5 @@ Temporary Items
 # Project specific
 out/
 *.pdf
-*.html
+
 temp/

@@ -23,6 +23,11 @@
     --text-on-light: #333232;
     --text-on-light-secondary: #666666;
     --dark-bg-threshold: #666666; /* Colors darker than this need light text */
+    --primary-color: #e82f89;
+    --secondary-color: #333232;
+    --page-width: 210mm;
+    --page-height: 297mm;
+    --content-padding: 20px;
 }
 
 /* Automatic contrast protection for dark backgrounds */
@@ -245,9 +250,14 @@ h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
 }
 
-/* Product Showcase */
+/* Product Showcase - Enhanced alignment and consistency */
 .product-showcase {
     background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
 }
 
 .product-page {
@@ -258,8 +268,10 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     page-break-after: always;
     break-after: page;
-    margin: 0 auto 20px auto;
+    margin: 0 auto;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #f0f0f0;
+    background: white;
 }
 
 .product-layout {
@@ -268,9 +280,367 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 100%;
     flex: 1;
+    min-height: 297mm;
+    align-items: stretch;
 }
 
-/* Layout Variations */
+/* New Structured Layout - Single consistent layout for all products */
+.product-layout.layout-structured {
+    display: grid;
+    grid-template-rows: 89mm 208mm; /* Fixed A4 dimensions: 89mm hero + 208mm details = 297mm total */
+    grid-template-columns: 1fr;
+    height: 297mm; /* Exact A4 height */
+    gap: 0;
+    background: #ffffff;
+    overflow: hidden; /* Prevent any content overflow beyond A4 */
+}
+
+.layout-structured .hero-section {
+    grid-row: 1;
+    background: linear-gradient(135deg, #1a1a1a 0%, #333232 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 3px solid #e82f89;
+    height: 89mm; /* Exact height constraint */
+    max-height: 89mm; /* Enforce maximum height */
+}
+
+.layout-structured .details-section {
+    grid-row: 2;
+    background: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 0;
+    height: 208mm; /* Exact height constraint */
+    max-height: 208mm; /* Enforce maximum height */
+    overflow: hidden; /* Prevent content overflow */
+}
+
+.layout-structured .left-column {
+    padding: 1.5rem 1.25rem 1.25rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-right: 2px solid #e9ecef;
+    background: #ffffff;
+    overflow: hidden; /* Prevent content overflow */
+    position: relative;
+}
+
+.layout-structured .right-column {
+    padding: 1.5rem 2rem 1.25rem 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #fafafa 0%, #f0f0f0 100%);
+    border-left: 1px solid #e9ecef;
+}
+
+.layout-structured .secondary-image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 180mm; /* Optimize for A4 constraint */
+    position: relative;
+    padding: 1rem;
+}
+
+.layout-structured .secondary-image img {
+    max-width: 85%;
+    max-height: 85%;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    border: 1px solid #e0e0e0;
+    background: #ffffff;
+    padding: 0.75rem;
+}
+
+.layout-structured .secondary-image .image-placeholder {
+    width: 85%;
+    height: 85%;
+    min-width: 180px;
+    min-height: 180px;
+    max-width: 300px;
+    max-height: 300px;
+    background: linear-gradient(135deg, #333232 0%, #222222 100%);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    border: 1px solid #e0e0e0;
+}
+
+.layout-structured .product-header {
+    margin-bottom: 1rem;
+    min-height: 75px;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #f0f0f0;
+    position: relative;
+}
+
+.layout-structured .product-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: linear-gradient(90deg, #e82f89 0%, #333232 100%);
+    border-radius: 2px;
+}
+
+.layout-structured .product-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 0.4rem;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+.layout-structured .product-model {
+    font-size: 0.85rem;
+    color: #666666;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    background: #f8f9fa;
+    padding: 0.2rem 0.6rem;
+    border-radius: 3px;
+    display: inline-block;
+    border: 1px solid #e9ecef;
+}
+
+
+.layout-structured .specifications {
+    flex: 1;
+    margin-bottom: 1rem;
+    background: #fafafa;
+    border-radius: 6px;
+    padding: 1rem;
+    border: 1px solid #e9ecef;
+}
+
+.layout-structured .spec-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 0.75rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.layout-structured .spec-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #e82f89 0%, #333232 100%);
+    border-radius: 2px;
+}
+
+.layout-structured .spec-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    max-height: 280px;
+    overflow-y: auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    display: block;
+}
+
+.layout-structured .spec-table tbody {
+    display: block;
+    max-height: 260px;
+    overflow-y: auto;
+}
+
+.layout-structured .spec-row {
+    display: table-row;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.2s ease;
+}
+
+.layout-structured .spec-row:nth-child(even) {
+    background: #f8f9fa;
+}
+
+.layout-structured .spec-row:nth-child(odd) {
+    background: #ffffff;
+}
+
+.layout-structured .spec-row:hover {
+    background: rgba(232, 47, 137, 0.05) !important;
+}
+
+.layout-structured .spec-key {
+    display: table-cell;
+    padding: 0.6rem 0.75rem;
+    font-size: 0.7rem;
+    color: #666666;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    width: 40%;
+    vertical-align: middle;
+    border-right: 2px solid #e9ecef;
+    background: rgba(232, 47, 137, 0.05);
+}
+
+.layout-structured .spec-value {
+    display: table-cell;
+    padding: 0.6rem 0.75rem;
+    font-size: 0.75rem;
+    color: #2d2d2d;
+    line-height: 1.3;
+    font-weight: 500;
+    width: 60%;
+    vertical-align: middle;
+}
+
+.layout-structured .product-footer {
+    margin-top: auto;
+    padding: 1rem;
+    border-top: 2px solid #e9ecef;
+    min-height: 60px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 0 0 6px 6px;
+}
+
+.layout-structured .supplier-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    align-items: flex-start;
+}
+
+.layout-structured .supplier-label {
+    font-size: 0.65rem;
+    color: #666666;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    background: #e82f89;
+    color: #ffffff;
+    padding: 0.2rem 0.6rem;
+    border-radius: 10px;
+}
+
+.layout-structured .supplier-name {
+    font-size: 0.95rem;
+    color: #1a1a1a;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+/* Hero section styling for structured layout */
+.layout-structured .hero-image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    position: relative;
+}
+
+.layout-structured .hero-image::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    height: 85%;
+    border: 2px solid rgba(232, 47, 137, 0.3);
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.layout-structured .hero-image img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 15px 40px rgba(255, 255, 255, 0.2);
+    position: relative;
+    z-index: 2;
+    filter: brightness(1.1) contrast(1.05);
+}
+
+.layout-structured .hero-image .image-placeholder {
+    width: 80%;
+    height: 80%;
+    min-width: 220px;
+    min-height: 220px;
+    max-width: 350px;
+    max-height: 350px;
+    background: linear-gradient(135deg, #4a4a4a 0%, #2d2d2d 100%);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 15px 40px rgba(255, 255, 255, 0.2);
+    position: relative;
+    z-index: 2;
+}
+
+/* Responsive adjustments for structured layout */
+@media (max-width: 1024px) {
+    .product-layout.layout-structured {
+        grid-template-rows: 40% 60%;
+    }
+    
+    .layout-structured .details-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+    
+    .layout-structured .left-column {
+        border-right: none;
+        border-bottom: 1px solid #e9ecef;
+        padding: 1.5rem;
+    }
+    
+    .layout-structured .right-column {
+        padding: 1.5rem;
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-layout.layout-structured {
+        grid-template-rows: 35% 65%;
+    }
+    
+    .layout-structured .left-column,
+    .layout-structured .right-column {
+        padding: 1rem;
+    }
+    
+    .layout-structured .product-title {
+        font-size: 1.5rem;
+    }
+    
+    .layout-structured .spec-table {
+        max-height: 250px;
+    }
+}
+
+/* Layout Variations - Legacy (keeping for backward compatibility) */
 
 /* Hero Left Layout - Large hero image on left, specs on right */
 .product-layout.layout-hero-left {
@@ -745,7 +1115,10 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid rgba(232, 47, 137, 0.1);
     margin-bottom: 0.5rem;
     box-sizing: border-box;
-    min-height: 150px; /* Ensure consistent layout structure */
+    min-height: 150px;
+    align-content: start;
+    justify-content: stretch;
+    grid-auto-rows: minmax(40px, auto);
 }
 
 /* 
@@ -815,17 +1188,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .spec-row {
     display: grid;
-    grid-template-columns: 32px 1fr; /* Fixed icon column width for uniformity */
-    gap: 0.6rem; /* Standardized gap */
+    grid-template-columns: 32px 1fr;
+    gap: 0.6rem;
     align-items: center;
-    padding: 0.4rem 0.6rem; /* Added horizontal padding for better spacing */
-    min-height: 40px; /* Fixed minimum height for uniform appearance */
-    max-height: 50px; /* Maximum height to prevent oversized items */
-    border-bottom: 1px solid rgba(51, 50, 50, 0.08); /* Even lighter border */
-    border-radius: 4px; /* Subtle rounded corners for modern look */
-    margin-bottom: 0.2rem; /* Small margin between items */
-    box-sizing: border-box; /* Ensure padding doesn't affect dimensions */
-    overflow: hidden; /* Prevent content overflow */
+    justify-content: start;
+    padding: 0.4rem 0.6rem;
+    min-height: 40px;
+    max-height: 50px;
+    border-bottom: 1px solid rgba(51, 50, 50, 0.08);
+    border-radius: 4px;
+    margin-bottom: 0.2rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.8);
+    transition: background-color 0.2s ease;
 }
 
 /* Removed hover effects for PDF rendering */
@@ -1083,16 +1459,30 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.9rem;
 }
 
-/* Responsive Design */
+/* Enhanced Responsive Design */
 @media (max-width: 1024px) {
+    :root {
+        --content-padding: 15px;
+    }
+
+    .product-page {
+        width: 95vw;
+        max-width: none;
+        margin: 0 auto 15px auto;
+    }
+
     .product-layout {
         grid-template-columns: 1fr;
         grid-template-rows: 60vh 1fr;
+        min-height: 90vh;
     }
     
     /* Reset all layout variations to single column on tablets */
     .product-layout.layout-hero-left,
-    .product-layout.layout-specs-focus {
+    .product-layout.layout-specs-focus,
+    .product-layout.layout-left-image-right-content,
+    .product-layout.layout-right-image-left-content,
+    .product-layout.layout-category-grid {
         grid-template-columns: 1fr;
         grid-template-rows: 60vh 1fr;
     }
@@ -1119,16 +1509,15 @@ h1, h2, h3, h4, h5, h6 {
         order: 2;
     }
     
-    /* Adjust grid-showcase details section */
-    .layout-grid-showcase .details-section {
+    /* Adjust all details sections for mobile */
+    .layout-grid-showcase .details-section,
+    .layout-minimal-grid .details-section,
+    .layout-left-image-right-content .details-section,
+    .layout-right-image-left-content .details-section,
+    .layout-category-grid .details-section {
         display: block;
         padding: 2rem;
-    }
-    
-    /* Adjust minimal-grid details section */
-    .layout-minimal-grid .details-section {
-        display: block;
-        padding: 2rem;
+        grid-template-columns: 1fr;
     }
     
     .hero-section,
@@ -1139,6 +1528,17 @@ h1, h2, h3, h4, h5, h6 {
     .back-content {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+
+    /* Better mobile typography */
+    .product-title {
+        font-size: clamp(1.5rem, 5vw, 2.5rem);
+    }
+
+    .spec-table.left-right-layout,
+    .spec-table.linear-layout {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
     }
 }
 
@@ -1552,37 +1952,286 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+/* Enhanced Print Styles for Professional Left/Right Page PDF Layout */
 @media print {
+    /* Reset margins and ensure proper page setup */
+    @page {
+        size: A4;
+        margin: 0;
+    }
+    
+    /* Left page (odd pages) - wider inner margin for binding */
+    @page :left {
+        margin-left: 25mm;
+        margin-right: 15mm;
+        margin-top: 20mm;
+        margin-bottom: 20mm;
+    }
+    
+    /* Right page (even pages) - wider outer margin for binding */
+    @page :right {
+        margin-left: 15mm;
+        margin-right: 25mm;
+        margin-top: 20mm;
+        margin-bottom: 20mm;
+    }
+    
+    /* Cover page specific margins */
+    @page :first {
+        margin: 0;
+    }
+    
+    html, body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        background: white !important;
+        color: black !important;
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+    
+    /* Page structure for professional layout */
     .product-page {
         page-break-after: always;
         break-after: page;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        box-shadow: none !important;
+        border: none !important;
+        background: white !important;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .cover-page {
+        page-break-after: always;
+        break-after: page;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        box-shadow: none !important;
     }
     
     .back-cover {
         page-break-before: always;
         break-before: page;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        box-shadow: none !important;
     }
     
-    body {
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-        background: white !important;
-        color: black !important;
-    }
-    
+    /* Product layout optimizations */
     .product-layout {
         page-break-after: always;
         background: white !important;
         box-shadow: none !important;
-        border: 1px solid #ccc !important;
+        border: none !important;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
     }
     
+    /* Typography optimizations for print */
+    .product-title {
+        font-size: 24pt !important;
+        line-height: 1.2 !important;
+        color: #000000 !important;
+        font-weight: 700 !important;
+    }
+    
+    .product-model {
+        font-size: 14pt !important;
+        color: #666666 !important;
+    }
+    
+    .product-description p {
+        font-size: 11pt !important;
+        line-height: 1.4 !important;
+        color: #333333 !important;
+    }
+    
+    .spec-title {
+        font-size: 16pt !important;
+        color: #000000 !important;
+        font-weight: 700 !important;
+    }
+    
+    .spec-text {
+        font-size: 10pt !important;
+        color: #333333 !important;
+        line-height: 1.3 !important;
+    }
+    
+    /* Image and hero section optimizations */
     .hero-image {
-        max-height: 300px !important;
+        max-height: 200mm !important;
+        padding: 10mm !important;
     }
     
+    .hero-image img {
+        max-width: 100% !important;
+        max-height: 100% !important;
+        object-fit: contain !important;
+        box-shadow: none !important;
+    }
+    
+    /* Specifications table for print */
     .spec-table {
         background: white !important;
-        border: 1px solid #ccc !important;
+        border: 1px solid #cccccc !important;
+        border-radius: 0 !important;
+        padding: 5mm !important;
+        margin-bottom: 3mm !important;
+        page-break-inside: avoid;
+    }
+    
+    .spec-row {
+        background: white !important;
+        border-bottom: 1px solid #eeeeee !important;
+        border-radius: 0 !important;
+        padding: 2mm 3mm !important;
+        margin-bottom: 1mm !important;
+        page-break-inside: avoid;
+    }
+    
+    .spec-icon {
+        background: #f5f5f5 !important;
+        color: #e82f89 !important;
+        border-radius: 50% !important;
+    }
+    
+    /* Hide interactive elements */
+    .status-overlay,
+    .category-label {
+        display: none !important;
+    }
+    
+    /* Page numbers for professional binding */
+    .page-number {
+        position: fixed;
+        bottom: 10mm;
+        right: 15mm;
+        background: transparent !important;
+        color: #666666 !important;
+        border-radius: 0 !important;
+        font-size: 12pt !important;
+        font-weight: 400 !important;
+    }
+    
+    /* Avoid breaks in critical content */
+    .product-header,
+    .product-description,
+    .specifications {
+        page-break-inside: avoid;
+    }
+    
+    /* Ensure proper spacing for binding */
+    .details-section {
+        padding: 15mm 10mm 15mm 10mm !important;
+    }
+    
+    .hero-section {
+        padding: 10mm !important;
+    }
+    
+    /* Layout-specific print adjustments */
+    .layout-hero-right .details-section {
+        padding: 10mm 15mm !important;
+    }
+    
+    .layout-hero-left .hero-section,
+    .layout-specs-focus .hero-section {
+        padding: 5mm !important;
+    }
+    
+    /* Structured layout print optimizations */
+    .layout-structured .hero-section {
+        height: 89mm !important; /* Exactly 30% of A4 height */
+        padding: 8mm !important;
+    }
+    
+    .layout-structured .details-section {
+        height: 208mm !important; /* Exactly 70% of A4 height */
+        grid-template-columns: 1fr 1fr !important;
+        gap: 0 !important;
+    }
+    
+    .layout-structured .left-column {
+        padding: 8mm 6mm 8mm 12mm !important; /* More padding on binding side */
+        border-right: 1px solid #cccccc !important;
+        background: white !important;
+    }
+    
+    .layout-structured .right-column {
+        padding: 8mm 12mm 8mm 6mm !important; /* More padding on outer edge */
+        background: white !important;
+    }
+    
+    .layout-structured .product-title {
+        font-size: 18pt !important;
+        margin-bottom: 3mm !important;
+    }
+    
+    .layout-structured .product-model {
+        font-size: 12pt !important;
+        margin-bottom: 5mm !important;
+    }
+    
+    .layout-structured .product-description p {
+        font-size: 10pt !important;
+        margin-bottom: 4mm !important;
+    }
+    
+    .layout-structured .spec-title {
+        font-size: 14pt !important;
+        margin-bottom: 4mm !important;
+    }
+    
+    .layout-structured .spec-text {
+        font-size: 9pt !important;
+        line-height: 1.2 !important;
+    }
+    
+    .layout-structured .spec-table {
+        max-height: 120mm !important; /* Prevent overflow on A4 */
+        background: white !important;
+        border: 1px solid #ddd !important;
+        padding: 4mm !important;
+    }
+    
+    .layout-structured .spec-row {
+        background: white !important;
+        border-bottom: 1px solid #f0f0f0 !important;
+        padding: 1mm 2mm !important;
+        margin-bottom: 0.5mm !important;
+    }
+    
+    .layout-structured .secondary-image img {
+        max-width: 90% !important;
+        max-height: 90% !important;
+        box-shadow: 0 2mm 8mm rgba(0,0,0,0.1) !important;
+    }
+    
+    .layout-structured .hero-image img {
+        max-width: 80% !important;
+        max-height: 80% !important;
+        box-shadow: 0 3mm 12mm rgba(255,255,255,0.2) !important;
+    }
+    
+    /* Brand colors for print */
+    .brand-name {
+        color: #e82f89 !important;
+        -webkit-print-color-adjust: exact;
+    }
+    
+    /* Ensure gradients render properly */
+    .cover-page,
+    .back-cover {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
     }
 }

@@ -1,16 +1,28 @@
 from fastapi import FastAPI, Request, WebSocket, WebSocketDisconnect
-from fastapi.responses import HTMLResponse
+from fastapi.responses import HTMLResponse, FileResponse
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
-import boto3, base64, uuid, asyncio, json
+import boto3, base64, uuid, asyncio, json, tempfile
 from botocore.exceptions import NoCredentialsError
 from typing import List
 import sys
 import os
+import platform
 from datetime import datetime
 from collections import defaultdict
 from dotenv import load_dotenv
+
+# Windows-specific imports and compatibility handling
+if platform.system() == "Windows":
+    import subprocess
+    # Set up Windows-compatible asyncio policy
+    if sys.version_info >= (3, 8):
+        try:
+            from asyncio import WindowsProactorEventLoopPolicy
+            asyncio.set_event_loop_policy(WindowsProactorEventLoopPolicy())
+        except ImportError:
+            pass
 
 # Load environment variables from .env file
 load_dotenv()
@@ -18,6 +30,11 @@ load_dotenv()
 # Add scripts directory to path for importing polling service
 sys.path.append(os.path.join(os.path.dirname(__file__), 'scripts'))
 from automated_polling_service import AutomatedPollingService
+
+# Add brochure directory to path for PDF generation
+sys.path.append(os.path.join(os.path.dirname(__file__), 'brochure'))
+from pdf_generator import PDFGenerator
+from playwright.async_api import async_playwright
 
 # ---------------- CONFIG ----------------
 AWS_ACCESS_KEY_ID     = os.getenv("AWS_ACCESS_KEY_ID")
@@ -208,6 +225,7 @@ async def live_catalog(request: Request):
                 "supplier": product.get("supplier", ""),
                 "primary_image": product.get("metadata", {}).get("drive_link", ""),
                 "short_description": product.get("specifications", {}).get("description", "")[:200] + "..." if product.get("specifications", {}).get("description", "") else "",
+                "specifications": product.get("specifications", {}),
                 "features": []
             }
             
@@ -237,6 +255,439 @@ async def live_catalog(request: Request):
         
     except Exception as e:
         return HTMLResponse(f"Error loading catalog: {str(e)}", status_code=500)
+
+# PDF catalog endpoint
+@app.get("/catalog/pdf")
+async def generate_catalog_pdf(request: Request):
+    """Generate and download PDF version of the live catalog with enhanced Windows compatibility"""
+    try:
+        # Load products from JSON file
+        with open("data/products.json", "r", encoding="utf-8") as f:
+            data = json.load(f)
+        
+        products = data.get("products", [])
+        metadata = data.get("metadata", {})
+        
+        # Group products by category
+        grouped_products = defaultdict(list)
+        for product in products:
+            category = product.get("category", "Uncategorized")
+            # Format product for template
+            formatted_product = {
+                "name": product.get("name", ""),
+                "model": product.get("model", ""),
+                "supplier": product.get("supplier", ""),
+                "primary_image": product.get("metadata", {}).get("drive_link", ""),
+                "short_description": product.get("specifications", {}).get("description", "")[:200] + "..." if product.get("specifications", {}).get("description", "") else "",
+                "specifications": product.get("specifications", {}),
+                "features": []
+            }
+            
+            # Extract features from specifications
+            specs = product.get("specifications", {})
+            features_text = specs.get("features", "")
+            if features_text and features_text != "Feature":
+                # Split by commas and clean up
+                features_list = [f.strip() for f in features_text.split(",") if f.strip() and f.strip() != "Feature"]
+                formatted_product["features"] = features_list[:10]  # Limit to 10 features
+            
+            grouped_products[category].append(formatted_product)
+        
+        # Template context for PDF (similar to live catalog but without WebSocket elements)
+        context = {
+            "request": request,
+            "company_info": {"name": "HeyZack"},
+            "theme": "luxury-dark",
+            "generation_date": datetime.now().strftime("%B %d, %Y"),
+            "total_products": len(products),
+            "categories": list(grouped_products.keys()),
+            "grouped_products": dict(grouped_products)
+        }
+        
+        # Generate filename with current date
+        date_str = datetime.now().strftime("%Y-%m-%d")
+        
+        # Try multiple PDF generation methods in order of preference
+        pdf_methods = [
+            "playwright_enhanced",
+            "pyppeteer",
+            "reportlab_enhanced"
+        ]
+        
+        for method in pdf_methods:
+            try:
+                temp_pdf_path = await generate_pdf_with_method(method, context, request, grouped_products, products)
+                if temp_pdf_path:
+                    filename = f"HeyZack-Catalog-{date_str}.pdf"
+                    
+                    return FileResponse(
+                        path=temp_pdf_path,
+                        filename=filename,
+                        media_type="application/pdf",
+                        background=None
+                    )
+            except Exception as method_error:
+                # Suppress asyncio errors for cleaner logs
+                import logging
+                logging.getLogger('asyncio').setLevel(logging.WARNING)
+                continue
+        
+        # If all methods fail, return error
+        return HTMLResponse(
+            "PDF generation failed with all available methods. Please try again or contact support.",
+            status_code=500
+        )
+        
+    except Exception as e:
+        return HTMLResponse(f"Error generating PDF catalog: {str(e)}", status_code=500)
+
+
+async def generate_pdf_with_method(method: str, context: dict, request: Request, grouped_products: dict, products: list):
+    """Generate PDF using specified method with enhanced error handling"""
+    
+    if method == "playwright_enhanced":
+        # Enhanced Playwright implementation with better Windows compatibility
+        try:
+            # Detect Windows and adjust subprocess handling
+            import platform
+            is_windows = platform.system() == "Windows"
+            
+            # Create temporary PDF file
+            with tempfile.NamedTemporaryFile(suffix='.pdf', delete=False) as temp_pdf:
+                temp_pdf_path = temp_pdf.name
+            
+            async with async_playwright() as p:
+                # Enhanced browser launch arguments for Windows compatibility
+                launch_args = [
+                    '--no-sandbox',
+                    '--disable-setuid-sandbox',
+                    '--disable-dev-shm-usage',
+                    '--disable-accelerated-2d-canvas',
+                    '--no-first-run',
+                    '--disable-gpu',
+                    '--disable-web-security',
+                    '--disable-features=VizDisplayCompositor',
+                    '--run-all-compositor-stages-before-draw',
+                    '--disable-background-timer-throttling',
+                    '--disable-renderer-backgrounding',
+                    '--disable-backgrounding-occluded-windows',
+                    '--disable-ipc-flooding-protection',
+                ]
+                
+                if is_windows:
+                    # Additional Windows-specific arguments
+                    launch_args.extend([
+                        '--single-process',
+                        '--no-zygote',
+                        '--disable-extensions',
+                        '--disable-default-apps',
+                        '--disable-sync',
+                        '--no-default-browser-check'
+                    ])
+                
+                browser = await p.chromium.launch(
+                    headless=True,
+                    args=launch_args,
+                    timeout=60000  # Increased timeout for Windows
+                )
+                
+                try:
+                    page = await browser.new_page()
+                    
+                    # Set viewport for consistent rendering
+                    await page.set_viewport_size({"width": 1200, "height": 1600})
+                    
+                    # Navigate to live catalog URL with retries
+                    catalog_url = f"http://{request.url.netloc}/catalog"
+                    max_retries = 3
+                    
+                    for attempt in range(max_retries):
+                        try:
+                            await page.goto(catalog_url, wait_until="networkidle", timeout=30000)
+                            break
+                        except Exception as nav_error:
+                            if attempt == max_retries - 1:
+                                raise nav_error
+                            await asyncio.sleep(2)
+                    
+                    # Wait for content to load with multiple selectors
+                    selectors_to_wait = ['.product-page', '.cover-page', '.back-cover']
+                    for selector in selectors_to_wait:
+                        try:
+                            await page.wait_for_selector(selector, timeout=15000)
+                        except:
+                            pass  # Continue if selector not found
+                    
+                    # Additional wait for images to load
+                    await page.wait_for_load_state("networkidle")
+                    await asyncio.sleep(2)  # Extra buffer for slow loading images
+                    
+                    # Enhanced CSS for PDF optimization
+                    await page.add_style_tag(content="""
+                        /* Hide live elements for PDF */
+                        .live-indicator,
+                        .notification,
+                        .pdf-export-button,
+                        #liveStatus,
+                        #notification,
+                        #pdfExport {
+                            display: none !important;
+                        }
+                        
+                        /* Optimize for PDF rendering */
+                        body {
+                            margin: 0;
+                            padding: 20px 0;
+                            -webkit-print-color-adjust: exact;
+                            print-color-adjust: exact;
+                        }
+                        
+                        /* Ensure proper page breaks */
+                        .product-page {
+                            page-break-after: always;
+                            break-after: page;
+                            margin: 0 auto 20px auto;
+                            box-shadow: none !important;
+                        }
+                        
+                        .cover-page {
+                            page-break-after: always;
+                            break-after: page;
+                            margin: 0 auto 20px auto;
+                        }
+                        
+                        .back-cover {
+                            page-break-before: always;
+                            break-before: page;
+                            margin: 20px auto 0 auto;
+                        }
+                        
+                        /* Fix text rendering issues */
+                        .spec-text, .product-description p {
+                            text-rendering: optimizeLegibility;
+                            -webkit-font-smoothing: antialiased;
+                        }
+                        
+                        /* Ensure images render properly */
+                        img {
+                            max-width: 100%;
+                            height: auto;
+                            object-fit: contain;
+                        }
+                        
+                        /* Fix grid layouts for PDF */
+                        .spec-table.linear-layout,
+                        .spec-table.left-right-layout {
+                            grid-gap: 0.4rem 0.8rem;
+                            align-items: start;
+                        }
+                    """)
+                    
+                    # Generate PDF with optimized settings
+                    await page.pdf(
+                        path=temp_pdf_path,
+                        format='A4',
+                        print_background=True,
+                        margin={
+                            'top': '10mm',
+                            'right': '10mm', 
+                            'bottom': '10mm',
+                            'left': '10mm'
+                        },
+                        prefer_css_page_size=True,
+                        display_header_footer=False,
+                        scale=0.95  # Slightly smaller scale for better fit
+                    )
+                    
+                    return temp_pdf_path
+                    
+                finally:
+                    await browser.close()
+                    
+        except Exception as e:
+            # Clean up on failure
+            if 'temp_pdf_path' in locals() and os.path.exists(temp_pdf_path):
+                os.unlink(temp_pdf_path)
+            raise e
+    
+    elif method == "pyppeteer":
+        # Pyppeteer as alternative (often works better on Windows)
+        try:
+            import pyppeteer
+            
+            with tempfile.NamedTemporaryFile(suffix='.pdf', delete=False) as temp_pdf:
+                temp_pdf_path = temp_pdf.name
+            
+            browser = await pyppeteer.launch(
+                headless=True,
+                args=[
+                    '--no-sandbox',
+                    '--disable-setuid-sandbox',
+                    '--disable-dev-shm-usage',
+                    '--single-process'
+                ]
+            )
+            
+            try:
+                page = await browser.newPage()
+                await page.setViewport({'width': 1200, 'height': 1600})
+                
+                catalog_url = f"http://{request.url.netloc}/catalog"
+                await page.goto(catalog_url, {'waitUntil': 'networkidle0'})
+                
+                await page.pdf({
+                    'path': temp_pdf_path,
+                    'format': 'A4',
+                    'printBackground': True,
+                    'margin': {
+                        'top': '10mm',
+                        'right': '10mm',
+                        'bottom': '10mm',
+                        'left': '10mm'
+                    }
+                })
+                
+                return temp_pdf_path
+                
+            finally:
+                await browser.close()
+                
+        except ImportError:
+            # Pyppeteer not installed, skip this method
+            raise Exception("Pyppeteer not available")
+        except Exception as e:
+            if 'temp_pdf_path' in locals() and os.path.exists(temp_pdf_path):
+                os.unlink(temp_pdf_path)
+            raise e
+    
+    elif method == "reportlab_enhanced":
+        # Enhanced ReportLab fallback that better matches live design
+        try:
+            from reportlab.lib.pagesizes import A4
+            from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Image, PageBreak, Table, TableStyle
+            from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
+            from reportlab.lib.units import mm, inch
+            from reportlab.lib import colors
+            from reportlab.lib.enums import TA_LEFT, TA_CENTER, TA_RIGHT
+            
+            with tempfile.NamedTemporaryFile(suffix='.pdf', delete=False) as temp_pdf:
+                temp_pdf_path = temp_pdf.name
+            
+            # Create PDF document
+            doc = SimpleDocTemplate(
+                temp_pdf_path,
+                pagesize=A4,
+                rightMargin=15*mm,
+                leftMargin=15*mm,
+                topMargin=15*mm,
+                bottomMargin=15*mm
+            )
+            
+            # Enhanced styles that mimic the live catalog
+            styles = getSampleStyleSheet()
+            
+            # Custom styles matching live catalog
+            title_style = ParagraphStyle(
+                'CustomTitle',
+                parent=styles['Heading1'],
+                fontSize=24,
+                spaceAfter=12,
+                textColor=colors.Color(0.91, 0.18, 0.54),  # #e82f89
+                fontName='Helvetica-Bold',
+                alignment=TA_CENTER
+            )
+            
+            product_title_style = ParagraphStyle(
+                'ProductTitle',
+                parent=styles['Heading2'],
+                fontSize=18,
+                spaceAfter=6,
+                textColor=colors.black,
+                fontName='Helvetica-Bold'
+            )
+            
+            description_style = ParagraphStyle(
+                'Description',
+                parent=styles['Normal'],
+                fontSize=10,
+                spaceAfter=8,
+                textColor=colors.Color(0.2, 0.2, 0.2),
+                fontName='Helvetica'
+            )
+            
+            feature_style = ParagraphStyle(
+                'Feature',
+                parent=styles['Normal'],
+                fontSize=9,
+                spaceAfter=3,
+                leftIndent=15,
+                textColor=colors.Color(0.13, 0.13, 0.13),
+                fontName='Helvetica'
+            )
+            
+            story = []
+            
+            # Cover page
+            story.append(Spacer(1, 60*mm))
+            story.append(Paragraph("HeyZack", title_style))
+            story.append(Spacer(1, 10*mm))
+            story.append(Paragraph("Your Home, Smarter Than Ever", styles['Heading3']))
+            story.append(Spacer(1, 20*mm))
+            story.append(Paragraph(f"Product Catalog - {context['generation_date']}", styles['Normal']))
+            story.append(Paragraph(f"{context['total_products']} Products across {len(context['categories'])} Categories", styles['Normal']))
+            story.append(PageBreak())
+            
+            # Product pages
+            product_count = 1
+            for category, category_products in grouped_products.items():
+                for product in category_products:
+                    # Product title and basic info
+                    story.append(Paragraph(f"{product_count:02d}. {product['name']}", product_title_style))
+                    if product['model']:
+                        story.append(Paragraph(f"Model: {product['model']}", styles['Normal']))
+                    story.append(Spacer(1, 5*mm))
+                    
+                    # Description
+                    if product['short_description']:
+                        story.append(Paragraph("Description:", styles['Heading4']))
+                        story.append(Paragraph(product['short_description'], description_style))
+                        story.append(Spacer(1, 5*mm))
+                    
+                    # Features
+                    if product['features']:
+                        story.append(Paragraph("Key Features:", styles['Heading4']))
+                        for feature in product['features'][:15]:  # Limit features for space
+                            story.append(Paragraph(f"• {feature}", feature_style))
+                        story.append(Spacer(1, 5*mm))
+                    
+                    # Supplier info
+                    if product['supplier']:
+                        story.append(Paragraph(f"Supplier: {product['supplier']}", styles['Normal']))
+                    
+                    story.append(Spacer(1, 10*mm))
+                    story.append(PageBreak())
+                    
+                    product_count += 1
+            
+            # Back cover
+            story.append(Spacer(1, 40*mm))
+            story.append(Paragraph("HeyZack AI Calling Agent", title_style))
+            story.append(Spacer(1, 10*mm))
+            story.append(Paragraph("Complete AI-powered smart home ecosystem", styles['Normal']))
+            story.append(Spacer(1, 20*mm))
+            story.append(Paragraph(f"Generated on {context['generation_date']}", styles['Normal']))
+            
+            # Build PDF
+            doc.build(story)
+            
+            return temp_pdf_path
+            
+        except Exception as e:
+            if 'temp_pdf_path' in locals() and os.path.exists(temp_pdf_path):
+                os.unlink(temp_pdf_path)
+            raise e
+    
+    return None
 
 # Simple dashboard endpoint for testing
 @app.get("/", response_class=HTMLResponse)

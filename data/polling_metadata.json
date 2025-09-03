@@ -1,12 +1,12 @@
 {
-  "last_sync": "2025-09-02T08:58:51.693113+00:00",
+  "last_sync": "2025-09-02T10:04:34.894578+00:00",
   "row_count": 0,
   "data_hash": null,
   "last_row_processed": 0,
   "sheet_fingerprint": {
-    "row_count": 273,
-    "data_hash": "f5e7c162c58d41978f302e19ef71fc8b",
-    "last_row_hash": "8383e9c193c9be755e32c27a9ce547e9",
-    "timestamp": "2025-09-02T08:58:51.692115+00:00"
+    "row_count": 272,
+    "data_hash": "6f46bac888d3843f595211e6f8795436",
+    "last_row_hash": "ea38f899a7edd7a939a7db59670cdc46",
+    "timestamp": "2025-09-02T10:04:34.894578+00:00"
   }
 }
