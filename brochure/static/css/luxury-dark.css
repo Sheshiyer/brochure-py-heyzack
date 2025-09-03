@@ -332,26 +332,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .layout-structured .right-column {
-    padding: 0.6rem 0.8rem 0.6rem 0.4rem;
+    padding: 0.6rem 0.4rem 0.6rem 0.4rem;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background: linear-gradient(135deg, #fafafa 0%, #f0f0f0 100%);
     border-left: 1px solid #e9ecef;
     flex: 0.5; /* Give minimal space to right column */
+    overflow: hidden; /* Prevent overflow */
 }
 
 .layout-structured .secondary-image {
     width: 100%;
-    height: 60%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    max-height: 120mm; /* Reduced for supplier space */
+    max-height: 180mm; /* Restored original height */
     position: relative;
-    padding: 0.8rem;
-    margin-bottom: 1rem;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    overflow: hidden; /* Prevent image overflow */
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e9ecef;
 }
 
 .layout-structured .secondary-image img {
@@ -359,10 +364,11 @@ h1, h2, h3, h4, h5, h6 {
     max-height: 85%;
     object-fit: contain;
     border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
-    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #f0f0f0;
     background: #ffffff;
-    padding: 0.75rem;
+    padding: 0.8rem;
+    box-sizing: border-box;
 }
 
 .layout-structured .secondary-image .image-placeholder {
@@ -374,11 +380,11 @@ h1, h2, h3, h4, h5, h6 {
     max-height: 300px;
     background: linear-gradient(135deg, #333232 0%, #222222 100%);
     border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #f0f0f0;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
-    border: 1px solid #e0e0e0;
 }
 
 .layout-structured .product-header {
@@ -519,31 +525,24 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
 
-/* Right column supplier styling */
-.layout-structured .right-column .supplier-info {
-    margin-top: auto;
-    text-align: center;
-    padding: 0.5rem;
-    background: rgba(232, 47, 137, 0.1);
-    border-radius: 6px;
-    border: 1px solid rgba(232, 47, 137, 0.2);
+/* Left column supplier styling */
+.layout-structured .supplier-info {
+    display: inline-block;
+    margin: 0.3rem 0;
 }
 
-.layout-structured .right-column .supplier-label {
-    display: block;
-    font-size: 0.6rem;
-    color: #e82f89;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin-bottom: 0.2rem;
+.layout-structured .supplier-label {
+    font-size: 0.7rem;
+    color: #666666;
+    font-weight: 500;
+    text-transform: lowercase;
+    margin-right: 0.2rem;
 }
 
-.layout-structured .right-column .supplier-name {
-    display: block;
-    font-size: 0.8rem;
+.layout-structured .supplier-name {
+    font-size: 0.7rem;
     color: #333232;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .layout-structured .product-footer {
