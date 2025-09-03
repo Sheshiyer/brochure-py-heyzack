@@ -169,49 +169,104 @@
                                             {% if specs is string %}
                                                 {% set specs_list = specs.split(' | ') %}
                                                 <table class="spec-table">
-                                                    {% for spec in specs_list %}
-                                                        {% if spec and '|' in spec %}
-                                                            {% set parts = spec.split('|', 1) %}
-                                                            <tr>
-                                                                <td class="spec-key">{{ parts[0].strip() }}</td>
-                                                                <td class="spec-value">{{ parts[1].strip() }}</td>
-                                                            </tr>
-                                                        {% elif spec %}
-                                                            <tr>
-                                                                <td class="spec-key">Specification</td>
-                                                                <td class="spec-value">{{ spec }}</td>
-                                                            </tr>
-                                                        {% endif %}
-                                                    {% endfor %}
-                                                </table>
-                                            {% elif specs is mapping %}
-                                                {% if specs.specifications is string %}
-                                                    {% set specs_list = specs.specifications.split(' | ') %}
-                                                    <table class="spec-table">
-                                                        {% for spec in specs_list %}
+                                                    <tbody>
+                                                        {% for spec in specs_list[:7] %}
                                                             {% if spec and '|' in spec %}
                                                                 {% set parts = spec.split('|', 1) %}
-                                                                <tr>
-                                                                    <td class="spec-key">{{ parts[0].strip() }}</td>
+                                                                <tr class="spec-row">
+                                                                    <td class="spec-key">{{ parts[0].strip() }}:</td>
                                                                     <td class="spec-value">{{ parts[1].strip() }}</td>
                                                                 </tr>
                                                             {% elif spec %}
-                                                                <tr>
-                                                                    <td class="spec-key">Specification</td>
+                                                                <tr class="spec-row">
+                                                                    <td class="spec-key">Specification:</td>
                                                                     <td class="spec-value">{{ spec }}</td>
                                                                 </tr>
                                                             {% endif %}
                                                         {% endfor %}
+                                                    </tbody>
+                                                </table>
+                                                {% if specs_list|length > 7 %}
+                                                <div class="features-section">
+                                                    <div class="features-title">Features:</div>
+                                                    <div class="features-text">
+                                                        {% set remaining_specs = specs_list[7:] %}
+                                                        {% set feature_texts = [] %}
+                                                        {% for spec in remaining_specs %}
+                                                            {% if spec and '|' in spec %}
+                                                                {% set parts = spec.split('|', 1) %}
+                                                                {% set _ = feature_texts.append(parts[1].strip()) %}
+                                                            {% elif spec %}
+                                                                {% set _ = feature_texts.append(spec) %}
+                                                            {% endif %}
+                                                        {% endfor %}
+                                                        {{ feature_texts|join(', ') }}.
+                                                    </div>
+                                                </div>
+                                                {% endif %}
+                                            {% elif specs is mapping %}
+                                                {% if specs.specifications is string %}
+                                                    {% set specs_list = specs.specifications.split(' | ') %}
+                                                    <table class="spec-table">
+                                                        <tbody>
+                                                            {% for spec in specs_list[:7] %}
+                                                                {% if spec and '|' in spec %}
+                                                                    {% set parts = spec.split('|', 1) %}
+                                                                    <tr class="spec-row">
+                                                                        <td class="spec-key">{{ parts[0].strip() }}:</td>
+                                                                        <td class="spec-value">{{ parts[1].strip() }}</td>
+                                                                    </tr>
+                                                                {% elif spec %}
+                                                                    <tr class="spec-row">
+                                                                        <td class="spec-key">Specification:</td>
+                                                                        <td class="spec-value">{{ spec }}</td>
+                                                                    </tr>
+                                                                {% endif %}
+                                                            {% endfor %}
+                                                        </tbody>
                                                     </table>
+                                                    {% if specs_list|length > 7 %}
+                                                    <div class="features-section">
+                                                        <div class="features-title">Features:</div>
+                                                        <div class="features-text">
+                                                            {% set remaining_specs = specs_list[7:] %}
+                                                            {% set feature_texts = [] %}
+                                                            {% for spec in remaining_specs %}
+                                                                {% if spec and '|' in spec %}
+                                                                    {% set parts = spec.split('|', 1) %}
+                                                                    {% set _ = feature_texts.append(parts[1].strip()) %}
+                                                                {% elif spec %}
+                                                                    {% set _ = feature_texts.append(spec) %}
+                                                                {% endif %}
+                                                            {% endfor %}
+                                                            {{ feature_texts|join(', ') }}.
+                                                        </div>
+                                                    </div>
+                                                    {% endif %}
                                                 {% elif specs.specifications is mapping %}
                                                     <table class="spec-table">
-                                                        {% for key, value in specs.specifications.items() %}
-                                                            <tr>
-                                                                <td class="spec-key">{{ key }}</td>
-                                                                <td class="spec-value">{{ value }}</td>
-                                                            </tr>
-                                                        {% endfor %}
+                                                        <tbody>
+                                                            {% for key, value in specs.specifications.items()[:7] %}
+                                                                <tr class="spec-row">
+                                                                    <td class="spec-key">{{ key }}:</td>
+                                                                    <td class="spec-value">{{ value }}</td>
+                                                                </tr>
+                                                            {% endfor %}
+                                                        </tbody>
                                                     </table>
+                                                    {% if specs.specifications.items()|length > 7 %}
+                                                    <div class="features-section">
+                                                        <div class="features-title">Features:</div>
+                                                        <div class="features-text">
+                                                            {% set remaining_items = specs.specifications.items()[7:] %}
+                                                            {% set feature_texts = [] %}
+                                                            {% for key, value in remaining_items %}
+                                                                {% set _ = feature_texts.append(value) %}
+                                                            {% endfor %}
+                                                            {{ feature_texts|join(', ') }}.
+                                                        </div>
+                                                    </div>
+                                                    {% endif %}
                                                 {% else %}
                                                     <p>Specifications format not recognized.</p>
                                                 {% endif %}
@@ -227,15 +282,9 @@
                                 </div>
                             </div>
 
-                            <div class="product-footer">
-                                <div class="supplier-info">
-                                    <span class="supplier-label">Supplier</span>
-                                    <span class="supplier-name">{{ product.supplier }}</span>
-                                </div>
-                            </div>
                         </div>
 
-                        <!-- Right Column: Secondary Image -->
+                        <!-- Right Column: Secondary Image and Supplier -->
                         <div class="right-column">
                             <div class="secondary-image">
                                 {% if product.primary_image %}
@@ -245,6 +294,11 @@
                                     <span class="placeholder-text">{{ product.name[:2]|upper }}</span>
                                 </div>
                                 {% endif %}
+                            </div>
+                            
+                            <div class="supplier-info">
+                                <span class="supplier-label">Supplier</span>
+                                <span class="supplier-name">{{ product.supplier }}</span>
                             </div>
                         </div>
                     </div>
