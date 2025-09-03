@@ -12,3 +12,8 @@ flake8>=6.0.0
 # PDF generation dependencies
 weasyprint>=60.0
 reportlab>=4.0.0
+
+# Google Sheets integration dependencies
+requests>=2.31.0
+pandas>=2.0.0
+openpyxl>=3.1.0

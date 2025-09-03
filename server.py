@@ -222,20 +222,27 @@ async def live_catalog(request: Request):
             formatted_product = {
                 "name": product.get("name", ""),
                 "model": product.get("model", ""),
-                "supplier": product.get("supplier", ""),
-                "primary_image": product.get("metadata", {}).get("drive_link", ""),
-                "short_description": product.get("specifications", {}).get("description", "")[:200] + "..." if product.get("specifications", {}).get("description", "") else "",
-                "specifications": product.get("specifications", {}),
+                "supplier": "Tuya",  # Default supplier
+                "hero_image": product.get("hero_image", ""),
+                "secondary_image": product.get("secondary_image", ""),
+                "short_description": product.get("features", "")[:200] + "..." if product.get("features", "") else "",
+                "specifications": product.get("specifications", ""),
                 "features": []
             }
             
-            # Extract features from specifications
-            specs = product.get("specifications", {})
-            features_text = specs.get("features", "")
-            if features_text and features_text != "Feature":
-                # Split by commas and clean up
-                features_list = [f.strip() for f in features_text.split(",") if f.strip() and f.strip() != "Feature"]
-                formatted_product["features"] = features_list[:10]  # Limit to 10 features
+            # Extract features from features field
+            features_text = product.get("features", "")
+            if features_text and features_text.strip():
+                # Split by newlines and clean up
+                features_list = [f.strip() for f in features_text.split("\n") if f.strip()]
+                # Remove numbers from the beginning of each feature (e.g., "1. " -> "")
+                cleaned_features = []
+                for feature in features_list:
+                    # Remove pattern like "1. ", "2. ", etc. from the beginning
+                    import re
+                    cleaned_feature = re.sub(r'^\d+\.\s*', '', feature)
+                    cleaned_features.append(cleaned_feature)
+                formatted_product["features"] = cleaned_features[:10]  # Limit to 10 features
             
             grouped_products[category].append(formatted_product)
         
@@ -276,20 +283,27 @@ async def generate_catalog_pdf(request: Request):
             formatted_product = {
                 "name": product.get("name", ""),
                 "model": product.get("model", ""),
-                "supplier": product.get("supplier", ""),
-                "primary_image": product.get("metadata", {}).get("drive_link", ""),
-                "short_description": product.get("specifications", {}).get("description", "")[:200] + "..." if product.get("specifications", {}).get("description", "") else "",
-                "specifications": product.get("specifications", {}),
+                "supplier": "Tuya",  # Default supplier
+                "hero_image": product.get("hero_image", ""),
+                "secondary_image": product.get("secondary_image", ""),
+                "short_description": product.get("features", "")[:200] + "..." if product.get("features", "") else "",
+                "specifications": product.get("specifications", ""),
                 "features": []
             }
             
-            # Extract features from specifications
-            specs = product.get("specifications", {})
-            features_text = specs.get("features", "")
-            if features_text and features_text != "Feature":
-                # Split by commas and clean up
-                features_list = [f.strip() for f in features_text.split(",") if f.strip() and f.strip() != "Feature"]
-                formatted_product["features"] = features_list[:10]  # Limit to 10 features
+            # Extract features from features field
+            features_text = product.get("features", "")
+            if features_text and features_text.strip():
+                # Split by newlines and clean up
+                features_list = [f.strip() for f in features_text.split("\n") if f.strip()]
+                # Remove numbers from the beginning of each feature (e.g., "1. " -> "")
+                cleaned_features = []
+                for feature in features_list:
+                    # Remove pattern like "1. ", "2. ", etc. from the beginning
+                    import re
+                    cleaned_feature = re.sub(r'^\d+\.\s*', '', feature)
+                    cleaned_features.append(cleaned_feature)
+                formatted_product["features"] = cleaned_features[:10]  # Limit to 10 features
             
             grouped_products[category].append(formatted_product)
         

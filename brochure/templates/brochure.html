@@ -85,8 +85,8 @@
                             <span class="number">{{ "%02d"|format(product_counter.value) }}</span>
                         </div>
                         <div class="hero-image">
-                            {% if product.primary_image %}
-                            <img src="{{ product.primary_image }}" alt="{{ product.name }}" loading="lazy">
+                            {% if product.hero_image %}
+                            <img src="{{ product.hero_image }}" alt="{{ product.name }}" loading="lazy">
                             {% else %}
                             <div class="image-placeholder">
                                 <span class="placeholder-text">{{ product.name[:2]|upper }}</span>
@@ -116,44 +116,30 @@
                             {% endif %}
                         </div>
 
-                        <div class="specifications">
-                            <h3 class="spec-title">Strengths & Advantages</h3>
-                            <div class="spec-table{% if (product.features and product.features|length >= 20) or (not product.features and 8 >= 20) %} linear-layout{% elif (product.features and product.features|length >= 6) or (not product.features and 8 >= 6) %} left-right-layout{% endif %}">
-                                {% if product.features and product.features|length > 0 %}
-                                    {% for feature in product.features %}
-                                    <div class="spec-row">
-                                        <div class="spec-icon">⚡</div>
-                                        <div class="spec-text">{{ feature }}</div>
-                                    </div>
-                                    {% endfor %}
+                        <!-- Features Section -->
+                        <div class="features">
+                            <h3 class="spec-title">FEATURES</h3>
+                            <div class="features-content">
+                                {% if product.features %}
+                                    <ul class="features-list">
+                                        {% for feature in product.features[:5] %}
+                                            <li class="feature-item">{{ feature }}</li>
+                                        {% endfor %}
+                                    </ul>
                                 {% else %}
-                                    <!-- Fallback features based on product category and available data -->
-                                    {% set fallback_features = [] %}
-                                    {% if product.specifications and product.specifications.power_source and product.specifications.power_source.strip() %}
-                                        {% set _ = fallback_features.append("Power: " + product.specifications.power_source) %}
-                                    {% endif %}
-                                    {% if product.specifications and product.specifications.communication_protocol and product.specifications.communication_protocol.strip() %}
-                                        {% set _ = fallback_features.append("Protocol: " + product.specifications.communication_protocol) %}
-                                    {% endif %}
-                                    {% if product.specifications and product.specifications.moq and product.specifications.moq.strip() %}
-                                        {% set _ = fallback_features.append("MOQ: " + product.specifications.moq + " units") %}
-                                    {% endif %}
-                                    {% if product.category %}
-                                        {% set _ = fallback_features.append("Category: " + product.category) %}
-                                    {% endif %}
-                                    {% if product.supplier %}
-                                        {% set _ = fallback_features.append("Supplier: " + product.supplier) %}
-                                    {% endif %}
-                                    {% set _ = fallback_features.append("Smart Home Compatible") %}
-                                    {% set _ = fallback_features.append("Professional Grade Quality") %}
-                                    {% set _ = fallback_features.append("Easy Installation") %}
-                                    
-                                    {% for feature in fallback_features[:8] %}
-                                    <div class="spec-row">
-                                        <div class="spec-icon">⚡</div>
-                                        <div class="spec-text">{{ feature }}</div>
-                                    </div>
-                                    {% endfor %}
+                                    <p>No features available for this product.</p>
+                                {% endif %}
+                            </div>
+                        </div>
+
+                        <!-- Specifications Section -->
+                        <div class="specifications">
+                            <h3 class="spec-title">PRODUCT SPECIFICATIONS</h3>
+                            <div class="spec-content">
+                                {% if product.specifications %}
+                                    <div class="specifications-text">{{ product.specifications }}</div>
+                                {% else %}
+                                    <p>No specifications available for this product.</p>
                                 {% endif %}
                             </div>
                         </div>

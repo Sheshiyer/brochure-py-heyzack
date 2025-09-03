@@ -479,7 +479,7 @@ def initialize_polling_service(sheets_url: str, catalog_path: str = "data/produc
 async def main():
     """Main function for testing the polling service."""
     # Configuration
-    SHEETS_URL = "https://docs.google.com/spreadsheets/d/17xcmTsSZkguOjXC6h6YDrNcOU27jrpU8Ah9xEONARg8/edit?gid=86173031#gid=86173031"
+    SHEETS_URL = "https://docs.google.com/spreadsheets/d/17xcmTsSZkguOjXC6h6YDrNcOU27jrpU8Ah9xEONARg8/edit?gid=1707985453#gid=1707985453"
     
     # Initialize service
     service = initialize_polling_service(SHEETS_URL)
