@@ -1,5 +1,18 @@
 # Changelog
 
+## [Fixed] - Catalog Live Template Alignment Issues
+
+### Back Cover Layout Fixes
+- **Fixed section class**: Changed from `cover-page` to `back-cover` for proper styling
+- **Fixed company title visibility**: "HeyZack AI Calling Agent" now displays correctly with proper CSS styling
+- **Fixed value proposition alignment**: "Why Choose HeyZack?" section now has proper grid alignment
+- **Fixed partner section**: Wrapped image in proper `partner-section` div for consistent layout
+
+### Technical Changes
+- Updated HTML structure to use correct CSS classes (`back-cover`, `partner-section`)
+- Ensured proper grid layout for value proposition items
+- Fixed text visibility with appropriate color contrast and styling
+
 ## [Updated] - Automated Polling Service Enhancement
 
 ### Changes Made
