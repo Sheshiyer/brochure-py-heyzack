@@ -87,7 +87,7 @@
 
     <!-- PDF Export Button -->
     <div id="pdfExport" class="pdf-export-button">
-        <button onclick="downloadPDF()" title="Download catalog as PDF">
+        <button onclick="downloadPDF()" title="Download catalog as PDF" id="pdfExportBtn">
             📄 Export PDF
         </button>
     </div>
@@ -295,6 +295,31 @@
             ws.close();
         });
         
+        // Update PDF button text based on current filters
+        function updatePDFButtonText() {
+            const button = document.getElementById('pdfExportBtn');
+            const currentParams = new URLSearchParams(window.location.search);
+            
+            if (currentParams.has('rows') || currentParams.has('category')) {
+                let filterText = '';
+                if (currentParams.has('rows')) {
+                    filterText += `Rows: ${currentParams.get('rows')}`;
+                }
+                if (currentParams.has('category')) {
+                    if (filterText) filterText += ' | ';
+                    filterText += `Category: ${currentParams.get('category')}`;
+                }
+                button.innerHTML = `📄 Export PDF (${filterText})`;
+                button.title = `Download filtered catalog as PDF - ${filterText}`;
+            } else {
+                button.innerHTML = '📄 Export PDF';
+                button.title = 'Download catalog as PDF';
+            }
+        }
+        
+        // Update button text on page load
+        updatePDFButtonText();
+        
         // Optional: Periodically ping to keep connection alive
         setInterval(function() {
             if (ws.readyState === WebSocket.OPEN) {
@@ -312,8 +337,14 @@
                 button.disabled = true;
                 button.innerHTML = '⏳ Generating PDF...';
                 
-                // Make request to PDF endpoint
-                const response = await fetch('/catalog/pdf', {
+                // Get current URL parameters to maintain filter state
+                const currentParams = new URLSearchParams(window.location.search);
+                const pdfUrl = '/catalog/pdf' + (currentParams.toString() ? '?' + currentParams.toString() : '');
+                
+                console.log('PDF URL with current filters:', pdfUrl);
+                
+                // Make request to PDF endpoint with current filter parameters
+                const response = await fetch(pdfUrl, {
                     method: 'GET',
                     headers: {
                         'Accept': 'application/pdf'
@@ -333,9 +364,20 @@
                 a.style.display = 'none';
                 a.href = url;
                 
-                // Generate filename with current date
+                // Generate filename with current date and filter info
                 const date = new Date().toISOString().split('T')[0];
-                a.download = `HeyZack-Catalog-${date}.pdf`;
+                let filename = `HeyZack-Catalog-${date}`;
+                
+                // Add filter information to filename if filters are applied
+                if (currentParams.has('rows')) {
+                    filename += `-rows-${currentParams.get('rows').replace(/,/g, '-')}`;
+                }
+                if (currentParams.has('category')) {
+                    const category = currentParams.get('category').replace(/[^a-zA-Z0-9]/g, '-');
+                    filename += `-${category}`;
+                }
+                
+                a.download = `${filename}.pdf`;
                 
                 // Trigger download
                 document.body.appendChild(a);

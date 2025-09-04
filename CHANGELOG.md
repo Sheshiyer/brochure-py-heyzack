@@ -1,5 +1,30 @@
 # Changelog
 
+## [Fixed] - PDF Export Filter State Preservation
+
+### PDF Export Improvements
+- **Filter State Preservation**: PDF export now respects current catalog filter state
+- **Dynamic URL Parameters**: PDF generation uses same filters as current catalog view
+- **Smart Filename Generation**: PDF filename includes filter information when filters are applied
+- **Visual Filter Indicators**: PDF button shows active filters in button text and tooltip
+
+### Technical Implementation
+- **URL Parameter Detection**: JavaScript captures current URL parameters and passes them to PDF endpoint
+- **Filter-Aware Filenames**: Generated PDFs include filter info in filename (e.g., `HeyZack-Catalog-2025-01-15-rows-1-3-5-Security.pdf`)
+- **Button State Updates**: PDF export button dynamically updates to show active filters
+- **Console Logging**: Debug output shows PDF URL with applied filters
+
+### User Experience
+- **Consistent Filtering**: PDF contains exactly the same products as the current catalog view
+- **Clear Filter Indication**: Users can see which filters are active before exporting
+- **Descriptive Filenames**: PDF files are named to reflect their content and filters
+- **Seamless Workflow**: Export PDF button works the same way regardless of filter state
+
+### Examples
+- Viewing `/catalog?rows=1,3,5` → PDF export generates `/catalog/pdf?rows=1,3,5`
+- Viewing `/catalog?category=Security` → PDF export generates `/catalog/pdf?category=Security`
+- Combined filters work seamlessly with PDF export
+
 ## [Enhanced] - Advanced Product Filtering
 
 ### New Filtering Features
