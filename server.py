@@ -1198,8 +1198,6 @@ async def dashboard():
             <button class="button" onclick="getStatus()">Refresh Status</button>
             <a href="/catalog" class="catalog-link" target="_blank">View Live Catalog</a>
             <a href="/catalog?rows=1,5,10" class="catalog-link" target="_blank">View Rows 1,5,10</a>
-            <a href="/catalog?category=Smart Lighting" class="catalog-link" target="_blank">View Smart Lighting</a>
-            <a href="/catalog?category=Security" class="catalog-link" target="_blank">View Security</a>
         </div>
         
         <h3>Real-time Updates</h3>
