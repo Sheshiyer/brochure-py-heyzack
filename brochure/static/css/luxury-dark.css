@@ -154,6 +154,7 @@ h1, h2, h3, h4, h5, h6 {
 .cover-page {
     width: 210mm;
     height: 297mm;
+    padding-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
