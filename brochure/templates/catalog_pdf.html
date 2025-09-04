@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ company_info.name }} Product Catalog</title>
+    <link rel="stylesheet" href="static/css/{{ theme }}.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Brinnan';
+            src: url('data:font/opentype;base64,{{ brinnan_font_base64 }}') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+    </style>
+    <style>
+        /* PDF-specific optimizations */
+        body {
+            margin: 0;
+            padding: 20px 0;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+        
+        /* Ensure proper page breaks */
+        .product-page {
+            page-break-after: always;
+            break-after: page;
+            margin: 0 auto 20px auto;
+            box-shadow: none !important;
+        }
+        
+        .cover-page {
+            page-break-after: always;
+            break-after: page;
+            margin: 0 auto 20px auto;
+        }
+        
+        .back-cover {
+            page-break-before: always;
+            break-before: page;
+            margin: 20px auto 0 auto;
+        }
+        
+        /* Ensure images render properly */
+        img {
+            max-width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+        
+        /* Fix text rendering issues */
+        .spec-text, .product-description p {
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        /* Fix grid layouts for PDF */
+        .spec-table.linear-layout,
+        .spec-table.left-right-layout {
+            grid-gap: 0.4rem 0.8rem;
+            align-items: start;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cover Page -->
+    <section class="cover-page">
+        {% if intro_image_base64 %}
+        <img src="data:image/png;base64,{{ intro_image_base64 }}" alt="HeyZack Smart Living" class="cover-page">
+        {% else %}
+        <img src="static/images/intro.png" alt="HeyZack Smart Living" class="cover-page">
+        {% endif %}
+    </section>
+
+    <!-- Product Showcase -->
+    <main class="product-showcase" id="productShowcase">
+        {% set product_counter = namespace(value=1) %}
+        {% for category, category_products in grouped_products.items() %}
+            {% for product in category_products %}
+            <section class="product-page layout-structured" data-product="{{ product_counter.value }}">
+                <div class="product-layout layout-structured">
+                    <!-- Hero Image Section (30% height) -->
+                    <div class="hero-section">
+                        <div class="hero-image">
+                            {% if product.hero_image %}
+                            <img src="{{ product.hero_image }}" alt="{{ product.name }}" loading="lazy">
+                            {% else %}
+                            <div class="image-placeholder">
+                                <span class="placeholder-text">{{ product.name[:2]|upper }}</span>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    <!-- Details Section (70% height, two columns) -->
+                    <div class="details-section">
+                        <!-- Left Column: Specifications and Features -->
+                        <div class="left-column">
+                            <div class="product-header">
+                                <h2 class="product-title">{{ product.name }}</h2>
+                                <p class="product-type">{{ category|upper }}</p>
+                                <p class="product-model">{{ product.model }}</p>
+                            </div>
+
+                            <!-- Features Section -->
+                            <div class="features">
+                                <h3 class="spec-title">FEATURES</h3>
+                                <div class="features-content">
+                                    {% if product.features %}
+                                        <ul class="features-list">
+                                            {% for feature in product.features[:5] %}
+                                                <li class="feature-item">{{ feature }}</li>
+                                            {% endfor %}
+                                        </ul>
+                                    {% else %}
+                                        <p>No features available for this product.</p>
+                                    {% endif %}
+                                </div>
+                            </div>
+
+                            <!-- Specifications Section -->
+                            <div class="specifications">
+                                <h3 class="spec-title">PRODUCT SPECIFICATIONS</h3>
+                                <div class="spec-content">
+                                    {% if product.specifications %}
+                                        <div class="specifications-text">{{ product.specifications }}</div>
+                                    {% else %}
+                                        <p>No specifications available for this product.</p>
+                                    {% endif %}
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Right Column: Secondary Image -->
+                        <div class="right-column">
+                            <div class="secondary-image">
+                                {% if product.secondary_image %}
+                                <img src="{{ product.secondary_image }}" alt="{{ product.name }} - Detail View" loading="lazy">
+                                {% else %}
+                                <div class="image-placeholder">
+                                    <span class="placeholder-text">{{ product.name[:2]|upper }}</span>
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Page Number -->
+                <div class="page-number">
+                    <span>{{ product_counter.value }}</span>
+                </div>
+            </section>
+            {% set product_counter.value = product_counter.value + 1 %}
+            {% endfor %}
+        {% endfor %}
+    </main>
+
+    <!-- Back Cover -->
+    <section class="back-cover-fixed">
+        <div class="back-content-fixed">
+          <div class="company-section-fixed">
+            <div class="value-proposition">
+              <h3><br>Why Choose HeyZack?</h3>
+              <div class="value-grid">
+                <div class="value-item">
+                  <h4>AI Guardian Technology</h4>
+                  <p>Proactive home management</p>
+                </div>
+                <div class="value-item">
+                  <h4>Complete Integration</h4>
+                  <p>All devices work seamlessly together</p>
+                </div>
+                <div class="value-item">
+                  <h4>Professional Support</h4>
+                  <p>Dedicated partner success program</p>
+                </div>
+                <div class="value-item">
+                  <h4>30% Partner Margins</h4>
+                  <p>Industry-leading profitability</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="partner-section-fixed">
+            {% if outer_image_base64 %}
+            <img src="data:image/png;base64,{{ outer_image_base64 }}" alt="HeyZack Partner Network">
+            {% else %}
+            <img src="static/images/outer.png" alt="HeyZack Partner Network">
+            {% endif %}
+          </div>
+        </div>
+      </section>
+</body>
+</html>

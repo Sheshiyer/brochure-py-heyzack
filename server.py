@@ -333,6 +333,27 @@ async def generate_catalog_pdf(request: Request):
             
             grouped_products[category].append(formatted_product)
         
+        # Load font as base64 for PDF generation
+        brinnan_font_base64 = ""
+        font_path = "brochure/static/fonts/Brinnan Regular.otf"
+        if os.path.exists(font_path):
+            with open(font_path, 'rb') as font_file:
+                brinnan_font_base64 = base64.b64encode(font_file.read()).decode('utf-8')
+        
+        # Load images as base64 for PDF generation
+        intro_image_base64 = ""
+        outer_image_base64 = ""
+        
+        intro_path = "brochure/static/images/intro.png"
+        if os.path.exists(intro_path):
+            with open(intro_path, 'rb') as img_file:
+                intro_image_base64 = base64.b64encode(img_file.read()).decode('utf-8')
+        
+        outer_path = "brochure/static/images/outer.png"
+        if os.path.exists(outer_path):
+            with open(outer_path, 'rb') as img_file:
+                outer_image_base64 = base64.b64encode(img_file.read()).decode('utf-8')
+        
         # Template context for PDF (similar to live catalog but without WebSocket elements)
         context = {
             "request": request,
@@ -341,24 +362,30 @@ async def generate_catalog_pdf(request: Request):
             "generation_date": datetime.now().strftime("%B %d, %Y"),
             "total_products": len(products),
             "categories": list(grouped_products.keys()),
-            "grouped_products": dict(grouped_products)
+            "grouped_products": dict(grouped_products),
+            "brinnan_font_base64": brinnan_font_base64,
+            "intro_image_base64": intro_image_base64,
+            "outer_image_base64": outer_image_base64
         }
         
         # Generate filename with current date
         date_str = datetime.now().strftime("%Y-%m-%d")
         
         # Try multiple PDF generation methods in order of preference
+        # Prioritize browser-based methods that preserve the live catalog design
         pdf_methods = [
-            "playwright_enhanced",
-            "pyppeteer",
-            "reportlab_enhanced"
+            "playwright_sync",      # Browser-based method for Windows
+            "pyppeteer",           # Alternative browser method
+            "reportlab_enhanced"   # Simple text fallback
         ]
         
         for method in pdf_methods:
             try:
+                print(f"Trying PDF generation method: {method}")
                 temp_pdf_path = await generate_pdf_with_method(method, context, request, grouped_products, products)
                 if temp_pdf_path:
                     filename = f"HeyZack-Catalog-{date_str}.pdf"
+                    print(f"PDF generated successfully using method: {method}")
                     
                     return FileResponse(
                         path=temp_pdf_path,
@@ -367,6 +394,7 @@ async def generate_catalog_pdf(request: Request):
                         background=None
                     )
             except Exception as method_error:
+                print(f"PDF generation method {method} failed: {str(method_error)}")
                 # Suppress asyncio errors for cleaner logs
                 import logging
                 logging.getLogger('asyncio').setLevel(logging.WARNING)
@@ -385,7 +413,149 @@ async def generate_catalog_pdf(request: Request):
 async def generate_pdf_with_method(method: str, context: dict, request: Request, grouped_products: dict, products: list):
     """Generate PDF using specified method with enhanced error handling"""
     
-    if method == "playwright_enhanced":
+    if method == "playwright_sync":
+        # Synchronous Playwright implementation optimized for Windows
+        try:
+            from playwright.sync_api import sync_playwright
+            import threading
+            
+            # Create temporary PDF file
+            with tempfile.NamedTemporaryFile(suffix='.pdf', delete=False) as temp_pdf:
+                temp_pdf_path = temp_pdf.name
+            
+            def run_playwright():
+                with sync_playwright() as p:
+                    # Launch browser with Windows-optimized settings
+                    browser = p.chromium.launch(
+                        headless=True,
+                        args=[
+                            '--no-sandbox',
+                            '--disable-setuid-sandbox',
+                            '--disable-dev-shm-usage',
+                            '--disable-gpu',
+                            '--disable-web-security',
+                            '--single-process',
+                            '--no-zygote'
+                        ]
+                    )
+                    
+                    try:
+                        page = browser.new_page()
+                        
+                        # Set viewport for consistent rendering
+                        page.set_viewport_size({"width": 1200, "height": 1600})
+                        
+                        # Create a temporary HTML file with the PDF template
+                        with tempfile.NamedTemporaryFile(mode='w', suffix='.html', delete=False, encoding='utf-8') as temp_html:
+                            html_content = templates.get_template("catalog_pdf.html").render(**context)
+                            temp_html.write(html_content)
+                            temp_html_path = temp_html.name
+                        
+                        # Navigate to the temporary HTML file
+                        page.goto(f"file://{temp_html_path}", wait_until="networkidle", timeout=30000)
+                        
+                        # Wait for content to load
+                        try:
+                            page.wait_for_selector('.product-page', timeout=10000)
+                        except:
+                            pass  # Continue even if selector not found
+                        
+                        page.wait_for_load_state("networkidle")
+                        
+                        # Load and inject the CSS file content
+                        css_file_path = "brochure/static/css/luxury-dark.css"
+                        if os.path.exists(css_file_path):
+                            with open(css_file_path, 'r', encoding='utf-8') as css_file:
+                                css_content = css_file.read()
+                                page.add_style_tag(content=css_content)
+                        
+                        # Add additional CSS to hide live elements and optimize for PDF
+                        page.add_style_tag(content="""
+                            /* Hide live elements for PDF */
+                            .live-indicator,
+                            .notification,
+                            .pdf-export-button,
+                            #liveStatus,
+                            #notification,
+                            #pdfExport {
+                                display: none !important;
+                            }
+                            
+                            /* Optimize for PDF rendering */
+                            body {
+                                margin: 0;
+                                padding: 20px 0;
+                                -webkit-print-color-adjust: exact;
+                                print-color-adjust: exact;
+                            }
+                            
+                            /* Ensure proper page breaks */
+                            .product-page {
+                                page-break-after: always;
+                                break-after: page;
+                                margin: 0 auto 20px auto;
+                                box-shadow: none !important;
+                            }
+                            
+                            .cover-page {
+                                page-break-after: always;
+                                break-after: page;
+                                margin: 0 auto 20px auto;
+                            }
+                            
+                            .back-cover {
+                                page-break-before: always;
+                                break-before: page;
+                                margin: 20px auto 0 auto;
+                            }
+                            
+                            /* Ensure images render properly */
+                            img {
+                                max-width: 100%;
+                                height: auto;
+                                object-fit: contain;
+                            }
+                        """)
+                        
+                        # Generate PDF with optimized settings
+                        page.pdf(
+                            path=temp_pdf_path,
+                            format='A4',
+                            print_background=True,
+                            margin={
+                                'top': '10mm',
+                                'right': '10mm', 
+                                'bottom': '10mm',
+                                'left': '10mm'
+                            },
+                            prefer_css_page_size=True,
+                            display_header_footer=False,
+                            scale=0.95
+                        )
+                        
+                    finally:
+                        browser.close()
+                        # Clean up temporary HTML file
+                        if 'temp_html_path' in locals() and os.path.exists(temp_html_path):
+                            os.unlink(temp_html_path)
+            
+            # Run in thread to avoid blocking async function
+            thread = threading.Thread(target=run_playwright)
+            thread.start()
+            thread.join(timeout=60)  # 60 second timeout
+            
+            if thread.is_alive():
+                raise Exception("Playwright PDF generation timed out")
+            
+            return temp_pdf_path
+                    
+        except Exception as e:
+            # Clean up on failure
+            if 'temp_pdf_path' in locals() and os.path.exists(temp_pdf_path):
+                os.unlink(temp_pdf_path)
+            raise e
+    
+    elif method == "playwright_enhanced":
         # Enhanced Playwright implementation with better Windows compatibility
         try:
             # Detect Windows and adjust subprocess handling
@@ -396,40 +566,159 @@ async def generate_pdf_with_method(method: str, context: dict, request: Request,
             with tempfile.NamedTemporaryFile(suffix='.pdf', delete=False) as temp_pdf:
                 temp_pdf_path = temp_pdf.name
             
-            async with async_playwright() as p:
-                # Enhanced browser launch arguments for Windows compatibility
-                launch_args = [
-                    '--no-sandbox',
-                    '--disable-setuid-sandbox',
-                    '--disable-dev-shm-usage',
-                    '--disable-accelerated-2d-canvas',
-                    '--no-first-run',
-                    '--disable-gpu',
-                    '--disable-web-security',
-                    '--disable-features=VizDisplayCompositor',
-                    '--run-all-compositor-stages-before-draw',
-                    '--disable-background-timer-throttling',
-                    '--disable-renderer-backgrounding',
-                    '--disable-backgrounding-occluded-windows',
-                    '--disable-ipc-flooding-protection',
-                ]
+            # Use synchronous approach for Windows compatibility
+            if is_windows:
+                from playwright.sync_api import sync_playwright
                 
-                if is_windows:
-                    # Additional Windows-specific arguments
-                    launch_args.extend([
+                with sync_playwright() as p:
+                    # Enhanced browser launch arguments for Windows compatibility
+                    launch_args = [
+                        '--no-sandbox',
+                        '--disable-setuid-sandbox',
+                        '--disable-dev-shm-usage',
+                        '--disable-accelerated-2d-canvas',
+                        '--no-first-run',
+                        '--disable-gpu',
+                        '--disable-web-security',
+                        '--disable-features=VizDisplayCompositor',
+                        '--run-all-compositor-stages-before-draw',
+                        '--disable-background-timer-throttling',
+                        '--disable-renderer-backgrounding',
+                        '--disable-backgrounding-occluded-windows',
+                        '--disable-ipc-flooding-protection',
                         '--single-process',
                         '--no-zygote',
                         '--disable-extensions',
                         '--disable-default-apps',
                         '--disable-sync',
                         '--no-default-browser-check'
-                    ])
-                
-                browser = await p.chromium.launch(
-                    headless=True,
-                    args=launch_args,
-                    timeout=60000  # Increased timeout for Windows
-                )
+                    ]
+                    
+                    browser = p.chromium.launch(
+                        headless=True,
+                        args=launch_args
+                    )
+                    
+                    try:
+                        page = browser.new_page()
+                        
+                        # Set viewport for consistent rendering
+                        page.set_viewport_size({"width": 1200, "height": 1600})
+                        
+                        # Navigate to live catalog URL
+                        catalog_url = f"http://{request.url.netloc}/catalog"
+                        page.goto(catalog_url, wait_until="networkidle", timeout=30000)
+                        
+                        # Wait for content to load
+                        page.wait_for_selector('.product-page', timeout=15000)
+                        page.wait_for_load_state("networkidle")
+                        
+                        # Enhanced CSS for PDF optimization
+                        page.add_style_tag(content="""
+                            /* Hide live elements for PDF */
+                            .live-indicator,
+                            .notification,
+                            .pdf-export-button,
+                            #liveStatus,
+                            #notification,
+                            #pdfExport {
+                                display: none !important;
+                            }
+                            
+                            /* Optimize for PDF rendering */
+                            body {
+                                margin: 0;
+                                padding: 20px 0;
+                                -webkit-print-color-adjust: exact;
+                                print-color-adjust: exact;
+                            }
+                            
+                            /* Ensure proper page breaks */
+                            .product-page {
+                                page-break-after: always;
+                                break-after: page;
+                                margin: 0 auto 20px auto;
+                                box-shadow: none !important;
+                            }
+                            
+                            .cover-page {
+                                page-break-after: always;
+                                break-after: page;
+                                margin: 0 auto 20px auto;
+                            }
+                            
+                            .back-cover {
+                                page-break-before: always;
+                                break-before: page;
+                                margin: 20px auto 0 auto;
+                            }
+                            
+                            /* Fix text rendering issues */
+                            .spec-text, .product-description p {
+                                text-rendering: optimizeLegibility;
+                                -webkit-font-smoothing: antialiased;
+                            }
+                            
+                            /* Ensure images render properly */
+                            img {
+                                max-width: 100%;
+                                height: auto;
+                                object-fit: contain;
+                            }
+                            
+                            /* Fix grid layouts for PDF */
+                            .spec-table.linear-layout,
+                            .spec-table.left-right-layout {
+                                grid-gap: 0.4rem 0.8rem;
+                                align-items: start;
+                            }
+                        """)
+                        
+                        # Generate PDF with optimized settings
+                        page.pdf(
+                            path=temp_pdf_path,
+                            format='A4',
+                            print_background=True,
+                            margin={
+                                'top': '10mm',
+                                'right': '10mm', 
+                                'bottom': '10mm',
+                                'left': '10mm'
+                            },
+                            prefer_css_page_size=True,
+                            display_header_footer=False,
+                            scale=0.95
+                        )
+                        
+                        return temp_pdf_path
+                        
+                    finally:
+                        browser.close()
+            else:
+                # Async approach for non-Windows systems
+                async with async_playwright() as p:
+                    # Enhanced browser launch arguments for Windows compatibility
+                    launch_args = [
+                        '--no-sandbox',
+                        '--disable-setuid-sandbox',
+                        '--disable-dev-shm-usage',
+                        '--disable-accelerated-2d-canvas',
+                        '--no-first-run',
+                        '--disable-gpu',
+                        '--disable-web-security',
+                        '--disable-features=VizDisplayCompositor',
+                        '--run-all-compositor-stages-before-draw',
+                        '--disable-background-timer-throttling',
+                        '--disable-renderer-backgrounding',
+                        '--disable-backgrounding-occluded-windows',
+                        '--disable-ipc-flooding-protection',
+                    ]
+                    
+                    browser = await p.chromium.launch(
+                        headless=True,
+                        args=launch_args,
+                        timeout=60000
+                    )
                 
                 try:
                     page = await browser.new_page()
@@ -595,6 +884,48 @@ async def generate_pdf_with_method(method: str, context: dict, request: Request,
         except ImportError:
             # Pyppeteer not installed, skip this method
             raise Exception("Pyppeteer not available")
+        except Exception as e:
+            if 'temp_pdf_path' in locals() and os.path.exists(temp_pdf_path):
+                os.unlink(temp_pdf_path)
+            raise e
+    
+    elif method == "weasyprint_enhanced":
+        # WeasyPrint implementation using dedicated PDF template
+        try:
+            import weasyprint
+            from weasyprint import HTML, CSS
+            
+            with tempfile.NamedTemporaryFile(suffix='.pdf', delete=False) as temp_pdf:
+                temp_pdf_path = temp_pdf.name
+            
+            # Create a temporary HTML file with the PDF template
+            with tempfile.NamedTemporaryFile(mode='w', suffix='.html', delete=False, encoding='utf-8') as temp_html:
+                # Render the dedicated PDF template
+                html_content = templates.get_template("catalog_pdf.html").render(**context)
+                temp_html.write(html_content)
+                temp_html_path = temp_html.name
+            
+            try:
+                # Generate PDF with WeasyPrint
+                html_doc = HTML(filename=temp_html_path)
+                
+                # Load the CSS file
+                css_file = "brochure/static/css/luxury-dark.css"
+                if os.path.exists(css_file):
+                    css_doc = CSS(filename=css_file)
+                    html_doc.write_pdf(temp_pdf_path, stylesheets=[css_doc])
+                else:
+                    html_doc.write_pdf(temp_pdf_path)
+                
+                return temp_pdf_path
+                
+            finally:
+                # Clean up temporary HTML file
+                if os.path.exists(temp_html_path):
+                    os.unlink(temp_html_path)
+                    
+        except ImportError:
+            raise Exception("WeasyPrint not available")
         except Exception as e:
             if 'temp_pdf_path' in locals() and os.path.exists(temp_pdf_path):
                 os.unlink(temp_pdf_path)

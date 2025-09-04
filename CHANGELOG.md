@@ -1,5 +1,36 @@
 # Changelog
 
+## [Enhanced] - PDF Export Functionality for Live Catalog
+
+### PDF Generation Improvements
+- **Added multiple PDF generation methods**: Playwright (sync/async), Pyppeteer, and ReportLab with automatic fallback
+- **Windows compatibility**: Implemented synchronous Playwright approach to handle Windows subprocess limitations
+- **Live catalog design preservation**: PDF now maintains exact visual design from live catalog instead of simple format
+- **Enhanced CSS optimization**: Added PDF-specific styling to hide live elements and optimize page breaks
+- **Improved error handling**: Better fallback mechanisms when primary PDF generation methods fail
+
+### Technical Implementation
+- **Playwright Sync Method**: Primary method using synchronous Playwright API for Windows compatibility
+- **CSS Injection**: Automatically hides live indicators, notifications, and export buttons in PDF
+- **Page Break Optimization**: Ensures proper page breaks for product pages, cover, and back cover
+- **Image Rendering**: Optimized image display and scaling for PDF output
+- **Background Printing**: Preserves colors and gradients in PDF output
+
+### Dependencies Added
+- `playwright>=1.40.0` - For browser-based PDF generation
+- `pyppeteer>=1.0.2` - Alternative browser automation
+- `fastapi>=0.104.0` - Web framework for API endpoints
+- `uvicorn>=0.24.0` - ASGI server
+- `python-multipart>=0.0.6` - Form data handling
+- `python-dotenv>=1.0.0` - Environment variable management
+- `boto3>=1.34.0` - AWS S3 integration
+
+### User Experience
+- **One-click PDF export**: Users can download live catalog as PDF with same design
+- **Automatic filename**: PDFs are named with current date (e.g., `HeyZack-Catalog-2025-01-15.pdf`)
+- **Loading states**: Button shows progress during PDF generation
+- **Error handling**: User-friendly error messages if PDF generation fails
+
 ## [Fixed] - Catalog Live Template Alignment Issues
 
 ### Back Cover Layout Fixes
