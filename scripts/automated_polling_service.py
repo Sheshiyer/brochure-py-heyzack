@@ -58,22 +58,23 @@ class ChangeDetector:
     def create_data_fingerprint(self, sheets_data: List[List[str]]) -> Dict[str, Any]:
         """Create a fingerprint of the sheets data for change detection."""
         if not sheets_data:
-            return {"row_count": 0, "data_hash": "", "last_row_hash": ""}
+            return {"row_count": 0, "data_hash": "", "row_hashes": {}}
         
         # Calculate hash of all data
         data_str = json.dumps(sheets_data, sort_keys=True)
         data_hash = hashlib.md5(data_str.encode('utf-8')).hexdigest()
         
-        # Calculate hash of last row for quick new row detection
-        last_row_hash = ""
+        # Calculate hash for each row (excluding header) for detailed change detection
+        row_hashes = {}
         if len(sheets_data) > 1:  # Skip header
-            last_row_str = json.dumps(sheets_data[-1], sort_keys=True)
-            last_row_hash = hashlib.md5(last_row_str.encode('utf-8')).hexdigest()
+            for i, row in enumerate(sheets_data[1:], start=1):  # Start from 1 to account for header
+                row_str = json.dumps(row, sort_keys=True)
+                row_hashes[str(i)] = hashlib.md5(row_str.encode('utf-8')).hexdigest()
         
         return {
             "row_count": len(sheets_data) - 1,  # Exclude header
             "data_hash": data_hash,
-            "last_row_hash": last_row_hash,
+            "row_hashes": row_hashes,
             "timestamp": datetime.now(timezone.utc).isoformat()
         }
     
@@ -84,12 +85,18 @@ class ChangeDetector:
         changes = {
             "has_changes": False,
             "new_rows": [],
+            "modified_rows": [],
+            "deleted_rows": [],
             "new_row_count": 0,
+            "modified_row_count": 0,
+            "deleted_row_count": 0,
             "total_rows": current_fingerprint["row_count"],
             "previous_rows": self.metadata.get("sheet_fingerprint", {}).get("row_count", 0)
         }
         
         previous_fingerprint = self.metadata.get("sheet_fingerprint", {})
+        previous_row_hashes = previous_fingerprint.get("row_hashes", {})
+        current_row_hashes = current_fingerprint["row_hashes"]
         
         # Check if data hash changed
         if current_fingerprint["data_hash"] != previous_fingerprint.get("data_hash"):
@@ -107,6 +114,42 @@ class ChangeDetector:
                 changes["new_row_count"] = len(new_rows)
                 
                 logger.info(f"Detected {len(new_rows)} new rows in Google Sheets")
+            
+            # Check for modified existing rows
+            modified_rows = []
+            for row_index, current_hash in current_row_hashes.items():
+                if row_index in previous_row_hashes:
+                    if current_hash != previous_row_hashes[row_index]:
+                        # Row has been modified
+                        row_data_index = int(row_index)  # This is 1-based row number
+                        # Access the data array: header is at index 0, first data row at index 1, etc.
+                        if row_data_index <= len(current_data) - 1:  # Check bounds
+                            modified_rows.append({
+                                "row_index": row_data_index,
+                                "row_data": current_data[row_data_index],  # row_data_index is already correct for 0-based array
+                                "previous_hash": previous_row_hashes[row_index],
+                                "current_hash": current_hash
+                            })
+            
+            if modified_rows:
+                changes["modified_rows"] = modified_rows
+                changes["modified_row_count"] = len(modified_rows)
+                logger.info(f"Detected {len(modified_rows)} modified rows in Google Sheets")
+            
+            # Check for deleted rows (rows that existed before but not now)
+            deleted_rows = []
+            for row_index, previous_hash in previous_row_hashes.items():
+                if row_index not in current_row_hashes:
+                    # This row was deleted
+                    deleted_rows.append({
+                        "row_index": int(row_index),
+                        "previous_hash": previous_hash
+                    })
+            
+            if deleted_rows:
+                changes["deleted_rows"] = deleted_rows
+                changes["deleted_row_count"] = len(deleted_rows)
+                logger.info(f"Detected {len(deleted_rows)} deleted rows in Google Sheets")
         
         # Update metadata
         self.metadata["sheet_fingerprint"] = current_fingerprint
@@ -169,11 +212,56 @@ class DataProcessor:
         
         return new_products
     
+    def process_modified_rows(self, modified_rows: List[Dict[str, Any]], headers: List[str]) -> List[Dict[str, Any]]:
+        """Convert modified Google Sheets rows to product objects."""
+        modified_products = []
+        
+        for modified_row in modified_rows:
+            try:
+                # Map row data to product structure
+                product = self._create_product_from_row(modified_row["row_data"], headers)
+                if product:
+                    # Add metadata about the modification
+                    product["_modification_info"] = {
+                        "row_index": modified_row["row_index"],
+                        "previous_hash": modified_row["previous_hash"],
+                        "current_hash": modified_row["current_hash"],
+                        "modified_at": datetime.now(timezone.utc).isoformat()
+                    }
+                    modified_products.append(product)
+            except Exception as e:
+                logger.error(f"Error processing modified row {modified_row}: {e}")
+                continue
+        
+        return modified_products
+    
+    def process_deleted_rows(self, deleted_rows: List[Dict[str, Any]], headers: List[str]) -> List[Dict[str, Any]]:
+        """Process deleted rows to identify which products were removed."""
+        deleted_products = []
+        
+        for deleted_row in deleted_rows:
+            try:
+                # We can't get the actual row data since it's deleted, but we can use the row index
+                # to identify which product was deleted based on the previous data
+                deleted_products.append({
+                    "row_index": deleted_row["row_index"],
+                    "previous_hash": deleted_row["previous_hash"],
+                    "deleted_at": datetime.now(timezone.utc).isoformat()
+                })
+            except Exception as e:
+                logger.error(f"Error processing deleted row {deleted_row}: {e}")
+                continue
+        
+        return deleted_products
+    
     def _create_product_from_row(self, row: List[str], headers: List[str]) -> Optional[Dict[str, Any]]:
-        """Create a product object from a Google Sheets row."""
+        """Create a product object from a Google Sheets row matching the current products.json structure."""
+        # Ensure row has the same length as headers by padding with empty strings
         if len(row) < len(headers):
-            # Pad row with empty strings if needed
             row = row + [''] * (len(headers) - len(row))
+        elif len(row) > len(headers):
+            # Truncate row if it's longer than headers
+            row = row[:len(headers)]
         
         # Create mapping of headers to values with case-insensitive matching
         row_data = {}
@@ -195,56 +283,28 @@ class DataProcessor:
                     return str(row_data[header_map[name_lower]]).strip()
             return ''
         
-        # Extract key fields (adjust based on your sheet structure)
+        # Extract key fields based on the brochure-products sheet structure
         name = get_field(['Product Name'])
         if not name:
             return None
         
-        # Generate unique product ID
-        timestamp = int(time.time() * 1000000)  # microsecond precision
-        product_id = f"product-{timestamp}"
-        
-        # Get specifications and parse them for description and technical specs
+        # Get specifications and features
         specs_raw = get_field(['Specifications'])
-        description, technical_specs = self._parse_specifications(specs_raw)
+        features = get_field(['Features'])
         
-        # Process drive link for images
-        drive_link = get_field(['Drive Link'])
-        images = []
-        if drive_link and 'drive.google.com' in drive_link:
-            # Convert Google Drive share link to direct image URL if possible
-            images = [{"url": drive_link, "alt": name, "type": "drive_link"}]
+        # Process images
+        hero_image = get_field(['Hero Image'])
+        secondary_image = get_field(['Secondary Image'])
         
-        # Build product object
+        # Build product object matching the current products.json structure
         product = {
-            "id": product_id,
             "name": name,
-            "model": get_field(['Model Number', 'Model']),
-            "supplier": get_field(['Supplier']),
+            "model": get_field(['Model Number']),
             "category": get_field(['Category']),
-            "price": self._parse_price(get_field(['Price'])),
-            "currency": "USD",
-            "status": "published",
-            "images": images,
-            "specifications": {
-                "description": description or "New smart home product with advanced features.",
-                "specifications": technical_specs,
-                "features": specs_raw,  # Keep the full specs as features for now
-                "communication_protocol": get_field(['Communitcation protocol', 'Communication protocol', 'Protocol']),
-                "power_source": get_field(['Power Source']),
-                "country": get_field(['Country']),
-                "moq": get_field(['MOQ']),
-                "lead_time": get_field(['Lead Time'])
-            },
-            "metadata": {
-                "enhanced_id": f"{get_field(['Supplier'])}_{get_field(['Model Number', 'Model'])}",
-                "drive_link": drive_link,
-                "price_raw": get_field(['Price']),
-                "ref_heyzack": get_field(['REF HEYZACK', 'Ref Heyzack']) or None,
-                "designation_fr": get_field(['DESIGNATION FR', 'Designation FR']) or None
-            },
-            "createdAt": datetime.now(timezone.utc).isoformat(),
-            "updatedAt": datetime.now(timezone.utc).isoformat()
+            "specifications": specs_raw or "",
+            "features": features or "",
+            "hero_image": hero_image or "",
+            "secondary_image": secondary_image or ""
         }
         
         return product
@@ -288,16 +348,29 @@ class DataProcessor:
         except ValueError:
             return 0.0
     
-    def update_catalog(self, new_products: List[Dict[str, Any]]) -> bool:
-        """Add new products to the catalog."""
-        if not new_products:
+    def update_catalog(self, new_products: List[Dict[str, Any]] = None, modified_products: List[Dict[str, Any]] = None, current_sheet_models: List[str] = None) -> bool:
+        """Add new products, update modified products, and remove deleted products from the catalog."""
+        if not new_products and not modified_products and not current_sheet_models:
             return False
         
         try:
             products_data = self._load_products()
             
             # Add new products
-            products_data["products"].extend(new_products)
+            if new_products:
+                products_data["products"].extend(new_products)
+                logger.info(f"Added {len(new_products)} new products to catalog")
+            
+            # Update modified products
+            if modified_products:
+                updated_count = self._update_modified_products(products_data, modified_products)
+                logger.info(f"Updated {updated_count} modified products in catalog")
+            
+            # Remove deleted products
+            if current_sheet_models:
+                removed_count = self._remove_deleted_products(products_data, current_sheet_models)
+                if removed_count > 0:
+                    logger.info(f"Removed {removed_count} deleted products from catalog")
             
             # Update categories and suppliers in metadata
             self._update_metadata_stats(products_data)
@@ -305,42 +378,79 @@ class DataProcessor:
             # Save updated data
             self._save_products(products_data)
             
-            logger.info(f"Added {len(new_products)} new products to catalog")
             return True
             
         except Exception as e:
             logger.error(f"Error updating catalog: {e}")
             return False
     
+    def _update_modified_products(self, products_data: Dict[str, Any], modified_products: List[Dict[str, Any]]) -> int:
+        """Update existing products with modified data."""
+        updated_count = 0
+        
+        for modified_product in modified_products:
+            # Find the product to update by model (primary key) since name might change
+            product_name = modified_product.get("name")
+            product_model = modified_product.get("model")
+            
+            if not product_model:  # Use model as primary identifier
+                continue
+            
+            # Find matching product in the catalog by model (more reliable than name)
+            for i, existing_product in enumerate(products_data["products"]):
+                if existing_product.get("model") == product_model:
+                    # Found matching product by model, update it
+                    # Remove modification info before saving
+                    clean_product = {k: v for k, v in modified_product.items() if not k.startswith("_")}
+                    old_name = existing_product.get("name", "Unknown")
+                    products_data["products"][i] = clean_product
+                    updated_count += 1
+                    logger.info(f"Updated product: {old_name} -> {product_name} ({product_model})")
+                    break
+        
+        return updated_count
+    
+    def _remove_deleted_products(self, products_data: Dict[str, Any], current_sheet_models: List[str]) -> int:
+        """Remove products from catalog that are no longer in the Google Sheet."""
+        removed_count = 0
+        
+        # Create a set of model numbers that exist in the current sheet
+        current_models = set(current_sheet_models)
+        
+        # Find products in catalog that are no longer in the sheet
+        products_to_remove = []
+        for i, product in enumerate(products_data["products"]):
+            product_model = product.get("model", "")
+            if product_model and product_model not in current_models:
+                products_to_remove.append((i, product))
+        
+        # Remove products in reverse order to maintain indices
+        for i, product in reversed(products_to_remove):
+            logger.info(f"Removing deleted product: {product.get('name', 'Unknown')} ({product.get('model', 'No model')})")
+            products_data["products"].pop(i)
+            removed_count += 1
+        
+        return removed_count
+    
     def _update_metadata_stats(self, products_data: Dict[str, Any]):
-        """Update metadata statistics."""
+        """Update metadata statistics to match current products.json structure."""
         products = products_data["products"]
         
-        # Extract unique categories and suppliers
+        # Extract unique categories
         categories = set()
-        suppliers = set()
-        total_price = 0
-        price_count = 0
         
         for product in products:
             if product.get("category"):
                 categories.add(product["category"])
-            if product.get("supplier"):
-                suppliers.add(product["supplier"])
-            
-            price = product.get("price", 0)
-            if price > 0:
-                total_price += price
-                price_count += 1
         
-        # Update metadata
+        # Update metadata to match current structure
         metadata = products_data.setdefault("metadata", {})
         metadata.update({
+            "total_products": len(products),
             "categories": sorted(list(categories)),
             "categories_count": len(categories),
-            "suppliers": sorted(list(suppliers)),
-            "suppliers_count": len(suppliers),
-            "average_price": total_price / price_count if price_count > 0 else 0
+            "last_synchronized": datetime.now(timezone.utc).isoformat(),
+            "source": "google_sheets_import"
         })
 
 class AutomatedPollingService:
@@ -361,6 +471,8 @@ class AutomatedPollingService:
             "last_check": None,
             "total_checks": 0,
             "products_added": 0,
+            "products_modified": 0,
+            "products_deleted": 0,
             "errors": 0
         }
         
@@ -392,7 +504,7 @@ class AutomatedPollingService:
             logger.info("Checking Google Sheets for changes...")
             
             # Get current sheets data
-            sheets_data = self.client.get_sheet_data(self.spreadsheet_id, "All Products")
+            sheets_data = self.client.get_sheet_data(self.spreadsheet_id, "brochure-products")
             
             if not sheets_data:
                 logger.warning("No data found in Google Sheets")
@@ -405,34 +517,72 @@ class AutomatedPollingService:
                 logger.info("No changes detected in Google Sheets")
                 return
             
+            headers = sheets_data[0] if sheets_data else []
+            new_products = []
+            modified_products = []
+            current_sheet_models = []
+            
+            # Extract current model numbers from sheet data for deletion detection
+            if len(sheets_data) > 1:  # Skip header
+                for row in sheets_data[1:]:
+                    if len(row) > 0:  # Make sure row has at least model number
+                        model = row[0].strip() if row[0] else ""
+                        if model:
+                            current_sheet_models.append(model)
+            
+            # Process new rows
             if changes["new_row_count"] > 0:
                 logger.info(f"Processing {changes['new_row_count']} new rows")
-                logger.info(f"Product Details: {changes['new_rows']}")
+                logger.info(f"New Product Details: {changes['new_rows']}")
                 
-                # Process new rows
-                headers = sheets_data[0] if sheets_data else []
                 new_products = self.data_processor.process_new_rows(changes["new_rows"], headers)
                 
                 if new_products:
-                    # Update catalog
-                    success = self.data_processor.update_catalog(new_products)
-                    
-                    if success:
-                        self.stats["products_added"] += len(new_products)
-                        logger.info(f"Successfully added {len(new_products)} new products")
-                        
-                        # Send notification if callback is provided
-                        if self.notification_callback:
-                            try:
-                                await self.notification_callback(new_products)
-                            except Exception as e:
-                                logger.error(f"Error sending notification: {e}")
-                        
-                        await self._notify_new_products(new_products)
-                    else:
-                        logger.error("Failed to update catalog")
+                    self.stats["products_added"] += len(new_products)
+                    logger.info(f"Successfully processed {len(new_products)} new products")
                 else:
                     logger.warning("No valid products extracted from new rows")
+            
+            # Process modified rows
+            if changes["modified_row_count"] > 0:
+                logger.info(f"Processing {changes['modified_row_count']} modified rows")
+                
+                modified_products = self.data_processor.process_modified_rows(changes["modified_rows"], headers)
+                
+                if modified_products:
+                    self.stats["products_modified"] += len(modified_products)
+                    logger.info(f"Successfully processed {len(modified_products)} modified products")
+                else:
+                    logger.warning("No valid products extracted from modified rows")
+            
+            # Process deleted rows
+            if changes["deleted_row_count"] > 0:
+                logger.info(f"Processing {changes['deleted_row_count']} deleted rows")
+                # We'll handle deletions by comparing current sheet models with catalog
+            
+            # Update catalog with new, modified, and deleted products
+            if new_products or modified_products or current_sheet_models:
+                success = self.data_processor.update_catalog(new_products, modified_products, current_sheet_models)
+                
+                if success:
+                    # Send notifications
+                    if new_products:
+                        await self._notify_new_products(new_products)
+                    
+                    if modified_products:
+                        await self._notify_modified_products(modified_products)
+                    
+                    # Send callback notification if provided
+                    if self.notification_callback:
+                        try:
+                            await self.notification_callback({
+                                "new_products": new_products,
+                                "modified_products": modified_products
+                            })
+                        except Exception as e:
+                            logger.error(f"Error sending notification: {e}")
+                else:
+                    logger.error("Failed to update catalog")
             
         except Exception as e:
             logger.error(f"Error polling and processing: {e}")
@@ -442,12 +592,36 @@ class AutomatedPollingService:
         notification = {
             "type": "new_products",
             "count": len(new_products),
-            "products": [{"id": p["id"], "name": p["name"], "category": p["category"]} for p in new_products],
+            "products": [{"name": p["name"], "model": p.get("model"), "category": p.get("category")} for p in new_products],
             "timestamp": datetime.now(timezone.utc).isoformat()
         }
         
         # TODO: Implement WebSocket broadcasting
         logger.info(f"New products notification: {notification}")
+    
+    async def _notify_modified_products(self, modified_products: List[Dict[str, Any]]):
+        """Send notification about modified products (placeholder for WebSocket integration)."""
+        notification = {
+            "type": "modified_products",
+            "count": len(modified_products),
+            "products": [{"name": p["name"], "model": p.get("model"), "category": p.get("category")} for p in modified_products],
+            "timestamp": datetime.now(timezone.utc).isoformat()
+        }
+        
+        # TODO: Implement WebSocket broadcasting
+        logger.info(f"Modified products notification: {notification}")
+    
+    async def _notify_deleted_products(self, deleted_products: List[Dict[str, Any]]):
+        """Send notification about deleted products (placeholder for WebSocket integration)."""
+        notification = {
+            "type": "deleted_products",
+            "count": len(deleted_products),
+            "products": [{"name": p.get("name", "Unknown"), "model": p.get("model", "No model")} for p in deleted_products],
+            "timestamp": datetime.now(timezone.utc).isoformat()
+        }
+        
+        # TODO: Implement WebSocket broadcasting
+        logger.info(f"Deleted products notification: {notification}")
     
     def get_status(self) -> Dict[str, Any]:
         """Get current polling service status."""
@@ -458,6 +632,8 @@ class AutomatedPollingService:
             "last_check": self.stats["last_check"],
             "total_checks": self.stats["total_checks"],
             "products_added": self.stats["products_added"],
+            "products_modified": self.stats["products_modified"],
+            "products_deleted": self.stats["products_deleted"],
             "errors": self.stats["errors"],
             "total_rows": self.change_detector.metadata.get("sheet_fingerprint", {}).get("row_count", 0),
             "spreadsheet_id": self.spreadsheet_id

@@ -268,7 +268,7 @@ def main():
     """
     # Configuration
     API_KEY = "AIzaSyB23iX6kXdCBVIx2YVFSrdE2r9DXjl7T3k"
-    SHEETS_URL = "https://docs.google.com/spreadsheets/d/17xcmTsSZkguOjXC6h6YDrNcOU27jrpU8Ah9xEONARg8/edit?gid=86173031#gid=86173031"
+    SHEETS_URL = "https://docs.google.com/spreadsheets/d/17xcmTsSZkguOjXC6h6YDrNcOU27jrpU8Ah9xEONARg8/edit?gid=1707985453#gid=1707985453"
     CSV_PATH = "data/SMART HOME FOLLOWING PROJECT - All Products.csv"
     
     try:

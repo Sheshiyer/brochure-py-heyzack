@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "total_products": 68,
+    "total_products": 73,
     "categories_count": 15,
     "categories": [
       "Baby Monitor",
@@ -19,7 +19,7 @@
       "background music",
       "smart switch"
     ],
-    "last_synchronized": "2025-09-04T04:31:05.118532+00:00",
+    "last_synchronized": "2025-09-04T04:23:01.571783+00:00",
     "source": "google_sheets_import"
   },
   "products": [
@@ -30,7 +30,7 @@
       "specifications": "Wi-Fi connectivity | 2K/1080p live view | PIR motion detection | Events recording and notification | Two-way audio talk | Night vision | Siren alarm | Rechargeable battery | IPX4 weatherproof | Indoor chime (optional)",
       "features": "1. See clearly day or night with 2K video and night vision.\n2. Respond to visitors instantly using two-way audio from anywhere.\n3. Stay alerted to motion with PIR detection and instant notifications.\n4. Enjoy uninterrupted security with a long-lasting, rechargeable battery.\n5. Protect your home outdoors with IPX4 weatherproof reliability.",
       "hero_image": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/IPB215_aaa168327b824311aea689a83aa2942c.jpg",
-      "secondary_image": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/IPB215_aaa168327b824311aea689a83aa2942c.jpg"
+      "secondary_image": "https://drive.google.com/file/d/1JqKpg1tRRNOX0iPE-hzK4prAtPvEAVZM/view?usp=drive_link"
     },
     {
       "name": "Battery Solar Camera",
@@ -634,6 +634,51 @@
       "features": "1. Unlock your door with a password, card, or key for versatile access.\n2. Graffiti remote unlocking offers effortless entry from a distance.\n3. Installs seamlessly on doors under 60mm thick, ensuring broad compatibility.\n4. Multiple unlocking methods provide robust security against unauthorized entry.\n5. Reduces reliance on physical keys, simplifying daily routines at home.",
       "hero_image": "",
       "secondary_image": ""
+    },
+    {
+      "name": "1gang Display Lighting switch",
+      "model": "TY-Z-UN-PLF1",
+      "category": "smart switch",
+      "specifications": "* Name: Screen display Lighting switch\r\n* Standard: UK, EU standard\r\n* Control button: 1gang\r\n* Input voltage: 100V-240V AC 50-60HZ\r\n* Communication method: WiFi, ZigBee\r\n* WIFI standard: 802.11b/g/n 2.4GHZ\r\n* Wiring: N+L line\r\n* Load power: ≤600W (N+L line)\r\n* Wireless power consumption: ≤0.3W\r\n* Control method: manual  button control/APP control/AI voice control\r\n* Panel material: PC flame retardant material\r\n* Size: 86*86*34mm\r\n* Color: White/Black/Grey",
+      "features": "",
+      "hero_image": "",
+      "secondary_image": ""
+    },
+    {
+      "name": "2gang Display Lighting switch",
+      "model": "TY-Z-UN-PLF2",
+      "category": "smart switch",
+      "specifications": "* Name: Screen display Lighting switch\r\n* Standard: UK, EU standard\r\n* Control button: 1gang\r\n* Input voltage: 100V-240V AC 50-60HZ\r\n* Communication method: WiFi, ZigBee\r\n* WIFI standard: 802.11b/g/n 2.4GHZ\r\n* Wiring: N+L line\r\n* Load power: ≤600W (N+L line)\r\n* Wireless power consumption: ≤0.3W\r\n* Control method: manual  button control/APP control/AI voice control\r\n* Panel material: PC flame retardant material\r\n* Size: 86*86*34mm\r\n* Color: White/Black/Grey",
+      "features": "",
+      "hero_image": "",
+      "secondary_image": ""
+    },
+    {
+      "name": "3gang Display Lighting switch",
+      "model": "TY-Z-UN-PLF3",
+      "category": "smart switch",
+      "specifications": "* Name: Screen display Lighting switch\r\n* Standard: UK, EU standard\r\n* Control button: 1gang\r\n* Input voltage: 100V-240V AC 50-60HZ\r\n* Communication method: WiFi, ZigBee\r\n* WIFI standard: 802.11b/g/n 2.4GHZ\r\n* Wiring: N+L line\r\n* Load power: ≤600W (N+L line)\r\n* Wireless power consumption: ≤0.3W\r\n* Control method: manual  button control/APP control/AI voice control\r\n* Panel material: PC flame retardant material\r\n* Size: 86*86*34mm\r\n* Color: White/Black/Grey",
+      "features": "",
+      "hero_image": "",
+      "secondary_image": ""
+    },
+    {
+      "name": "4gang Display Lighting switch",
+      "model": "TY-Z-UN-PLF3",
+      "category": "smart switch",
+      "specifications": "* Name: Screen display Lighting switch\r\n* Standard: UK, EU standard\r\n* Control button: 1gang\r\n* Input voltage: 100V-240V AC 50-60HZ\r\n* Communication method: WiFi, ZigBee\r\n* WIFI standard: 802.11b/g/n 2.4GHZ\r\n* Wiring: N+L line\r\n* Load power: ≤600W (N+L line)\r\n* Wireless power consumption: ≤0.3W\r\n* Control method: manual  button control/APP control/AI voice control\r\n* Panel material: PC flame retardant material\r\n* Size: 86*86*34mm\r\n* Color: White/Black/Grey",
+      "features": "",
+      "hero_image": "",
+      "secondary_image": ""
+    },
+    {
+      "name": "Battery Video Doorbell  10",
+      "model": "IPB643",
+      "category": "Smart Control Panel",
+      "specifications": "Wi-Fi connectivity | 2K/1080p live view | PIR motion detection | Events recording and notification | Two-way audio talk | Night vision | Siren alarm | Rechargeable battery | IPX4 weatherproof | Indoor chime (optional)",
+      "features": "1. See clearly day or night with 2K video and night vision.\n2. Respond to visitors instantly using two-way audio from anywhere.\n3. Stay alerted to motion with PIR detection and instant notifications.\n4. Enjoy uninterrupted security with a long-lasting, rechargeable battery.\n5. Protect your home outdoors with IPX4 weatherproof reliability.",
+      "hero_image": "https://smart-home-product-images.s3.us-east-1.amazonaws.com/IPB215_aaa168327b824311aea689a83aa2942c.jpg",
+      "secondary_image": "https://drive.google.com/file/d/1JqKpg1tRRNOX0iPE-hzK4prAtPvEAVZM/view?usp=drive_link"
     }
   ]
 }

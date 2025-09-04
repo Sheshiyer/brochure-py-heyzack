@@ -94,16 +94,42 @@ class ConnectionManager:
 
 manager = ConnectionManager()
 
-# Callback function for polling service to notify of new products
-async def notify_new_products(new_products: List[dict]):
-    """Called by polling service when new products are detected"""
-    notification = {
-        "type": "new_products",
-        "count": len(new_products),
-        "products": new_products,
-        "timestamp": new_products[0].get("metadata", {}).get("last_updated") if new_products else None
-    }
-    await manager.broadcast(notification)
+# Callback function for polling service to notify of product changes
+async def notify_product_changes(change_data: dict):
+    """Called by polling service when products are detected (new or modified)"""
+    new_products = change_data.get("new_products", [])
+    modified_products = change_data.get("modified_products", [])
+    
+    # Send notification for new products
+    if new_products:
+        notification = {
+            "type": "new_products",
+            "count": len(new_products),
+            "products": [{"name": p["name"], "model": p.get("model"), "category": p.get("category")} for p in new_products],
+            "timestamp": datetime.now().isoformat()
+        }
+        await manager.broadcast(notification)
+    
+    # Send notification for modified products
+    if modified_products:
+        notification = {
+            "type": "modified_products",
+            "count": len(modified_products),
+            "products": [{"name": p["name"], "model": p.get("model"), "category": p.get("category")} for p in modified_products],
+            "timestamp": datetime.now().isoformat()
+        }
+        await manager.broadcast(notification)
+    
+    # Send notification for deleted products
+    deleted_products = change_data.get("deleted_products", [])
+    if deleted_products:
+        notification = {
+            "type": "deleted_products",
+            "count": len(deleted_products),
+            "products": [{"name": p.get("name", "Unknown"), "model": p.get("model", "No model")} for p in deleted_products],
+            "timestamp": datetime.now().isoformat()
+        }
+        await manager.broadcast(notification)
 
 @app.post("/upload")
 async def upload_image(req: UploadRequest):
@@ -140,9 +166,9 @@ async def start_polling():
             return {"success": False, "message": "Polling service is already running"}
         
         polling_service = AutomatedPollingService(
-            spreadsheet_url="https://docs.google.com/spreadsheets/d/17xcmTsSZkguOjXC6h6YDrNcOU27jrpU8Ah9xEONARg8/edit?gid=86173031#gid=86173031",
+            spreadsheet_url="https://docs.google.com/spreadsheets/d/17xcmTsSZkguOjXC6h6YDrNcOU27jrpU8Ah9xEONARg8/edit?gid=1707985453#gid=1707985453",
             catalog_path="data/products.json",
-            notification_callback=notify_new_products
+            notification_callback=notify_product_changes
         )
         
         # Start polling in background
@@ -745,6 +771,10 @@ async def dashboard():
                 
                 if (data.type === 'new_products') {
                     logs.innerHTML += `<div><strong>${new Date().toLocaleTimeString()}</strong>: ${data.count} new products detected! Catalog will auto-refresh.</div>`;
+                } else if (data.type === 'modified_products') {
+                    logs.innerHTML += `<div><strong>${new Date().toLocaleTimeString()}</strong>: ${data.count} products updated! Catalog will auto-refresh.</div>`;
+                } else if (data.type === 'deleted_products') {
+                    logs.innerHTML += `<div><strong>${new Date().toLocaleTimeString()}</strong>: ${data.count} products deleted! Catalog will auto-refresh.</div>`;
                 } else {
                     logs.innerHTML += `<div>${new Date().toLocaleTimeString()}: ${event.data}</div>`;
                 }
@@ -778,6 +808,8 @@ async def dashboard():
                         <p>Last Check: ${result.stats.last_check || 'Never'}</p>
                         <p>Total Checks: ${result.stats.total_checks || 0}</p>
                         <p>Products Added: ${result.stats.products_added || 0}</p>
+                        <p>Products Modified: ${result.stats.products_modified || 0}</p>
+                        <p>Products Deleted: ${result.stats.products_deleted || 0}</p>
                     ` : ''}
                 `;
             }

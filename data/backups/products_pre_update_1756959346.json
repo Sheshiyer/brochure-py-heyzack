@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "total_products": 68,
+    "total_products": 72,
     "categories_count": 15,
     "categories": [
       "Baby Monitor",
@@ -19,7 +19,7 @@
       "background music",
       "smart switch"
     ],
-    "last_synchronized": "2025-09-04T04:31:05.118532+00:00",
+    "last_synchronized": "2025-09-04T03:59:10.658629+00:00",
     "source": "google_sheets_import"
   },
   "products": [
@@ -45,8 +45,8 @@
       "name": "2K Battery Camera",
       "model": "SC155-WQ3",
       "category": "Camera",
-      "specifications": "Video: 2K HD, resolution 2304*1296 | Lens: 3.3mm fixed lens | FOV: 120° (D) | Connectivity: Support bluetooth LE+Wi-Fi & Siren alarm | Features: Support spotlight & color night vision | Support human PIR detection & Area settings | Battery: Built-in 5200mAh lithium battery | Design: IP65",
-      "features": "1. Capture sharp 2K HD footage for clear identification of visitors or intruders.\n2. Monitor wide 120° views with minimal blind spots around entryways or yards.\n3. Detect human movement accurately, reducing false alarms from pets or wind.\n4. Illuminate scenes automatically with the spotlight for full-color night vision.\n5. Install wire-free anywhere outdoors with IP65 weather resistance and long battery life.",
+      "specifications": "Video: 2K HD, resolution 2304*1296 | Lens: 3.3mm fixed lens | FOV: 120Â° (D) | Connectivity: Support bluetooth LE+Wi-Fi & Siren alarm | Features: Support spotlight & color night vision | Support human PIR detection & Area settings | Battery: Built-in 5200mAh lithium battery | Design: IP65",
+      "features": "1. Capture sharp 2K HD footage for clear identification of visitors or intruders.\n2. Monitor wide 120Â° views with minimal blind spots around entryways or yards.\n3. Detect human movement accurately, reducing false alarms from pets or wind.\n4. Illuminate scenes automatically with the spotlight for full-color night vision.\n5. Install wire-free anywhere outdoors with IP65 weather resistance and long battery life.",
       "hero_image": "",
       "secondary_image": ""
     },
@@ -63,8 +63,8 @@
       "name": "Smart Bird Feeder",
       "model": "SF254-WC2",
       "category": "Pets accessories",
-      "specifications": "Video: 2MP HD, Resolution 1920*1080 | Lens: 2.5mm fixed lens | FOV: 144° (D) | Features: Support bird detection & squirrel detection | Support 10000+bird name recognition (not included) | Battery: Built-in 5200mAh battery | Design: IP65 | Solar: Built-in 3w solar panel | Bird Cage: Wood (red cedar) | Storage: 3L capacity for bird food",
-      "features": "1. Monitor backyard visitors with a 144° HD video view.\n2. Solar panel extends battery life for weeks of operation.\n3. IP65-rated housing protects against rain, dust, and debris.\n4. Recognizes bird species automatically to enrich your birdwatching.\n5. Deters squirrels to preserve food exclusively for birds.",
+      "specifications": "Video: 2MP HD, Resolution 1920*1080 | Lens: 2.5mm fixed lens | FOV: 144Â° (D) | Features: Support bird detection & squirrel detection | Support 10000+bird name recognition (not included) | Battery: Built-in 5200mAh battery | Design: IP65 | Solar: Built-in 3w solar panel | Bird Cage: Wood (red cedar) | Storage: 3L capacity for bird food",
+      "features": "1. Monitor backyard visitors with a 144Â° HD video view.\n2. Solar panel extends battery life for weeks of operation.\n3. IP65-rated housing protects against rain, dust, and debris.\n4. Recognizes bird species automatically to enrich your birdwatching.\n5. Deters squirrels to preserve food exclusively for birds.",
       "hero_image": "",
       "secondary_image": ""
     },
@@ -72,8 +72,8 @@
       "name": "2K Video Doorbell",
       "model": "SC162-WCD3",
       "category": "Video Door Bell",
-      "specifications": "Video: 2K HD, Resolution 1536*2048 | Lens: 2.5mm fixed lens | FOV: 170° (D) | Features: Support motion/Human/Package Detection | Digital chime (included) & function Setting by APP | Support bluetooth LE + Wi-Fi & Tamper alarm | Battery: Built-in 5200mAh lithium battery | Design: IP65 | Power supply: AC 8-24V",
-      "features": "1. See visitors clearly with 2K HD resolution and a 170° wide view.\n2. Receive instant alerts for people, packages, or motion at your doorstep.\n3. Enjoy tamper-proof monitoring with IP65 weather resistance and alarm support.\n4. Answer your door remotely via Wi-Fi, even without AC power, using the\n5. Customize chime sounds and detection settings effortlessly through the app.",
+      "specifications": "Video: 2K HD, Resolution 1536*2048 | Lens: 2.5mm fixed lens | FOV: 170Â° (D) | Features: Support motion/Human/Package Detection | Digital chime (included) & function Setting by APP | Support bluetooth LE + Wi-Fi & Tamper alarm | Battery: Built-in 5200mAh lithium battery | Design: IP65 | Power supply: AC 8-24V",
+      "features": "1. See visitors clearly with 2K HD resolution and a 170Â° wide view.\n2. Receive instant alerts for people, packages, or motion at your doorstep.\n3. Enjoy tamper-proof monitoring with IP65 weather resistance and alarm support.\n4. Answer your door remotely via Wi-Fi, even without AC power, using the\n5. Customize chime sounds and detection settings effortlessly through the app.",
       "hero_image": "",
       "secondary_image": ""
     },
@@ -81,7 +81,7 @@
       "name": "Battery Solar Spotlight Camera",
       "model": "IPC176",
       "category": "Camera",
-      "specifications": "Connectivity: Wi-Fi | Live View: 2K/1080p | Detection: PIR motion detection | Recording: Events recording and notification | Audio: Two-way audio talk | Vision: IR night vision & Color night vision | Alarm: Siren & light alarm | Battery: Rechargeable battery | Weatherproof: IP65 | Image sensor: 2.0MP CMOS (3.0MP optional) | Lens: 100-Degree fixed focus | Video Size: 2304x1296, 1920x1080 | PIR Sensor: Effective distance max 5 meters, Detecting angle 90° | Storage: Micro SD cards up to 128GB for local, cloud storage optional | Wireless Standard: IEEE 802.11 b/g/n, 2.4GHz | Button/Switch: Power switch x1, Reset button x1 | Microphone&Speaker: Yes, built-in | Power Source: Built-in rechargeable lithium battery, Solar power recharger | Dimension: Camera: 90x63x83mm",
+      "specifications": "Connectivity: Wi-Fi | Live View: 2K/1080p | Detection: PIR motion detection | Recording: Events recording and notification | Audio: Two-way audio talk | Vision: IR night vision & Color night vision | Alarm: Siren & light alarm | Battery: Rechargeable battery | Weatherproof: IP65 | Image sensor: 2.0MP CMOS (3.0MP optional) | Lens: 100-Degree fixed focus | Video Size: 2304x1296, 1920x1080 | PIR Sensor: Effective distance max 5 meters, Detecting angle 90Â° | Storage: Micro SD cards up to 128GB for local, cloud storage optional | Wireless Standard: IEEE 802.11 b/g/n, 2.4GHz | Button/Switch: Power switch x1, Reset button x1 | Microphone&Speaker: Yes, built-in | Power Source: Built-in rechargeable lithium battery, Solar power recharger | Dimension: Camera: 90x63x83mm",
       "features": "1. Solar power sustains continuous outdoor monitoring without manual recharging.\n2. Two-way audio enables immediate communication with visitors or intruders.\n3. IR and color night vision ensure clear visibility in any lighting condition.\n4. PIR motion detection alerts you precisely to movement within 5 meters.\n5. Weatherproof design guarantees reliable performance through rain, snow, or heat.",
       "hero_image": "",
       "secondary_image": ""
@@ -90,8 +90,8 @@
       "name": "Baby Monitor",
       "model": "IPC180 V2",
       "category": "Baby Monitor",
-      "specifications": "Live view: 2K/1080p | Connectivity: Wi-Fi | Display: 2.4\"IPS screen with two-way video | Vision: IR night vision | Pan/Tilt: Horizontal 355° monitor by App | Features: Night lamp | Temperature detector and alert | One-press to call-out | Viewing angle: 100-degree | Smart clock | Siren alarm | Charging: Type-C | Local storage",
-      "features": "1. Monitor your baby clearly day or night with 2K/1080p live view.\n2. Stay connected from anywhere using your home’s Wi-Fi network.\n3. Comfort your child remotely with the two-way video and voice feature.\n4. Receive immediate alerts if room temperature becomes unsafe for infants.\n5. Pan and tilt the camera silently via app to check every corner.",
+      "specifications": "Live view: 2K/1080p | Connectivity: Wi-Fi | Display: 2.4\"IPS screen with two-way video | Vision: IR night vision | Pan/Tilt: Horizontal 355Â° monitor by App | Features: Night lamp | Temperature detector and alert | One-press to call-out | Viewing angle: 100-degree | Smart clock | Siren alarm | Charging: Type-C | Local storage",
+      "features": "1. Monitor your baby clearly day or night with 2K/1080p live view.\n2. Stay connected from anywhere using your homeâs Wi-Fi network.\n3. Comfort your child remotely with the two-way video and voice feature.\n4. Receive immediate alerts if room temperature becomes unsafe for infants.\n5. Pan and tilt the camera silently via app to check every corner.",
       "hero_image": "",
       "secondary_image": ""
     },
@@ -99,7 +99,7 @@
       "name": "Indoor Rotatable Camera",
       "model": "IPC286",
       "category": "Camera",
-      "specifications": "Live view: 2K/1080p | Connectivity: Wi-Fi (2.4G & 5GHz) | Control: Monitor by app at anytime anywhere | Pan & tilt: 355°, 180° | Features: Privacy protection mode, Human motion/sound detection, Two-way audio talk, Night vision, Local storage",
+      "specifications": "Live view: 2K/1080p | Connectivity: Wi-Fi (2.4G & 5GHz) | Control: Monitor by app at anytime anywhere | Pan & tilt: 355Â°, 180Â° | Features: Privacy protection mode, Human motion/sound detection, Two-way audio talk, Night vision, Local storage",
       "features": "1. Monitor your entire room with 355-degree pan and 180-degree tilt.\n2. Crisp 2K clarity ensures you see every detail, day or night.\n3. Respond instantly through two-way audio from anywhere via the app.\n4. Human motion and sound detection alert you only to meaningful activity.\n5. Privacy protection mode physically blocks the lens for assured security.",
       "hero_image": "",
       "secondary_image": ""
@@ -108,8 +108,8 @@
       "name": "Indoor Rotatable Camera",
       "model": "IPC267",
       "category": "Camera",
-      "specifications": "Live view: 2K/1080p | Connectivity: Wi-Fi (2.4G & 5GHz) | Control: Monitor by app at anytime anywhere | Pan & tilt: 355°, 180° | Features: Privacy protection mode, Human motion/sound detection, Two-way audio talk, Night vision, Local storage",
-      "features": "1. Monitor your entire room with 355° pan and 180° tilt coverage.\n2. Receive instant alerts for human motion or sound detected indoors.\n3. Enjoy crisp 2K clarity day or night with reliable night vision.\n4. Communicate clearly through two-way audio from any location.\n5. Protect privacy instantly with one-tap privacy mode activation.",
+      "specifications": "Live view: 2K/1080p | Connectivity: Wi-Fi (2.4G & 5GHz) | Control: Monitor by app at anytime anywhere | Pan & tilt: 355Â°, 180Â° | Features: Privacy protection mode, Human motion/sound detection, Two-way audio talk, Night vision, Local storage",
+      "features": "1. Monitor your entire room with 355Â° pan and 180Â° tilt coverage.\n2. Receive instant alerts for human motion or sound detected indoors.\n3. Enjoy crisp 2K clarity day or night with reliable night vision.\n4. Communicate clearly through two-way audio from any location.\n5. Protect privacy instantly with one-tap privacy mode activation.",
       "hero_image": "",
       "secondary_image": ""
     },
@@ -117,8 +117,8 @@
       "name": "Indoor Rotatable Camera",
       "model": "SC116-WZ3A",
       "category": "Camera",
-      "specifications": "Live view: 2K 2304*1296| Connectivity: Wi-Fi (2.4G & 5GHz)+ BLE | Control: Monitor by app at anytime anywhere | Pan & tilt: 355°, 50° | Features: Human motion/sound / baby crying/ pet detection, Two-way audio talk, Night vision, Local storage",
-      "features": "1. Monitor your entire room with 355° pan and 50° tilt rotation.\n2. Receive instant alerts for human motion, sounds, or baby cries.\n3. Maintain clear visibility day or night with sharp 2K night vision.\n4. Communicate directly through two-way audio from anywhere via app.\n5. Securely store footage locally without recurring cloud fees.",
+      "specifications": "Live view: 2K 2304*1296| Connectivity: Wi-Fi (2.4G & 5GHz)+ BLE | Control: Monitor by app at anytime anywhere | Pan & tilt: 355Â°, 50Â° | Features: Human motion/sound / baby crying/ pet detection, Two-way audio talk, Night vision, Local storage",
+      "features": "1. Monitor your entire room with 355Â° pan and 50Â° tilt rotation.\n2. Receive instant alerts for human motion, sounds, or baby cries.\n3. Maintain clear visibility day or night with sharp 2K night vision.\n4. Communicate directly through two-way audio from anywhere via app.\n5. Securely store footage locally without recurring cloud fees.",
       "hero_image": "",
       "secondary_image": ""
     },
@@ -126,8 +126,8 @@
       "name": "Indoor Rotatable Camera",
       "model": "SC316-WB4A",
       "category": "Camera",
-      "specifications": "Live view: 2K （2560*1440） | Connectivity: Wi-Fi (2.4G & 5GHz)+ BLE | Control: Monitor by app at anytime anywhere | Pan & tilt: 355°, 50° | Features: Physical protection mode; one click call; Human motion/sound / baby crying/ pet detection, Two-way audio talk, Color Night vision, Local storage",
-      "features": "1. Monitor your home in crisp 2K clarity from anywhere.\n2. Rotate 355° horizontally and 50° vertically for complete room coverage.\n3. Receive instant alerts for human motion, pets, or unusual sounds.\n4. Enjoy color night vision for detailed visibility after dark.\n5. Communicate clearly through two-way audio for immediate reassurance.",
+      "specifications": "Live view: 2K ï¼2560*1440ï¼ | Connectivity: Wi-Fi (2.4G & 5GHz)+ BLE | Control: Monitor by app at anytime anywhere | Pan & tilt: 355Â°, 50Â° | Features: Physical protection mode; one click call; Human motion/sound / baby crying/ pet detection, Two-way audio talk, Color Night vision, Local storage",
+      "features": "1. Monitor your home in crisp 2K clarity from anywhere.\n2. Rotate 355Â° horizontally and 50Â° vertically for complete room coverage.\n3. Receive instant alerts for human motion, pets, or unusual sounds.\n4. Enjoy color night vision for detailed visibility after dark.\n5. Communicate clearly through two-way audio for immediate reassurance.",
       "hero_image": "",
       "secondary_image": ""
     },
@@ -153,7 +153,7 @@
       "name": "Outdoor Camera",
       "model": "SC336-WBNP3",
       "category": "Camera",
-      "specifications": "Live view: 2K （2304*1296） | Connectivity: Wired +Wi-Fi (2.4G & 5GHz)+ BLE | Control: Monitor by app at anytime anywhere  | Features:  Human motion/sound / vehicle detection, Two-way audio talk, Color Night vision, Local storage|Siren alarm | Weatherproof: IP65",
+      "specifications": "Live view: 2K ï¼2304*1296ï¼ | Connectivity: Wired +Wi-Fi (2.4G & 5GHz)+ BLE | Control: Monitor by app at anytime anywhere  | Features:  Human motion/sound / vehicle detection, Two-way audio talk, Color Night vision, Local storage|Siren alarm | Weatherproof: IP65",
       "features": "1. Monitor your property remotely in sharp 2K clarity day or night.\n2. Receive instant alerts for human motion, vehicles, or unusual sounds.\n3. Deter intruders effectively with a built-in siren and two-way audio.\n4. Enjoy reliable outdoor performance with weatherproof IP65-rated construction.\n5. Store footage locally for continuous security without recurring cloud fees.",
       "hero_image": "",
       "secondary_image": ""
@@ -162,7 +162,7 @@
       "name": "Outdoor Wi-Fi DC Camera",
       "model": "IPC173",
       "category": "Camera",
-      "specifications": "Video: 2K/1080p live view and video | Connectivity: Wi-Fi (2.4G & 5 GHz) | Vision: IR night vision (color light vision with LED) | Alarm: Light & Siren alarm | Pan & Tilt: 350°, 90° | Audio: Two-way audio | Waterproof: IP54 | Storage: Micro SD card slot (max.256GB)",
+      "specifications": "Video: 2K/1080p live view and video | Connectivity: Wi-Fi (2.4G & 5 GHz) | Vision: IR night vision (color light vision with LED) | Alarm: Light & Siren alarm | Pan & Tilt: 350Â°, 90Â° | Audio: Two-way audio | Waterproof: IP54 | Storage: Micro SD card slot (max.256GB)",
       "features": "1. Monitor your property in crisp 2K clarity day or night.\n2. Respond instantly to visitors or alerts with two-way audio.\n3. Deter intruders automatically with customizable light and siren alarms.\n4. Enjoy reliable outdoor monitoring with robust IP54 weather resistance.\n5. Review past footage conveniently with expandable local storage options.",
       "hero_image": "",
       "secondary_image": ""
@@ -207,7 +207,7 @@
       "name": "Smart Smoke sensor",
       "model": "ZSD16",
       "category": "Smart Sensor",
-      "specifications": "Features: 10 years battery life, Minimalist design, Local and APP alarm, 20m² wide range detection | Wireless Technology: ZigBee | Transmission Frequency: 2.4GHz | Power supply: DC 3V(CR123A) | Detection range: 20 square meter | Installation method: ceiling installation | Alarm Sound Pressure: 85dB (3m ahead) | Working temperature: -10°C-50°C | Working humidity: up to 95%RH | Material: Fireproof PC+Fireproof ABS | Color: white",
+      "specifications": "Features: 10 years battery life, Minimalist design, Local and APP alarm, 20mÂ² wide range detection | Wireless Technology: ZigBee | Transmission Frequency: 2.4GHz | Power supply: DC 3V(CR123A) | Detection range: 20 square meter | Installation method: ceiling installation | Alarm Sound Pressure: 85dB (3m ahead) | Working temperature: -10Â°C-50Â°C | Working humidity: up to 95%RH | Material: Fireproof PC+Fireproof ABS | Color: white",
       "features": "1. Detect smoke reliably across a 20-square-meter room for comprehensive coverage.\n2. Receive immediate alerts on your phone and locally for swift response.\n3. Operate continuously for a decade without battery replacement, ensuring constant vigilance.\n4. Its discreet white design integrates seamlessly into any ceiling installation.\n5. Sound a powerful 85dB alarm to alert occupants clearly from any corner.",
       "hero_image": "",
       "secondary_image": ""
@@ -216,7 +216,7 @@
       "name": "Smart Gas sensor",
       "model": "ZGD16",
       "category": "Smart Sensor",
-      "specifications": "Features: 10 years battery life, Minimalist design, Local and APP alarm, Celling&wall mounting installation | Wireless Technology: ZigBee | Working Voltage: AC220V | Alarm Density: LEL 8% ±3%LEL (natural gas) | Working Temperature: -10°C to +55°C | Working Humidity: 10%-95%RH | Alarm Method: Audible and visual alarm, APP wireless alarm | Transmission Frequency: 2.4GHz | Standby Current: 100mA | Alarm Sound Pressure: 70dB(1m ahead) | Detected Gas: Natural gas",
+      "specifications": "Features: 10 years battery life, Minimalist design, Local and APP alarm, Celling&wall mounting installation | Wireless Technology: ZigBee | Working Voltage: AC220V | Alarm Density: LEL 8% Â±3%LEL (natural gas) | Working Temperature: -10Â°C to +55Â°C | Working Humidity: 10%-95%RH | Alarm Method: Audible and visual alarm, APP wireless alarm | Transmission Frequency: 2.4GHz | Standby Current: 100mA | Alarm Sound Pressure: 70dB(1m ahead) | Detected Gas: Natural gas",
       "features": "1. Detect natural gas leaks instantly with reliable local and app alerts.\n2. Enjoy ten years of continuous protection without battery replacement.\n3. Audible and visual alarms ensure swift awareness in any room.\n4. Flexible ceiling or wall mounting suits any kitchen or utility space.\n5. Maintains accurate detection across a wide range of temperatures and humidity.",
       "hero_image": "",
       "secondary_image": ""
@@ -225,8 +225,8 @@
       "name": "4G Gateway",
       "model": "UX33",
       "category": "Smart Gateway",
-      "specifications": "Features: Metal material, Multiple networks in one, Wireless networking, External antenna, Optional power supply mode | Connection Protocol: Ethernet, Wi-Fi, 4G, Zigbee, Bluetooth | Power input: Method 1: 5V 2A or Method 2: POE power supply | Product size: 265*240*65mm (without antenna) | Product net weight: 480g | Working temperature: -10°C-+55°C | Working humidity: 10%-90%RH(non-condensing)",
-      "features": "1. Seamlessly integrates Zigbee, Bluetooth, and Wi-Fi for unified smart home control.\n2. Maintains reliable connectivity with dual power options and robust metal housing.\n3. Ensures uninterrupted monitoring through 4G backup when Wi-Fi is unavailable.\n4. Operates dependably across varied climates from -10°C to +55°C.\n5. Supports external antenna for stronger signal in large or multi-story homes.",
+      "specifications": "Features: Metal material, Multiple networks in one, Wireless networking, External antenna, Optional power supply mode | Connection Protocol: Ethernet, Wi-Fi, 4G, Zigbee, Bluetooth | Power input: Method 1: 5V 2A or Method 2: POE power supply | Product size: 265*240*65mm (without antenna) | Product net weight: 480g | Working temperature: -10Â°C-+55Â°C | Working humidity: 10%-90%RH(non-condensing)",
+      "features": "1. Seamlessly integrates Zigbee, Bluetooth, and Wi-Fi for unified smart home control.\n2. Maintains reliable connectivity with dual power options and robust metal housing.\n3. Ensures uninterrupted monitoring through 4G backup when Wi-Fi is unavailable.\n4. Operates dependably across varied climates from -10Â°C to +55Â°C.\n5. Supports external antenna for stronger signal in large or multi-story homes.",
       "hero_image": "",
       "secondary_image": ""
     },
@@ -234,8 +234,8 @@
       "name": "Wired Matter Gateway",
       "model": "GW60-Matter",
       "category": "Smart Gateway",
-      "specifications": "Features: Supports third-party platforms (Apple, Google, Amazon), Rich sub-device ecosystem, Support tuya thread devices and third-party matter over thread devices, LAN control | Network port: RJ45 | Color: Grey/Wood Grain | Power input: 5V 1A | Operating Voltage: 2.0V-3.8V | Working Temperature: -10°C-55°C | Working Humidity: 10%-90%RH | Wireless technology: Zigbee, Thread | Dimensions: 87*87*20mm",
-      "features": "1. Control your entire smart home locally for enhanced security and reliability.\n2. Seamlessly integrates with Apple, Google, and Amazon ecosystems for unified comfort.\n3. Supports a rich ecosystem of third-party devices for flexible home automation.\n4. Operates reliably in varied home environments from -10°C to 55°C.\n5. Connects Zigbee and Thread devices for expanded, energy-efficient smart home control.",
+      "specifications": "Features: Supports third-party platforms (Apple, Google, Amazon), Rich sub-device ecosystem, Support tuya thread devices and third-party matter over thread devices, LAN control | Network port: RJ45 | Color: Grey/Wood Grain | Power input: 5V 1A | Operating Voltage: 2.0V-3.8V | Working Temperature: -10Â°C-55Â°C | Working Humidity: 10%-90%RH | Wireless technology: Zigbee, Thread | Dimensions: 87*87*20mm",
+      "features": "1. Control your entire smart home locally for enhanced security and reliability.\n2. Seamlessly integrates with Apple, Google, and Amazon ecosystems for unified comfort.\n3. Supports a rich ecosystem of third-party devices for flexible home automation.\n4. Operates reliably in varied home environments from -10Â°C to 55Â°C.\n5. Connects Zigbee and Thread devices for expanded, energy-efficient smart home control.",
       "hero_image": "",
       "secondary_image": ""
     },
@@ -243,7 +243,7 @@
       "name": "Smart Radiator Valve",
       "model": "TRV06",
       "category": "Smart Thermostat",
-      "specifications": "Features: APP control, Voice control, Stroke distance detection, Open window detection | Voice control: Amazon Alexa, Google Home | Frequency: 2.4GHz | Battery: 2*AA alkaline battery(LR6) | Battery life: Half a Year | Temperature range: 5°C-60°C | Temperature sensor: NTC | Wireless protocol: Zigbee 3.0 | Connection: M30*1.5mm | Max travel: 6mm | Working temperature: -10°C-40°C | Anti-Froze: Yes | Programmable: Yes",
+      "specifications": "Features: APP control, Voice control, Stroke distance detection, Open window detection | Voice control: Amazon Alexa, Google Home | Frequency: 2.4GHz | Battery: 2*AA alkaline battery(LR6) | Battery life: Half a Year | Temperature range: 5Â°C-60Â°C | Temperature sensor: NTC | Wireless protocol: Zigbee 3.0 | Connection: M30*1.5mm | Max travel: 6mm | Working temperature: -10Â°C-40Â°C | Anti-Froze: Yes | Programmable: Yes",
       "features": "1. Automatically maintains warmth even during winter's coldest nights.\n2. Adjust temperatures remotely via app or voice for immediate comfort.\n3. Conserve energy with open window detection, preventing wasteful heating.\n4. Enjoy seamless integration with Alexa and Google Home for effortless control.\n5. Reliable Zigbee 3.0 connection ensures consistent performance across your home.",
       "hero_image": "",
       "secondary_image": ""
@@ -252,7 +252,7 @@
       "name": "Universal Remote Control",
       "model": "UFO-R1",
       "category": "Smart Remote Control",
-      "specifications": "Features: Easy connection setting, Mobile App remote control, Support air conditioning/TV/set-top box, 360° all-round no blind angle signal coverage | Power input: DC 5V/1A | Stand by power consumption: < 0.4W | Control distance: horizontal <= 8m, positive <= 15m | Launch tubes: 7 | Infrared control direction: multi-directional | Working temperature: -10°C-50°C | Working humidity: < 85% RH | Connection method: 2.4GHz 802.11b/g/n",
+      "specifications": "Features: Easy connection setting, Mobile App remote control, Support air conditioning/TV/set-top box, 360Â° all-round no blind angle signal coverage | Power input: DC 5V/1A | Stand by power consumption: < 0.4W | Control distance: horizontal <= 8m, positive <= 15m | Launch tubes: 7 | Infrared control direction: multi-directional | Working temperature: -10Â°C-50Â°C | Working humidity: < 85% RH | Connection method: 2.4GHz 802.11b/g/n",
       "features": "1. Effortlessly manage your entire entertainment setup from anywhere.\n2. Enjoy reliable, seamless control across rooms with no signal gaps.\n3. Reduce standby energy consumption to under 0.4 watts for savings.\n4. Confidently operate multiple devices with precise, multi-directional infrared.\n5. Maintain consistent performance in varied home environments and climates.",
       "hero_image": "",
       "secondary_image": ""
@@ -261,7 +261,7 @@
       "name": "\u0001 Controller",
       "model": "WHS20S",
       "category": "Smart Remote Control",
-      "specifications": "Features: Smart IR remote control + temp & humidity sensor 2 in 1, Screen brightness adjustable, Temp & humidity calibration function, °C & °F for option, APP remote monitoring, Voice control | Input: 5V 1A | WIFI frequency: 2.4GHz IEEE 802.11 b/g/n | Temperature measure range: 0°C-60°C | Humidity measure range: 0% RH-99%RH | Temperature/Humidity accuracy: ±1°C / ±5%RH | Infrared frequency: 38KHz | Infrared range: <= 10 Meters | Dimensions: 80*86*105 mm | Net weight: 130g | Voice control: Amazon alexa, Google Home",
+      "specifications": "Features: Smart IR remote control + temp & humidity sensor 2 in 1, Screen brightness adjustable, Temp & humidity calibration function, Â°C & Â°F for option, APP remote monitoring, Voice control | Input: 5V 1A | WIFI frequency: 2.4GHz IEEE 802.11 b/g/n | Temperature measure range: 0Â°C-60Â°C | Humidity measure range: 0% RH-99%RH | Temperature/Humidity accuracy: Â±1Â°C / Â±5%RH | Infrared frequency: 38KHz | Infrared range: <= 10 Meters | Dimensions: 80*86*105 mm | Net weight: 130g | Voice control: Amazon alexa, Google Home",
       "features": "1. Monitor home temperature and humidity remotely via the app.\n2. Adjust screen brightness for comfortable visibility in any room.\n3. Calibrate sensors to ensure precise climate control accuracy.\n4. Control compatible devices seamlessly with voice or infrared.\n5. Maintain consistent comfort with reliable, room-specific environmental tracking.",
       "hero_image": "",
       "secondary_image": ""
@@ -279,7 +279,7 @@
       "name": "Air-Conditioner Controller",
       "model": "S16Pro",
       "category": "Smart Electrical Products",
-      "specifications": "Features: Remote control Air-conditioner by App, Local touch panel control, Work with Alexa or google assistant, Smart schedule | Input: DC 5V/1A | Dimension: 80*80*16mm | Infrared frequency: 38kHz | Temp measure range: 0°C-60°C | Humidity measure range: 0%RH-99%RH | Wi-Fi frequency: Wi-Fi 2.4G | Display: LCD",
+      "specifications": "Features: Remote control Air-conditioner by App, Local touch panel control, Work with Alexa or google assistant, Smart schedule | Input: DC 5V/1A | Dimension: 80*80*16mm | Infrared frequency: 38kHz | Temp measure range: 0Â°C-60Â°C | Humidity measure range: 0%RH-99%RH | Wi-Fi frequency: Wi-Fi 2.4G | Display: LCD",
       "features": "1. Control your air conditioner remotely via smartphone app.\n2. Schedule cooling cycles automatically for consistent comfort.\n3. Operate hands-free using Alexa or Google Assistant voice commands.\n4. Monitor room temperature and humidity precisely with integrated sensors.\n5. Enjoy seamless integration with existing smart home ecosystems.",
       "hero_image": "",
       "secondary_image": ""
@@ -306,7 +306,7 @@
       "name": "Pet\u0001Feeder\u0001+ \u0001Pet\u0001Water\u0001Fountain",
       "model": "F1 7- C+W 8",
       "category": "Pets accessories",
-      "specifications": "Capacity: 4 L (pet feeder)  +  3 L (pet water fountain)\n| Material: ABS plastic, 304 stainless steel |Rated Power: 5 W | Wi-Fi: 2.4 GHz  &  5 GHz | Operating Temperature: 0 °C – 50 °C",
+      "specifications": "Capacity: 4 L (pet feeder)  +  3 L (pet water fountain)\n| Material: ABS plastic, 304 stainless steel |Rated Power: 5 W | Wi-Fi: 2.4 GHz  &  5 GHz | Operating Temperature: 0 Â°C â 50 Â°C",
       "features": "1. Ensures your pet enjoys fresh, filtered water throughout the day.\n2. Maintains consistent feeding schedules even when you're away.\n3. Reduces plastic waste with durable stainless steel and ABS construction.\n4. Provides peace of mind with reliable Wi-Fi connectivity for remote monitoring.\n5. Supports pet health by encouraging hydration with a continuous water flow.",
       "hero_image": "",
       "secondary_image": ""
@@ -504,8 +504,8 @@
       "name": "Multi-mode wireless gateway plug type",
       "model": "Zigbee + Bluetooth",
       "category": "Smart Gateway",
-      "specifications": "Status indicator: 1 LED (Wi-Fi+Zigbee) Operation button: 1 button (reset) Power supply: AC100-240V Working current: <1A Working temperature: -10℃-55℃ Working humidity: 10%-90% RH (non-condensing) Storage temperature: -20℃-60℃ Storage humidity: 5%-90% RH (non-condensing) Wireless technology: Wi-Fi 802.11 b/g/n (Zigbee 802.15.4), support Bluetooth Zigbee Parameters Wireless frequency: 2.400-2.480GHz Transmit power: nominal 10dBm Number of channels: CH1-CH26 Channel transmission rate: 250Kbps Other parameters Wireless encryption: AES 128bit encryption, WPA-PSK/WPA2-PSK, WPA/WPA2 security mechanism Network management: Remote App configuration Maximum number of connections: Max Node=50",
-      "features": "1. Secures your smart home with AES 128-bit encryption and WPA2 protocols.\n2. Connects up to 50 devices for seamless, whole-home automation control.\n3. Operates reliably from -10°C to 55°C, ensuring performance in varied climates.\n4. Simplifies network management with intuitive remote app configuration.\n5. Reduces energy consumption with a working current under 1 amp.",
+      "specifications": "Status indicator: 1 LED (Wi-Fi+Zigbee) Operation button: 1 button (reset) Power supply: AC100-240V Working current: <1A Working temperature: -10â-55â Working humidity: 10%-90% RH (non-condensing) Storage temperature: -20â-60â Storage humidity: 5%-90% RH (non-condensing) Wireless technology: Wi-Fi 802.11 b/g/n (Zigbee 802.15.4), support Bluetooth Zigbee Parameters Wireless frequency: 2.400-2.480GHz Transmit power: nominal 10dBm Number of channels: CH1-CH26 Channel transmission rate: 250Kbps Other parameters Wireless encryption: AES 128bit encryption, WPA-PSK/WPA2-PSK, WPA/WPA2 security mechanism Network management: Remote App configuration Maximum number of connections: Max Node=50",
+      "features": "1. Secures your smart home with AES 128-bit encryption and WPA2 protocols.\n2. Connects up to 50 devices for seamless, whole-home automation control.\n3. Operates reliably from -10Â°C to 55Â°C, ensuring performance in varied climates.\n4. Simplifies network management with intuitive remote app configuration.\n5. Reduces energy consumption with a working current under 1 amp.",
       "hero_image": "",
       "secondary_image": ""
     },
@@ -613,7 +613,7 @@
       "model": "WHD12-W",
       "category": "Smart DIY Module",
       "specifications": "*Current: 10A/16A\n*Item Type: Smart Curtain Switches\n*Switch Type: APP control\n*Features: MINI\n*Voltage: AC 100V-240V 110V 220V 60HZ/50HZ\n*Controller size: 45*45*24mm\n*Controller weight:50g\n*CTN:320PCS/BOX",
-      "features": "1. Automate your curtains remotely for effortless daily comfort.\n2. Schedule operations to reduce energy costs and enhance savings.\n3. Secure your home by simulating occupancy even when away.\n4. Compact design integrates discreetly into any room’s aesthetic.\n5. Control lighting and privacy instantly from anywhere via smartphone.",
+      "features": "1. Automate your curtains remotely for effortless daily comfort.\n2. Schedule operations to reduce energy costs and enhance savings.\n3. Secure your home by simulating occupancy even when away.\n4. Compact design integrates discreetly into any roomâs aesthetic.\n5. Control lighting and privacy instantly from anywhere via smartphone.",
       "hero_image": "",
       "secondary_image": ""
     },
@@ -621,8 +621,8 @@
       "name": "Lock BoX",
       "model": "LL05-B",
       "category": "Door Lock",
-      "specifications": "Storage capacity: 100 pcs (not included) | Materials: Aluminum alloy | Surface treatment: Spray painting process | Battery life: 12 months(AAA)/24 months(CR123A) | Operating temperature: -20°C~55°C | Working environment humidity: 40%RH~85%RH | Salt spray test: 96 hours | Installation: Hooks, self-tapping screws, expansion screws | Supported gateways: Bluetooth Gateway | Certification: CE, FCC, RoHS, IP65",
-      "features": "1. Maintains reliable access across extreme climates, from -20°C to 55°C.\n2. Secures outdoor entry points with IP65-rated, corrosion-resistant aluminum construction.\n3. Enjoy uninterrupted household access for up to two years on a single\n4. Effortlessly integrates with Bluetooth gateways for seamless smart-home control.\n5. Confidently withstands harsh environments, proven by 96-hour salt spray testing.",
+      "specifications": "Storage capacity: 100 pcs (not included) | Materials: Aluminum alloy | Surface treatment: Spray painting process | Battery life: 12 months(AAA)/24 months(CR123A) | Operating temperature: -20Â°C~55Â°C | Working environment humidity: 40%RH~85%RH | Salt spray test: 96 hours | Installation: Hooks, self-tapping screws, expansion screws | Supported gateways: Bluetooth Gateway | Certification: CE, FCC, RoHS, IP65",
+      "features": "1. Maintains reliable access across extreme climates, from -20Â°C to 55Â°C.\n2. Secures outdoor entry points with IP65-rated, corrosion-resistant aluminum construction.\n3. Enjoy uninterrupted household access for up to two years on a single\n4. Effortlessly integrates with Bluetooth gateways for seamless smart-home control.\n5. Confidently withstands harsh environments, proven by 96-hour salt spray testing.",
       "hero_image": "",
       "secondary_image": ""
     },
@@ -632,6 +632,42 @@
       "category": "Door Lock",
       "specifications": "Password, card, key, graffiti remote unlocking. Can be installed on doors below 60MM thick",
       "features": "1. Unlock your door with a password, card, or key for versatile access.\n2. Graffiti remote unlocking offers effortless entry from a distance.\n3. Installs seamlessly on doors under 60mm thick, ensuring broad compatibility.\n4. Multiple unlocking methods provide robust security against unauthorized entry.\n5. Reduces reliance on physical keys, simplifying daily routines at home.",
+      "hero_image": "",
+      "secondary_image": ""
+    },
+    {
+      "name": "1gang Display Lighting switch",
+      "model": "TY-Z-UN-PLF1",
+      "category": "smart switch",
+      "specifications": "* Name: Screen display Lighting switch\r\n* Standard: UK, EU standard\r\n* Control button: 1gang\r\n* Input voltage: 100V-240V AC 50-60HZ\r\n* Communication method: WiFi, ZigBee\r\n* WIFI standard: 802.11b/g/n 2.4GHZ\r\n* Wiring: N+L line\r\n* Load power: ≤600W (N+L line)\r\n* Wireless power consumption: ≤0.3W\r\n* Control method: manual  button control/APP control/AI voice control\r\n* Panel material: PC flame retardant material\r\n* Size: 86*86*34mm\r\n* Color: White/Black/Grey",
+      "features": "",
+      "hero_image": "",
+      "secondary_image": ""
+    },
+    {
+      "name": "2gang Display Lighting switch",
+      "model": "TY-Z-UN-PLF2",
+      "category": "smart switch",
+      "specifications": "* Name: Screen display Lighting switch\r\n* Standard: UK, EU standard\r\n* Control button: 1gang\r\n* Input voltage: 100V-240V AC 50-60HZ\r\n* Communication method: WiFi, ZigBee\r\n* WIFI standard: 802.11b/g/n 2.4GHZ\r\n* Wiring: N+L line\r\n* Load power: ≤600W (N+L line)\r\n* Wireless power consumption: ≤0.3W\r\n* Control method: manual  button control/APP control/AI voice control\r\n* Panel material: PC flame retardant material\r\n* Size: 86*86*34mm\r\n* Color: White/Black/Grey",
+      "features": "",
+      "hero_image": "",
+      "secondary_image": ""
+    },
+    {
+      "name": "3gang Display Lighting switch",
+      "model": "TY-Z-UN-PLF3",
+      "category": "smart switch",
+      "specifications": "* Name: Screen display Lighting switch\r\n* Standard: UK, EU standard\r\n* Control button: 1gang\r\n* Input voltage: 100V-240V AC 50-60HZ\r\n* Communication method: WiFi, ZigBee\r\n* WIFI standard: 802.11b/g/n 2.4GHZ\r\n* Wiring: N+L line\r\n* Load power: ≤600W (N+L line)\r\n* Wireless power consumption: ≤0.3W\r\n* Control method: manual  button control/APP control/AI voice control\r\n* Panel material: PC flame retardant material\r\n* Size: 86*86*34mm\r\n* Color: White/Black/Grey",
+      "features": "",
+      "hero_image": "",
+      "secondary_image": ""
+    },
+    {
+      "name": "4gang Display Lighting switch",
+      "model": "TY-Z-UN-PLF3",
+      "category": "smart switch",
+      "specifications": "* Name: Screen display Lighting switch\r\n* Standard: UK, EU standard\r\n* Control button: 1gang\r\n* Input voltage: 100V-240V AC 50-60HZ\r\n* Communication method: WiFi, ZigBee\r\n* WIFI standard: 802.11b/g/n 2.4GHZ\r\n* Wiring: N+L line\r\n* Load power: ≤600W (N+L line)\r\n* Wireless power consumption: ≤0.3W\r\n* Control method: manual  button control/APP control/AI voice control\r\n* Panel material: PC flame retardant material\r\n* Size: 86*86*34mm\r\n* Color: White/Black/Grey",
+      "features": "",
       "hero_image": "",
       "secondary_image": ""
     }

@@ -1,0 +1,136 @@
+# Changelog
+
+## [Updated] - Automated Polling Service Enhancement
+
+### Changes Made
+
+#### Enhanced Change Detection
+- **Row-level fingerprinting**: Added individual row hash tracking for precise change detection
+- **Modified row detection**: Service now detects changes in existing rows, not just new additions
+- **Detailed change tracking**: Tracks both new rows and modified rows separately
+
+#### Updated Product Structure
+- **Aligned with current products.json**: Updated product creation to match the existing structure:
+  - `name`: Product name
+  - `model`: Model number
+  - `category`: Product category
+  - `specifications`: Product specifications
+  - `features`: Product features
+  - `hero_image`: Primary product image
+  - `secondary_image`: Secondary product image
+
+#### Enhanced Data Processing
+- **Flexible header matching**: Case-insensitive header matching with multiple possible field names
+- **Modified product handling**: New method to process and update existing products
+- **Improved catalog updates**: Handles both new additions and modifications in a single operation
+
+#### Updated Metadata Management
+- **Current structure compliance**: Metadata now matches the existing products.json format
+- **Enhanced statistics**: Tracks both added and modified product counts
+- **Source tracking**: Maintains source information for data lineage
+
+#### Notification System
+- **Dual notification types**: Separate notifications for new and modified products
+- **Enhanced callback support**: Updated callback structure to handle both change types
+- **Detailed logging**: Comprehensive logging for all change operations
+
+### Technical Improvements
+
+#### ChangeDetector Class
+- `create_data_fingerprint()`: Now creates individual row hashes for detailed tracking
+- `detect_changes()`: Enhanced to detect both new and modified rows
+- Improved metadata storage for better change tracking
+
+#### DataProcessor Class
+- `process_modified_rows()`: New method to handle modified row processing
+- `_create_product_from_row()`: Updated to match current products.json structure
+- `update_catalog()`: Enhanced to handle both new and modified products
+- `_update_modified_products()`: New method for updating existing products
+- `_update_metadata_stats()`: Updated to match current metadata structure
+
+#### AutomatedPollingService Class
+- Enhanced `_poll_and_process()`: Now handles both new and modified rows
+- `_notify_modified_products()`: New notification method for modified products
+- Updated statistics tracking for both addition and modification counts
+- Enhanced status reporting with modification statistics
+
+### Key Features
+
+1. **Real-time Change Detection**: Monitors Google Sheets every 5 minutes for any changes
+2. **Granular Change Tracking**: Detects changes at the individual row level
+3. **Automatic Product Updates**: Updates existing products when their data changes
+4. **Flexible Field Mapping**: Handles various header naming conventions
+5. **Comprehensive Logging**: Detailed logs for all operations and changes
+6. **Backup System**: Creates backups before any updates
+7. **Notification System**: Ready for WebSocket integration for real-time updates
+
+### Usage
+
+The service now automatically:
+- Detects new rows added to the Google Sheet
+- Identifies modifications to existing rows
+- Updates the products.json file accordingly
+- Maintains proper metadata and statistics
+- Provides detailed logging and notifications
+
+### Configuration
+
+The service uses the same Google Sheets URL and maintains backward compatibility with existing configurations while adding enhanced change detection capabilities.
+
+## [Updated] - Server Integration Enhancement
+
+### Server.py Updates
+
+#### Enhanced Notification System
+- **Updated callback function**: `notify_product_changes()` now handles both new and modified products
+- **Dual notification types**: Separate WebSocket notifications for new vs modified products
+- **Enhanced dashboard**: Shows both added and modified product counts
+
+#### WebSocket Integration
+- **Real-time notifications**: Dashboard now displays both new product additions and modifications
+- **Enhanced logging**: Real-time logs show different messages for new vs modified products
+- **Improved user feedback**: Clear distinction between new products and product updates
+
+#### Dashboard Enhancements
+- **Modified products tracking**: Dashboard now displays count of modified products
+- **Enhanced status display**: Shows both `products_added` and `products_modified` statistics
+- **Real-time updates**: WebSocket messages distinguish between new and modified product notifications
+
+### Key Server Features
+
+1. **Real-time Change Notifications**: WebSocket broadcasts for both new and modified products
+2. **Enhanced Dashboard**: Shows comprehensive statistics including modification counts
+3. **Improved User Experience**: Clear distinction between different types of changes
+4. **Backward Compatibility**: Maintains existing API endpoints and functionality
+
+## [Updated] - Product Deletion Support
+
+### Enhanced Change Detection
+- **Deleted row detection**: Service now detects when rows are removed from Google Sheets
+- **Automatic product removal**: Deleted products are automatically removed from the catalog
+- **Model-based matching**: Uses model numbers as primary identifiers for reliable product matching
+
+### Deletion Processing
+- **Smart product removal**: Compares current sheet models with catalog to identify deleted products
+- **Robust matching**: Uses model numbers instead of names for more reliable product identification
+- **Comprehensive logging**: Detailed logs for all deletion operations
+
+### Enhanced Notifications
+- **Deleted product notifications**: Separate WebSocket notifications for deleted products
+- **Dashboard updates**: Shows count of deleted products in statistics
+- **Real-time feedback**: Users can see when products are removed from the catalog
+
+### Key Features Added
+
+1. **Complete CRUD Support**: Create, Read, Update, and Delete operations for products
+2. **Automatic Cleanup**: Removes products that no longer exist in Google Sheets
+3. **Model-based Tracking**: Uses model numbers as unique identifiers for reliable matching
+4. **Enhanced Statistics**: Tracks added, modified, and deleted product counts
+5. **Real-time Deletion Notifications**: Immediate feedback when products are removed
+
+### Technical Implementation
+
+- **Row-level tracking**: Monitors individual row hashes to detect deletions
+- **Model extraction**: Extracts model numbers from current sheet data for comparison
+- **Catalog synchronization**: Ensures catalog matches the current state of Google Sheets
+- **Backup system**: Creates backups before any deletion operations
