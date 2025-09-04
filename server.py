@@ -230,8 +230,15 @@ async def websocket_endpoint(websocket: WebSocket):
 
 # Live catalog endpoint that auto-updates
 @app.get("/catalog", response_class=HTMLResponse)
-async def live_catalog(request: Request):
-    """Live catalog that automatically updates when new products are added"""
+async def live_catalog(request: Request, rows: str = None, category: str = None):
+    """Live catalog that automatically updates when new products are added
+    
+    Args:
+        rows: Comma-separated row numbers to filter products (e.g., "1,5,10,15")
+              If not provided, shows all products
+        category: Category name to filter products (e.g., "Smart Lighting", "Security")
+                 If not provided, shows all categories
+    """
     try:
         # Load products from JSON file
         with open("data/products.json", "r", encoding="utf-8") as f:
@@ -240,10 +247,39 @@ async def live_catalog(request: Request):
         products = data.get("products", [])
         metadata = data.get("metadata", {})
         
+        # Filter products by row numbers if specified
+        if rows:
+            try:
+                # Parse comma-separated row numbers
+                row_numbers = [int(row.strip()) for row in rows.split(',') if row.strip().isdigit()]
+                print(f"Filtering products by row numbers: {row_numbers}")
+                
+                # Filter products based on row numbers (assuming products are in order)
+                # Note: Row numbers are 1-based, so we need to subtract 1 for 0-based indexing
+                filtered_products = []
+                for row_num in row_numbers:
+                    if 1 <= row_num <= len(products):
+                        filtered_products.append(products[row_num - 1])
+                    else:
+                        print(f"Warning: Row number {row_num} is out of range (1-{len(products)})")
+                
+                products = filtered_products
+                print(f"Filtered to {len(products)} products from {len(row_numbers)} row numbers")
+                
+            except ValueError as e:
+                print(f"Error parsing row numbers '{rows}': {e}")
+                # Continue with all products if parsing fails
+        
+        # Filter by category if specified
+        if category:
+            print(f"Filtering products by category: {category}")
+            products = [p for p in products if p.get("category", "").lower() == category.lower()]
+            print(f"Filtered to {len(products)} products in category '{category}'")
+        
         # Group products by category
         grouped_products = defaultdict(list)
         for product in products:
-            category = product.get("category", "Uncategorized")
+            product_category = product.get("category", "Uncategorized")
             # Format product for template
             formatted_product = {
                 "name": product.get("name", ""),
@@ -270,7 +306,7 @@ async def live_catalog(request: Request):
                     cleaned_features.append(cleaned_feature)
                 formatted_product["features"] = cleaned_features[:10]  # Limit to 10 features
             
-            grouped_products[category].append(formatted_product)
+            grouped_products[product_category].append(formatted_product)
         
         # Template context
         context = {
@@ -289,10 +325,48 @@ async def live_catalog(request: Request):
     except Exception as e:
         return HTMLResponse(f"Error loading catalog: {str(e)}", status_code=500)
 
+# Get available categories endpoint
+@app.get("/catalog/categories")
+async def get_categories():
+    """Get list of available product categories"""
+    try:
+        # Load products from JSON file
+        with open("data/products.json", "r", encoding="utf-8") as f:
+            data = json.load(f)
+        
+        products = data.get("products", [])
+        
+        # Extract unique categories
+        categories = set()
+        for product in products:
+            category = product.get("category", "Uncategorized")
+            if category and category.strip():
+                categories.add(category)
+        
+        # Convert to sorted list
+        categories_list = sorted(list(categories))
+        
+        return {
+            "categories": categories_list,
+            "total_categories": len(categories_list),
+            "total_products": len(products)
+        }
+        
+    except Exception as e:
+        return {"error": f"Error loading categories: {str(e)}"}
+
+
 # PDF catalog endpoint
 @app.get("/catalog/pdf")
-async def generate_catalog_pdf(request: Request):
-    """Generate and download PDF version of the live catalog with enhanced Windows compatibility"""
+async def generate_catalog_pdf(request: Request, rows: str = None, category: str = None):
+    """Generate and download PDF version of the live catalog with enhanced Windows compatibility
+    
+    Args:
+        rows: Comma-separated row numbers to filter products (e.g., "1,5,10,15")
+              If not provided, shows all products
+        category: Category name to filter products (e.g., "Smart Lighting", "Security")
+                 If not provided, shows all categories
+    """
     try:
         # Load products from JSON file
         with open("data/products.json", "r", encoding="utf-8") as f:
@@ -301,10 +375,39 @@ async def generate_catalog_pdf(request: Request):
         products = data.get("products", [])
         metadata = data.get("metadata", {})
         
+        # Filter products by row numbers if specified
+        if rows:
+            try:
+                # Parse comma-separated row numbers
+                row_numbers = [int(row.strip()) for row in rows.split(',') if row.strip().isdigit()]
+                print(f"PDF: Filtering products by row numbers: {row_numbers}")
+                
+                # Filter products based on row numbers (assuming products are in order)
+                # Note: Row numbers are 1-based, so we need to subtract 1 for 0-based indexing
+                filtered_products = []
+                for row_num in row_numbers:
+                    if 1 <= row_num <= len(products):
+                        filtered_products.append(products[row_num - 1])
+                    else:
+                        print(f"PDF: Warning: Row number {row_num} is out of range (1-{len(products)})")
+                
+                products = filtered_products
+                print(f"PDF: Filtered to {len(products)} products from {len(row_numbers)} row numbers")
+                
+            except ValueError as e:
+                print(f"PDF: Error parsing row numbers '{rows}': {e}")
+                # Continue with all products if parsing fails
+        
+        # Filter by category if specified
+        if category:
+            print(f"PDF: Filtering products by category: {category}")
+            products = [p for p in products if p.get("category", "").lower() == category.lower()]
+            print(f"PDF: Filtered to {len(products)} products in category '{category}'")
+        
         # Group products by category
         grouped_products = defaultdict(list)
         for product in products:
-            category = product.get("category", "Uncategorized")
+            product_category = product.get("category", "Uncategorized")
             # Format product for template
             formatted_product = {
                 "name": product.get("name", ""),
@@ -331,7 +434,7 @@ async def generate_catalog_pdf(request: Request):
                     cleaned_features.append(cleaned_feature)
                 formatted_product["features"] = cleaned_features[:10]  # Limit to 10 features
             
-            grouped_products[category].append(formatted_product)
+            grouped_products[product_category].append(formatted_product)
         
         # Load font as base64 for PDF generation
         brinnan_font_base64 = ""
@@ -348,11 +451,17 @@ async def generate_catalog_pdf(request: Request):
         if os.path.exists(intro_path):
             with open(intro_path, 'rb') as img_file:
                 intro_image_base64 = base64.b64encode(img_file.read()).decode('utf-8')
+                print(f"Cover page image loaded: {len(intro_image_base64)} characters")
+        else:
+            print(f"Cover page image not found at: {intro_path}")
         
         outer_path = "brochure/static/images/outer.png"
         if os.path.exists(outer_path):
             with open(outer_path, 'rb') as img_file:
                 outer_image_base64 = base64.b64encode(img_file.read()).decode('utf-8')
+                print(f"Back cover image loaded: {len(outer_image_base64)} characters")
+        else:
+            print(f"Back cover image not found at: {outer_path}")
         
         # Template context for PDF (similar to live catalog but without WebSocket elements)
         context = {
@@ -1088,6 +1197,9 @@ async def dashboard():
             <button class="button" onclick="stopPolling()">Stop Polling</button>
             <button class="button" onclick="getStatus()">Refresh Status</button>
             <a href="/catalog" class="catalog-link" target="_blank">View Live Catalog</a>
+            <a href="/catalog?rows=1,5,10" class="catalog-link" target="_blank">View Rows 1,5,10</a>
+            <a href="/catalog?category=Smart Lighting" class="catalog-link" target="_blank">View Smart Lighting</a>
+            <a href="/catalog?category=Security" class="catalog-link" target="_blank">View Security</a>
         </div>
         
         <h3>Real-time Updates</h3>

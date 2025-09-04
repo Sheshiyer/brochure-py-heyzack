@@ -32,12 +32,42 @@
             break-after: page;
             margin: 0 auto 20px auto;
             box-shadow: none !important;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .product-layout {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .details-section {
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .specifications {
+            page-break-inside: avoid;
+            break-inside: avoid;
         }
         
         .cover-page {
             page-break-after: always;
             break-after: page;
             margin: 0 auto 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        
+        .cover-page img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
         }
         
         .back-cover {
@@ -64,6 +94,35 @@
         .spec-table.left-right-layout {
             grid-gap: 0.4rem 0.8rem;
             align-items: start;
+        }
+        
+        /* Prevent page breaks in content sections */
+        .features,
+        .specifications,
+        .product-header {
+            page-break-inside: avoid;
+            break-inside: avoid;
+        }
+        
+        /* Ensure proper spacing and alignment */
+        .left-column {
+            flex: 1;
+            padding-right: 20px;
+        }
+        
+        .right-column {
+            flex: 0 0 300px;
+            padding-left: 20px;
+        }
+        
+        .hero-section {
+            flex: 0 0 30%;
+            min-height: 200px;
+        }
+        
+        .details-section {
+            flex: 1;
+            min-height: 400px;
         }
     </style>
 </head>
@@ -128,7 +187,7 @@
                                 <h3 class="spec-title">PRODUCT SPECIFICATIONS</h3>
                                 <div class="spec-content">
                                     {% if product.specifications %}
-                                        <div class="specifications-text">{{ product.specifications }}</div>
+                                        <div class="specifications-text" style="page-break-inside: avoid; break-inside: avoid; white-space: pre-wrap; font-size: 0.9em; line-height: 1.4;">{{ product.specifications }}</div>
                                     {% else %}
                                         <p>No specifications available for this product.</p>
                                     {% endif %}

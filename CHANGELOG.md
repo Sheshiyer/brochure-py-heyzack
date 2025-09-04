@@ -1,5 +1,35 @@
 # Changelog
 
+## [Enhanced] - Advanced Product Filtering
+
+### New Filtering Features
+- **Row-Based Filtering**: Added `rows` parameter to `/catalog` and `/catalog/pdf` endpoints
+- **Category-Based Filtering**: Added `category` parameter to filter products by category
+- **Comma-Separated Values**: Accept row numbers as comma-separated values (e.g., "1,5,10,15")
+- **Flexible Filtering**: Shows all products if no filters provided, filtered products if specified
+- **Combined Filtering**: Can use both row and category filters together
+
+### Technical Implementation
+- **Local JSON Filtering**: Uses existing `products.json` file for fast filtering
+- **Case-Insensitive Category Matching**: Category filtering works regardless of case
+- **PDF Support**: All filtering methods work with PDF generation
+- **Error Handling**: Graceful handling of invalid row numbers and out-of-range values
+- **Debugging Output**: Console logging for tracking filtered products
+- **Categories API**: New `/catalog/categories` endpoint to get available categories
+
+### Usage Examples
+- `http://localhost:8000/catalog` - Show all products
+- `http://localhost:8000/catalog?rows=1,5,10` - Show products from rows 1, 5, and 10
+- `http://localhost:8000/catalog?category=Smart Lighting` - Show only Smart Lighting products
+- `http://localhost:8000/catalog?rows=1,5,10&category=Security` - Show rows 1,5,10 from Security category
+- `http://localhost:8000/catalog/pdf?category=Smart Lighting` - Generate PDF with Smart Lighting products
+- `http://localhost:8000/catalog/categories` - Get list of available categories
+
+### Dashboard Integration
+- Added test links in the dashboard for easy testing of filtering
+- Links for row filtering and category filtering examples
+- Removed Google Sheets direct access (simplified to local JSON only)
+
 ## [Enhanced] - PDF Export Functionality for Live Catalog
 
 ### PDF Generation Improvements
