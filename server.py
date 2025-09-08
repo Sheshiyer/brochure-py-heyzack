@@ -463,6 +463,43 @@ async def generate_catalog_pdf(request: Request, rows: str = None, category: str
         else:
             print(f"Back cover image not found at: {outer_path}")
         
+        # Convert product images to base64 for PDF generation
+        import requests
+        for product in products:
+            # Convert hero image
+            if product.get('hero_image') and product['hero_image'].startswith('http'):
+                try:
+                    print(f"Converting hero image to base64: {product['name']}")
+                    response = requests.get(product['hero_image'], timeout=10)
+                    if response.status_code == 200:
+                        product['hero_image_base64'] = base64.b64encode(response.content).decode('utf-8')
+                        print(f"Hero image converted: {product['name']} - {len(product['hero_image_base64'])} characters")
+                    else:
+                        print(f"Failed to download hero image: {product['name']} - Status: {response.status_code}")
+                        product['hero_image_base64'] = ""
+                except Exception as e:
+                    print(f"Error converting hero image for {product['name']}: {e}")
+                    product['hero_image_base64'] = ""
+            else:
+                product['hero_image_base64'] = ""
+            
+            # Convert secondary image
+            if product.get('secondary_image') and product['secondary_image'].startswith('http'):
+                try:
+                    print(f"Converting secondary image to base64: {product['name']}")
+                    response = requests.get(product['secondary_image'], timeout=10)
+                    if response.status_code == 200:
+                        product['secondary_image_base64'] = base64.b64encode(response.content).decode('utf-8')
+                        print(f"Secondary image converted: {product['name']} - {len(product['secondary_image_base64'])} characters")
+                    else:
+                        print(f"Failed to download secondary image: {product['name']} - Status: {response.status_code}")
+                        product['secondary_image_base64'] = ""
+                except Exception as e:
+                    print(f"Error converting secondary image for {product['name']}: {e}")
+                    product['secondary_image_base64'] = ""
+            else:
+                product['secondary_image_base64'] = ""
+        
         # Template context for PDF (similar to live catalog but without WebSocket elements)
         context = {
             "request": request,
@@ -576,7 +613,16 @@ async def generate_pdf_with_method(method: str, context: dict, request: Request,
                         if os.path.exists(css_file_path):
                             with open(css_file_path, 'r', encoding='utf-8') as css_file:
                                 css_content = css_file.read()
+                                # Inject the full CSS content
                                 page.add_style_tag(content=css_content)
+                                print(f"CSS injected: {len(css_content)} characters")
+                        else:
+                            print(f"CSS file not found at: {css_file_path}")
+                        
+                        # Wait for images to load
+                        page.wait_for_load_state("networkidle")
+                        import time
+                        time.sleep(3)  # Extra wait for base64 images
                         
                         # Add additional CSS to hide live elements and optimize for PDF
                         page.add_style_tag(content="""
@@ -593,29 +639,196 @@ async def generate_pdf_with_method(method: str, context: dict, request: Request,
                             /* Optimize for PDF rendering */
                             body {
                                 margin: 0;
-                                padding: 20px 0;
+                                padding: 0;
                                 -webkit-print-color-adjust: exact;
                                 print-color-adjust: exact;
                             }
                             
-                            /* Ensure proper page breaks */
+                            /* Ensure proper page breaks and full page usage */
                             .product-page {
                                 page-break-after: always;
                                 break-after: page;
-                                margin: 0 auto 20px auto;
+                                margin: 0;
                                 box-shadow: none !important;
+                                height: 100vh;
+                                width: 100%;
+                                overflow: hidden;
+                                display: block !important;
+                            }
+                            
+                            /* Remove page break from last product to avoid extra white page */
+                            .product-page:last-of-type {
+                                page-break-after: auto;
+                                break-after: auto;
                             }
                             
                             .cover-page {
                                 page-break-after: always;
                                 break-after: page;
-                                margin: 0 auto 20px auto;
+                                margin: 0;
+                                height: 100vh;
+                                width: 100%;
                             }
                             
-                            .back-cover {
+                            .back-cover-fixed {
                                 page-break-before: always;
                                 break-before: page;
-                                margin: 20px auto 0 auto;
+                                margin: 0;
+                                height: 100vh;
+                                width: 100%;
+                                background: linear-gradient(135deg, #333232 0%, #222222 50%, #1a1a1a 100%);
+                                color: #ffffff;
+                                display: flex;
+                                align-items: center;
+                                padding: 4rem;
+                                overflow: hidden;
+                            }
+                            
+                            .back-content-fixed {
+                                max-width: 1200px;
+                                margin: 0 auto;
+                                display: grid;
+                                grid-template-columns: 1fr 1fr;
+                                gap: 4rem;
+                                width: 100%;
+                            }
+                            
+                            .company-section-fixed {
+                                grid-column: 1 / -1;
+                                margin-bottom: 3rem;
+                            }
+                            
+                            .value-proposition h3 {
+                                font-size: 1.5rem;
+                                color: #ffffff;
+                                margin-bottom: 2rem;
+                            }
+                            
+                            .value-grid {
+                                display: grid;
+                                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                                gap: 1.5rem;
+                            }
+                            
+                            .value-item {
+                                padding: 1.5rem;
+                                background: rgba(255, 255, 255, 0.05);
+                                border-radius: 8px;
+                                border: 1px solid rgba(232, 47, 137, 0.2);
+                            }
+                            
+                            .value-item h4 {
+                                font-size: 1.1rem;
+                                color: #e82f89;
+                                margin-bottom: 0.5rem;
+                            }
+                            
+                            .value-item p {
+                                font-size: 0.85rem;
+                                color: #dddddd;
+                                line-height: 1.4;
+                            }
+                            
+                            .partner-section-fixed {
+                                flex: 1;
+                                display: flex;
+                            }
+                            
+                            .partner-section-fixed img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                border-radius: 0;
+                                padding-top: 160px;
+                            }
+                            
+                            /* Force structured layout to use full page */
+                            .product-layout.layout-structured {
+                                height: 100vh !important;
+                                max-height: 100vh !important;
+                                width: 100% !important;
+                                overflow: hidden !important;
+                                display: grid !important;
+                                grid-template-rows: 30vh 70vh !important;
+                                grid-template-columns: 1fr !important;
+                            }
+                            
+                            .layout-structured .hero-section {
+                                height: 30vh !important;
+                                max-height: 30vh !important;
+                                overflow: hidden !important;
+                            }
+                            
+                            .layout-structured .details-section {
+                                height: 70vh !important;
+                                max-height: 70vh !important;
+                                overflow: hidden !important;
+                            }
+                            
+                            .layout-structured .left-column {
+                                height: 100% !important;
+                                overflow: hidden !important;
+                                display: flex !important;
+                                flex-direction: column !important;
+                            }
+                            
+                            .layout-structured .right-column {
+                                height: 100% !important;
+                                overflow: hidden !important;
+                            }
+                            
+                            /* Ensure content fits within page bounds */
+                            .layout-structured .features {
+                                flex: 1 !important;
+                                overflow: hidden !important;
+                                margin-bottom: 10px !important;
+                            }
+                            
+                            .layout-structured .specifications {
+                                flex: 1 !important;
+                                overflow: hidden !important;
+                                margin-bottom: 10px !important;
+                            }
+                            
+                            .layout-structured .features-content,
+                            .layout-structured .spec-content {
+                                height: 100% !important;
+                                overflow: hidden !important;
+                            }
+                            
+                            .layout-structured .features-text,
+                            .layout-structured .specifications-text {
+                                font-size: 0.8em !important;
+                                line-height: 1.3 !important;
+                                max-height: 100% !important;
+                                overflow: hidden !important;
+                            }
+                            
+                            .layout-structured .features-list {
+                                max-height: 100% !important;
+                                overflow: hidden !important;
+                            }
+                            
+                            .layout-structured .features-text {
+                                font-size: 0.8em !important;
+                                line-height: 1.3 !important;
+                                color: #333 !important;
+                                white-space: pre-wrap !important;
+                                max-height: 100% !important;
+                                overflow: hidden !important;
+                            }
+                            
+                            /* Prevent content from breaking across pages */
+                            .product-layout,
+                            .hero-section,
+                            .details-section,
+                            .left-column,
+                            .right-column,
+                            .features,
+                            .specifications,
+                            .product-header {
+                                page-break-inside: avoid !important;
+                                break-inside: avoid !important;
                             }
                             
                             /* Ensure images render properly */
@@ -623,6 +836,8 @@ async def generate_pdf_with_method(method: str, context: dict, request: Request,
                                 max-width: 100%;
                                 height: auto;
                                 object-fit: contain;
+                                -webkit-print-color-adjust: exact;
+                                print-color-adjust: exact;
                             }
                         """)
                         
@@ -632,14 +847,14 @@ async def generate_pdf_with_method(method: str, context: dict, request: Request,
                             format='A4',
                             print_background=True,
                             margin={
-                                'top': '10mm',
-                                'right': '10mm', 
-                                'bottom': '10mm',
-                                'left': '10mm'
+                                'top': '0mm',
+                                'right': '0mm', 
+                                'bottom': '0mm',
+                                'left': '0mm'
                             },
                             prefer_css_page_size=True,
                             display_header_footer=False,
-                            scale=0.95
+                            scale=1.0
                         )
                         
                     finally:
@@ -756,7 +971,7 @@ async def generate_pdf_with_method(method: str, context: dict, request: Request,
                                 margin: 0 auto 20px auto;
                             }
                             
-                            .back-cover {
+                            .back-cover-fixed {
                                 page-break-before: always;
                                 break-before: page;
                                 margin: 20px auto 0 auto;
@@ -789,14 +1004,14 @@ async def generate_pdf_with_method(method: str, context: dict, request: Request,
                             format='A4',
                             print_background=True,
                             margin={
-                                'top': '10mm',
-                                'right': '10mm', 
-                                'bottom': '10mm',
-                                'left': '10mm'
+                                'top': '0mm',
+                                'right': '0mm', 
+                                'bottom': '0mm',
+                                'left': '0mm'
                             },
                             prefer_css_page_size=True,
                             display_header_footer=False,
-                            scale=0.95
+                            scale=1.0
                         )
                         
                         return temp_pdf_path
